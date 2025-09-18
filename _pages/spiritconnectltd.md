@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Spirit Connect Ltd"
-permalink: /SCPL/
+title: "SpiritConnectLtd"
+permalink: /SpiritConnectLtd/
 author_profile: true
 ---
 
