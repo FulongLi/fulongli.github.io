@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Spirit Connect Ltd"
-permalink: /SCPL/
+permalink: /SpiritConnect/
 author_profile: true
 ---
 
@@ -17,10 +17,10 @@ author_profile: true
 We are a **power electronics consultancy** specializing in the design and optimization of advanced energy systems.  
 Our mission is to bridge **research and industry** by delivering **innovative, efficient, and future-ready solutions** in:
 
-- ⚡ Power Converter Design & Control  
-- ⚡ Wide-Bandgap Devices (SiC/GaN) Applications  
-- ⚡ DC Systems & Microgrids  
-- ⚡ Custom Power Electronics Solutions  
+⚡ Power Converter Design & Control  
+⚡ Wide-Bandgap Devices (SiC/GaN) Applications  
+⚡ DC Systems & Microgrids  
+⚡ Custom Power Electronics Solutions  
 
 Whether you are developing a new product, improving efficiency, or exploring microgrid architectures, **Spirit Connect Ltd** provides the expertise and insight to bring your ideas to life.
 
