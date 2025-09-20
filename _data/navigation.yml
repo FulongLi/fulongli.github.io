@@ -9,11 +9,14 @@ main:
   - title: "Publications"
     url: /publications/
      
-  - title: "Novels"
-    url: /novels/
+  - title: "Creations"
+    url: /creations/
     
   - title: "CV"
     url: /cv/
 
   - title: "Spirit Connect Ltd"
     url: /SpiritConnect/
+
+  - title: "Donate us"
+    url: /donate/
