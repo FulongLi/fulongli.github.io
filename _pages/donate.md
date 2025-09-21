@@ -13,7 +13,6 @@ By donating, you enable us to:
 - Keep resources open and free  
 - Explore new research ideas and prototypes  
 - Provide tutorials and insights to engineers and students  
-- Bridge the gap between academia and industry  
 
 ---
 
