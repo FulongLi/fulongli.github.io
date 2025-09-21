@@ -10,14 +10,14 @@ redirect_from:
 
 My digital legacy...
 
-## 👋 About Me
+## About Me
 
 I’m **Dr. Fulong Li**, a Power Electronics Engineer and Researcher currently working in the UK. 
 I hold a Ph.D. in Electrical Engineering from Aston University, and I’m an IEEE Member with deep expertise in advanced converter design, control strategies, and energy systems integration.
 
 ---
 
-## 💼 Professional Focus
+## Professional Focus
 
 My work spans across:
 - AI-assisted optimal design of power electronic converters (DAB, Buck/Boost)
@@ -27,7 +27,7 @@ My work spans across:
 
 ---
 
-## 🔬 Research Vision
+## Research Vision
 
 I’m passionate about combining **power electronics**, **AI-assisted optimisation**, and **energy systems** to build more sustainable, efficient, and intelligent electrical infrastructures. My research contributions include:
 - Developing high-performance converter prototypes
@@ -36,23 +36,13 @@ I’m passionate about combining **power electronics**, **AI-assisted optimisati
 
 ---
 
-## 🌍 Global Experience
-
-I've had the privilege to work and collaborate across multiple countries and institutions, including:
-- 🇬🇧 UK (Aston University, Loughborough University, Cardiff University)
-- 🇨🇦 University of Waterloo
-- 🇨🇳 Zhejiang University
-- 🇳🇱 DC Systems BV, TU Delft
-
----
-
-## ✨ Beyond Work
+## Beyond Work
 
 Outside of engineering, I enjoy creative writing and have drafted several science-fiction novels. I’m fascinated by the intersection of technology, storytelling, and society.
 
 ---
 
-📫 **Feel free to reach out** via [email](mailto:fulong.li@ieee.org) or connect with me on [LinkedIn](https://www.linkedin.com/in/fulong-li-6bb443127/).
+**Feel free to reach out** via [email](mailto:fulong.li@ieee.org) or connect with me on [LinkedIn](https://www.linkedin.com/in/fulong-li-6bb443127/).
 
 
 

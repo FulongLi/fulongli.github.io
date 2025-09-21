@@ -5,6 +5,9 @@ permalink: /donate/
 author_profile: true
 ---
 
+*If you find this website useful, please donate us.*
+
+---
 # Support us
 
 Your support helps us continue developing **innovative power electronics solutions** and sharing knowledge with the community.  
