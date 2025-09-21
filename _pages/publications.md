@@ -5,7 +5,7 @@ layout: single
 author_profile: true
 ---
 
-## 📚 Journal Papers
+## Journal Papers
 
 1. **F. Li**, Z. Lin, H. Xu, F. Wang: [Comprehensive local control design for eliminating line resistance effect on power sharing degradation in DC microgrids](https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/pel2.12208). *IET Power Electron.*, 15(11), 2022.
 2. **F. Li**, Z. Lin: ["Novel Passive Controller Design for Enhancing Boost Converter Stability in DC Microgrid Applications"](https://ieeexplore.ieee.org/document/9391691). *IEEE J. Emerg. Sel. Topics Power Electron.*, 9(6), 6901–6911, Dec. 2021.
@@ -14,13 +14,13 @@ author_profile: true
 
 ---
 
-## 📘 Book Chapters
+## Book Chapters
 
 1. Z. Lin, **F. Li**, F. Wang: *"DC Networks"*, in *Reference Module in Materials Science and Engineering*, Elsevier, 2022.
 
 ---
 
-## 📝 Conference Papers
+## Conference Papers
 
 1. **F. Li**, Z. Lin, H. Xu, R. Wang: ["Review of DC Bus Signalling Control Methods in DC Microgrids"](https://ieeexplore.ieee.org/document/9959577), IEEE PEAC 2022.
 2. W. Shang, R. Wang, Z. Lin, **F. Li**, J. Wu: ["An Integrated Communication Method for LED Intelligent Dimming System"](https://ieeexplore.ieee.org/document/9628525), PEAS 2021.
@@ -36,6 +36,6 @@ author_profile: true
 
 ---
 
-## 🎓 Ph.D. Thesis
+## Ph.D. Thesis
 
 **F. Li**: *[Control Strategies for Low Voltage DC Microgrids](https://publications.aston.ac.uk/id/eprint/46135/)*. Ph.D. Thesis, Aston University, UK.
