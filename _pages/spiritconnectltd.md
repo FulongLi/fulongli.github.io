@@ -15,7 +15,7 @@ author_profile: true
 
 
 We are a **power electronics consultancy** specializing in the design and optimization of advanced energy systems.  
-Our mission is to bridge **research and industry** by delivering **innovative, efficient, and future-ready solutions** in:
+Our services cover:
 
 - Power Converter Design & Control  
 - Wide-Bandgap Devices (SiC/GaN) Applications  

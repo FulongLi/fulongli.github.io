@@ -11,14 +11,14 @@ tags:
 
 Keywords: Company Registration, Startup, Consultancy.
 
-## 🎉 A New Beginning  
+## A New Beginning  
 
 I’m excited to announce that **Spirit Connect Ltd** has been officially registered as a company in the UK!  
 This marks the formal start of my entrepreneurial journey, building on years of research and experience in **power electronics and energy systems**.
 
 ---
 
-## 🏢 Company Overview  
+## Company Overview  
 
 - **Company Name:** Spirit Connect Ltd  
 - **Incorporation Date:** 09 June 2025  
@@ -30,14 +30,14 @@ This marks the formal start of my entrepreneurial journey, building on years of 
 
 ---
 
-## 🚀 Vision & Mission  
+## Vision & Mission  
 
 At Spirit Connect Ltd, our mission is to bridge **academic research** and **industrial application**.  
 We aim to deliver **innovative, efficient, and reliable energy solutions** that support the global transition to clean and intelligent power systems.  
 
 ---
 
-## 📌 Next Steps  
+## Next Steps  
 
 - Build partnerships with academia and industry.  
 - Expand consultancy projects in **converter design, microgrids, and WBG devices**.  
@@ -45,5 +45,5 @@ We aim to deliver **innovative, efficient, and reliable energy solutions** that 
 
 ---
 
-> 🧠 **Milestone Note:**  
+> **Milestone Note:**  
 The official registration of Spirit Connect Ltd represents not just the start of a company, but a platform to connect ideas, research, and industry needs into practical, high-impact solutions.
