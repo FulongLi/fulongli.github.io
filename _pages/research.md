@@ -31,9 +31,9 @@ This page outlines the hierarchical structure of my research themes, following t
   <img src="/images/research/converter.png" alt="Converters" style="width:100%; max-width:240px; border:1px solid #ccc; border-radius:6px;">
   <h3> Converters</h3>
   <ul style="list-style: none; padding-left: 0;">
-    <li><a href="/research/converters/">Non-isolated Converter</a></li>
-    <li><a href="/research/converters/">Isolated Converter</a></li>
-    <li><a href="/research/converters/">MMC</a></li>
+    <li><a href="/research/nonisolated_converters/">Non-isolated Converter</a></li>
+    <li><a href="/research/isolated_converters/">Isolated Converter</a></li>
+    <li><a href="/research/mmc/">MMC</a></li>
   </ul>
 </div>
 
