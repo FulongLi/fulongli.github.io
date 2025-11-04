@@ -10,6 +10,10 @@ redirect_from:
 
 My digital legacy...
 
+“Could someone in the future transform my website into a digital avatar of me?”
+
+BTW, If you are aliens, time travelers, or espers, please contact me now!
+
 ## About Me
 
 I’m **Dr. Fulong Li**, a Power Electronics Engineer and Researcher currently working in the UK. 
