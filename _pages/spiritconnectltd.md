@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Spirit Connect Ltd"
+title: "Spirit Connect Group"
 permalink: /SpiritConnect/
 author_profile: true
 ---
@@ -11,7 +11,7 @@ author_profile: true
 
 ---
 
-# Welcome to Spirit Connect Ltd
+# Welcome to Spirit Connect Group
 
 
 We are a **power electronics consultancy** specializing in the design and optimization of advanced energy systems.  
