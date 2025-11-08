@@ -55,7 +55,5 @@ to power the future — one open circuit at a time.
 ---
 
 ## Get in Touch
-Interested in working together or learning more about our consultancy?  
-Reach out at [fulong.li@ieee.org](mailto:fulong.li@ieee.org) or connect with me on [LinkedIn](https://www.linkedin.com/in/fulong-li-6bb443127).  
-
-Let’s power your vision ⚡
+Interested in working together or learning more about us?  
+Reach out at [fulong.li@ieee.org](mailto:fulong.li@ieee.org) or connect with me on [LinkedIn](https://www.linkedin.com/in/fulong-li-6bb443127).
