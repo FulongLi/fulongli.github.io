@@ -31,15 +31,6 @@ My work spans across:
 
 ---
 
-## Research Vision
-
-I’m passionate about combining **power electronics**, **AI-assisted optimisation**, and **energy systems** to build more sustainable, efficient, and intelligent electrical infrastructures. My research contributions include:
-- Developing high-performance converter prototypes
-- Innovating control algorithms for distributed energy systems
-- Publishing journal and conference papers in IEEE/IET
-
----
-
 ## Beyond Work
 
 Outside of engineering, I enjoy creative writing and have drafted several science-fiction novels. I’m fascinated by the intersection of technology, storytelling, and society.
