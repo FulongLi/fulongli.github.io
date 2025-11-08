@@ -24,7 +24,7 @@ to power the future — one open circuit at a time.
 
 ---
 
-## Services & Expertise 
+## Current Expertise 
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; text-align: center;">
 
