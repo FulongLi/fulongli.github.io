@@ -5,7 +5,7 @@ title: "Novels"
 author_profile: true
 ---
 
-## Novels
+## Hello!
 
 Welcome to my creative writing space. Here I share stories that explore science fiction, alternate realities, and the human side of technology.
 
