@@ -1,14 +1,14 @@
 ---
 layout: archive
-title: "Donate us"
-permalink: /donate/
+title: "Support us"
+permalink: /support/
 author_profile: true
 ---
 
 *If you find this website useful, please donate us.*
 
 ---
-# Support us
+# Why support us
 
 Your support helps us continue developing **innovative power electronics solutions** and sharing knowledge with the community.  
 By donating, you enable us to:  
@@ -16,14 +16,6 @@ By donating, you enable us to:
 - Keep resources open and free  
 - Explore new research ideas and prototypes  
 - Provide tutorials and insights to engineers and students  
-
----
-
-## How Your Donation Helps  
-- ✅ Website hosting and open educational resources  
-- ✅ Development of converter models and control strategies  
-- ✅ Prototyping and testing of wide-bandgap devices  
-- ✅ Community workshops and outreach  
 
 ---
 

@@ -16,12 +16,12 @@ BTW, if you are aliens, time travelers, or espers, please contact me now!
 
 ## About Me
 
-I’m **Dr. Fulong Li**, a Power Electronics Engineer and Researcher currently working in the UK. 
-I hold a Ph.D. in Electrical Engineering from Aston University, and I’m an IEEE Member with deep expertise in advanced converter design, control strategies, and energy systems integration.
-
+I’m **Fulong**, a Power Electronics Engineer and Researcher based in the UK. 
+I’m an with deep expertise in converter design, control strategies, and energy systems integration.
+Through Spirit Connect, I hope to build an open community where engineers and enthusiasts can collaborate, share ideas, and make power electronics more accessible to everyone.
 ---
 
-## Professional Focus
+## Research Focus
 
 My work spans across:
 - AI-assisted optimal design of power electronic converters (DAB, Buck/Boost)
