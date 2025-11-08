@@ -13,16 +13,14 @@ author_profile: true
 
 # Welcome to Spirit Connect Group
 
+We are a community of power electronics enthusiasts passionate about learning, building, and sharing knowledge.
+Our mission is to make power electronics open and accessible — from converter design and control to wide-bandgap device applications and DC microgrids.
 
-We are a **power electronics consultancy** specializing in the design and optimization of advanced energy systems.  
-Our services cover:
+We believe that engineering grows stronger through collaboration and openness.
+That’s why we’re creating an open-source knowledge hub for power electronics — where ideas, models, and tools can be freely shared, improved, and reimagined together.
 
-- Power Converter Design & Control  
-- Wide-Bandgap Devices (SiC/GaN) Applications  
-- DC Systems & Microgrids  
-- Custom Power Electronics Solutions  
-
-Whether you are developing a new product, improving efficiency, or exploring microgrid architectures, **Spirit Connect Ltd** provides the expertise and insight to bring your ideas to life.
+Join us as we connect engineers, researchers, and learners around the world,
+to power the future — one open circuit at a time.
 
 ---
 

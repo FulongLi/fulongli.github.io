@@ -12,7 +12,7 @@ My digital legacy...
 
 “Could someone in the future transform my website into a digital avatar of me?”
 
-BTW, If you are aliens, time travelers, or espers, please contact me now!
+BTW, if you are aliens, time travelers, or espers, please contact me now!
 
 ## About Me
 
