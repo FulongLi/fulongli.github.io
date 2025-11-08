@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Spirit Connect Group"
-permalink: /SpiritConnect/
+permalink: /spiritconnectgroup/
 author_profile: true
 ---
 
