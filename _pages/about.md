@@ -16,9 +16,11 @@ BTW, if you are aliens, time travelers, or espers, please contact me now!
 
 ## About Me
 
-I’m **Fulong**, a Power Electronics Engineer and Researcher based in the UK. 
+I’m Fulong, a power electronics engineer and researcher based in the UK, specializing in advanced converter design, control strategies, and energy-system integration.
+
+Beyond engineering, I’m also a novelist who enjoys exploring ideas about technology, humanity, and destiny through storytelling. Writing allows me to capture experiences, question assumptions, and express the creative side that complements my technical work.
 I’m an with deep expertise in converter design, control strategies, and energy systems integration.
-Through Spirit Connect, I hope to build an open community where engineers and enthusiasts can collaborate, share ideas, and make power electronics more accessible to everyone.
+Through Spirit Connect, I hope to build an open, collaborative community where engineers, researchers, hobbyists, and creators of all kinds can share knowledge, exchange ideas, and contribute to an open-source ecosystem that makes power electronics more acce
 ---
 
 ## Research Focus

@@ -11,23 +11,36 @@ Welcome to my creative writing space. Here I share stories that explore science 
 
 ---
 
+### *人生十年：浅窥命运*
 ### *Ten Years of Life: A Glimpse into Destiny*
-
 *Coming soon…*  
 **Expected Release:** Winter 2025
 
 ---
-
+### *灵接科技: 月球暗面*
 ### *Spirit Connect S&T: The Dark Side of the Moon*
 
 *Coming soon…*  
 **Expected Release:** Winter 2025
 
 ---
-
+### *灵接科技: 零域之境*
 ### *Spirit Connect S&T: The Domain of Zero*
 
 *Coming soon…*  
-**Expected Release:** Summer 2026
+**Expected Release:** Winter 2026
+
+---
+### *灵接科技: 巨鲸的陨落*
+### *Spirit Connect S&T: The Whale’s Fall*
+
+*Coming soon…*  
+**Expected Release:** Winter 2027
+
+### *灵接科技: 灵猫*
+### *Spirit Connect S&T: The Mystic Cat*
+
+*Coming soon…*  
+**Expected Release:** Winter 2028
 
 > Stay tuned for updates!
