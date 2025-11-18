@@ -18,5 +18,5 @@ author_profile: true
 
 ## Thank You  
 
-Every contribution — big or small — helps us move closer to a sustainable, efficient, and connected energy future.  
+Every contribution, big or small, helps us move closer to a sustainable, efficient, and connected energy future.  
 Together, we are powering innovation. 
