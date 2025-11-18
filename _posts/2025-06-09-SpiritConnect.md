@@ -1,49 +1,63 @@
 ---
-title: 'Spirit Connect Ltd Officially Registered'
+title: 'Spirit Connect — Building an Open-Source Power Electronics Community'
 date: 2025-06-09
 permalink: /posts/2025/06/spirit-connect/
 tags:
-  - startup
-  - consultancy
+  - open-source
   - power electronics
-  - entrepreneurship
+  - community
+  - knowledge-sharing
 ---
 
-Keywords: Company Registration, Startup, Consultancy.
+Keywords: Open Source, Power Electronics, Community, Collaboration.
 
-## A New Beginning  
+## A New Direction
 
-I’m excited to announce that **Spirit Connect Ltd** has been officially registered as a company in the UK!  
-This marks the formal start of my entrepreneurial journey, building on years of research and experience in **power electronics and energy systems**.
+Today marks the beginning of **Spirit Connect** as more than a personal project —  
+it is becoming a **community for open-source power electronics**, dedicated to sharing knowledge, tools, and best practices across the industry.
 
----
-
-## Company Overview  
-
-- **Company Name:** Spirit Connect Ltd  
-- **Incorporation Date:** 09 June 2025  
-- **Focus Areas:**  
-  - Power Converter Design & Control  
-  - Wide-Bandgap Devices (SiC/GaN) Applications  
-  - DC Systems & Microgrids  
-  - Custom Power Electronics Solutions  
+For years, power electronics has been limited by fragmented data, closed-door design processes, and inaccessible expertise.  
+Spirit Connect aims to change that.
 
 ---
 
-## Vision & Mission  
+## What Spirit Connect Stands For
 
-At Spirit Connect Ltd, our mission is to bridge **academic research** and **industrial application**.  
-We aim to deliver **innovative, efficient, and reliable energy solutions** that support the global transition to clean and intelligent power systems.  
+- **Open Knowledge**  
+  Curating datasets, models, and design resources freely accessible to engineers, students, and enthusiasts.
+
+- **Collaborative Learning**  
+  Bringing people together to discuss converter topologies, magnetics, WBG devices, and control methods.
+
+- **Practical Tools**  
+  From simulation templates to component databases, our goal is to build a collective toolkit that accelerates innovation.
+
+- **Bridging Academia & Industry**  
+  Sharing insights, case studies, measurements, and real-world design notes to reduce the gap between theory and application.
 
 ---
 
-## Next Steps  
+## Our Vision
 
-- Build partnerships with academia and industry.  
-- Expand consultancy projects in **converter design, microgrids, and WBG devices**.  
-- Develop collaborative R&D initiatives to push forward high-efficiency power systems.  
+To create the world’s most vibrant **open-source power electronics ecosystem** —  
+a place where contributors from any background can learn, build, and innovate together.
+
+We believe that by opening up data, models, and methods, the entire field can progress faster, become more transparent, and empower the next generation of power-electronics engineers.
+
+---
+
+## How You Can Join
+
+- Contribute datasheets, models, or code.  
+- Share your design notes, measurements, or insights.  
+- Participate in discussions, reviews, and collaborative R&D.  
+- Help shape tools, libraries, or educational content.  
+
+Spirit Connect is built on **community, curiosity, and collaboration**.  
+Every idea and contribution helps strengthen the ecosystem.
 
 ---
 
 > **Milestone Note:**  
-The official registration of Spirit Connect Ltd represents not just the start of a company, but a platform to connect ideas, research, and industry needs into practical, high-impact solutions.
+This is not the launch of a company — it is the beginning of a community.  
+A place to connect people, share knowledge, and collectively push the boundaries of modern power electronics.
