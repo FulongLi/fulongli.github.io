@@ -24,12 +24,21 @@ to power the future — one open circuit at a time.
 
 ---
 
-## Our Contributors
+## Our Contributors & Supporters
 Dr. Fulong Li - Founder of Spirit Connect Group.
 
 Dr. Sheng Wang - University of Glasgow.
 
-Dr. Jinlei Chen - Cardiff University.
+[//]: # (Dr. Jinlei Chen - Cardiff University.)
+
+[//]: # ()
+[//]: # (Dr. Ruichi Wang - Loughborough University.)
+
+[//]: # ()
+[//]: # (Dr. Wenlong Ming - Cardiff University.)
+
+[//]: # ()
+[//]: # (Dr. Zhengyu Lin - Loughborough University.)
 
 ---
 
