@@ -14,6 +14,7 @@ Welcome to my creative writing space. Here I share stories that explore science 
 ### 人生十年：浅窥命运
 ### *Ten Years of Life: A Glimpse into Destiny*
 
+<img src="/images/novels/LD.png" width="250" />
 
 *Coming soon…*  
 **Expected Release:** Winter 2025
