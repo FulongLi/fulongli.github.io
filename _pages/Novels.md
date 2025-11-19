@@ -43,12 +43,16 @@ Welcome to my creative writing space. Here I share stories that explore science 
 ### 灵接科技: 巨鲸的陨落
 ### *Spirit Connect S&T: The Whale’s Fall*
 
+<img src="/images/novels/WF.png" width="250" />
+
 *Coming soon…*  
 **Expected Release:** Winter 2027
 
 ---
 ### 灵接科技: 灵猫
 ### *Spirit Connect S&T: The Mystic Cat*
+
+<img src="/images/novels/MC.png" width="250" />
 
 *Coming soon…*  
 **Expected Release:** Winter 2028
