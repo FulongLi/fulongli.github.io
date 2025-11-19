@@ -13,12 +13,17 @@ Welcome to my creative writing space. Here I share stories that explore science 
 
 ### 人生十年：浅窥命运
 ### *Ten Years of Life: A Glimpse into Destiny*
+
+
 *Coming soon…*  
 **Expected Release:** Winter 2025
+
 
 ---
 ### 灵接科技: 月球暗面
 ### *Spirit Connect S&T: The Dark Side of the Moon*
+
+![cover](/images/novels/DM.png)
 
 *Coming soon…*  
 **Expected Release:** Winter 2025
@@ -26,6 +31,8 @@ Welcome to my creative writing space. Here I share stories that explore science 
 ---
 ### 灵接科技: 零域之境
 ### *Spirit Connect S&T: The Domain of Zero*
+
+![cover](/images/novels/ZD.png)
 
 *Coming soon…*  
 **Expected Release:** Winter 2026
