@@ -23,7 +23,8 @@ Welcome to my creative writing space. Here I share stories that explore science 
 ### 灵接科技: 月球暗面
 ### *Spirit Connect S&T: The Dark Side of the Moon*
 
-![cover](/images/novels/DM.png)
+<img src="/images/novels/DM.png" width="250" />
+
 
 *Coming soon…*  
 **Expected Release:** Winter 2025
@@ -32,7 +33,7 @@ Welcome to my creative writing space. Here I share stories that explore science 
 ### 灵接科技: 零域之境
 ### *Spirit Connect S&T: The Domain of Zero*
 
-![cover](/images/novels/ZD.png)
+<img src="/images/novels/ZD.png" width="250" />
 
 *Coming soon…*  
 **Expected Release:** Winter 2026
