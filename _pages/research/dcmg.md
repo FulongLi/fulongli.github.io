@@ -3,7 +3,7 @@ layout: single
 title: "DC Microgrids"
 permalink: /research/dcmg/
 author_profile: true
---------------------
+---
 
 # Overview
 

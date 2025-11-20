@@ -1,6 +1,6 @@
 ---
 layout: single
-title: DC Microgrids"
+title: "Microgrids Applications"
 permalink: /research/mgapp/
 author_profile: true
 ---

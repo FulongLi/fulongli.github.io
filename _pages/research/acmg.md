@@ -3,7 +3,7 @@ layout: single
 title: "AC Microgrids"
 permalink: /research/acmg/
 author_profile: true
---------------------
+---
 
 ## Overview
 
