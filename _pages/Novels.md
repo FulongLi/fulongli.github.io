@@ -4,6 +4,7 @@ permalink: /novels/
 title: "Novels"
 author_profile: true
 ---
+## 小说
 
 ## Hello!
 
@@ -28,7 +29,7 @@ Welcome to my creative writing space. Here I share stories that explore science 
 
 
 *Coming soon…*  
-**Expected Release:** Winter 2025
+**Expected Release:** Spring 2026
 
 ---
 ### 灵接科技: 零域之境
@@ -45,8 +46,7 @@ Welcome to my creative writing space. Here I share stories that explore science 
 
 <img src="/images/novels/WF.png" width="250" />
 
-*Coming soon…*  
-**Expected Release:** Winter 2027
+*Coming soon…*
 
 ---
 ### 灵接科技: 灵猫
@@ -54,9 +54,18 @@ Welcome to my creative writing space. Here I share stories that explore science 
 
 <img src="/images/novels/MC.png" width="250" />
 
-*Coming soon…*  
-**Expected Release:** Winter 2028
+*Coming soon…*
 
 ---
+### 灵接科技: 演讲迷宫
+### *Spirit Connect S&T: The Labyrinth of Speech*
 
+<img src="/images/novels/LS.png" width="250" />
+
+*Coming soon…*
+
+---
+## 杂文
+
+---
 > Stay tuned for updates!
