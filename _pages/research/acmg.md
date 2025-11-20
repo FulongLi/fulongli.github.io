@@ -1,5 +1,4 @@
 ---
-
 layout: single
 title: "AC Microgrids"
 permalink: /research/acmg/
