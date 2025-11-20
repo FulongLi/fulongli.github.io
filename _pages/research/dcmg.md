@@ -16,7 +16,7 @@ providing enhanced reliability and flexibility for modern distributed energy app
 As the demand for clean and efficient power grows, 
 DC microgrids are becoming a key enabler for future low-carbon, intelligent energy infrastructures.
 
-<img src="/images/research/DCMG.png" width="250" />
+<img src="/images/research/DCMG.png" width="500" />
 
 ---
 
