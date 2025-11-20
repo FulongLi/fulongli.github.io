@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Control Strategies of DC Microgrids"
-permalink: /research/control_strategies/
+title: DC Microgrids"
+permalink: /research/DCMG/
 author_profile: true
 ---
 
