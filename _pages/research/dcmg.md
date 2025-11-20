@@ -22,15 +22,26 @@ DC microgrids are becoming a key enabler for future low-carbon, intelligent ener
 
 # Research Streams
 
-## Control strategies.
+## DC Microgrids: Control strategies
 
 ### Hierarchical Controls 
 
-Legacy Code (not maintained)
+- Boost Converter Control
+
+- PV Control
+
+- Fuel Cell Control
+
+Note: Legacy Code (not maintained)
+
+---
 
 ### Stability Analysis.
 
 
+---
+
+## EV Wireless Charging
 
 ---
 Last updated: 16/05/2022
