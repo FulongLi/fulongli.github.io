@@ -2,7 +2,7 @@
 
 layout: single
 title: "DC Microgrids"
-permalink: /research/DCMG/
+permalink: /research/dcmg/
 author_profile: true
 --------------------
 

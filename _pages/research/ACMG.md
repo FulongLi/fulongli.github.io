@@ -2,7 +2,7 @@
 
 layout: single
 title: "AC Microgrids"
-permalink: /research/ACMG/
+permalink: /research/acmg/
 author_profile: true
 --------------------
 

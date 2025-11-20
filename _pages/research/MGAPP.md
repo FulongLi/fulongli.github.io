@@ -1,7 +1,7 @@
 ---
 layout: single
 title: DC Microgrids"
-permalink: /research/DCMG/
+permalink: /research/mgapp/
 author_profile: true
 ---
 
