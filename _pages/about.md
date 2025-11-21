@@ -62,9 +62,9 @@ My work spans across:
 
 ### Simulations/ Power Electronics (no longer maintained)
 - [Non-isolated_Coverters - Buck Conveter Closed Loop Design](https://github.com/FulongLi/Non-isolated_Coverters)
-- [Non-isolated_Coverters - BoostClosed Loop Design/Passive Control](https://github.com/FulongLi/Non-isolated_Coverters)
-- [Isolated_Coverters Conveter - Closed Loop Design](https://github.com/FulongLi/Isolated_Coverters)
-- [Isolated_Coverters - DAB Closed Loop Design](https://github.com/FulongLi/Isolated_Coverters)
+- [Non-isolated_Coverters - Boost Converter Closed Loop Design/Passive Control](https://github.com/FulongLi/Non-isolated_Coverters)
+- [Isolated_Coverters Conveter - LLC Converter Closed Loop Design](https://github.com/FulongLi/Isolated_Coverters)
+- [Isolated_Coverters - DAB Converter Closed Loop Design](https://github.com/FulongLi/Isolated_Coverters)
 
 
 ### Prototype/ Power Electronics (no longer maintained)
