@@ -47,6 +47,44 @@ Outside of engineering, I enjoy creative writing and have drafted several scienc
 
 ---
 
+## Open-Source Archives
+
+### Python / Power Electronics (still maintained)
+- [MosANNLib - SiC MOSFET ANN Library](https://github.com/FulongLi/MOSFET_ANN_Library)
+
+- [BuckMOO - Buck Converter Design Optimisation ]()
+
+- [DPT - Double Pulse Test Automation](https://github.com/FulongLi/DPT_PE)
+
+### Simulations/ Power Electronics (still maintained)
+- [SST - 3 stages SST](https://github.com/FulongLi/SST)
+
+### Prototype/ Power Electronics (still maintained)
+- [Rogowski Coil - Design and Prototype of PCB Rogowski Coil](https://github.com/FulongLi/Rogowski_Coil)
+- [Current Transformer - Magnetic core embedded PCB CT transducer](https://github.com/FulongLi/Current_Transformer)
+
+
+---
+
+### Prototype/ Power Electronics (no longer maintained)
+- [WPTP-Wireless Charging Prototype](https://github.com/FulongLi/Wireless_Power_Transfer)
+- [DCMGTB - DC Microgrid Test Bench](https://github.com/FulongLi/DCMGTB)
+
+
+### Simulations/ Power Electronics (no longer maintained)
+- [Non-isolated_Coverters - Buck Conveter Closed Loop Design](https://github.com/FulongLi/Non-isolated_Coverters)
+- [Non-isolated_Coverters - BoostClosed Loop Design/Passive Control](https://github.com/FulongLi/Non-isolated_Coverters)
+- [Isolated_Coverters Conveter - Closed Loop Design](https://github.com/FulongLi/Isolated_Coverters)
+- [Isolated_Coverters - DAB Closed Loop Design](https://github.com/FulongLi/Isolated_Coverters)
+
+### Legacy Code (no longer maintained)
+- [BstPasCLC - Boost Converter Closed Loop Control with Passive Theory]()
+- [WPT - Wireless Charging DSP codes](https://github.com/FulongLi/Wireless_Power_Transfer)
+- [PVMPPT - MPPT algorithms DSP codes for PV]()
+
+---
+
+
 **Feel free to reach out** via [email](mailto:fulong.li@ieee.org) or connect with me on [LinkedIn](https://www.linkedin.com/in/fulong-li-6bb443127/).
 
 
