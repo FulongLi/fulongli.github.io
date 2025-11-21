@@ -68,10 +68,17 @@ Welcome to my creative writing space. Here I share stories that explore science 
 ### 灵接科技: 生死邮轮
 ### *Spirit Connect S&T: The Death Cruise*
 
-<img src="/images/novels/DC.png" width="250" />
+<img src="/images/novels/DC1.png" width="250" />
 
 *Coming soon…*
 
+---
+### 灵接科技: 灵魂归处
+### *Spirit Connect S&T: Home of the Soul*
+
+<img src="/images/novels/HS.png" width="250" />
+
+*Coming soon…*
 
 ---
 ## 杂文
