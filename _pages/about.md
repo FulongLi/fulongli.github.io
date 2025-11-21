@@ -46,7 +46,7 @@ My work spans across:
 
 ### Python / Power Electronics (still maintained)
 - [MosANNLib - SiC MOSFET ANN Library](https://github.com/FulongLi/MOSFET_ANN_Library)
-- [BuckMOO - Buck Converter Design Optimisation ]()
+- [BuckMOO - Buck Converter Design Optimisation ](https://github.com/FulongLi/BuckConverterOptimisation)
 - [HSOA - Heat Sink Optimisation Automation](https://github.com/FulongLi/HeatSinkOptimisation)
 - [DPT - Double Pulse Test Automation](https://github.com/FulongLi/DPT_PE)
 
