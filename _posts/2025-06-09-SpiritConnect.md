@@ -1,5 +1,5 @@
 ---
-title: 'Spirit Connect — Building an Open-Source Power Electronics Community'
+title: 'Spirit Connect Group'
 date: 2025-06-09
 permalink: /posts/2025/06/spirit-connect/
 tags:

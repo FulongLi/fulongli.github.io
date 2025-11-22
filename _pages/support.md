@@ -11,7 +11,7 @@ author_profile: true
 ---
 
 ## Ways to Support  
-- 💳 [PayPal](https://paypal.me/yourlink)
+- 💳 [PayPal](https://paypal.me/fulongli)
 - 📧 For sponsorship or business support, contact us at [fulong.li@ieee.org](mailto:fulong.li@ieee.org)  
 
 ---
