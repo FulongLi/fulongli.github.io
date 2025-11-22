@@ -17,6 +17,7 @@ Today marks the beginning of **Spirit Connect** as more than a personal project 
 it is becoming a **community for open-source power electronics**, dedicated to sharing knowledge, tools, and best practices across the industry.
 
 For years, power electronics has been limited by fragmented data, closed-door design processes, and inaccessible expertise.  
+
 Spirit Connect aims to change that.
 
 ---
