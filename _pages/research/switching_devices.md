@@ -38,7 +38,11 @@ Full Details: [Github - DPT Automation](https://github.com/FulongLi/DPT_Automati
 
 
 ### 2. Thermal Characterisation
-- Thermal impedance Z_th extraction (step response / structure function)  
+- Thermal impedance Z_th extraction (TO-247-3 Package) 
+
+<img src="/images/research/characterisation/TIM.png" width="300" />
+
+Full Details: [Github - TIM Automation](https://github.com/FulongLi/TIM_Automation)
 
 - Cauer/Foster network fitting for transient thermal simulation  
 
