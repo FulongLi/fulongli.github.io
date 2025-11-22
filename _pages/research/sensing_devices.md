@@ -22,7 +22,7 @@ This section highlights two key technologies:
 PCB Rogowski coils are air-cored current sensors printed directly onto a PCB.
 
 **Key Features**
-- Wide bandwidth and excellent linearity — ideal for fast switching (SiC/GaN).
+- Wide bandwidth and excellent linearity — ideal for fast switching (SiC device).
 - No magnetic core → minimal saturation risk and wide dynamic range.
 - Flexible form factor — easily integrated into power modules or busbars.
 - Requires external integrator circuit to recover current signal.
@@ -32,7 +32,12 @@ PCB Rogowski coils are air-cored current sensors printed directly onto a PCB.
 - **Shielding and return paths** reduce EMI coupling.
 - **Integrator circuit**: high-quality op-amp, RC time constant tuned for switching frequency.
 
-[GitHub Example — PCB Rogowski Coil Design](https://github.com/yourname/pcb-rogowski)
+**Prototype Example**
+
+<img src="/images/research/Rogcoil/RogT2_d.png" width="300" />
+<img src="/images/research/Rogcoil/RogT4_d.png" width="300" />
+
+Full Details: [GitHub — PCB Rogowski Coil Design](https://github.com/FulongLi/Rogowski_Coil)
 
 ---
 
@@ -51,21 +56,9 @@ PCB-CT integrates a **ferromagnetic core** into the PCB stack-up, forming a comp
 - **Bandwidth trade-off** — core size, leakage inductance, and winding parasitics.
 - **Thermal stability** — embedded cores affect PCB lamination and soldering processes.
 
-[GitHub Example — PCB Current Transformer Design](https://github.com/yourname/pcb-current-transformer)
+[GitHub — PCB Current Transformer Design](https://github.com/FulongLi/Current_Transformer)
 
 ---
 
-## Applications
-
-- **SiC / GaN Converter Development** — fast and precise current feedback for digital control loops.
-- **Protection Circuits** — overcurrent and short-circuit detection.
-- **Power Module Monitoring** — integrated current sensing for compact power stages.
-
----
-
-## Next Steps
-
-- Add example KiCad/Altium files to GitHub for open-source designs.
-- Benchmark sensors under real converter switching conditions.
-- Document integrator circuits and compensation methods.
+**Feel free to reach out** via [email](mailto:fulong.li@ieee.org) or connect with me on [LinkedIn](https://www.linkedin.com/in/fulong-li-6bb443127/).
 
