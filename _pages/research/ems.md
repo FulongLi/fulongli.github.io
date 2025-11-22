@@ -5,7 +5,7 @@ permalink: /research/ems/
 author_profile: true
 ---
 
-## 🌍 Overview
+## Overview
 
 This section focuses on energy management algorithms for optimal dispatch in smart grids and microgrids, with objectives such as:
 
@@ -15,7 +15,7 @@ This section focuses on energy management algorithms for optimal dispatch in sma
 
 ---
 
-## 📊 Focus Areas
+## Focus Areas
 
 ### 1. Rule-Based and Fuzzy EMS
 - Logic tree methods

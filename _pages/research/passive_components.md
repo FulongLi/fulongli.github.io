@@ -26,3 +26,6 @@ This section covers the design, modelling, and optimisation of key passive compo
 
 Full Details: [GitHub — Inductor Design](https://github.com/FulongLi/Inductor_Design)
 
+---
+
+**Feel free to reach out** via [email](mailto:fulong.li@ieee.org).

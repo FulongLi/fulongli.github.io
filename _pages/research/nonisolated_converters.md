@@ -22,7 +22,6 @@ Non-isolated converters provide direct voltage transformation without galvanic i
 | **Buck** | Steps down input voltage to a lower output level. Common in point-of-load supplies and embedded systems. | [Buck Converter Repo](https://github.com/yourname/buck-converter) |
 | **Boost** | Steps up input voltage to a higher output level. Useful in LED drivers, renewable energy interfaces, and battery applications. | [Boost Converter Repo](https://github.com/yourname/boost-converter) |
 | **Buck–Boost** | Provides output voltage that can be higher or lower than input; inverts polarity. | [Buck-Boost Converter Repo](https://github.com/yourname/buckboost-converter) |
-| **Ćuk** | Achieves similar function to buck–boost but with reduced ripple on input/output current. | [Ćuk Converter Repo](https://github.com/yourname/cuk-converter) |
 
 > *Tip*: Host each converter’s modelling and control example on GitHub (simulation files, small design notes, or code).
 
@@ -38,14 +37,4 @@ Designed for **energy storage** and **two-way power flow**, ideal in battery man
 
 ---
 
-## Advanced Research Topics
-
-- **Soft-Switching Techniques**  
-  - ZVS / ZCS  
-  - Resonant topologies (LLC, Phase-Shift Full Bridge)
-
-- **High-Frequency Design Considerations**  
-  - Parasitics and EMI control  
-  - Gate driver optimisation and PCB layout
-
----
+**Feel free to reach out** via [email](mailto:fulong.li@ieee.org).

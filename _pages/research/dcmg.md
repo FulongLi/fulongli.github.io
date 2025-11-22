@@ -32,8 +32,6 @@ DC microgrids are becoming a key enabler for future low-carbon, intelligent ener
 
 - Fuel Cell Control
 
-Note: Legacy Code (not maintained)
-
 ---
 
 ### Stability Analysis.
@@ -44,4 +42,7 @@ Note: Legacy Code (not maintained)
 ## EV Wireless Charging
 
 ---
-Last updated: 16/05/2022
+
+
+**Feel free to reach out** via [email](mailto:fulong.li@ieee.org).
+

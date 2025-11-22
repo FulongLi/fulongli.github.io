@@ -66,7 +66,4 @@ Goal: Predict E_on, E_off, diode E_rec vs V_DC, I, T_j, R_g, dv/dt, di/dt to spe
 
 ---
 
-## Collaborations and Data Contribution
-
-Have measured DPT datasets or want to validate a device family?  
-Contact: [fulong.li@ieee.org](mailto:fulong.li@ieee.org)
+**Feel free to reach out** via [email](mailto:fulong.li@ieee.org).

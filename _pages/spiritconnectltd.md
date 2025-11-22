@@ -27,7 +27,7 @@ to power the future — one open circuit at a time.
 ## Our Contributors & Supporters
 Dr. Fulong Li - Founder of Spirit Connect Group.
 
-Dr. Sheng Wang - University of Glasgow.
+[//]: # (Dr. Sheng Wang - University of Glasgow.)
 
 [//]: # (Dr. Jinlei Chen - Cardiff University.)
 

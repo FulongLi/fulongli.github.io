@@ -27,3 +27,8 @@ This section covers the layered control strategies used in modern microgrids:
 
 ### 3. Grid-Forming and Grid-Following Strategies
 - Synchronisation and mode switching
+
+
+---
+
+**Feel free to reach out** via [email](mailto:fulong.li@ieee.org).

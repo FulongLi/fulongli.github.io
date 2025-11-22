@@ -24,3 +24,7 @@ and supporting the transition toward smarter and more sustainable power infrastr
 ## Research Streams
 
 I am still trying to build this page...
+
+---
+
+**Feel free to reach out** via [email](mailto:fulong.li@ieee.org).
