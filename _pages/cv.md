@@ -13,4 +13,4 @@ Welcome to my professional CV page.
 - You can **view and download a PDF copy** of my CV [here](/files/FulongCV.pdf).
 
 ---
-Last Updated: 16/10/2025
+Last Updated: 16/10/2025.

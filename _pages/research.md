@@ -33,7 +33,7 @@ This page outlines the hierarchical structure of my research themes, following t
   <ul style="list-style: none; padding-left: 0;">
     <li><a href="/research/nonisolated_converters/">Non-isolated Converter</a></li>
     <li><a href="/research/isolated_converters/">Isolated Converter</a></li>
-    <li><a href="/research/mmc/">MMC</a></li>
+    <li><a href="/research/sst/">SST</a></li>
   </ul>
 </div>
 
