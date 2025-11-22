@@ -56,6 +56,8 @@ PCB-CT integrates a **ferromagnetic core** into the PCB stack-up, forming a comp
 - **Bandwidth trade-off** — core size, leakage inductance, and winding parasitics.
 - **Thermal stability** — embedded cores affect PCB lamination and soldering processes.
 
+**Prototype Example**
+
 <img src="/images/research/CT/CT1_d.png" width="300" />
 
 Full Details: [GitHub — PCB Current Transformer Design](https://github.com/FulongLi/Current_Transformer)
