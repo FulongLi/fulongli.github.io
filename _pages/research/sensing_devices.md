@@ -65,4 +65,3 @@ Full Details: [GitHub — PCB Current Transformer Design](https://github.com/Ful
 ---
 
 **Feel free to reach out** via [email](mailto:fulong.li@ieee.org) or connect with me on [LinkedIn](https://www.linkedin.com/in/fulong-li-6bb443127/).
-
