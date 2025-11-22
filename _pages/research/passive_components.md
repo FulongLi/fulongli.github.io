@@ -23,6 +23,7 @@ This section covers the design, modelling, and optimisation of key passive compo
 **Prototype Example**
 
 <img src="/images/research/magnetics/inductor1_d.png" width="300" />
+<img src="/images/research/magnetics/inductor2_d.png" width="300" />
 
 Full Details: [GitHub — Inductor Design](https://github.com/FulongLi/Inductor_Design)
 
