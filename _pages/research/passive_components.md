@@ -5,13 +5,11 @@ permalink: /research/passive_components/
 author_profile: true
 ---
 
-## 🔋 Overview
+## Overview
 
 This section covers the design, modelling, and optimisation of key passive components in power electronics systems, including:
 
 - Inductors
-- Capacitors
-- Magnetic cores
 - Transformers
 
 ---
