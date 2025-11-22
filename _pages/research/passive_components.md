@@ -16,16 +16,13 @@ This section covers the design, modelling, and optimisation of key passive compo
 
 ---
 
-## 🔍 Research Focus
-
-### 1. Inductor Design for High-Frequency Converters
+## PCB Inductor Design for High-Frequency Converters
 - Core material selection (ferrite vs. nanocrystalline)
 - Skin effect and winding techniques
 
-### 2. Capacitor Selection and Reliability
-- ESR, ESL, and voltage derating
-- Lifetime modelling under ripple currents
+**Prototype Example**
 
-### 3. Transformer Modelling and Loss Analysis
-- Leakage inductance estimation
-- Thermal performance and EMI considerations
+<img src="/images/research/magnetics/inductor1_d.png" width="300" />
+
+Full Details: [GitHub — Inductor Design](https://github.com/FulongLi/Inductor_Design)
+
