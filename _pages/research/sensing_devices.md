@@ -37,7 +37,7 @@ PCB Rogowski coils are air-cored current sensors printed directly onto a PCB.
 <img src="/images/research/Rogcoil/RogT2_d.png" width="300" />
 <img src="/images/research/Rogcoil/RogT4_d.png" width="300" />
 
-Full Details: [GitHub — PCB Rogowski Coil Design](https://github.com/FulongLi/Rogowski_Coil)
+Full Details: [GitHub — PCB Rogowski Coil Design](https://github.com/FulongLi/Magnetics-PCBRogowskiCoil)
 
 ---
 
@@ -60,7 +60,7 @@ PCB-CT integrates a **ferromagnetic core** into the PCB stack-up, forming a comp
 
 <img src="/images/research/CT/CT1_d.png" width="300" />
 
-Full Details: [GitHub — PCB Current Transformer Design](https://github.com/FulongLi/Current_Transformer)
+Full Details: [GitHub — PCB Current Transformer Design](https://github.com/FulongLi/Magnetics-PCBCurrentTransformerTransducer)
 
 ---
 
