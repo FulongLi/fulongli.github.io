@@ -45,37 +45,37 @@ My work spans across:
 ## Open-Source Archives
 
 ### Python / Power Electronics (still maintained)
-- [MosANNLib - SiC MOSFET ANN Library](https://github.com/FulongLi/MOSFET_ANN_Library)
+- [MosANNLib - SiC MOSFET ANN Library](https://github.com/FulongLi/Transistor-MOSFETLibraryANN)
 - [BuckMOO - Buck Converter Design Optimisation ](https://github.com/FulongLi/BuckConverterOptimisation)
 - [HSOA - Heat Sink Optimisation Automation](https://github.com/FulongLi/HeatSinkOptimisation)
-- [DPT - Double Pulse Test Automation](https://github.com/FulongLi/DPT_PE)
+- [DPT - Double Pulse Test Automation](https://github.com/https://github.com/FulongLi/DoublePulseTestAutomation)
 
 ### Simulations/ Power Electronics (still maintained)
-- [SST - 3 stages SST](https://github.com/FulongLi/SST)
+- [SST - 3 stages SST](https://github.com/FulongLi/SolidStateTransformer)
 
 ### Prototype/ Power Electronics (still maintained)
-- [Rogowski Coil - Design and Prototype of PCB Rogowski Coil](https://github.com/FulongLi/Rogowski_Coil)
-- [Current Transformer - Magnetic core embedded PCB CT transducer](https://github.com/FulongLi/Current_Transformer)
+- [Rogowski Coil - Design and Prototype of PCB Rogowski Coil](https://github.com/FulongLi/Magnetics-PCBRogowskiCoil)
+- [Current Transformer - Magnetic core embedded PCB CT transducer](https://github.com/FulongLi/Magnetics-PCBCurrentTransformerTransducer)
 
 
 ---
 
 ### Simulations/ Power Electronics (no longer maintained)
-- [Non-isolated_Coverters - Buck Conveter Closed Loop Design](https://github.com/FulongLi/Non-isolated_Coverters)
-- [Non-isolated_Coverters - Boost Converter Closed Loop Design/Passive Control](https://github.com/FulongLi/Non-isolated_Coverters)
-- [Isolated_Coverters Conveter - LLC Converter Closed Loop Design](https://github.com/FulongLi/Isolated_Coverters)
-- [Isolated_Coverters - DAB Converter Closed Loop Design](https://github.com/FulongLi/Isolated_Coverters)
+- [Non-isolated_Coverters - Buck Conveter Closed Loop Design](https://github.com/FulongLi/NonisolatedCoverters)
+- [Non-isolated_Coverters - Boost Converter Closed Loop Design/Passive Control](https://github.com/FulongLi/NonisolatedCoverters)
+- [Isolated_Coverters Conveter - LLC Converter Closed Loop Design](https://github.com/FulongLi/IsolatedCoverters)
+- [Isolated_Coverters - DAB Converter Closed Loop Design](https://github.com/FulongLi/IsolatedCoverters)
 
 
 ### Prototype/ Power Electronics (no longer maintained)
-- [WPTP-Wireless Charging Prototype](https://github.com/FulongLi/Wireless_Power_Transfer)
-- [DCMGTB - DC Microgrid Test Bench](https://github.com/FulongLi/DCMGTB)
+- [WPTP-Wireless Charging Prototype](https://github.com/FulongLi/WirelessPowerTransferTestBench)
+- [DCMGTB - DC Microgrid Test Bench](https://github.com/FulongLi/DCMicrogridTestBench)
 
 
 ### Legacy Code (no longer maintained)
-- [BstPasCLC - Boost Converter Closed Loop Control with Passive Theory]()
-- [WPT - Wireless Charging DSP codes](https://github.com/FulongLi/Wireless_Power_Transfer)
-- [PVMPPT - MPPT algorithms DSP codes for PV]()
+- [BstPasCLC - Boost Converter Closed Loop Control with Passive Theory](https://github.com/FulongLi/DCMicrogridTestBench)
+- [WPT - Wireless Charging DSP codes](https://github.com/FulongLi/WirelessPowerTransferTestBench)
+- [PVMPPT - MPPT algorithms DSP codes for PV](https://github.com/FulongLi/DCMicrogridTestBench)
 
 ---
 
