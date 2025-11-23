@@ -17,7 +17,7 @@ Welcome to my creative writing space. Here I share stories that explore science 
 
 <img src="/images/novels/LD.png" width="250" />
 
-**Now on** [**Apple Books**](http://books.apple.com/us/book/id6755497208) 
+**Now on** [**Apple Books 📖**](http://books.apple.com/us/book/id6755497208) 
 
 ---
 
@@ -82,5 +82,6 @@ Welcome to my creative writing space. Here I share stories that explore science 
 ---
 ## 杂文
 
+- 🧾 [资本主义主义在现代科技数字文明中的潜在走向？]()
 ---
 > Stay tuned for updates!
