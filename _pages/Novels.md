@@ -17,7 +17,7 @@ Welcome to my creative writing space. Here I share stories that explore science 
 
 <img src="/images/novels/LD.png" width="250" />
 
-**Now on** [**Apple Books**](http://books.apple.com/us/book/id6755497208)
+**Now on** [**Apple Books**](http://books.apple.com/us/book/id6755497208) 
 
 ---
 
