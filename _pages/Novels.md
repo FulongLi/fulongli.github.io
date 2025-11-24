@@ -82,7 +82,7 @@ Welcome to my creative writing space. Here I share stories that explore science 
 ---
 ## 杂文
 
-- 🧾 [资本主义在现代科技数字文明中的潜在走向？]()
+- 🧾 [我们在现代科技数字文明中的潜在走向？]()
 
 
 ---
