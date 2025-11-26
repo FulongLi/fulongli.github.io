@@ -58,7 +58,7 @@ To accelerate converter design and optimisation, we develop neural-network model
 ### 1. Static Modelling — using ANN
 Goal: Predict losses across operating points without exhaustive interpolation of datasheet curves.
 
-<img src="/images/research/characterisation/fig1.png" width="800" />
+<img src="/images/research/characterisation/fig1.png" width="600" />
 <img src="/images/research/characterisation/fig1-1.png" width="300" />
 <img src="/images/research/characterisation/fig1-2.png" width="300" />
 
