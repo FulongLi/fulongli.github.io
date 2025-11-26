@@ -11,7 +11,7 @@ Microgrids represent a paradigm shift in power system architecture, offering loc
 
 ---
 
-## Marine Applications
+## Marine Applications - Energy Management System
 
 Marine microgrids are critical for ensuring reliable power supply in maritime environments where grid connectivity is unavailable or unreliable. 
 
