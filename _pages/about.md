@@ -44,7 +44,7 @@ power electronics more accessible, and more inspiring for everyone.
 
 ### Prototype/ Power Electronics (still maintained)
 - [Design and Prototype of PCB Rogowski Coil](https://github.com/FulongLi/Magnetics-PCBRogowskiCoil)
-- [Magnetic-core-embedded PCB Current Transformer transducer](https://github.com/FulongLi/Magnetics-PCBCurrentTransformerTransducer)
+- [Magnetic-core-embedded PCB Current Transformer Transducer](https://github.com/FulongLi/Magnetics-PCBCurrentTransformerTransducer)
 
 
 ---

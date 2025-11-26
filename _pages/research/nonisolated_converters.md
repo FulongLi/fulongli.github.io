@@ -25,15 +25,6 @@ Non-isolated converters provide direct voltage transformation without galvanic i
 
 > *Tip*: Host each converter’s modelling and control example on GitHub (simulation files, small design notes, or code).
 
----
-
-## Bidirectional Converters
-
-Designed for **energy storage** and **two-way power flow**, ideal in battery management and DC microgrids.
-
-- **Dual Active Bridge (DAB)** – high power density and soft-switching capability  
-- **Non-isolated bidirectional buck-boost** – compact and cost-effective  
-- [Example GitHub Repo](https://github.com/yourname/bidirectional-dcdc)
 
 ---
 
