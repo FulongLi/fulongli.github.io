@@ -21,7 +21,7 @@ Marine microgrids are critical for ensuring reliable power supply in maritime en
 - Full electric systems
 - Battery energy storage systems (BESS)
 - Fuel Cell integration
-- Rule-based power management systems
+- Rule-based energy management systems
 
 ![Github: Marine Microgrid System Examples](/images/research/mgapp/marine.png)
 
