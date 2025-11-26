@@ -34,17 +34,17 @@ power electronics more accessible, and more inspiring for everyone.
 ## Open-Source Archives
 
 ### Python / Power Electronics (still maintained)
-- [MosANNLib - SiC MOSFET ANN Library](https://github.com/FulongLi/Transistor-MOSFETLibraryANN)
-- [BuckMOO - Buck Converter Design Optimisation ](https://github.com/FulongLi/BuckConverterOptimisation)
-- [HSOA - Heat Sink Optimisation Automation](https://github.com/FulongLi/HeatSinkOptimisation)
-- [DPT - Double Pulse Test Automation](https://github.com/https://github.com/FulongLi/DoublePulseTestAutomation)
+- [SiC MOSFET ANN Library](https://github.com/FulongLi/Transistor-MOSFETLibraryANN)
+- [Buck Converter Design Optimisation ](https://github.com/FulongLi/BuckConverterOptimisation)
+- [Heat Sink Optimisation Automation](https://github.com/FulongLi/HeatSinkOptimisation)
+- [Double Pulse Test Automation](https://github.com/https://github.com/FulongLi/DoublePulseTestAutomation)
 
 ### Simulations/ Power Electronics (still maintained)
-- [SST - 3 stages SST](https://github.com/FulongLi/SolidStateTransformer)
+- [Three Stages Solid State Transformer](https://github.com/FulongLi/SolidStateTransformer)
 
 ### Prototype/ Power Electronics (still maintained)
-- [Rogowski Coil - Design and Prototype of PCB Rogowski Coil](https://github.com/FulongLi/Magnetics-PCBRogowskiCoil)
-- [Current Transformer - Magnetic core embedded PCB CT transducer](https://github.com/FulongLi/Magnetics-PCBCurrentTransformerTransducer)
+- [Design and Prototype of PCB Rogowski Coil](https://github.com/FulongLi/Magnetics-PCBRogowskiCoil)
+- [Magnetic-core-embedded PCB Current Transformer transducer](https://github.com/FulongLi/Magnetics-PCBCurrentTransformerTransducer)
 
 
 ---
@@ -57,14 +57,14 @@ power electronics more accessible, and more inspiring for everyone.
 
 
 ### Prototype/ Power Electronics (no longer maintained)
-- [WPTP-Wireless Charging Prototype](https://github.com/FulongLi/WirelessPowerTransferTestBench)
-- [DCMGTB - DC Microgrid Test Bench](https://github.com/FulongLi/DCMicrogridTestBench)
+- [Wireless Charging Prototype](https://github.com/FulongLi/WirelessPowerTransferTestBench)
+- [DC Microgrid Test Bench](https://github.com/FulongLi/DCMicrogridTestBench)
 
 
 ### Legacy Code (no longer maintained)
-- [BstPasCLC - Boost Converter Closed Loop Control with Passive Theory](https://github.com/FulongLi/DCMicrogridTestBench)
-- [WPT - Wireless Charging DSP codes](https://github.com/FulongLi/WirelessPowerTransferTestBench)
-- [PVMPPT - MPPT algorithms DSP codes for PV](https://github.com/FulongLi/DCMicrogridTestBench)
+- [Boost Converter Closed Loop Control with Passive Theory](https://github.com/FulongLi/DCMicrogridTestBench)
+- [Wireless Charging DSP codes](https://github.com/FulongLi/WirelessPowerTransferTestBench)
+- [MPPT algorithms DSP codes for PV](https://github.com/FulongLi/DCMicrogridTestBench)
 
 ---
 
