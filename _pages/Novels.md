@@ -40,7 +40,7 @@ Welcome to my creative writing space. Here I share stories that explore science 
 **Expected Release:** Winter 2026
 
 ---
-### 灵接科技: 巨鲸的陨落
+### 灵接科技: 巨鲸陨落
 ### *Spirit Connect S&T: The Whale’s Fall*
 
 <img src="/images/novels/WF.png" width="250" />
