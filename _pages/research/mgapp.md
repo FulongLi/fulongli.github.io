@@ -23,7 +23,7 @@ Marine microgrids are critical for ensuring reliable power supply in maritime en
 - Fuel Cell integration
 - Rule-based power management systems
 
-![Marine Microgrid System Examples](/images/research/mgapp/marine.png)
+![Github: Marine Microgrid System Examples](/images/research/mgapp/marine.png)
 
 Full details: [Mrine Microgrid Energy Management System](https://github.com/FulongLi/MicrogridEnergyManagementSystermDesign)
 
