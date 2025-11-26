@@ -55,26 +55,24 @@ Full Details: [Github - TIM Automation](https://github.com/FulongLi/TIM_Automati
 
 To accelerate converter design and optimisation, we develop neural-network models that predict device losses and dynamics directly from operating conditions.
 
-### 1. Static Loss Modelling — using ANN
-Goal: Predict conduction losses (P_cond) across operating points without exhaustive interpolation of datasheet curves.
+### 1. Static Modelling — using ANN
+Goal: Predict losses across operating points without exhaustive interpolation of datasheet curves.
 
-<img src="/images/research/characterisation/fig1.png" width="300" />
+<img src="/images/research/characterisation/fig1.png" width="800" />
 <img src="/images/research/characterisation/fig1-1.png" width="300" />
 <img src="/images/research/characterisation/fig1-2.png" width="300" />
 
 Full Details: [Github: Transistor-MOSFETLibraryANN](https://github.com/FulongLi/Transistor-MOSFETLibraryANN)
 
-### 2. Dynamic Loss Modelling (Switching) — using ANN
-Goal: Predict E_on, E_off, diode E_rec vs V_DC, I, T_j, R_g, dv/dt, di/dt to speed up topology-level optimisation.
+### 2. Dynamic Modelling (Switching) — using ANN
 
 ---
 
 ## Integration into Converter Optimisaiton Design
 
 - Plug ANN models into buck, DAB, LLC design flows to get instant loss/thermal estimates, enabling multi-objective optimisation (efficiency, mass, cost)  
-- Export compact models (ONNX) for use in Python/Matlab design tools or C++/embedded evaluators
 
-<img src="/images/research/characterisation/optimisationstructure.png" width="500" />
+<img src="/images/research/characterisation/optimisationstructure.png" width="600" />
 
 Full Details: [Github: Converter Optimisaiton Design](https://github.com/FulongLi/BuckConverterOptimisation)
 
