@@ -5,11 +5,6 @@ permalink: /research/
 author_profile: true
 ---
 
-## 🧭 Roadmap for Research
-
-This page outlines the hierarchical structure of my research themes, following the flow from **Microgrids** down to **Power Components**.
-
----
 
 ## Research Topics
 

@@ -31,17 +31,6 @@ power electronics more accessible, and more inspiring for everyone.
 
 ---
 
-## Research Focus
-
-My work spans across:
-- AI-assisted optimal design of power electronic converters (DAB, Buck/Boost)
-- Characterisation and thermal modelling of wide-bandgap semiconductors (SiC/GaN)
-- Control and stability of DC microgrids
-- Real-time energy management system (EMS) design
-
-
----
-
 ## Open-Source Archives
 
 ### Python / Power Electronics (still maintained)
