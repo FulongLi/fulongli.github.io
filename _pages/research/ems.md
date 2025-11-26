@@ -17,7 +17,7 @@ This section focuses on energy management algorithms for optimal dispatch in sma
 
 ## Focus Areas
 
-### 1. Rule-Based and Fuzzy EMS
+### 1. Rule-Based EMS
 - Logic tree methods
 - Integration of expert knowledge
 

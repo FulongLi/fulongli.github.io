@@ -5,7 +5,7 @@ permalink: /research/sst/
 author_profile: true
 ---
 
-## 🔋 Overview
+## Overview
 
 
 ---
