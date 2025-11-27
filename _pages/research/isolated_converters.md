@@ -14,7 +14,7 @@ Unlike non-isolated converters, these topologies use **galvanic isolation** (oft
 
 ## Isolated DC–DC Converter Summary
 
-| Topology | Description | GitHub Examples |
+| Topology | Description | GitHub Repo |
 |----------|-------------|----------------|
 | **Dual Active Bridge (DAB)** | Widely used for high-power bidirectional energy transfer. Achieves soft-switching (ZVS) and high efficiency at medium–high power levels. | [DAB Converter Repo](https://github.com/yourname/dab-converter) |
 | **LLC Resonant Converter** | High efficiency and soft-switching over wide load range. Common in server power supplies, EV chargers, and telecom applications. | [LLC Converter Repo](https://github.com/yourname/llc-converter) |
@@ -22,5 +22,16 @@ Unlike non-isolated converters, these topologies use **galvanic isolation** (oft
 
 
 ---
+
+
+## Dual Active Bridge (DAB)
+
+---
+
+## Full-Bridge Converter - WPT
+
+<img src="/images/research/isolatedconverters/WPT_setup.png" width="500" />
+
+--- 
 
 **Feel free to reach out** via [email](mailto:fulong.li@ieee.org).
