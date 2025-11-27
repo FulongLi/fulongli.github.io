@@ -51,7 +51,7 @@ Full Details: [Github - TIM Automation](https://github.com/FulongLi/TIM_Automati
 
 ---
 
-## Modelling
+## Electrical Modelling
 
 To accelerate converter design and optimisation, we develop neural-network models that predict device losses and dynamics directly from operating conditions.
 
@@ -62,11 +62,21 @@ Goal: Predict losses across operating points without exhaustive interpolation of
 <img src="/images/research/characterisation/fig1-1.png" width="300" />
 <img src="/images/research/characterisation/fig1-2.png" width="300" />
 
-Full Details: [Github: Transistor-MOSFETLibraryANN](https://github.com/FulongLi/Transistor-MOSFETLibraryANN)
-
 ### 2. Dynamic Modelling (Switching) — using ANN
 
+## Thermal Modelling
+
+### 1. Static Modelling
+
+
+### 2. Dynamic Modelling
+
+
+
+Full Details: [Github: Transistor-MOSFETLibraryANN](https://github.com/FulongLi/Transistor-MOSFETLibraryANN)
+
 ---
+
 
 ## Integration into Converter Optimisaiton Design
 
