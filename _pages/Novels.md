@@ -82,7 +82,8 @@ Welcome to my creative writing space. Here I share stories that explore science 
 ---
 ## 杂文
 
-- 🧾 [我们在现代科技数字文明中的潜在走向？]()
+- 🧾 [人类在现代数字文明中的潜在走向？]()
+- 🧾 [AI时代给我的创造力带来的是冲击还是机遇？]()
 
 
 ---
