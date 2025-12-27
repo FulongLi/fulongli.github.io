@@ -1,0 +1,22 @@
+# main links links
+main:
+  - title: "Timeline"
+    url: /year-archive/     
+    
+  - title: "Research"
+    url: /research/  
+    
+  - title: "Publications"
+    url: /publications/
+     
+  - title: "Novels"
+    url: /novels/
+    
+  - title: "CV"
+    url: /cv/
+
+  - title: "Spirit Connect Group"
+    url: /spiritconnectgroup/
+
+  - title: "Support"
+    url: /support/
