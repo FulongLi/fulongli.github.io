@@ -33,16 +33,19 @@ power electronics more accessible, and more inspiring for everyone.
 
 ## Open-Source Archives
 
-### Python / Power Electronics (still maintained)
+### Not very useful but interesting... (actively maintained)
+- [Another World - Life Trajectory Simulator](https://github.com/FulongLi/AnotherWorld)
+
+### Python / Power Electronics (actively maintained)
 - [SiC MOSFET ANN Library](https://github.com/FulongLi/Transistor-MOSFETLibraryANN)
 - [Buck Converter Design Optimisation ](https://github.com/FulongLi/BuckConverterOptimisation)
 - [Heat Sink Optimisation Automation](https://github.com/FulongLi/HeatSinkOptimisation)
 - [Double Pulse Test Automation](https://github.com/https://github.com/FulongLi/DoublePulseTestAutomation)
 
-### Simulations/ Power Electronics (still maintained)
+### Simulations/ Power Electronics (actively maintained)
 - [Three Stages Solid State Transformer](https://github.com/FulongLi/SolidStateTransformer)
 
-### Prototype/ Power Electronics (still maintained)
+### Prototype/ Power Electronics (actively maintained)
 - [Design and Prototype of PCB Rogowski Coil](https://github.com/FulongLi/Magnetics-PCBRogowskiCoil)
 - [Magnetic-core-embedded PCB Current Transformer Transducer](https://github.com/FulongLi/Magnetics-PCBCurrentTransformerTransducer)
 
