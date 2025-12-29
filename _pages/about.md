@@ -54,7 +54,7 @@ power electronics more accessible, and more inspiring for everyone.
 
 ### Simulations/ Power Electronics (no longer maintained)
 - [Non-isolated_Coverters - Buck Conveter Closed Loop Design](https://github.com/FulongLi/NonisolatedCoverters)
-- [Non-isolated_Coverters - Boost Converter Closed Loop Design/Passive Control](https://github.com/FulongLi/NonisolatedCoverters)
+- [Non-isolated_Coverters - Boost Converter Closed Loop Design/Passivity-based Control](https://github.com/FulongLi/NonisolatedCoverters)
 - [Isolated_Coverters Conveter - LLC Converter Closed Loop Design](https://github.com/FulongLi/IsolatedCoverters)
 - [Isolated_Coverters - DAB Converter Closed Loop Design](https://github.com/FulongLi/IsolatedCoverters)
 
