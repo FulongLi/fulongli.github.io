@@ -22,7 +22,7 @@ Welcome to my creative writing space. Here I share stories that explore science 
 ### *Spirit Connect S&T: The Dark Side of the Moon*
 
 <img src="/images/novels/DM.png" width="200" />
-
+<img src="/images/novels/DM_E.png" width="200" />
 
 📖 **Now on** [**Apple Books**](http://books.apple.com/us/book/id6756632701) 
 
