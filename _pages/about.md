@@ -71,11 +71,6 @@ power electronics more accessible, and more inspiring for everyone.
 
 ---
 
-## Beyond Work
-
-Outside of engineering, I enjoy creative writing and have drafted several science-fiction novels. I’m fascinated by the intersection of technology, storytelling, and society.
-
----
 
 **Feel free to reach out** via [email](mailto:fulong.li@ieee.org) or connect with me on [LinkedIn](https://www.linkedin.com/in/fulong-li-6bb443127/).
 
