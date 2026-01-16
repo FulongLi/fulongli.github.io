@@ -96,5 +96,8 @@ Welcome to my creative writing space. Here I share stories that explore science 
 - 🧾 [AI时代给我的创造力带来的是冲击还是机遇？](/notes/ai-creativity/)
 - 🧾 [AI和阿卡夏记录](/notes/ai-akashic-records/)
 - 🧾 [Heated Rivalry的观感](/notes/heated-rivalry-review/)
+
+
+
 ---
 > Stay tuned for updates!
