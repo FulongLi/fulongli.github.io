@@ -38,3 +38,56 @@
 .container:hover .overlay {
   opacity: 0.25;
 }
+
+/* ==========================================================================
+   BILINGUAL NOTES LAYOUT (Left: Chinese, Right: English)
+   ========================================================================== */
+
+.note-bilingual__content {
+  .note-bilingual__wrapper {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+    
+    @include breakpoint(max-width $medium) {
+      flex-direction: column;
+      gap: 1.5em;
+    }
+  }
+
+  .note-bilingual__column {
+    flex: 1;
+    min-width: 0; // Prevents overflow
+    
+    &--chinese {
+      padding-right: 1em;
+      border-right: 1px solid $border-color;
+      
+      @include breakpoint(max-width $medium) {
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 1.5em;
+      }
+    }
+    
+    &--english {
+      padding-left: 1em;
+      
+      @include breakpoint(max-width $medium) {
+        padding-left: 0;
+        padding-top: 1.5em;
+      }
+    }
+    
+    h2 {
+      margin-top: 0;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid $border-color;
+    }
+    
+    p, li {
+      line-height: 1.6;
+    }
+  }
+}
