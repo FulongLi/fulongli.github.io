@@ -94,11 +94,11 @@ Welcome to my creative writing space. Here I share stories that explore science 
 
 2026
 --- 
-- 🧾 Jan-09: [Heated Rivalry的观感](/notes/heated-rivalry-review/)
-- 🧾 Jan-01: [AI和阿卡西记录](/notes/ai-akashic-records/)
+- 🧾 Jan-09: [AI和阿卡西记录](/notes/ai-akashic-records/)
 
 2025
 ---
+- 🧾 Dec-31: [Heated Rivalry的观感](/notes/heated-rivalry-review/)
 - 🧾 Dec-18: [人类在现代数字文明中的潜在走向？](/notes/human-digital-civilization/)
 - 🧾 Nov-26: [AI时代给我的创造力带来的是冲击还是机遇？](/notes/ai-creativity/)
 
