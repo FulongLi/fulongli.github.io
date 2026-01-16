@@ -94,7 +94,7 @@ Welcome to my creative writing space. Here I share stories that explore science 
 
 - 🧾 [人类在现代数字文明中的潜在走向？](/notes/human-digital-civilization/)
 - 🧾 [AI时代给我的创造力带来的是冲击还是机遇？](/notes/ai-creativity/)
-- 🧾 [AI和阿卡夏记录](/notes/ai-akashic-records/)
+- 🧾 [AI和阿卡西记录](/notes/ai-akashic-records/)
 - 🧾 [Heated Rivalry的观感](/notes/heated-rivalry-review/)
 
 
