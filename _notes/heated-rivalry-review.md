@@ -11,6 +11,8 @@ tags:
   - entertainment
 ---
 
+keywords: blogs, review, LGBTQ+, Canada
+
 ## Heated Rivalry 的观感
 
 整个圣诞都在等《Stranger Things》，却无意中刷到了《Heated Rivalry》。

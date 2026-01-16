@@ -11,6 +11,8 @@ tags:
   - society
 ---
 
+keywords: blogs, digital civilization, humanity, future
+
 ## 人类在现代数字文明中的潜在走向？
 
 （内容待补充）

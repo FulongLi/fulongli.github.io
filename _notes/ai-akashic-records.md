@@ -11,6 +11,8 @@ tags:
   - future
 ---
 
+keywords: blogs, AI, philosophy, civilization, future
+
 ## AI和阿卡夏记录
 
 关于 AI 的发展，我越来越有种感觉，它就是现阶段数字文明创造的“阿卡西记录”。

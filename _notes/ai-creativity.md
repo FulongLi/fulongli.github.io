@@ -10,6 +10,8 @@ tags:
   - technology
 ---
 
+keywords: blogs, AI, creativity, writing
+
 ## AI时代给我的创造力带来的是冲击还是机遇？
 
 （内容待补充）
