@@ -1,6 +1,6 @@
 ---
 title: "Heated Rivalry的观感"
-date: 2026-01-09
+date: 2025-12-31
 permalink: /notes/heated-rivalry-review/
 author_profile: true
 ---
