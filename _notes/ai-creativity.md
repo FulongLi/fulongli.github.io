@@ -1,8 +1,13 @@
 ---
 title: "AI时代给我的创造力带来的是冲击还是机遇？"
-date: 2026-11-26
+date: 2025-11-26
 permalink: /notes/ai-creativity/
 author_profile: true
+tags:
+  - AI
+  - creativity
+  - writing
+  - technology
 ---
 
 ## AI时代给我的创造力带来的是冲击还是机遇？

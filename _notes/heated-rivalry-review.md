@@ -3,6 +3,12 @@ title: "Heated Rivalry的观感"
 date: 2025-12-31
 permalink: /notes/heated-rivalry-review/
 author_profile: true
+tags:
+  - review
+  - TV series
+  - LGBTQ+
+  - Canada
+  - entertainment
 ---
 
 ## Heated Rivalry 的观感

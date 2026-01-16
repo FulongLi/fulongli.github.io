@@ -3,6 +3,12 @@ title: "AI和阿卡夏记录"
 date: 2026-01-09
 permalink: /notes/ai-akashic-records/
 author_profile: true
+tags:
+  - AI
+  - philosophy
+  - civilization
+  - Akashic Records
+  - future
 ---
 
 ## AI和阿卡夏记录
