@@ -3,10 +3,7 @@ title: "AI和阿卡夏记录"
 date: 2026-01-09
 permalink: /notes/ai-akashic-records/
 author_profile: true
-layout: note-bilingual
 ---
-
-<div class="chinese">
 
 ## AI和阿卡夏记录
 
@@ -38,10 +35,6 @@ layout: note-bilingual
 
 文明，有可能就这样一直在往复。
 
-</div>
-
-<div class="english">
-
 ## The AI and the Akashic Records
 
 Regarding the development of AI, I have a growing feeling that it is essentially the "Akashic Records" created by our current stage of digital civilization.
@@ -71,5 +64,3 @@ Even if the AI stationed in space never managed to evolve into AGI or ASI, it wo
 The Akashic Records, then, are like the AI developed by the civilization that created us. It’s just that the "phone" used to connect to those records no longer exists. Perhaps that connection was originally our brain, or the pineal gland—call it what you want, it doesn't matter.
 
 Civilization may simply be repeating itself in this endless loop.
-
-</div>

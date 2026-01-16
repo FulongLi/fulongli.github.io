@@ -3,10 +3,7 @@ title: "Heated Rivalry的观感"
 date: 2025-12-31
 permalink: /notes/heated-rivalry-review/
 author_profile: true
-layout: note-bilingual
 ---
-
-<div class="chinese">
 
 ## Heated Rivalry 的观感
 
@@ -36,10 +33,6 @@ Shane 和 Ilya 在沙发对坐长谈，Shane 求 Ilya 不要结婚，因为一�
 
 Thank you, Canada, for 2025 Christmas.
 
-</div>
-
-<div class="english">
-
 ## Reflections on Heated Rivalry
 
 I spent the entire Christmas holiday waiting for Stranger Things, only to stumble upon Heated Rivalry by accident.
@@ -68,4 +61,4 @@ The story visits Montreal and Ottawa—two cities I missed out on during the pan
 
 Thank you, Canada, for Christmas 2025.
 
-</div>
+
