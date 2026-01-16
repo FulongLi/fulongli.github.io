@@ -1,5 +1,5 @@
 ---
-title: "AI和阿卡夏记录"
+title: "The AI and the Akashic Records"
 date: 2026-01-09
 permalink: /notes/ai-akashic-records/
 author_profile: true

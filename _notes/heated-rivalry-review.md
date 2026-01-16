@@ -1,5 +1,5 @@
 ---
-title: "Heated Rivalry的观感"
+title: "Heated Rivalry"
 date: 2025-12-31
 permalink: /notes/heated-rivalry-review/
 author_profile: true
