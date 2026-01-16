@@ -94,7 +94,7 @@ Welcome to my creative writing space. Here I share stories that explore science 
 
 2026
 --- 
-- 🧾 Nov-26: [AI测试的最后一波](/notes/ai-creativity/)
+- 🧾 Jan-12: [AI测试的最后一波](/notes/ai-creativity/)
 - 🧾 Jan-09: [AI和阿卡西记录](/notes/ai-akashic-records/)
 
 2025
