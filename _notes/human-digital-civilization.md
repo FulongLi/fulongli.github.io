@@ -22,7 +22,7 @@ keywords: blogs, digital civilization, humanity, future
 音乐人的天塌了。 下面是一段 AI 音乐软件 Suno 合成的音乐，用 Ariana 和比伯的声音唱周杰伦的《One Last Time + 珊瑚海》。
 
 <audio controls>
-  <source src="/notes/music/onelasttime.mp3" type="audio/mpeg">
+  <source src="/notes/music/olt.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
