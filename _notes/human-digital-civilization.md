@@ -19,10 +19,10 @@ keywords: blogs, digital civilization, humanity, future
 
 虽然短暂陷入过虚无主义，但那一定是一个个人天赋绽放的时代：音乐、美术、视频、编程、专业知识、教育、医疗、游戏、经济。
 
-音乐人的天塌了。 下面是一段 AI 音乐软件 Suno 合成的音乐，用 Ariana 和比伯的声音唱周杰伦的《珊瑚海》。是不是听完感觉还挺棒的？
+音乐人的天塌了。 下面是一段 AI 音乐软件 Suno 合成的音乐，用 Ariana 和比伯的声音唱周杰伦的《One Last Time + 珊瑚海》。是不是听完感觉还挺棒的？
 
 <audio controls>
-  <source src="/files/music/coral-sea-ai-cover.mp3" type="audio/mpeg">
+  <source src="/notes/music/onelasttime.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
@@ -50,7 +50,7 @@ After being deeply immersed in AI for a few months, I feel as though I’ve trav
 
 Though I briefly fell into a state of nihilism, I am now certain that this will be an era where individual talent truly flourishes: across music, art, video, programming, professional expertise, education, healthcare, gaming, and economics.
 
-The world of musicians has collapsed. Below is a track synthesized by the AI music software Suno, using the voices of Ariana Grande and Justin Bieber to sing Jay Chou’s "Coral Sea." Doesn't it sound surprisingly good?
+The world of musicians has collapsed. Below is a track synthesized by the AI music software Suno, using the voices of Ariana Grande and Justin Bieber to sing Jay Chou’s "One Last Time + Coral Sea." Doesn't it sound surprisingly good?
 
 For art and video, the release of Sora 2 was already a massive shock, and Google’s Nano Banana has only made things more challenging for creators.
 
