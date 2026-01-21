@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : "lifelonglee"  # X (formerly Twitter)
 facebook:
   username               :
   app_id                 :
@@ -109,7 +109,7 @@ author:
   stackoverflow    : 
   steam            :
   tumblr           :
-  twitter          : "lifelonglee" 
+  x                : "lifelonglee"  # X (formerly Twitter) 
   vine             :
   weibo            :
   xing             :
