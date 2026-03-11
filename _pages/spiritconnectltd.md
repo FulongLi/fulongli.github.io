@@ -22,6 +22,8 @@ That’s why we’re creating an open-source knowledge hub for power electronics
 Join us as we connect engineers, researchers, and learners around the world,
 to power the future — one open circuit at a time.
 
+Visit our website: [Spirit Connect – Power Labs](https://fulongli.github.io/SCPowerLabs/).
+
 ---
 
 ## Our Contributors & Supporters
