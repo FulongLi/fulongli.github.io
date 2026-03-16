@@ -8,12 +8,61 @@ header:
 ---
 
 {% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+
+<div class="posts-toggle" style="margin-bottom: 1.5rem;">
+  <button id="btn-academic" class="btn btn--primary">Academic posts</button>
+  <button id="btn-life" class="btn">Life posts</button>
+</div>
+
+<div id="academic-posts">
+  {% capture written_year %}'None'{% endcapture %}
+  {% for post in site.posts %}
+    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% if year != written_year %}
+      <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+      {% capture written_year %}{{ year }}{% endcapture %}
+    {% endif %}
+    {% include archive-single.html %}
+  {% endfor %}
+</div>
+
+<div id="life-posts" style="display:none;">
+  {% capture written_year %}'None'{% endcapture %}
+  {% assign life_notes = site.notes | sort: 'date' | reverse %}
+  {% for note in life_notes %}
+    {% capture year %}{{ note.date | date: '%Y' }}{% endcapture %}
+    {% if year != written_year %}
+      <h2 id="life-{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+      {% capture written_year %}{{ year }}{% endcapture %}
+    {% endif %}
+    {% include archive-single.html post=note %}
+  {% endfor %}
+</div>
+
+<script>
+  (function() {
+    var academicBtn = document.getElementById('btn-academic');
+    var lifeBtn = document.getElementById('btn-life');
+    var academicSection = document.getElementById('academic-posts');
+    var lifeSection = document.getElementById('life-posts');
+
+    if (!academicBtn || !lifeBtn || !academicSection || !lifeSection) return;
+
+    function setMode(mode) {
+      if (mode === 'life') {
+        academicSection.style.display = 'none';
+        lifeSection.style.display = '';
+        lifeBtn.classList.add('btn--primary');
+        academicBtn.classList.remove('btn--primary');
+      } else {
+        academicSection.style.display = '';
+        lifeSection.style.display = 'none';
+        academicBtn.classList.add('btn--primary');
+        lifeBtn.classList.remove('btn--primary');
+      }
+    }
+
+    academicBtn.addEventListener('click', function() { setMode('academic'); });
+    lifeBtn.addEventListener('click', function() { setMode('life'); });
+  })();
+</script>
