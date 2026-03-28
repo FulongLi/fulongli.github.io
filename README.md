@@ -1,41 +1,53 @@
 # Fulong Li's Personal Website
 
-This is the source code for [Fulong Li's](https://fulongli.github.io) personal academic and professional website, built using **Jekyll** and the **Minimal Mistakes** theme. The site is hosted for free using **GitHub Pages** and showcases research, publications, creative writing, and career highlights.
+Source code for [fulongli.github.io](https://fulongli.github.io) — a personal academic and professional website built with **Jekyll** and the **Minimal Mistakes** theme, hosted on **GitHub Pages**.
+
+**Live site:** [https://fulongli.github.io](https://fulongli.github.io)
 
 ---
 
-## 🌐 Live Site
+## Site Structure
 
-👉 [https://fulongli.github.io](https://fulongli.github.io)
+| Section | Path | Description |
+|---------|------|-------------|
+| **Timeline** | `_posts/` | Chronological milestones — conferences, secondments, career events |
+| **Research** | `_pages/research/` | Technical research areas: switching devices, converters, microgrids, passive components, sensing devices, etc. |
+| **Publications** | `_pages/publications.md` | Journal articles, conference papers, and thesis |
+| **Novels** | `_pages/Novels.md` | Science-fiction writing projects (Spirit Connect series and more) |
+| **CV** | `_pages/cv/` | Academic background, work experience, and achievements |
+| **Spirit Connect Group** | `_pages/spiritconnectltd.md` | Open-source power electronics community |
+| **Notes** | `_notes/` | Essays and reflections on AI, civilisation, and life |
+| **Support** | `_pages/support.md` | Ways to support the project |
+
+## Repository Layout
+
+```
+.
+├── _config.yml          # Jekyll site configuration
+├── _data/               # Navigation and UI text
+├── _includes/           # Reusable HTML partials
+├── _layouts/            # Page layout templates
+├── _pages/              # Static pages (research, CV, novels, etc.)
+├── _posts/              # Blog / timeline posts
+├── _notes/              # Life notes collection
+├── _publications/       # Publication entries
+├── _sass/               # Stylesheets
+├── assets/              # CSS, JS, fonts
+├── files/               # Downloadable PDFs (slides, posters, CV)
+└── images/              # Site images (research, novels, timeline)
+```
+
+## Local Development
+
+```bash
+gem install bundler jekyll
+bundle install
+bundle exec jekyll serve
+```
+
+Then visit `http://localhost:4000`.
 
 ---
 
-## 📁 Website Structure
-
-The site is organised into the following main sections:
-
-- 🕒 **Timeline**  
-  A chronological view of academic, professional, and research milestones.
-
-- 📚 **Research**  
-  Detailed breakdown of technical research areas including:
-  - Switching Devices (IGBT, SiC, GaN)
-  - Passive Components
-  - Sensing Devices
-  - Converters
-  - Microgrid Control Strategies
-  - etc.
-
-- 📝 **Publications**  
-  A list of journal articles, conference papers, etc.
-
-- 📖 **Novels**  
-  A space dedicated to creative and science-fiction writing projects.
-
-- 📄 **CV**  
-  Curriculum Vitae highlighting academic background, work experience, and achievements.
-
----
-
-## 🔄 Last updated: June 2025
+Last updated: March 2026
 
