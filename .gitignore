@@ -1,6 +1,9 @@
 _site/
-images/posts/*.tex
-images/posts/*.pdf
-images/posts/*.sty
-_source/*_cache
+.idea/
+*.Rproj
 .Rproj.user
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+node_modules/
