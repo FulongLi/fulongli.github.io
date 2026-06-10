@@ -10,9 +10,9 @@ author_profile: true
 
 Welcome to my creative writing space. Here I share stories that explore science fiction, alternate realities, and the human side of technology.
 
->欢迎访问小说世界观网站: [点击这里](https://fulongli.github.io/Spirit-Connect-Fantasy/)
+>欢迎访问小说世界观网站: [点击这里](https://fulongli.github.io/SpiritConnectTec.github.io/)
 
->Welcome to the worldbuilding website for the novel: [Click here](https://fulongli.github.io/Spirit-Connect-Fantasy/)
+>Welcome to the worldbuilding website for the novel: [Click here](https://fulongli.github.io/SpiritConnectTec.github.io/)
 
 
 
