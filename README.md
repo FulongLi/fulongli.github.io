@@ -13,9 +13,9 @@ Source code for [fulongli.github.io](https://fulongli.github.io) — a personal 
 | **Timeline** | `_posts/` | Chronological milestones — conferences, secondments, career events |
 | **Research** | `_pages/research/` | Technical research areas: switching devices, converters, microgrids, passive components, sensing devices, etc. |
 | **Publications** | `_pages/publications.md` | Journal articles, conference papers, and thesis |
-| **Novels** | `_pages/Novels.md` | Science-fiction writing projects (Spirit Connect series and more) |
+| **Novels** | `_pages/Novels.md` | Science-fiction writing projects with the Spirit Connect Fantasy worldbuilding link |
 | **CV** | `_pages/cv/` | Academic background, work experience, and achievements |
-| **Spirit Connect Group** | `_pages/spiritconnectltd.md` | Open-source power electronics community |
+| **Spirit Connect Group** | `_pages/spiritconnectltd.md` | Open-source power electronics community linking to Spirit Connect AIPE Labs |
 | **Notes** | `_notes/` | Essays and reflections on AI, civilisation, and life |
 | **Support** | `_pages/support.md` | Ways to support the project |
 
@@ -49,5 +49,5 @@ Then visit `http://localhost:4000`.
 
 ---
 
-Last updated: March 2026
+Last updated: June 2026
 
