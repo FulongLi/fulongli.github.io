@@ -1,76 +1,71 @@
 ---
 permalink: /
-title: "About this website"
-excerpt: "About this website"
+title: "About"
+excerpt: "Power electronics, open-source tools, and creative systems."
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
 My digital legacy...
 
-“Could someone in the future transform my website into a digital avatar of me?”
+"Could someone in the future transform my website into a digital avatar of me?"
 
 BTW, if you are aliens, time travelers, or espers, please contact me now!
 
 ## About Me
 
-I’m Fulong, a power electronics engineer and researcher based in the UK, 
-specializing in advanced converter design, control strategies, 
-and energy-system integration.
+I'm Fulong, a power electronics engineer and researcher based in the UK. My work focuses on converter design, wide-bandgap power devices, modelling and optimisation, current sensing, and energy-system integration.
 
-Beyond engineering, I’m also a novelist who enjoys exploring ideas about technology, 
-humanity, and destiny through storytelling. Writing allows me to capture experiences, 
-question assumptions, and express the creative side that complements my technical work.
+Recently, I have been exploring how AI-assisted engineering can make power-electronics design more open, data-driven, and accessible. This includes device libraries, design agents, optimisation workflows, and practical open-source tools for engineers and learners.
 
-Through Spirit Connect, I hope to build an open, collaborative community 
-where engineers, researchers, hobbyists, and creators of all kinds can share knowledge, 
-exchange ideas, and contribute to an open-source ecosystem that makes 
-power electronics more accessible, and more inspiring for everyone.
+Beyond engineering, I'm also a novelist who enjoys exploring ideas about technology, humanity, and destiny through storytelling. Writing gives me another way to question assumptions and express the creative side that complements my technical work.
+
+Through Spirit Connect, I hope to build an open, collaborative community where engineers, researchers, hobbyists, and creators can share knowledge, exchange ideas, and contribute to an open-source ecosystem that makes power electronics more accessible and more inspiring for everyone.
 
 ---
 
-## Open-Source Archives
+## Current Focus
 
-### Not very useful but interesting... (actively maintained)
-- [Another World - Life Trajectory Simulator](https://github.com/FulongLi/AnotherWorld)
+- AI-assisted power electronics design and device modelling
+- Open-source datasets, design tools, and engineering workflows
+- Wide-bandgap devices, converter optimisation, and current sensing
+- Spirit Connect as a community for open knowledge in power electronics
+- Creative writing and speculative systems around technology and humanity
 
-### Python / Power Electronics (actively maintained)
+---
+
+## Selected Open-Source Work
+
+### AI + Power Electronics
+
+- [AIPE Power Device Library](https://github.com/FulongLi/AIPE-power-device-library)
+- [Power Electronics Design Agent](https://github.com/FulongLi/Power-Electronics-Design-Agent)
+- [Power Device Database](https://github.com/FulongLi/Power-Device-Database)
 - [SiC MOSFET ANN Library](https://github.com/FulongLi/Transistor-MOSFETLibraryANN)
-- [Buck Converter Design Optimisation ](https://github.com/FulongLi/BuckConverterOptimisation)
-- [Heat Sink Optimisation Automation](https://github.com/FulongLi/HeatSinkOptimisation)
-- [Double Pulse Test Automation](https://github.com/https://github.com/FulongLi/DoublePulseTestAutomation)
 
-### Simulations/ Power Electronics (actively maintained)
-- [Three Stages Solid State Transformer](https://github.com/FulongLi/SolidStateTransformer)
+### Hardware, Prototypes, and Test Platforms
 
-### Prototype/ Power Electronics (actively maintained)
-- [Design and Prototype of PCB Rogowski Coil](https://github.com/FulongLi/Magnetics-PCBRogowskiCoil)
-- [Magnetic-core-embedded PCB Current Transformer Transducer](https://github.com/FulongLi/Magnetics-PCBCurrentTransformerTransducer)
+- [PCB Rogowski Coil](https://github.com/FulongLi/PCB-Rogowski-Coil)
+- [PCB Rogowski Coil Archive](https://github.com/FulongLi/Magnetics-PCBRogowskiCoil)
+- [Low-Voltage DC Microgrid Test Bench](https://github.com/FulongLi/DCMicrogridTestBench)
+- [Solid State Transformer](https://github.com/FulongLi/SolidStateTransformer)
 
+### Spirit Connect Ecosystem
 
----
+- [Spirit Connect AIPE Labs](https://github.com/FulongLi/Spirit-Connect-AIPE-Labs)
+- [Spirit Connect Website](https://github.com/FulongLi/spiritconnect.github.io)
+- [Awesome Open-Source Power Electronics](https://github.com/FulongLi/awesome-open-source-power-electronics)
 
-### Simulations/ Power Electronics (no longer maintained)
-- [Non-isolated_Coverters - Buck Conveter Closed Loop Design](https://github.com/FulongLi/NonisolatedCoverters)
-- [Non-isolated_Coverters - Boost Converter Closed Loop Design/Passivity-based Control](https://github.com/FulongLi/NonisolatedCoverters)
-- [Isolated_Coverters Conveter - LLC Converter Closed Loop Design](https://github.com/FulongLi/IsolatedCoverters)
-- [Isolated_Coverters - DAB Converter Closed Loop Design](https://github.com/FulongLi/IsolatedCoverters)
+### Creative and Experimental Projects
 
+- [Another World - Life Trajectory Simulator](https://github.com/FulongLi/AnotherWorld)
+- [Spirit Connect Fantasy](https://github.com/FulongLi/Spirit-Connect-Fantasy)
+- [Spirit Connect 3D Projector](https://github.com/FulongLi/Spirit-Connect-3D-Projector)
 
-### Prototype/ Power Electronics (no longer maintained)
-- [Wireless Charging Prototype](https://github.com/FulongLi/WirelessPowerTransferTestBench)
-- [DC Microgrid Test Bench](https://github.com/FulongLi/DCMicrogridTestBench)
-
-
-### Legacy Code (no longer maintained)
-- [Boost Converter Closed Loop Control with Passive Theory](https://github.com/FulongLi/DCMicrogridTestBench)
-- [Wireless Charging DSP codes](https://github.com/FulongLi/WirelessPowerTransferTestBench)
-- [MPPT algorithms DSP codes for PV](https://github.com/FulongLi/DCMicrogridTestBench)
+For the full and most up-to-date list, visit my [GitHub profile](https://github.com/FulongLi).
 
 ---
-
 
 **Feel free to reach out** via [email](mailto:fulong.li@ieee.org) or connect with me on [LinkedIn](https://www.linkedin.com/in/fulong-li-6bb443127/).
-
