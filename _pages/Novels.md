@@ -31,6 +31,15 @@ Welcome to my creative writing space. Here I share stories that explore science 
 ---
 
 
+### 灵接科技: 巨鲸陨落
+### *Spirit Connect Tech: The Whale’s Fall*
+
+<img src="/images/novels/WF1.png" width="200" />
+
+*Coming soon…*
+
+--- 
+
 ### 人生十年：浅窥命运
 ### *Ten Years of Life: A Glimpse into Destiny*
 
@@ -42,22 +51,6 @@ Welcome to my creative writing space. Here I share stories that explore science 
 
 ---
 
-### 灵接科技: 零域之境
-### *Spirit Connect Tech: The Domain of Zero*
-
-<img src="/images/novels/ZD.png" width="200" />
-
-*Coming soon…*  
-
----
-### 灵接科技: 巨鲸陨落
-### *Spirit Connect Tech: The Whale’s Fall*
-
-<img src="/images/novels/WF.png" width="200" />
-
-*Coming soon…*
-
----
 ### 灵接科技: 灵猫
 ### *Spirit Connect Tech: The Mystic Cat*
 
@@ -66,15 +59,7 @@ Welcome to my creative writing space. Here I share stories that explore science 
 *Coming soon…*
 
 ---
-### 灵接科技: 演讲迷宫
-### *Spirit Connect Tech: The Labyrinth of Speech*
-
-<img src="/images/novels/LS.png" width="200" />
-
-*Coming soon…*
-
----
-### 灵接科技: 生死邮轮
+### 灵接科技: 血色邮轮
 ### *Spirit Connect Tech: The Death Cruise*
 
 <img src="/images/novels/DC1.png" width="200" />
@@ -82,25 +67,5 @@ Welcome to my creative writing space. Here I share stories that explore science 
 *Coming soon…*
 
 ---
-### 灵接科技: 灵魂归处
-### *Spirit Connect Tech: Home of the Soul*
 
-<img src="/images/novels/HS.png" width="200" />
-
-*Coming soon…*
-
----
-## 杂文
-
-2026
---- 
-- 🧾 Jan-12: [AI测试的最后一波](/notes/ai-creativity/)
-- 🧾 Jan-09: [AI和阿卡西记录](/notes/ai-akashic-records/)
-
-2025
----
-- 🧾 Dec-31: [Heated Rivalry的观感](/notes/heated-rivalry-review/)
-- 🧾 Dec-18: [人类在现代数字文明中的潜在走向？](/notes/human-digital-civilization/)
-
----
 > Stay tuned for updates!
