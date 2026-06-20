@@ -71,29 +71,3 @@
   border: 1px solid $border-color;
   border-radius: 6px;
 }
-
-.research-topic-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 2rem;
-  text-align: center;
-}
-
-.research-topic-card {
-  min-width: 0;
-}
-
-.research-topic-card img {
-  width: 100%;
-  max-width: 200px;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border: 1px solid $border-color;
-  border-radius: 6px;
-}
-
-@media (max-width: 720px) {
-  .research-topic-grid {
-    grid-template-columns: 1fr;
-  }
-}

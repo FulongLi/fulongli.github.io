@@ -8,11 +8,11 @@ author_profile: true
 
 ## Research Topics
 
-<div class="research-topic-grid">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; text-align: center;">
 
 <!-- Microgrids Column -->
-<div class="research-topic-card">
-  <img src="/images/research/generated/microgrids-overview.png" alt="Microgrids">
+<div style="flex: 1; min-width: 280px;">
+  <img src="/images/research/generated/microgrids-overview.png" alt="Microgrids" style="width:100%; max-width:240px; border:1px solid #ccc; border-radius:6px;">
   <h3> Microgrids</h3>
   <ul style="list-style: none; padding-left: 0;">
     <li><a href="/research/dcmg/">DC Microgrids (DCMG)</a></li>
@@ -22,8 +22,8 @@ author_profile: true
 </div>
 
 <!-- Converters Column -->
-<div class="research-topic-card">
-  <img src="/images/research/generated/converters-overview.png" alt="Converters">
+<div style="flex: 1; min-width: 280px;">
+  <img src="/images/research/generated/converters-overview.png" alt="Converters" style="width:100%; max-width:240px; border:1px solid #ccc; border-radius:6px;">
   <h3> Converters</h3>
   <ul style="list-style: none; padding-left: 0;">
     <li><a href="/research/nonisolated_converters/">Non-isolated Converter</a></li>
@@ -33,8 +33,8 @@ author_profile: true
 </div>
 
 <!-- Components Column -->
-<div class="research-topic-card">
-  <img src="/images/research/generated/components-overview.png" alt="Components">
+<div style="flex: 1; min-width: 280px;">
+  <img src="/images/research/generated/components-overview.png" alt="Components" style="width:100%; max-width:240px; border:1px solid #ccc; border-radius:6px;">
   <h3> Components</h3>
   <ul style="list-style: none; padding-left: 0;">
     <li><a href="/research/switching_devices/">Switching Devices (IGBT, SiC, GaN)</a></li>
