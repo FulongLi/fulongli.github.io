@@ -73,29 +73,27 @@
 }
 
 .research-topic-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2rem;
-  justify-content: space-between;
   text-align: center;
 }
 
 .research-topic-card {
-  flex: 1;
-  min-width: 280px;
+  min-width: 0;
 }
 
 .research-topic-card img {
   width: 100%;
-  max-width: 240px;
+  max-width: 200px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border: 1px solid $border-color;
   border-radius: 6px;
 }
 
-.research-topic-card p {
-  max-width: 280px;
-  margin: 0.5rem auto 1rem;
-  font-size: 0.85em;
+@media (max-width: 720px) {
+  .research-topic-grid {
+    grid-template-columns: 1fr;
+  }
 }
