@@ -20,14 +20,6 @@ The group connects two main directions: a public-facing landing page for the bro
 - [Spirit Connect Landing Page](https://spiritconnect.co.uk/)
 - [Spirit Connect AIPE Labs](https://fulongli.github.io/Spirit-Connect-AIPE-Labs/)
 
-## Related Links
-
-- [Spirit Connect Website Repository](https://github.com/FulongLi/spiritconnect.github.io)
-- [Spirit Connect AIPE Labs Repository](https://github.com/FulongLi/Spirit-Connect-AIPE-Labs)
-- [Spirit Connect Fantasy](https://fulongli.github.io/Spirit-Connect-Fantasy/)
-- [My GitHub Profile](https://github.com/FulongLi)
-- [Support this work](/support/)
-
 ---
 
 ## Get in Touch
