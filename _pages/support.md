@@ -5,18 +5,18 @@ permalink: /support/
 author_profile: true
 ---
 
-*If you find this website useful, please support us.*
+Thank you for visiting my website and open-source work. If something here has helped your research, engineering practice, learning, or creative projects, you are welcome to buy me a coffee or support future maintenance.
 
 
 ---
 
-## Ways to Support  
-- 💳 [PayPal](https://paypal.me/fulongli)
-- 📧 For sponsorship or business support, contact us at [fulong.li@ieee.org](mailto:fulong.li@ieee.org)  
+## Ways to Support
+
+- [Buy me a coffee via PayPal](https://paypal.me/fulongli)
+- For sponsorship, collaboration, or business support, contact me at [fulong.li@ieee.org](mailto:fulong.li@ieee.org)
 
 ---
 
-## Thank You  
+## Thank You
 
-Every contribution, big or small, helps us move closer to a sustainable, efficient, and connected energy future.  
-Together, we are powering innovation. 
+Every contribution helps me keep sharing open resources, notes, tools, and creative work with the wider community.

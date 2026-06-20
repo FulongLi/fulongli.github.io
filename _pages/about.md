@@ -8,12 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-My digital legacy...
-
-"Could someone in the future transform my website into a digital avatar of me?"
-
-BTW, if you are aliens, time travelers, or espers, please contact me now!
-
 ## About Me
 
 I'm Fulong, a power electronics engineer and researcher based in the UK. My work focuses on converter design, wide-bandgap power devices, modelling and optimisation, current sensing, and energy-system integration.
@@ -36,35 +30,7 @@ Through Spirit Connect, I hope to build an open, collaborative community where e
 
 ---
 
-## Selected Open-Source Work
-
-### AI + Power Electronics
-
-- [AIPE Power Device Library](https://github.com/FulongLi/AIPE-power-device-library)
-- [Power Electronics Design Agent](https://github.com/FulongLi/Power-Electronics-Design-Agent)
-- [Power Device Database](https://github.com/FulongLi/Power-Device-Database)
-- [SiC MOSFET ANN Library](https://github.com/FulongLi/Transistor-MOSFETLibraryANN)
-
-### Hardware, Prototypes, and Test Platforms
-
-- [PCB Rogowski Coil](https://github.com/FulongLi/PCB-Rogowski-Coil)
-- [PCB Rogowski Coil Archive](https://github.com/FulongLi/Magnetics-PCBRogowskiCoil)
-- [Low-Voltage DC Microgrid Test Bench](https://github.com/FulongLi/DCMicrogridTestBench)
-- [Solid State Transformer](https://github.com/FulongLi/SolidStateTransformer)
-
-### Spirit Connect Ecosystem
-
-- [Spirit Connect AIPE Labs](https://github.com/FulongLi/Spirit-Connect-AIPE-Labs)
-- [Spirit Connect Website](https://github.com/FulongLi/spiritconnect.github.io)
-- [Awesome Open-Source Power Electronics](https://github.com/FulongLi/awesome-open-source-power-electronics)
-
-### Creative and Experimental Projects
-
-- [Another World - Life Trajectory Simulator](https://github.com/FulongLi/AnotherWorld)
-- [Spirit Connect Fantasy](https://github.com/FulongLi/Spirit-Connect-Fantasy)
-- [Spirit Connect 3D Projector](https://github.com/FulongLi/Spirit-Connect-3D-Projector)
-
-For the full and most up-to-date list, visit my [GitHub profile](https://github.com/FulongLi).
+For specific projects, repositories, and the most up-to-date work, please visit my [GitHub profile](https://github.com/FulongLi).
 
 ---
 

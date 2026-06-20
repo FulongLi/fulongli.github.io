@@ -10,13 +10,13 @@ main:
     url: /publications/
      
   - title: "Novels"
-    url: /novels/
+    url: https://fulongli.github.io/Spirit-Connect-Fantasy/
     
   - title: "CV"
     url: /cv/
 
   - title: "Spirit Connect Group"
-    url: /spiritconnectgroup/
+    url: https://fulongli.github.io/Spirit-Connect-AIPE-Labs/
 
   - title: "Support"
     url: /support/
