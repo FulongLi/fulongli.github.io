@@ -51,3 +51,44 @@
   width: 1em;
   height: 1em;
 }
+
+/*
+   Research pages
+   ========================================================================== */
+
+.research-hero-image {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  margin: 1.25rem 0 1.5rem;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+}
+
+.research-topic-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.research-topic-card {
+  flex: 1;
+  min-width: 280px;
+}
+
+.research-topic-card img {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+}
+
+.research-topic-card p {
+  max-width: 280px;
+  margin: 0.5rem auto 1rem;
+  font-size: 0.85em;
+}

@@ -15,6 +15,10 @@ This section highlights two key technologies:
 - **PCB Rogowski Coils (PCB-RC)**  
 - **Embedded-Core PCB Current Transformers (PCB-CT)**  
 
+<img class="research-hero-image" src="/images/research/generated/sensing-devices.png" alt="Current sensing technical illustration" />
+
+My sensing work focuses on compact PCB-integrated current measurement for fast switching converters, where bandwidth, isolation, noise immunity, and manufacturability all matter.
+
 ---
 
 ## PCB Rogowski Coil (PCB-RC)
@@ -34,8 +38,7 @@ PCB Rogowski coils are air-cored current sensors printed directly onto a PCB.
 
 **Prototype Example**
 
-<img src="/images/research/Rogcoil/RogT2_d.png" width="300" />
-<img src="/images/research/Rogcoil/RogT4_d.png" width="300" />
+Prototype design connects PCB geometry, signal integration, and electromagnetic compatibility in a compact sensor package.
 
 Full Details: [GitHub — PCB Rogowski Coil Design](https://github.com/FulongLi/Magnetics-PCBRogowskiCoil)
 
@@ -58,7 +61,7 @@ PCB-CT integrates a **ferromagnetic core** into the PCB stack-up, forming a comp
 
 **Prototype Example**
 
-<img src="/images/research/CT/CT1_d.png" width="300" />
+Prototype design explores the trade-off between sensitivity, isolation, bandwidth, and embedded-core manufacturing constraints.
 
 Full Details: [GitHub — PCB Current Transformer Design](https://github.com/FulongLi/Magnetics-PCBCurrentTransformerTransducer)
 

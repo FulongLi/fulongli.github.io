@@ -12,6 +12,10 @@ This section covers the design, modelling, and optimisation of key passive compo
 - Inductors
 - Transformers
 
+<img class="research-hero-image" src="/images/research/generated/passive-components.png" alt="Passive components technical illustration" />
+
+Passive components strongly influence converter efficiency, power density, thermal performance, and electromagnetic behaviour, especially at high switching frequency.
+
 ---
 
 ## PCB Inductor Design for High-Frequency Converters
@@ -20,8 +24,7 @@ This section covers the design, modelling, and optimisation of key passive compo
 
 **Prototype Example**
 
-<img src="/images/research/magnetics/inductor1_d.png" width="300" />
-<img src="/images/research/magnetics/inductor2_d.png" width="300" />
+Prototype work connects electromagnetic design choices with manufacturability, thermal constraints, and converter-level performance.
 
 Full Details: [GitHub — Inductor Design](https://github.com/FulongLi/Inductor_Design)
 

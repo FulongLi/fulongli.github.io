@@ -9,13 +9,15 @@ author_profile: true
 
 Microgrids represent a paradigm shift in power system architecture, offering localized energy generation, storage, and management capabilities. These systems can operate both connected to the main grid and in islanded mode, providing enhanced reliability, resilience, and efficiency for various applications.
 
+<img class="research-hero-image" src="/images/research/generated/microgrid-applications.png" alt="Microgrid applications technical illustration" />
+
+My application-focused work looks at how converter control, energy storage, and energy management can be adapted to demanding environments such as marine and aerospace systems.
+
 ---
 
 ## Marine Applications - Energy Management System
 
 Marine microgrids are critical for ensuring reliable power supply in maritime environments where grid connectivity is unavailable or unreliable. 
-
-![Marine Microgrid System](/images/research/mgapp/HSTmarine.png)
 
 ### Key Technologies:
 - Full electric systems
@@ -23,14 +25,12 @@ Marine microgrids are critical for ensuring reliable power supply in maritime en
 - Fuel Cell integration
 - Rule-based energy management systems
 
-![Github: Marine Microgrid System Examples](/images/research/mgapp/marine.png)
-
-Full details: [Mrine Microgrid Energy Management System](https://github.com/FulongLi/MicrogridEnergyManagementSystermDesign)
+Full details: [Marine Microgrid Energy Management System](https://github.com/FulongLi/MicrogridEnergyManagementSystermDesign)
 
 
 ---
 
-## Aircarft Applications
+## Aircraft Applications
 
 ---
 

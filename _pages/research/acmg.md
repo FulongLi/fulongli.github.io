@@ -17,7 +17,9 @@ AC microgrids play a key role in balancing intermittent generation,
 enabling flexible control strategies, 
 and supporting the transition toward smarter and more sustainable power infrastructures.
 
-<img src="/images/research/ACMG.png" width="500" />
+<img class="research-hero-image" src="/images/research/generated/ac-microgrids.png" alt="AC microgrid technical illustration" />
+
+My interest in this area focuses on modelling, control, and system-level integration for reliable AC-based distributed energy networks.
 
 ---
 

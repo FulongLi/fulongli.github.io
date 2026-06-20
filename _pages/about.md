@@ -8,6 +8,12 @@ redirect_from:
   - /about.html
 ---
 
+My digital legacy...
+
+"Could someone in the future transform my website into a digital avatar of me?"
+
+BTW, if you are aliens, time travelers, or espers, please contact me now!
+
 ## About Me
 
 I'm Fulong, a power electronics engineer and researcher based in the UK. My work focuses on converter design, wide-bandgap power devices, modelling and optimisation, current sensing, and energy-system integration.

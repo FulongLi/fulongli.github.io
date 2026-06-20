@@ -13,6 +13,10 @@ This section focuses on energy management algorithms for optimal dispatch in sma
 - Renewable energy integration
 - Battery lifetime extension
 
+<img class="research-hero-image" src="/images/research/generated/energy-management-systems.png" alt="Energy management system technical illustration" />
+
+The goal is to coordinate generation, storage, and flexible loads so that microgrids can operate efficiently, reliably, and with awareness of real-world constraints.
+
 ---
 
 ## Focus Areas

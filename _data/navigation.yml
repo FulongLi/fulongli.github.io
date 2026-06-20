@@ -11,12 +11,9 @@ main:
      
   - title: "Novels"
     url: https://fulongli.github.io/Spirit-Connect-Fantasy/
-    
-  - title: "CV"
-    url: /cv/
 
   - title: "Spirit Connect Group"
-    url: https://fulongli.github.io/Spirit-Connect-AIPE-Labs/
+    url: /spiritconnectgroup/
 
   - title: "Support"
     url: /support/

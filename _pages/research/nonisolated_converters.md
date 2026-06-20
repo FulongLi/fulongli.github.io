@@ -11,6 +11,10 @@ This section introduces the **topologies, modelling, and control** of both **DC�
 
 We start with **non-isolated converters** — simple but fundamental building blocks — then move into more advanced **bidirectional** and **AC interface** topologies.
 
+<img class="research-hero-image" src="/images/research/generated/non-isolated-converters.png" alt="Non-isolated converter technical illustration" />
+
+This topic covers practical converter design from circuit topology and modulation to closed-loop control and hardware implementation.
+
 ---
 
 ## Non-Isolated DC–DC Converters
@@ -26,7 +30,7 @@ Non-isolated converters provide direct voltage transformation without galvanic i
 
 ## Bidirectional Boost Converter
 
-<img src="/images/research/nonisolatedconverters/boost.png" width="500" />
+Bidirectional converters are especially important for battery systems, DC microgrids, and applications that require controlled power flow in both directions.
 
 --- 
 

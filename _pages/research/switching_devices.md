@@ -13,6 +13,10 @@ Switching devices are the cornerstone of modern power electronics. They determin
 - SiC MOSFETs for high-efficiency, high-frequency systems  
 - GaN HEMTs for ultra-fast switching and compact converter designs
 
+<img class="research-hero-image" src="/images/research/generated/switching-devices.png" alt="Switching devices technical illustration" />
+
+My work in this area connects device characterisation, loss modelling, thermal behaviour, and converter-level optimisation for wide-bandgap power electronics.
+
 ---
 
 ## Device Comparison
@@ -40,8 +44,6 @@ Full Details: [Github - DPT Automation](https://github.com/FulongLi/DPT_Automati
 ### 2. Thermal Characterisation
 - Thermal impedance Z_th extraction (TO-247-3 Package) 
 
-<img src="/images/research/characterisation/TIM.png" width="300" />
-
 Full Details: [Github - TIM Automation](https://github.com/FulongLi/TIM_Automation)
 
 - Cauer/Foster network fitting for transient thermal simulation  
@@ -57,10 +59,6 @@ To accelerate converter design and optimisation, we develop neural-network model
 
 ### 1. Static Modelling — using ANN
 Goal: Predict losses across operating points without exhaustive interpolation of datasheet curves.
-
-<img src="/images/research/characterisation/fig1.png" width="600" />
-<img src="/images/research/characterisation/fig1-1.png" width="300" />
-<img src="/images/research/characterisation/fig1-2.png" width="300" />
 
 ### 2. Dynamic Modelling (Switching) — using ANN
 
@@ -81,8 +79,6 @@ Full Details: [Github: Transistor-MOSFETLibraryANN](https://github.com/FulongLi/
 ## Integration into Converter Optimisaiton Design
 
 - Plug ANN models into buck, DAB, LLC design flows to get instant loss/thermal estimates, enabling multi-objective optimisation (efficiency, mass, cost)  
-
-<img src="/images/research/characterisation/optimisationstructure.png" width="600" />
 
 Full Details: [Github: Converter Optimisaiton Design](https://github.com/FulongLi/BuckConverterOptimisation)
 

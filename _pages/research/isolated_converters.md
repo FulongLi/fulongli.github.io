@@ -10,6 +10,10 @@ author_profile: true
 This section introduces the **topologies, modelling, and control** of isolated DC–DC converters.  
 Unlike non-isolated converters, these topologies use **galvanic isolation** (often with high-frequency transformers) to provide safety, meet regulatory requirements, and allow large step-up or step-down voltage ratios.
 
+<img class="research-hero-image" src="/images/research/generated/isolated-converters.png" alt="Isolated DC-DC converter technical illustration" />
+
+This work connects topology selection, transformer design, soft-switching operation, and control strategies for high-efficiency power conversion.
+
 ---
 
 ## Isolated DC–DC Converter Summary
@@ -29,7 +33,7 @@ Unlike non-isolated converters, these topologies use **galvanic isolation** (oft
 
 ## Full-Bridge Converter - WPT
 
-<img src="/images/research/isolatedconverters/WPT_setup.png" width="500" />
+Wireless power transfer is one application where isolation, resonance, and converter control must be considered together to improve efficiency and robustness.
 
 --- 
 
