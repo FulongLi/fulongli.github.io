@@ -3,6 +3,137 @@
    ========================================================================== */
 
 /*
+   Visual skin: light sci-fi
+   ========================================================================== */
+
+html {
+  background:
+    linear-gradient(rgba(0, 167, 181, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 167, 181, 0.045) 1px, transparent 1px),
+    #f8fbfb;
+  background-size: 42px 42px, 42px 42px, auto;
+}
+
+body {
+  background:
+    linear-gradient(115deg, rgba(255, 255, 255, 0.96), rgba(242, 250, 249, 0.92));
+  color: #2f383b;
+}
+
+a {
+  color: #008da0;
+}
+
+a:hover {
+  color: #006d77;
+}
+
+.masthead {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgba(0, 141, 160, 0.18);
+  background: rgba(248, 251, 251, 0.88);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(13, 45, 52, 0.06);
+}
+
+.masthead__menu-item a {
+  position: relative;
+  color: #344145;
+}
+
+.masthead__menu-item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.35rem;
+  height: 2px;
+  background: #00a7b5;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.18s ease;
+}
+
+.masthead__menu-item a:hover::after {
+  transform: scaleX(1);
+}
+
+#main {
+  position: relative;
+}
+
+.archive,
+.page {
+  border: 1px solid rgba(0, 141, 160, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 18px 50px rgba(23, 56, 62, 0.06);
+}
+
+.archive {
+  padding: 1.25rem 1.4rem;
+}
+
+.page__title {
+  color: #223033;
+}
+
+.page__content h2,
+.archive h2 {
+  border-bottom-color: rgba(0, 141, 160, 0.2);
+}
+
+.page__content h2::before,
+.archive h2::before {
+  content: "";
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-right: 0.45rem;
+  border: 1px solid #00a7b5;
+  transform: rotate(45deg);
+}
+
+.sidebar {
+  color: #344145;
+}
+
+.author__avatar img {
+  border-color: rgba(0, 141, 160, 0.22);
+  box-shadow: 0 0 0 4px rgba(0, 167, 181, 0.06), 0 12px 30px rgba(17, 58, 63, 0.1);
+}
+
+.author__name {
+  color: #223033;
+}
+
+.author__urls {
+  border-color: rgba(0, 141, 160, 0.16);
+}
+
+.author__urls a {
+  border-radius: 4px;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.author__urls a:hover {
+  background: rgba(0, 167, 181, 0.08);
+  color: #006d77;
+  text-decoration: none;
+  transform: translateX(2px);
+}
+
+.page__footer {
+  border-top: 1px solid rgba(0, 141, 160, 0.14);
+  background: rgba(245, 250, 249, 0.78);
+}
+
+img {
+  border-radius: 6px;
+}
+
+/*
    Visibility
    ========================================================================== */
 
