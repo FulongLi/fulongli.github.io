@@ -127,7 +127,7 @@ a:hover {
 }
 
 .page__footer footer { margin-top: 0; padding-top: 1.5rem; padding-bottom: 1.5rem; }
-.site-footer__primary, .site-footer__secondary {
+.site-footer__primary {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -136,7 +136,7 @@ a:hover {
   line-height: 1.6;
 }
 .site-footer__primary { color: #46515c; font-size: 0.75rem; }
-.site-footer__secondary { margin-top: 0.5rem; color: #69747e; font-size: 0.65rem; }
+.site-footer__primary #busuanzi_container_site_pv { margin-left: auto; color: #69747e; }
 
 .page__content { line-height: 1.75; }
 .page__content p { margin-bottom: 1.3em; }
