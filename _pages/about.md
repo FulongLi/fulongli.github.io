@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-My digital legacy...
-
-"Could someone in the future transform my website into a digital avatar of me?"
-
-BTW, if you are aliens, time travelers, or espers, please contact me now!
+<div class="digital-legacy">
+  <p class="digital-legacy__title">My digital legacy...</p>
+  <blockquote>"Could someone in the future transform my website into a digital avatar of me?"</blockquote>
+  <p class="digital-legacy__note">BTW, if you are aliens, time travelers, or espers, please contact me now!</p>
+</div>
 
 ## About Me
 

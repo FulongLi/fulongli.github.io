@@ -6,18 +6,13 @@
    Visual skin: light sci-fi
    ========================================================================== */
 
-html {
-  background:
-    linear-gradient(rgba(0, 167, 181, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 167, 181, 0.045) 1px, transparent 1px),
-    #f8fbfb;
-  background-size: 42px 42px, 42px 42px, auto;
-}
+html { background: #fafbfc; }
 
 body {
-  background:
-    linear-gradient(115deg, rgba(255, 255, 255, 0.96), rgba(242, 250, 249, 0.92));
-  color: #2f383b;
+  background: #fafbfc;
+  color: #30363d;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  letter-spacing: 0;
 }
 
 a {
@@ -65,14 +60,15 @@ a:hover {
 
 .archive,
 .page {
-  border: 1px solid rgba(0, 141, 160, 0.12);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.78);
-  box-shadow: 0 18px 50px rgba(23, 56, 62, 0.06);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .archive {
-  padding: 1.25rem 1.4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .page__title {
@@ -86,13 +82,7 @@ a:hover {
 
 .page__content h2::before,
 .archive h2::before {
-  content: "";
-  display: inline-block;
-  width: 0.55rem;
-  height: 0.55rem;
-  margin-right: 0.45rem;
-  border: 1px solid #00a7b5;
-  transform: rotate(45deg);
+  content: none;
 }
 
 .sidebar {
@@ -113,6 +103,11 @@ a:hover {
 }
 
 .author__urls a {
+  display: flex;
+  align-items: center;
+  gap: 0.55em;
+  min-height: 2em;
+  line-height: 1.4;
   border-radius: 4px;
   transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
 }
@@ -121,7 +116,6 @@ a:hover {
   background: rgba(0, 167, 181, 0.08);
   color: #006d77;
   text-decoration: none;
-  transform: translateX(2px);
 }
 
 .page__footer {
@@ -129,8 +123,80 @@ a:hover {
   background: rgba(245, 250, 249, 0.78);
 }
 
-img {
+.page__content { line-height: 1.75; }
+.page__content p { margin-bottom: 1.3em; }
+.page__content h2, .archive h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.page__content hr { margin: 2rem 0; border-color: #e1e6eb; }
+.digital-legacy {
+  margin: 0.75rem 0 2.5rem;
+  padding: 1.5rem 0;
+  border-top: 2px solid #008da0;
+  border-bottom: 1px solid #dce3e8;
+}
+.digital-legacy .digital-legacy__title {
+  margin: 0 0 1rem;
+  color: #202b35;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.digital-legacy blockquote {
+  margin: 0 0 1rem;
+  padding: 0;
+  border: 0;
+  color: #46545f;
+  font-size: 1.1rem;
+  font-style: normal;
+  line-height: 1.65;
+}
+.digital-legacy .digital-legacy__note {
+  margin: 0;
+  color: #626b74;
+  font-size: 0.8rem;
+}
+.author__urls a > i, .author__urls a > svg {
+  flex: 0 0 1.28571429em;
+  width: 1.28571429em;
+  margin: 0;
+  text-align: center;
+}
+.author__urls li { white-space: normal; }
+.research-topics {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+}
+.research-topic { min-width: 0; }
+.research-topic img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin: 0 auto;
+  border: 1px solid #dce3e8;
   border-radius: 6px;
+}
+.research-topic h3 { margin: 1rem 0 0.75rem; font-size: 1rem; }
+.research-topic li { margin: 0.65rem 0; font-size: 0.8rem; line-height: 1.6; }
+.research-topic a { overflow-wrap: anywhere; text-underline-offset: 3px; }
+@media (min-width: 600px) {
+  .research-topics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 925px) {
+  .research-topics { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+  .author__urls { padding-top: 0.75rem; border-top: 1px solid #dce3e8; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .masthead__menu-item a::after, .author__urls a { transition: none; }
 }
 
 /*
