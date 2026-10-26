@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Sensing Devices"
+title: "Current Sensing"
 permalink: /research/sensing_devices/
 author_profile: true
 ---
@@ -22,6 +22,12 @@ My sensing work focuses on compact PCB-integrated current measurement for fast s
 ---
 
 ## PCB Rogowski Coil (PCB-RC)
+
+**Overview:** PCB-integrated current sensing for power electronics applications.
+
+**My contribution:** Worked on PCB Rogowski coil sensing; specific design, modelling, and testing responsibilities will be documented in the next project update.
+
+**Outcome / evidence:** The existing public repository is linked below. Project-specific performance and validation remain to be confirmed.
 
 PCB Rogowski coils are air-cored current sensors printed directly onto a PCB.
 
@@ -46,6 +52,12 @@ Full Details: [GitHub — PCB Rogowski Coil Design](https://github.com/FulongLi/
 
 ## Embedded-Core PCB Current Transformer (PCB-CT)
 
+**Overview:** PCB-integrated current sensing using an embedded magnetic core.
+
+**My contribution:** Worked on PCB embedded-core current transformer sensing; individual design and experimental responsibilities will be documented in the next project update.
+
+**Outcome / evidence:** The existing public repository is linked below. Project-specific performance and validation remain to be confirmed.
+
 PCB-CT integrates a **ferromagnetic core** into the PCB stack-up, forming a compact, isolated current transformer.
 
 **Key Features**
@@ -67,4 +79,6 @@ Full Details: [GitHub — PCB Current Transformer Design](https://github.com/Ful
 
 ---
 
-**Feel free to reach out** via [email](mailto:fulong.li@ieee.org).
+The technical considerations above describe the sensing methods; they are not measured specifications for these projects.
+
+[Back to Research](/research/) · **Feel free to reach out** via [email](mailto:fulong.li@ieee.org).

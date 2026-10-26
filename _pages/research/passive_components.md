@@ -30,4 +30,6 @@ Full Details: [GitHub — Inductor Design](https://github.com/FulongLi/Inductor_
 
 ---
 
-**Feel free to reach out** via [email](mailto:fulong.li@ieee.org).
+[Converter Design Optimisation](/research/converter_optimization/) covers passive component selection and loss–volume trade-offs.
+
+[Back to Research](/research/) · **Feel free to reach out** via [email](mailto:fulong.li@ieee.org).

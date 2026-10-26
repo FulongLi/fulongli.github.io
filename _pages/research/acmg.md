@@ -25,8 +25,8 @@ My interest in this area focuses on modelling, control, and system-level integra
 
 ## Research Streams
 
-I am still trying to build this page...
+This page retains AC microgrids as a related technical interest. Specific personal projects and contributions will be added only when confirmed; current project summaries are organised under [DC Microgrid Control](/research/dcmg/) and [Energy Management Systems](/research/ems/).
 
 ---
 
-**Feel free to reach out** via [email](mailto:fulong.li@ieee.org).
+[Back to Research](/research/) · **Feel free to reach out** via [email](mailto:fulong.li@ieee.org).

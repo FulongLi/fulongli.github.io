@@ -8,6 +8,12 @@ excerpt: "Multi-objective converter design and neural-network modelling, from a 
 
 ## Overview
 
+**Overview:** Multi-objective converter optimisation connecting semiconductor loss modelling, passive component selection, and loss–volume and efficiency trade-offs.
+
+**My contribution:** Developed a component-modelling and optimisation workflow through collaboration with Cardiff University, including AI-assisted modelling.
+
+**Outcome / evidence:** Calculated results, reproducibility resources, and model limitations are retained below. See also [AIPE](/research/aipe/) and [Semiconductor Device Modelling](/research/mosfet_ann_modelling/).
+
 Developed through my collaboration with **Cardiff University**, this project explores a practical design question: **how can a power converter become more compact without sacrificing efficiency?**
 
 The case study is a **single-phase buck-type voltage-source inverter**, using a nominal **1 kW, 430 V / 230 V** benchmark. The workflow connects component models, multi-objective optimisation, and a neural-network surrogate to support design decisions.

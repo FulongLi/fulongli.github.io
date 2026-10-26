@@ -7,32 +7,34 @@ author_profile: true
 
 ## Overview
 
-This section introduces the **topologies, modelling, and control** of both **DC–DC** and **AC–DC** converters used across power electronics applications.
-
-We start with **non-isolated converters** — simple but fundamental building blocks — then move into more advanced **bidirectional** and **AC interface** topologies.
+My non-isolated converter work connects converter-level control with earlier DC microgrid research, including bidirectional battery interfaces and Buck/Boost control.
 
 <img class="research-hero-image" src="/images/research/generated/non-isolated-converters.png" alt="Non-isolated converter technical illustration" />
 
-This topic covers practical converter design from circuit topology and modulation to closed-loop control and hardware implementation.
+## Bidirectional Half-Bridge Buck–Boost Converter
 
----
+**Overview:** Bidirectional DC–DC converter work originating from my earlier DC microgrid research.
 
-## Non-Isolated DC–DC Converters
+**My contribution:** Investigated converter control in the microgrid context; specific design and implementation responsibilities will be confirmed in a later update.
 
-Non-isolated converters provide direct voltage transformation without galvanic isolation. They are widely used due to simplicity, high efficiency, and compact design.
+**Related work:** [Battery converter control](/research/battery_storage/#converter-level-control) · [DC Microgrid Control](/research/dcmg/).
 
-| Topology | Description | GitHub Repo                                                                  |
-|----------|-------------|------------------------------------------------------------------------------|
-| **Buck** | Steps down input voltage to a lower output level. Common in point-of-load supplies and embedded systems. | [Buck Converter Repo](https://github.com/FulongLi/NonisolatedCoverters)            |
-| **Boost** | Steps up input voltage to a higher output level. Useful in LED drivers, renewable energy interfaces, and battery applications. | [Boost Converter Repo](https://github.com/FulongLi/NonisolatedCoverters)          |
+## Buck / Boost Converter Control
 
----
+**Overview:** Buck/Boost converter control supports source and storage interfaces in DC systems.
 
-## Bidirectional Boost Converter
+**My contribution:** Researched Boost converter stability control, as documented in the publication below; other Buck/Boost implementations will be described incrementally.
 
-Bidirectional converters are especially important for battery systems, DC microgrids, and applications that require controlled power flow in both directions.
+**Related publications:** [“Novel Passive Controller Design for Enhancing Boost Converter Stability in DC Microgrid Applications,” IEEE JESTPE 2021](https://ieeexplore.ieee.org/document/9391691).
 
---- 
+**GitHub / external resources:** [Buck and Boost converter resources](https://github.com/FulongLi/NonisolatedCoverters).
 
+## AC–DC Converter Interfaces
 
-**Feel free to reach out** via [email](mailto:fulong.li@ieee.org).
+**Overview:** A three-phase voltage source converter (VSC) formed part of the existing DC microgrid experimental platform I used during visiting research at Zhejiang University.
+
+**My contribution:** The VSC was equipment used in that research, not a converter I independently designed or manufactured.
+
+**Related work:** The primary platform description is under [Zhejiang University: 50 kW DC Microgrid Platform](/research/experimental_platforms/#zhejiang-university-50-kw-dc-microgrid-platform).
+
+[Back to Research](/research/)
