@@ -26,4 +26,3 @@ My wireless power transfer work spans two separate research experiences. Their t
 **Outcome / evidence:** Topology, measured performance, and resources remain to be confirmed.
 
 [Isolated DC–DC Converters](/research/isolated_converters/) · [Back to Research](/research/)
-

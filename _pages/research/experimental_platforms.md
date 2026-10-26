@@ -40,4 +40,3 @@ These platforms place my microgrid research in its laboratory context. The entri
 **My contribution:** Platform-specific instrumentation, software, and data-acquisition responsibilities will be documented in a later update.
 
 [DC Microgrid Control](/research/dcmg/) · [Back to Research](/research/)
-

@@ -22,4 +22,3 @@ author_profile: true
 **Outcome / evidence:** See the linked control work and [experimental platforms](/research/experimental_platforms/); project-specific implementation details will be added later.
 
 [Battery Energy Storage Systems](/research/battery_storage/) · [Back to Research](/research/)
-

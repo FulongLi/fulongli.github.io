@@ -39,4 +39,3 @@ author_profile: true
 The [Energy Management Systems](/research/ems/#battery-energy-scheduling-and-optimisation) page cross-links this project as part of system-level scheduling.
 
 [Experimental Platforms](/research/experimental_platforms/) · [Back to Research](/research/)
-

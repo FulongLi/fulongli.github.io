@@ -41,4 +41,3 @@ AIPE is the entry point for my AI-assisted power engineering work. Project descr
 - [Frontiers: Open Research](https://aipel.co.uk/frontiers/)
 
 [Back to Research](/research/)
-
