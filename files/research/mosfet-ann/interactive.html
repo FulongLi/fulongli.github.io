@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MOSFET ANN — interactive conduction characteristics</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 12px; background: #fafbfc; color: #30363d; font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+    .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+    select, button { padding: 8px 10px; border: 1px solid #b8c8cf; border-radius: 4px; background: white; color: #243b44; font: inherit; min-height: 40px; }
+    button { cursor: pointer; }
+    button:hover { background: #eaf5f6; }
+    :focus-visible { outline: 2px solid #008da0; outline-offset: 2px; }
+    .hint { margin: 10px 0 0; color: #53616c; font-size: 12px; }
+    #plot { width: 100%; height: 440px; }
+    #status { margin: 0; font-size: 12px; }
+    #error { color: #8b3024; }
+    a { color: #007c8c; }
+    @media (max-width: 480px) { body { padding: 8px; } #plot { height: 380px; } }
+  </style>
+  <script defer src="plotly.min.js"></script>
+  <script defer src="interactive.js"></script>
+</head>
+<body>
+  <div class="controls">
+    <label for="branch">Characteristic</label>
+    <select id="branch">
+      <option value="conduction_mosfet">MOSFET channel</option>
+      <option value="conduction_diode">Body diode</option>
+    </select>
+    <label><input id="points" type="checkbox" checked> Reference points</label>
+    <button id="reset" type="button">Reset view</button>
+    <button id="rotate" type="button" aria-label="Rotate the 3D view left">Rotate left</button>
+    <button id="zoom-in" type="button" aria-label="Zoom in on the 3D view">+</button>
+    <button id="zoom-out" type="button" aria-label="Zoom out of the 3D view">−</button>
+  </div>
+  <p class="hint">Drag to rotate; scroll or pinch to zoom. Surface: ANN prediction. Grey: training references. Orange: held-out references.</p>
+  <div id="plot" role="img" aria-label="Interactive 3D ANN voltage surface against current and temperature, with reference table points."></div>
+  <p id="status" role="status">Loading results…</p>
+  <p id="error" hidden>Interactive graphics could not load. <a href="held-out-validation.png">View the validation chart</a> or <a href="test-predictions.csv">download the test results</a>.</p>
+  <noscript><p>JavaScript is required for the 3D view. <a href="test-predictions.csv">Download the numerical results instead.</a></p></noscript>
+</body>
+</html>

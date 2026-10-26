@@ -31,6 +31,7 @@ author_profile: true
     <h3> Components</h3>
   </div>
   <ul class="research-topic__projects">
+    <li><a href="/research/mosfet_ann_modelling/">MOSFET ANN Modelling</a></li>
     <li><a href="/research/switching_devices/">Switching Devices (IGBT, SiC, GaN)</a></li>
     <li><a href="/research/passive_components/">Passive Components (Magnetics)</a></li>
     <li><a href="/research/sensing_devices/">Sensing Devices</a></li>
