@@ -1,12 +1,22 @@
 ---
 layout: single
-title: "MOSFET ANN Modelling"
+title: "Semiconductor Device Modelling"
 permalink: /research/mosfet_ann_modelling/
 author_profile: true
 excerpt: "Temperature-dependent MOSFET characteristics modelled with neural networks, with interactive 3D results."
 ---
 
 ## Overview
+
+This category brings together ANN-based SiC MOSFET modelling, IGBT characterisation datasets, and data-driven device modelling. The detailed public model below remains the primary ANN project description.
+
+## ANN-Based SiC MOSFET Modelling
+
+**Overview:** Data-driven semiconductor device models for power-electronics design.
+
+**My contribution:** Developed neural-network device-modelling workflows through the collaboration described below.
+
+**Outcome / evidence:** The public example, test results, reproducibility resources, and limitations are preserved on this page.
 
 This project grew out of my collaboration with **Cardiff University** and **Sumitomo Heavy Industries, Japan**. It uses artificial neural networks to turn tabulated device characteristics into continuous models for power-electronics design.
 
@@ -50,5 +60,19 @@ The full training workflow was rerun on **26 October 2026**. Static conduction w
 ## Project Resources
 
 [View the project on GitHub](https://github.com/FulongLi/AIPE-MOSFET-ANN-Modelling) · [Back to Research](/research/)
+
+## IGBT Characterisation Datasets
+
+**Overview:** IGBT characterisation datasets form a separate strand of device-modelling work.
+
+**My contribution:** Dataset collection, curation, and modelling responsibilities require confirmation.
+
+**Outcome / evidence:** Dataset scope and public availability will be confirmed before any new dataset or repository is linked.
+
+## Data-Driven Device Modelling
+
+The ANN project above documents the current public modelling workflow. Related [device characterisation and existing modelling resources](/research/switching_devices/) supply engineering context; [Converter Design Optimisation](/research/converter_optimization/) covers component selection and loss–volume trade-offs.
+
+[AIPE](/research/aipe/) · [Back to Research](/research/)
 
 <!-- Add laboratory setup, measurement and temperature-rise photographs here when supplied, with device and test-condition captions. -->

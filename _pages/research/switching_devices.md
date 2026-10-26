@@ -1,11 +1,19 @@
 ---
 layout: single
-title: "Switching Devices"
+title: "Power Device Characterisation"
 permalink: /research/switching_devices/
 author_profile: true
 ---
 
 ## Overview
+
+**Overview:** My device characterisation work covers Double Pulse Testing (DPT), switching characteristics and loss measurements, and thermal impedance measurement for IGBT and SiC/GaN devices.
+
+**My contribution:** Worked on electrical and thermal device characterisation; specific automation, measurement, and analysis responsibilities will be confirmed in later project updates.
+
+**Outcome / evidence:** Existing DPT and thermal-impedance automation resources are retained below.
+
+Reliability testing is organised separately under [Power Device Reliability Testing](/research/reliability_testing/). For data-driven models and IGBT datasets, see [Semiconductor Device Modelling](/research/mosfet_ann_modelling/).
 
 Switching devices are the cornerstone of modern power electronics. They determine the performance, efficiency, and compactness of power conversion systems. Key technologies include:
 
@@ -76,7 +84,7 @@ Full Details: [Github: Transistor-MOSFETLibraryANN](https://github.com/FulongLi/
 ---
 
 
-## Integration into Converter Optimisaiton Design
+## Integration into Converter Optimisation Design
 
 - Plug ANN models into buck, DAB, LLC design flows to get instant loss/thermal estimates, enabling multi-objective optimisation (efficiency, mass, cost)  
 
@@ -84,4 +92,4 @@ Full Details: [Github: Converter Optimisaiton Design](https://github.com/FulongL
 
 ---
 
-**Feel free to reach out** via [email](mailto:fulong.li@ieee.org).
+[Converter Design Optimisation](/research/converter_optimization/) · [Back to Research](/research/) · **Feel free to reach out** via [email](mailto:fulong.li@ieee.org).
