@@ -72,7 +72,7 @@ My work connects power-electronic components, converter design, and microgrid co
     <li><a href="/research/ems/">Energy Management Systems</a></li>
     <li><a href="/research/dc_safety/">DC Safety &amp; Protection</a></li>
     <li><a href="/research/acmg/">Related Topic: AC Microgrids</a></li>
-    <li><a href="/research/mgapp/">Application: 3 MW Marine Fuel-Cell Hybrid Powertrain</a></li>
+    <li><a href="/research/mgapp/">Application: 3 MW Marine Powertrain &amp; SinO-OFH Thermal Evaluation</a></li>
   </ul>
 </div>
 
