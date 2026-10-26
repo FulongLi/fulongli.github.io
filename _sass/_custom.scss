@@ -188,22 +188,11 @@ a:hover {
   margin: 1.5rem 0 2rem;
   text-align: center;
 }
-.research-intro { max-width: 65ch; color: #46545f; line-height: 1.8; }
-.research-topic {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  padding: 1.25rem;
-  border: 1px solid #dce3e8;
-  border-radius: 8px;
-  background: #fff;
-  text-align: left;
-}
-.research-topic p { margin: 0 0 1rem; color: #46545f; font-size: 0.8rem; line-height: 1.75; }
-.research-topic ul { margin: auto 0 0; }
+.research-topic { min-width: 0; }
 .research-topic img {
   display: block;
   width: 100%;
+  max-width: 240px;
   height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
@@ -214,25 +203,6 @@ a:hover {
 .research-topic h3 { margin: 1rem 0 0.75rem; font-size: 1rem; }
 .research-topic li { margin: 0.65rem 0; font-size: 0.8rem; line-height: 1.6; }
 .research-topic a { overflow-wrap: anywhere; text-underline-offset: 3px; }
-.research-aipe {
-  grid-column: 1 / -1;
-  padding: 1.5rem;
-  border: 1px solid #bcdde0;
-  border-left: 4px solid #008da0;
-  border-radius: 8px;
-  background: #f0f8f9;
-  text-align: left;
-}
-.research-aipe p { font-size: 0.85rem; line-height: 1.8; }
-.research-aipe .research-aipe__eyebrow { margin: 0 0 0.5rem; color: #006d77; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
-.research-aipe h3 { margin: 0 0 1rem; font-size: 1.2rem; }
-.research-aipe__links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
-.research-aipe__links a { display: inline-block; padding: 0.5rem 0; font-size: 0.8rem; font-weight: 600; text-underline-offset: 3px; }
-.research-publication { padding: 0.25rem 0 0.25rem 1rem; border-left: 3px solid #008da0; }
-.research-publication .research-publication__meta { margin: 0 0 0.5rem; color: #626b74; font-size: 0.75rem; }
-.research-publication h3 { margin: 0 0 0.75rem; font-size: 1rem; line-height: 1.6; }
-.research-publication p, .research-publication > a { font-size: 0.8rem; line-height: 1.75; }
-.research-topic a:focus-visible, .research-aipe a:focus-visible, .research-publication a:focus-visible { outline: 2px solid #006d77; outline-offset: 4px; }
 @media (min-width: 600px) {
   .research-topics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
