@@ -5,6 +5,10 @@ layout: single
 author_profile: true
 ---
 
+## 2026
+
+1. T. Jin, Z. Feng, J. Liang, R. Navaratne, **F. Li**, and S. Wang: ["Explainable Multi-Objective Optimization for Data-Driven Design: Application to Power Converters"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7021149). *SSRN Electronic Journal*, Jul. 2026.
+
 ## 2022
 
 1. **F. Li**, Z. Lin, H. Xu, F. Wang: ["Comprehensive local control design for eliminating line resistance effect on power sharing degradation in DC microgrids"](https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/pel2.12208). *IET Power Electronics*, 15(11), 2022.
