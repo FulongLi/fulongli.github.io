@@ -1,0 +1,85 @@
+{
+  "source": "https://github.com/FulongLi/AIPE-Converter-Optimisation-Agent",
+  "revision": "3b682989b7072bbd42497c5432f2df246786a508",
+  "parameters": {
+    "num_switches_per_leg": 2,
+    "min_sws": 1,
+    "max_sws": 2,
+    "vge_switch": 900,
+    "h": 0.02879,
+    "rthja_ref": 150.0,
+    "rdson_area_swref": 9.348e-06,
+    "cossref_over_area": 8.9912e-07,
+    "qgref_over_area": 0.0002193,
+    "qrrref_over_area": 0.0011,
+    "alpha_val": 0.003636364,
+    "area_swref": 4.56e-05,
+    "ton_toff": 5.93e-09,
+    "toff_ton": 3.42e-10,
+    "frd_vge": 0.8,
+    "volume_resistance": 80.0,
+    "r_theta_sa": 0.1,
+    "in_vge": 430.0,
+    "out_vge": 230.0,
+    "out_ct": 4.35,
+    "amb_temp": 25.0,
+    "max_jn_temp": 100.0,
+    "out_rp": 0.0158,
+    "vf": 1.2,
+    "min_rp": 10.0,
+    "max_rp": 50.0,
+    "min_frp": 50000.0,
+    "max_frp": 300000.0,
+    "vge_gs": 18.0,
+    "pind1_loss": 0.02401,
+    "pind2_loss": 6.381e-10,
+    "pind3_loss_coeff": 0.002242,
+    "pind_coe1": 0.1302,
+    "pind_coe2": 0.06675,
+    "pind_coe3": 0.2853,
+    "pind_coe4": 2.774,
+    "indct_loss_max": 0.5,
+    "tan_del": 0.02,
+    "r_geom": 0.244375,
+    "p_out_nominal": 1000.0,
+    "include_heat_sink_volume": false
+  },
+  "python": "3.12.14",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "solver_success_count": 21,
+  "selected_row_indices": [
+    0,
+    10,
+    20
+  ],
+  "conventions": {
+    "efficiency_pct": "100 * (1000 - total_loss_W) / 1000; upstream reporting convention",
+    "power_density_kw_per_l": "(1000 - total_loss_W) / 1000 / (total_volume_m3 * 1000)",
+    "volume": "Sum of modelled switches, inductors and capacitors; heat sink excluded"
+  },
+  "limitations": [
+    "Python reimplementation with calibrated component volumes, not original MATLAB or hardware results.",
+    "SLSQP uses the upstream unscaled variables and warm starts; frequency stays near 175 kHz.",
+    "Junction-temperature rise is an independent bounded input, not a coupled thermal solution.",
+    "Solver success does not certify a global optimum or a globally Pareto-optimal front."
+  ],
+  "run_date": "2026-10-26",
+  "upstream_tests_passed": 2,
+  "ann": {
+    "training_rows": 21,
+    "hidden_layers": [
+      15,
+      12,
+      10
+    ],
+    "random_state": 42,
+    "training_completed": true,
+    "finite_predictions": true,
+    "independent_validation": false,
+    "note": "Training pipeline check only; no generalisation or speed claim."
+  }
+}
