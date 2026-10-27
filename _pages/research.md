@@ -88,7 +88,7 @@ My work connects power-electronic components, converter design, and microgrid co
     <li>
       <a href="/research/nonisolated_converters/">Non-Isolated DC–DC Converters</a>
       <ul>
-        <li><a href="/research/nonisolated_converters/#bidirectional-buck-boost-converter">Bidirectional Buck–Boost Converter</a></li>
+        <li><a href="/research/nonisolated-converters/bidirectional-buck-boost/">Bidirectional Buck–Boost Converter</a></li>
       </ul>
     </li>
     <li><a href="/research/nonisolated_converters/#acdc-converter-interfaces">AC–DC Converter Interfaces</a></li>
@@ -115,7 +115,14 @@ My work connects power-electronic components, converter design, and microgrid co
         <li><a href="/research/dcmg/rule-based-ems/">Rule-Based EMS</a></li>
       </ul>
     </li>
-    <li><a href="/research/experimental_platforms/">Experimental Platforms</a></li>
+    <li>
+      <a href="/research/experimental_platforms/">Experimental Platforms</a>
+      <ul>
+        <li><a href="/research/experimental-platforms/aston/">Aston University DC Microgrid</a></li>
+        <li><a href="/research/experimental-platforms/loughborough/">Loughborough University DC Microgrid</a></li>
+        <li><a href="/research/experimental-platforms/zhejiang/">Zhejiang University 50 kW DC Microgrid</a></li>
+      </ul>
+    </li>
     <li>
       <a href="/research/mgapp/">Microgrid Energy Management</a>
       <ul>

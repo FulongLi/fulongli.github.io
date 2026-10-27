@@ -5,18 +5,18 @@ permalink: /research/experimental_platforms/
 author_profile: true
 ---
 
-Experimental platforms connect converter-control ideas to source, storage and load behaviour. My work spans laboratory-scale DC microgrids and visiting research on a larger existing testbed.
+Experimental platforms bring converter control, energy storage and system operation together. I built low-voltage DC microgrid testbeds at Aston and Loughborough and also worked with an existing larger platform during visiting research at Zhejiang University.
 
 ## Aston University: Modular DC Microgrid Testbed
 
-The approximately **500 W-per-module** PhD testbed supported passive-control and bus-signalling experiments, battery coordination and planned grid/island transitions. The [DC microgrid study](/research/dcmg/) presents the framework and representative results; the [PhD thesis](https://publications.aston.ac.uk/id/eprint/46135/) documents the platform.
+A laboratory microgrid with a PV emulator, two battery banks and a grid emulator, connected through four interface converters. The PhD testbed used **250 W-rated interface converters**. [Explore the Aston platform](/research/experimental-platforms/aston/).
+
+## Loughborough University: Low-Voltage DC Microgrid
+
+A modular test bench developed through successive interface-converter prototypes, including a **500 W-per-converter** second version. [Explore the Loughborough platform](/research/experimental-platforms/loughborough/).
 
 ## Zhejiang University: 50 kW DC Microgrid Platform
 
-During visiting research at Zhejiang University, I used an existing **50 kW DC microgrid platform**, including its three-phase voltage-source converter interface. This experience forms part of the experimental context for my microgrid work.
-
-## Loughborough University: Plug-and-Play Low-Voltage DC Microgrid
-
-The Loughborough research context connects to my work on [modular plug-and-play battery storage control](/research/battery_storage/#battery-power-sharing-and-plug-and-play-storage).
+During visiting research I used an existing **50 kW DC microgrid platform**, including its three-phase voltage-source converter interface. [Platform overview](/research/experimental-platforms/zhejiang/).
 
 [DC Microgrid Control Strategies](/research/dcmg/) · [Back to Research](/research/)
