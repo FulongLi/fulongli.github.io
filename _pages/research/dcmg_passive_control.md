@@ -16,7 +16,7 @@ A Boost converter's voltage-control plant contains a right-half-plane zero: a du
 
 My thesis develops a passive stabiliser from an averaged converter model. The analysis first identifies the non-passive part of the outer-loop plant, then adds a feedforward path, and finally filters that path to preserve the steady operating point. The equations below follow Chapter 5, with the thesis's idealised component assumptions.
 
-<h2 id="passivity">Passivity as an Energy and Frequency-Domain Criterion</h2>
+<h2 id="passivity">Passivity Criteria</h2>
 
 A passive system cannot deliver more energy than it receives plus its initially stored energy. For input <i>u</i>, output <i>y</i>, stored energy <i>H</i> and dissipated energy ε, the thesis writes the energy balance as:
 
@@ -54,7 +54,7 @@ The current-sampling gain is <i>R</i><sub>f</sub>, <i>R</i> is the equivalent lo
 
 <div class="math-display">\[\alpha=\frac{D'R}{2R_f},\qquad \beta=\frac{L}{D'^2R},\qquad \gamma=\frac{RC}{2},\qquad G_{vc}(s)\approx\alpha\frac{1-s\beta}{1+s\gamma}.\]</div>
 
-<h2 id="positive-real-analysis">Where the Uncompensated Plant Becomes Non-Passive</h2>
+<h2 id="positive-real-analysis">Uncompensated Plant</h2>
 
 Substituting <i>s</i> = jω separates the real part of the plant response:
 
@@ -63,6 +63,13 @@ Substituting <i>s</i> = jω separates the real part of the plant response:
 The denominator is positive. The numerator becomes negative above the crossing frequency, so the plant no longer satisfies the positive-real condition in that region. The crossing and the high-frequency limit are:
 
 <div class="math-display">\[\omega_N=\frac{1}{\sqrt{\beta\gamma}},\qquad f_N=\frac{1}{2\pi}\sqrt{\frac{2D'^2}{LC}},\qquad \lim_{\omega\to\infty}G_{vc}(j\omega)=-\frac{\alpha\beta}{\gamma}.\]</div>
+
+<figure class="project-blueprint">
+  <a href="/images/research/dc-microgrid-control/nyquist-stages.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/nyquist-stages.png" alt="Three Nyquist sketches: uncompensated Boost plant, constant feedforward gain, and high-pass-filtered feedforward gain" width="1860" height="459" loading="lazy"></a>
+  <figcaption>Nyquist evolution during passivation.</figcaption>
+</figure>
+
+From left to right, the sketches show the uncompensated plant entering the negative-real region, constant gain shifting the whole locus to the right, and filtered gain moving the high-frequency end while retaining the low-frequency endpoint. The colours in the latter two sketches indicate increasing gain. These are conceptual sketches of the plant response, not closed-loop stability plots.
 
 <h2 id="constant-feedforward">First Iteration: Constant Feedforward</h2>
 
@@ -92,6 +99,13 @@ The filtered plant approaches α at DC and the gain <i>K</i> minus the magnitude
 The thesis uses the high-frequency compensation requirement and places the filter corner below the frequency at which the uncompensated plant enters the negative real region:
 
 <div class="math-display">\[K\ge\frac{\alpha\beta}{\gamma},\qquad 0<\delta<\omega_N.\]</div>
+
+<figure class="project-blueprint">
+  <a href="/images/research/dc-microgrid-control/nyquist-comparison.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/nyquist-comparison.png" alt="Numerical Nyquist plots comparing constant gain and high-pass-filtered gain for increasing compensation" width="1995" height="810" loading="lazy"></a>
+  <figcaption>Constant and filtered gain: numerical Nyquist comparison.</figcaption>
+</figure>
+
+For the thesis's example parameters, the numerical curves show the same distinction: constant gain shifts both real-axis endpoints, while filtered gain leaves the low-frequency endpoint unchanged as the gain increases. The curves illustrate the particular model and parameter choices; positive realness must be checked across the relevant frequency range.
 
 These endpoint and corner-frequency choices guide the design; the real part over the complete frequency range and the closed-loop margins still need checking for the chosen values and operating conditions.
 

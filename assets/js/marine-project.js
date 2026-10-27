@@ -20,14 +20,14 @@
     framePending = false;
     var offset = headerOffset() + 24;
     var mainRect = main.getBoundingClientRect();
-    var left = article.getBoundingClientRect().right + 24;
-    var right = Math.min(mainRect.right - parseFloat(getComputedStyle(main).paddingRight), document.documentElement.clientWidth - 24);
+    var left = article.getBoundingClientRect().right + 12;
+    var right = document.documentElement.clientWidth - 8;
     var width = right - left;
     var sidebar = desktop.matches && width >= 160;
     contents.classList.toggle('is-sidebar', sidebar);
     if (sidebar) {
       contents.style.setProperty('--contents-left', left + 'px');
-      contents.style.setProperty('--contents-width', Math.min(width, 240) + 'px');
+      contents.style.setProperty('--contents-width', width + 'px');
       contents.style.setProperty('--contents-top', offset + 'px');
       // Stop alongside the end of the article instead of covering the footer.
       var top = Math.min(offset, mainRect.bottom - contents.getBoundingClientRect().height - 24);
