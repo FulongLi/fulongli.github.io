@@ -1,95 +1,31 @@
 ---
 layout: single
-title: "Power Device Characterisation"
+title: "Power Device Characterization"
 permalink: /research/switching_devices/
 author_profile: true
+excerpt: "Electrical and thermal characterization of power devices: laboratory equipment, double-pulse testing, and thermal resistance measurements."
 ---
 
 ## Overview
 
-**Overview:** My device characterisation work covers Double Pulse Testing (DPT), switching characteristics and loss measurements, and thermal impedance measurement for IGBT and SiC/GaN devices.
+My power-device characterization work centres on laboratory measurement: configuring the equipment, establishing the test conditions and turning recorded signals into useful device data. It covers electrical switching behaviour and the thermal path between the semiconductor junction and its cooling arrangement.
 
-**My contribution:** Worked on electrical and thermal device characterisation; specific automation, measurement, and analysis responsibilities will be confirmed in later project updates.
+For the **Siemens project**, I worked with a colleague to build the double-pulse test platform and modify the original test board. We used this setup to characterize switching behaviour under different electrical and temperature conditions. The related thermal work focuses on operating the thermal-characterization equipment, calibrating temperature-sensitive electrical parameters and measuring device thermal resistance.
 
-**Outcome / evidence:** Existing DPT and thermal-impedance automation resources are retained below.
+<h2 id="electrical-characterization">Electrical Characterization</h2>
 
-Reliability testing is organised separately under [Power Device Reliability Testing](/research/reliability_testing/). For data-driven models and IGBT datasets, see [Semiconductor Device Modelling](/research/mosfet_ann_modelling/).
+**Double-pulse testing (DPT)** measures switching transients and event energies. This work includes the jointly built test platform, board modifications, probe configuration and waveform post-processing. Static **I–V and C–V measurements** with the Keysight B1505A provide complementary device characteristics.
 
-Switching devices are the cornerstone of modern power electronics. They determine the performance, efficiency, and compactness of power conversion systems. Key technologies include:
+[Explore Electrical Characterization: test equipment, DPT platform and switching results](/research/electrical-characterization/)
 
-- IGBTs for medium- to high-voltage applications  
-- SiC MOSFETs for high-efficiency, high-frequency systems  
-- GaN HEMTs for ultra-fast switching and compact converter designs
+<h2 id="thermal-characterization">Thermal Characterization</h2>
 
-<img class="research-hero-image" src="/images/research/generated/switching-devices.png" alt="Switching devices technical illustration" />
+**Thermal resistance and transient thermal impedance measurements** connect device power dissipation to junction-temperature rise. The workflow uses the PWT2400 power tester, T3STER measurement and analysis system, and a temperature-controlled cooling circuit, followed by comparison of dry and greased interfaces and extraction of thermal networks.
 
-My work in this area connects device characterisation, loss modelling, thermal behaviour, and converter-level optimisation for wide-bandgap power electronics.
+[Explore Thermal Characterization: equipment, calibration and thermal resistance testing](/research/thermal-characterization/)
 
----
+## Related Research
 
-## Device Comparison
+The measured characteristics provide inputs to [Semiconductor Device Modelling](/research/mosfet_ann_modelling/) and [Converter Design Optimisation](/research/converter_optimization/). [Power Device Reliability Testing](/research/reliability_testing/) is a separate area of work.
 
-| Device Type | Switching Speed | Voltage Rating | Efficiency | Typical Use Case |
-|-------------|------------------|----------------|------------|------------------|
-| IGBT        | Medium           | 600–1700 V     | Moderate   | Inverters, motor drives |
-| SiC MOSFET  | High             | 650–3300 V     | High       | EV traction, DC–DC, PV |
-| GaN HEMT    | Very High        | 100–650 V      | Very High  | Fast chargers, telecom, server PSU |
-
----
-
-## Testing and Measurement
-
-### 1. Electrical Characterisation
-
-- Double-Pulse Test (DPT) for switching loss (E_on, E_off, E_rec)  
-
-Full Details: [Github - DPT Automation](https://github.com/FulongLi/DPT_Automation)
-
-
-- Conduction loss from I–V/R_DS(on)/V_CE(sat) vs T_j curves  
-
-
-### 2. Thermal Characterisation
-- Thermal impedance Z_th extraction (TO-247-3 Package) 
-
-Full Details: [Github - TIM Automation](https://github.com/FulongLi/TIM_Automation)
-
-- Cauer/Foster network fitting for transient thermal simulation  
-
-- Layout/gate-loop parasitics and dead-time impacts on junction heating
-
-
----
-
-## Electrical Modelling
-
-To accelerate converter design and optimisation, we develop neural-network models that predict device losses and dynamics directly from operating conditions.
-
-### 1. Static Modelling — using ANN
-Goal: Predict losses across operating points without exhaustive interpolation of datasheet curves.
-
-### 2. Dynamic Modelling (Switching) — using ANN
-
-## Thermal Modelling
-
-### 1. Static Modelling
-
-
-### 2. Dynamic Modelling
-
-
-
-Full Details: [Github: Transistor-MOSFETLibraryANN](https://github.com/FulongLi/Transistor-MOSFETLibraryANN)
-
----
-
-
-## Integration into Converter Optimisation Design
-
-- Plug ANN models into buck, DAB, LLC design flows to get instant loss/thermal estimates, enabling multi-objective optimisation (efficiency, mass, cost)  
-
-Full Details: [Github: Converter Optimisaiton Design](https://github.com/FulongLi/BuckConverterOptimisation)
-
----
-
-[Converter Design Optimisation](/research/converter_optimization/) · [Back to Research](/research/) · **Feel free to reach out** via [email](mailto:fulong.li@ieee.org).
+[Back to Research](/research/)

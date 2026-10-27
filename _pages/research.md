@@ -35,7 +35,13 @@ My work connects power-electronic components, converter design, and microgrid co
   </div>
   <ul class="research-topic__projects">
     <li><a href="/research/sensing_devices/">Current Sensing</a></li>
-    <li><a href="/research/switching_devices/">Power Device Characterisation</a></li>
+    <li>
+      <a href="/research/switching_devices/">Power Device Characterization</a>
+      <ul>
+        <li><a href="/research/electrical-characterization/">Electrical Characterization</a></li>
+        <li><a href="/research/thermal-characterization/">Thermal Characterization</a></li>
+      </ul>
+    </li>
     <li><a href="/research/reliability_testing/">Power Device Reliability Testing</a></li>
     <li><a href="/research/mosfet_ann_modelling/">Semiconductor Device Modelling</a></li>
     <li><a href="/research/passive_components/">Supporting Work: Passive Components (Magnetics)</a></li>
