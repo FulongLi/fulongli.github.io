@@ -94,4 +94,4 @@ My related work examines bus-voltage variation, line-resistance effects and curr
 
 Figures are reproduced from my thesis with their original colours and proportions; captions identify the source figure and page.
 
-[All publications](/publications/) · [PV Systems](/research/pv_systems/) · [Experimental Platforms](/research/experimental_platforms/) · [Microgrid Energy Management](/research/mgapp/) · [DC Safety & Protection](/research/dc_safety/) · [Back to Research](/research/)
+[All publications](/publications/) · [PV Battery System](/research/pv_systems/) · [Experimental Platforms](/research/experimental_platforms/) · [Microgrid Energy Management](/research/mgapp/) · [DC Safety & Protection](/research/dc_safety/) · [Back to Research](/research/)

@@ -1,0 +1,189 @@
+{
+  "source": "F. Li, M. Alshareef, Z. Lin and W. Jiang, A modified MPPT algorithm with integrated active power control for PV-battery systems, IEEE ICRERA, 2016, pp. 742-746.",
+  "publication_url": "https://ieeexplore.ieee.org/document/7884432",
+  "source_filename": "A_modified_MPPT_algorithm_with_integrated_active_power_control_for_PV-battery_systems.pdf",
+  "source_sha256": "859fc0e93dfb0b0119ffa975678b5dab767b5899222d9dabe45ca954ccc85d22",
+  "extraction": "Original PDF figure regions rendered at 252 dpi, with source colours, annotations and aspect ratios preserved. No data redrawn.",
+  "figures": [
+    {
+      "file": "system-architecture.png",
+      "figure": 1,
+      "pdf_page": 2,
+      "printed_page": 743,
+      "crop_pdf_points": [
+        86,
+        96,
+        272,
+        202
+      ],
+      "width": 651,
+      "height": 371,
+      "sha256": "5e15ca12afc0167cacc0ef297fa897b431a978e2f3e2e9865248fff7d79e472a"
+    },
+    {
+      "file": "battery-charging-stages.png",
+      "figure": 2,
+      "pdf_page": 2,
+      "printed_page": 743,
+      "crop_pdf_points": [
+        77,
+        278,
+        279,
+        396
+      ],
+      "width": 708,
+      "height": 413,
+      "sha256": "365734963000c4ec31b04f0e8e6caff0ebb7a302706839249fe54030304075d4"
+    },
+    {
+      "file": "modified-mppt-flowchart.png",
+      "figure": 3,
+      "pdf_page": 2,
+      "printed_page": 743,
+      "crop_pdf_points": [
+        362,
+        329,
+        509,
+        557
+      ],
+      "width": 515,
+      "height": 799,
+      "sha256": "b757ec29c2ab7ecfeafe3e137a6de1051984aaadca8b010ce7d4121b6d64f7ce"
+    },
+    {
+      "file": "two-operating-points.png",
+      "figure": 4,
+      "pdf_page": 3,
+      "printed_page": 744,
+      "crop_pdf_points": [
+        64,
+        150,
+        287,
+        291
+      ],
+      "width": 781,
+      "height": 494,
+      "sha256": "e490dbcef4c0f55a1fa1cfa2583165639cadf7474a6108d3e9fbfcd9ccaa265a"
+    },
+    {
+      "file": "left-operating-point-waveforms.png",
+      "figure": 5,
+      "pdf_page": 3,
+      "printed_page": 744,
+      "crop_pdf_points": [
+        346,
+        50,
+        521,
+        333
+      ],
+      "width": 613,
+      "height": 991,
+      "sha256": "219cb8ec3554241455932531c65426ed14537e4736248ddb5d023587fe90b2eb"
+    },
+    {
+      "file": "left-operating-point-pv-curve.png",
+      "figure": 6,
+      "pdf_page": 3,
+      "printed_page": 744,
+      "crop_pdf_points": [
+        345,
+        346,
+        521,
+        520
+      ],
+      "width": 617,
+      "height": 609,
+      "sha256": "cf5e15dc7baf688aad0c75edc4abe9f15ff28058fd592e2099e40ddf33d1f2d8"
+    },
+    {
+      "file": "right-operating-point-waveforms.png",
+      "figure": 7,
+      "pdf_page": 4,
+      "printed_page": 745,
+      "crop_pdf_points": [
+        92,
+        50,
+        266,
+        334
+      ],
+      "width": 609,
+      "height": 994,
+      "sha256": "441f19f9909e0285283a044a1c598b091677c2075b907a344587d71821b62e7a"
+    },
+    {
+      "file": "right-operating-point-pv-curve.png",
+      "figure": 8,
+      "pdf_page": 4,
+      "printed_page": 745,
+      "crop_pdf_points": [
+        91,
+        346,
+        267,
+        521
+      ],
+      "width": 617,
+      "height": 613,
+      "sha256": "7c4b8778e46406e4b12cbbca37b00e2a37056fb2bb8853d23e9c7c7a42f2f057"
+    },
+    {
+      "file": "fast-irradiance-left.png",
+      "figure": 9,
+      "pdf_page": 4,
+      "printed_page": 745,
+      "crop_pdf_points": [
+        353,
+        50,
+        513,
+        334
+      ],
+      "width": 561,
+      "height": 994,
+      "sha256": "021f5e96d0a966a3d990783fcaa3e4fbc78257e033a6a3539e2d8eb647ac5da4"
+    },
+    {
+      "file": "fast-irradiance-right.png",
+      "figure": 10,
+      "pdf_page": 4,
+      "printed_page": 745,
+      "crop_pdf_points": [
+        353,
+        346,
+        513,
+        630
+      ],
+      "width": 561,
+      "height": 994,
+      "sha256": "f27d2cb62816994a8c85ba6c82977b75cb72f0c091f66de45e6d9f6ab3717690"
+    },
+    {
+      "file": "slow-irradiance-left.png",
+      "figure": 11,
+      "pdf_page": 5,
+      "printed_page": 746,
+      "crop_pdf_points": [
+        99,
+        50,
+        260,
+        333
+      ],
+      "width": 564,
+      "height": 991,
+      "sha256": "e529f2e1ab25aaf84c59d430b28543da8c3573fe6b76e39ca97bfec8d8cbebe6"
+    },
+    {
+      "file": "dynamic-response-comparison.png",
+      "figure": 12,
+      "pdf_page": 5,
+      "printed_page": 746,
+      "crop_pdf_points": [
+        98,
+        342,
+        261,
+        483
+      ],
+      "width": 571,
+      "height": 494,
+      "sha256": "dda4fd823ea8a836bd272874a881f62b77b9d67605d5acd276097154e6928b82"
+    }
+  ]
+}
