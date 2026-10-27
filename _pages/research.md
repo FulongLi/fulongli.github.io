@@ -68,7 +68,6 @@ My work connects power-electronic components, converter design, and microgrid co
         <li><a href="/research/semiconductor-device-modelling/static-ann/">SiC Power Devices — Static ANN Modelling</a></li>
       </ul>
     </li>
-    <li><a href="/research/passive_components/">Supporting Work: Passive Components (Magnetics)</a></li>
   </ul>
 </div>
 
@@ -82,7 +81,7 @@ My work connects power-electronic components, converter design, and microgrid co
     <li>
       <a href="/research/isolated_converters/">Isolated DC–DC Converters</a>
       <ul>
-        <li><a href="/research/isolated_converters/#llc-resonant-converter">LLC Converter</a></li>
+        <li><a href="/research/isolated-converters/llc/">LLC Converter</a></li>
         <li><a href="/research/isolated_converters/#dual-active-bridge-dab">DAB Converter</a></li>
       </ul>
     </li>

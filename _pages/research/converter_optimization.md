@@ -42,4 +42,4 @@ The original architecture remains a proposed framework. My subsequent AIPE work 
 
 The value of the approach is a design process in which assumptions and trade-offs can be inspected together. The public repository provides a focused implementation example and supports further development of engineering design tools.
 
-[Public converter optimisation code](https://github.com/FulongLi/AIPE-Converter-Optimisation-Agent) · [AIPE](https://aipel.co.uk/) · [Passive Components](/research/passive_components/) · [Back to Research](/research/)
+[Public converter optimisation code](https://github.com/FulongLi/AIPE-Converter-Optimisation-Agent) · [AIPE](https://aipel.co.uk/) · [Back to Research](/research/)
