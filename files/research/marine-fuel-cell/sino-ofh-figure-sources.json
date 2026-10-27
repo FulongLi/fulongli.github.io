@@ -1,0 +1,86 @@
+[
+  {
+    "file": "sino-north-sea-60c.png",
+    "source_deck": "SinO-OFH progress sildes_WP4.1 by Fulong.pptx",
+    "slide": 15,
+    "pptx_member": "ppt/media/image57.png",
+    "sha256": "931a954b270e39ef28543d786c995f08bd66daf727ba974d20fe97572f8ecc8e"
+  },
+  {
+    "file": "sino-persian-gulf-60c.png",
+    "source_deck": "SinO-OFH progress sildes_WP4.1 by Fulong.pptx",
+    "slide": 15,
+    "pptx_member": "ppt/media/image58.png",
+    "sha256": "6b3c15800478709467169dfb1795996aaf75337d4f914b7434527d19f4e3d410"
+  },
+  {
+    "file": "sino-persian-gulf-45c.png",
+    "source_deck": "SinO-OFH progress sildes_WP4.1 by Fulong.pptx",
+    "slide": 14,
+    "pptx_member": "ppt/media/image55.png",
+    "sha256": "0cac9c6379e5000fa96b9fb434e6e0ae31afe5a8f00edbc156a7d0ea3f3fdb5f"
+  },
+  {
+    "file": "sino-north-sea-45c.png",
+    "source_deck": "SinO-OFH progress sildes_WP4.1 by Fulong.pptx",
+    "slide": 14,
+    "pptx_member": "ppt/media/image56.png",
+    "sha256": "97117f4669d8cd4b131492f43073e1cf25abb4c0e4578e46afa66905995eb3b4"
+  },
+  {
+    "file": "sino-singapore-45c.png",
+    "source_deck": "SinO-OFH progress sildes_WP4.1 by Fulong.pptx",
+    "slide": 14,
+    "pptx_member": "ppt/media/image54.png",
+    "sha256": "fb395f322d36ac769e2205b554f46fc0384323a774d9af03177ce3df830c1eae"
+  },
+  {
+    "file": "sino-singapore-60c.png",
+    "source_deck": "SinO-OFH progress sildes_WP4.1 by Fulong.pptx",
+    "slide": 15,
+    "pptx_member": "ppt/media/image59.png",
+    "sha256": "46b0dba5ef6a19307be74f06474f6f2ff63d678cf531dbd4aad42c90fe905633"
+  },
+  {
+    "file": "sino-sensitivity-normal-resistance.png",
+    "source_deck": "SinO-OFH progress sildes_WP4.1 by Fulong.pptx",
+    "slide": 6,
+    "pptx_member": "ppt/media/image45.png",
+    "sha256": "9d38381ce5fe943f0380a61fd0184f29ad75b6ed76bd89c064a24f7ea82d0cdc"
+  },
+  {
+    "file": "sino-sensitivity-high-resistance.png",
+    "source_deck": "SinO-OFH progress sildes_WP4.1 by Fulong.pptx",
+    "slide": 6,
+    "pptx_member": "ppt/media/image47.png",
+    "sha256": "7f1a618551cae8b33488b3a937033f5baef71df44795cc5aed12da9d6d2b10e1"
+  },
+  {
+    "file": "sino-sensitivity-low-resistance.png",
+    "source_deck": "SinO-OFH progress sildes_WP4.1 by Fulong.pptx",
+    "slide": 6,
+    "pptx_member": "ppt/media/image49.png",
+    "sha256": "524db5547246cb03f2c234f5dbc626668aa8a1918ac861ce628f3275285f9ad1"
+  },
+  {
+    "file": "sino-sensitivity-small-fan.png",
+    "source_deck": "SinO-OFH progress sildes_WP4.1 by Fulong.pptx",
+    "slide": 6,
+    "pptx_member": "ppt/media/image48.png",
+    "sha256": "2cacae89114eb53fd1a739a3dd17b9e2173e4cac7c7b7c379a9b5dafd2aef74e"
+  },
+  {
+    "file": "sino-sensitivity-medium-fan.png",
+    "source_deck": "SinO-OFH progress sildes_WP4.1 by Fulong.pptx",
+    "slide": 6,
+    "pptx_member": "ppt/media/image46.png",
+    "sha256": "af5655a5123aebc186c1b4da2a3ac7312064ff4432209b135c2b37671c585070"
+  },
+  {
+    "file": "sino-sensitivity-large-fan.png",
+    "source_deck": "SinO-OFH progress sildes_WP4.1 by Fulong.pptx",
+    "slide": 6,
+    "pptx_member": "ppt/media/image50.png",
+    "sha256": "26bb4ebaf0d698cdf855723ec46a29a671f4729bee596aa05eb93e1f816d3f26"
+  }
+]

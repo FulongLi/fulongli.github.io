@@ -1,0 +1,126 @@
+[
+  {
+    "file": "3mw-ems-blueprint.png",
+    "source": "User-supplied 3 MW EMS overview image",
+    "sha256": "67b0b75337aa9c63d45fbb5152d72b64541a0be7182e38ecf354a1d80f7b7e12"
+  },
+  {
+    "file": "hst-power-schedule.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 58,
+    "pptx_member": "ppt/media/image96.png",
+    "sha256": "b8c8eab4bfe20ee14abd341f134b552ea09a109d1febf156d19d83b865527c5e"
+  },
+  {
+    "file": "hst-battery-state.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 58,
+    "pptx_member": "ppt/media/image97.png",
+    "sha256": "3441ffbb50910f60ca0ecaa0a9fac9e720e252cbbff12f73ac7e15f7e9eb0fcf"
+  },
+  {
+    "file": "hst-fuel-cell-state.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 58,
+    "pptx_member": "ppt/media/image98.png",
+    "sha256": "961555788eb7cf153abe6a3f40126b840416811d195d06f2203e3e0177fe45a8"
+  },
+  {
+    "file": "bmt-power-schedule.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 62,
+    "pptx_member": "ppt/media/image106.png",
+    "sha256": "570b8f2fb78ae82fb5cb6eaedcba3974654f39e5d2a36ab6e529a2906dc5a4e7"
+  },
+  {
+    "file": "bmt-battery-state.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 62,
+    "pptx_member": "ppt/media/image107.png",
+    "sha256": "93eaf216aaee7095cfede955e2fbdbc94d00a2a3d5811e974c82d1609baed4ad"
+  },
+  {
+    "file": "hst-vessel.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 54,
+    "pptx_member": "ppt/media/image94.png",
+    "sha256": "3a4d39599e5224b6efb7065dad1ac83537103ad72583950bd7f1e2bef25616cf"
+  },
+  {
+    "file": "bmt-vessel.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 54,
+    "pptx_member": "ppt/media/image93.png",
+    "sha256": "e1e9e447bed9075bc77750b677aa31f117ddc4074db6b881935e6d0e83d03753"
+  },
+  {
+    "file": "hst-duty-cycles.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 55,
+    "pptx_member": "ppt/media/image95.png",
+    "sha256": "e21b0cc5a92fb6e5001511db390eb30ee43f5f768d93489528e4c6493664a382"
+  },
+  {
+    "file": "bmt-duty-cycle.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 56,
+    "pptx_member": "ppt/media/image77.png",
+    "sha256": "c753885fdae1c2ad1be67984fcf650d316b1aedb778e9cc303254011bc8475a4"
+  },
+  {
+    "file": "cabinet-simulink-model.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 57,
+    "pptx_member": "ppt/media/image88.png",
+    "sha256": "a77638925df0faf3b543d67ce3ef6229a404926e1c7fc17606b38c117e4882b6"
+  },
+  {
+    "file": "hst-max-power.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 59,
+    "pptx_member": "ppt/media/image99.png",
+    "sha256": "b6e0d0cda6bad253a4777f2957c6c12d1275e800397efa9eefcee140904a3084"
+  },
+  {
+    "file": "hst-max-battery.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 59,
+    "pptx_member": "ppt/media/image100.png",
+    "sha256": "b9d41cfa63ea1b48159a3e8a9aec5dab79f982092c97502374cb521c91f098e0"
+  },
+  {
+    "file": "hst-max-fuel-cell.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 59,
+    "pptx_member": "ppt/media/image101.png",
+    "sha256": "ecfd6704676482eeda72b2eab115f0650873c312c5bd3635fd8b846cfae516a5"
+  },
+  {
+    "file": "hst-min-power.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 60,
+    "pptx_member": "ppt/media/image102.png",
+    "sha256": "5e7490b4dac0bc62f6f2b21c026088189bbbb3877c5513523022f59f6d07b49d"
+  },
+  {
+    "file": "hst-min-battery.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 60,
+    "pptx_member": "ppt/media/image103.png",
+    "sha256": "3f89003691453e905e2a1423c657bbb5140867bf7f0031636570f4d6a651838d"
+  },
+  {
+    "file": "hst-min-fuel-cell.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 60,
+    "pptx_member": "ppt/media/image104.png",
+    "sha256": "0901ae388a7489934881d5cb115dc8caaa3936d04a3ee6d351f19ed6b1270182"
+  },
+  {
+    "file": "bmt-fuel-cell-state.png",
+    "source_deck": "3MW overview_Fulong.pptx",
+    "slide": 62,
+    "pptx_member": "ppt/media/image105.png",
+    "sha256": "5163c582c710babf7c58cf98f0a52f0a8336d067bf83ae75fcae4c243b536813"
+  }
+]

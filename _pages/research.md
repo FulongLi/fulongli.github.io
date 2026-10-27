@@ -69,10 +69,15 @@ My work connects power-electronic components, converter design, and microgrid co
     <li><a href="/research/battery_storage/">Battery Energy Storage Systems</a></li>
     <li><a href="/research/dcmg/">DC Microgrid Control</a></li>
     <li><a href="/research/experimental_platforms/">Experimental Platforms</a></li>
-    <li><a href="/research/ems/">Energy Management Systems</a></li>
+    <li>
+      <a href="/research/mgapp/"><strong>Microgrid Energy Management</strong></a>
+      <ul>
+        <li><a href="/research/3mw-marine-fuel-cell/">3MW Marine Fuel-Cell Project</a></li>
+        <li><a href="/research/sino-ofh/">SinO-OFH: WP4.1 Thermal Evaluation</a></li>
+      </ul>
+    </li>
     <li><a href="/research/dc_safety/">DC Safety &amp; Protection</a></li>
     <li><a href="/research/acmg/">Related Topic: AC Microgrids</a></li>
-    <li><a href="/research/mgapp/"><strong>3 MW Marine Fuel-Cell Project</strong> &amp; SinO-OFH WP4.1</a></li>
   </ul>
 </div>
 
