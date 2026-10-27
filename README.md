@@ -38,7 +38,7 @@ Source code for [fulongli.github.io](https://fulongli.github.io) — a personal 
 
 ## Research Content and Assets
 
-Research pages use a concise conference-poster narrative: the question, approach, representative results and implications. Keep original figure colours and proportions, and use the shared site theme. Figure-source manifests under `files/research/` record the provenance of the published figures.
+Research pages use a concise technical narrative: the question, modelling or experimental method, representative results and implications. Keep enough detail to explain model inputs and outputs, network structure or control method, and the basis of validation. Technical articles retain their contents navigation; avoid emphasising partner names in the narrative. Keep original figure colours and proportions, and use the shared site theme. Figure-source manifests under `files/research/` record the provenance of the published figures.
 
 Keep only assets used by the site and its public downloads. Experimental scripts, regenerated simulation bundles and intermediate exports belong in their dedicated research repositories, linked from the relevant page.
 

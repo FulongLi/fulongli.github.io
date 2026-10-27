@@ -21,7 +21,12 @@ My work connects power-electronic components, converter design, and microgrid co
     <p><small>AI for Power Engineering: open knowledge, engineering tools, and research.</small></p>
   </div>
   <ul class="research-topic__projects">
-    <li><a href="/research/mosfet_ann_modelling/">AI-Assisted Semiconductor Device Modelling</a></li>
+    <li>
+      <a href="/research/mosfet_ann_modelling/">AI-Assisted Semiconductor Device Modelling</a>
+      <ul>
+        <li><a href="/research/semiconductor-device-modelling/static-ann/">SiC Power Devices — Static ANN Modelling</a></li>
+      </ul>
+    </li>
     <li><a href="/research/converter_optimization/">Multi-Objective Converter Optimisation</a></li>
     <li><a href="/research/aipe/#engineering-design-agents">Engineering Design Agents</a></li>
     <li><a href="/research/aipe/#open-source-engineering-tools-and-resources">Open-Source Engineering Tools and Resources</a></li>
@@ -56,7 +61,12 @@ My work connects power-electronic components, converter design, and microgrid co
         <li><a href="/research/reliability_testing/#gan-thermal-cycling">GaN Thermal Cycling</a></li>
       </ul>
     </li>
-    <li><a href="/research/mosfet_ann_modelling/">Semiconductor Device Modelling</a></li>
+    <li>
+      <a href="/research/mosfet_ann_modelling/">Semiconductor Device Modelling</a>
+      <ul>
+        <li><a href="/research/semiconductor-device-modelling/static-ann/">SiC Power Devices — Static ANN Modelling</a></li>
+      </ul>
+    </li>
     <li><a href="/research/passive_components/">Supporting Work: Passive Components (Magnetics)</a></li>
   </ul>
 </div>

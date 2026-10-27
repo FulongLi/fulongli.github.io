@@ -5,6 +5,7 @@ permalink: /research/dcmg/
 author_profile: true
 body_class: microgrid-project-page
 project_stylesheet: /assets/css/marine-project.css
+project_contents: true
 excerpt: "Passive converter control, DC bus signalling and rule-based energy management demonstrated on a laboratory microgrid."
 ---
 

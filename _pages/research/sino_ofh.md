@@ -5,6 +5,7 @@ permalink: /research/sino-ofh/
 author_profile: true
 body_class: marine-project-page
 project_stylesheet: /assets/css/marine-project.css
+project_contents: true
 excerpt: "Enclosure thermal modelling and ventilation behaviour across North Sea, Persian Gulf and Singapore climate scenarios."
 ---
 
@@ -18,6 +19,10 @@ This work followed the [3MW marine powertrain study](/research/3mw-marine-fuel-c
 <h2 id="model-development">Modelling the Enclosure and Ventilation</h2>
 
 The model represents internal air thermal capacity, heat transfer through the enclosure, equipment heat input and fan-driven air exchange. Sensitivity studies of enclosure resistance and airflow informed an updated **6 m × 2.4 m × 3.5 m** enclosure model.
+
+The enclosure description uses revised 5 mm aluminium walls and door, insulation assumptions, no windows and a 50% air-filled fraction. The air thermal capacity stores heat; boundary heat exchange and fan-driven airflow determine how the room responds to the equipment and outdoor temperature. Changing enclosure resistance and fan capacity tests those parts of the model separately.
+
+The climate scenarios use ambient ranges of 6–14°C for the North Sea, 14–46.6°C for the Persian Gulf and 24.3–32.4°C for Singapore. These are study inputs, with the same enclosure assessed across the three cases.
 
 The climate comparison uses equipment surface temperatures of **45°C and 60°C** and a **25°C room-temperature reference**. The representative plots below show the 60°C case under the updated enclosure assumptions.
 

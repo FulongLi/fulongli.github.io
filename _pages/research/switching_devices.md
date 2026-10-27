@@ -10,7 +10,7 @@ excerpt: "Electrical and thermal characterization of power devices: laboratory e
 
 My power-device characterization work centres on laboratory measurement: configuring the equipment, establishing the test conditions and turning recorded signals into useful device data. It covers electrical switching behaviour and the thermal path between the semiconductor junction and its cooling arrangement.
 
-For the **Siemens project**, I worked with a colleague to build the double-pulse test platform and modify the original test board. We used this setup to characterize switching behaviour under different electrical and temperature conditions. The related thermal work focuses on operating the thermal-characterization equipment, calibrating temperature-sensitive electrical parameters and measuring device thermal resistance.
+I jointly built the double-pulse test platform and modified the original test board. We used this setup to characterize switching behaviour under different electrical and temperature conditions. The related thermal work focuses on operating the thermal-characterization equipment, calibrating temperature-sensitive electrical parameters and measuring device thermal resistance.
 
 <h2 id="electrical-characterization">Electrical Characterization</h2>
 

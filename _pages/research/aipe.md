@@ -9,11 +9,11 @@ AIPE connects my work on device modelling, converter optimisation and open engin
 
 ## AI-Assisted Semiconductor Device Modelling
 
-I led a collaboration with Sumitomo Heavy Industries and Cardiff University linking ANN loss and thermal models to SiC buck-converter experiments up to 3 kW. [Explore semiconductor device modelling](/research/mosfet_ann_modelling/).
+I developed the modelling and assessment workflow linking fitted device characteristics to converter losses. The [SiC static ANN study](/research/semiconductor-device-modelling/static-ann/) explains the network branches, training and a buck-converter comparison up to 3 kW. [Semiconductor modelling overview](/research/mosfet_ann_modelling/).
 
 ## Multi-Objective Converter Optimisation
 
-I proposed an integrated component-modelling and converter-design framework during research and planning with Cardiff University, then continued it independently through AIPE. [Explore the design framework](/research/converter_optimization/).
+I proposed an integrated component-modelling and converter-design framework, then continued its development through AIPE. [Explore the design framework](/research/converter_optimization/).
 
 ## Engineering Design Agents
 

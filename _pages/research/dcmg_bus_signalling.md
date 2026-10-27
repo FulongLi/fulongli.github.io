@@ -5,6 +5,7 @@ permalink: /research/dcmg/dc-bus-signalling/
 author_profile: true
 body_class: microgrid-project-page
 project_stylesheet: /assets/css/marine-project.css
+project_contents: true
 excerpt: "The dual-window DC bus interacting method: working and signalling voltage windows for coordination of sources and storage."
 ---
 
@@ -21,7 +22,7 @@ I developed the voltage-window mechanism, signal sequences and converter-control
   <figcaption><strong>The dual-window principle.</strong> Normal power delivery and deliberate signalling occupy distinct voltage ranges. <span class="figure-source">PhD thesis, Figure 4.4, p. 77.</span></figcaption>
 </figure>
 
-The demonstration uses a **45–50 V working window** and a **52.5 V signalling level**. A converter temporarily controls the voltage sequence while the others decode it, then returns to its assigned power-control role. Receiver-control modifications limit unwanted interacting current during signalling.
+The demonstration uses a **45–50 V working window** and a **52.5 V signalling level**. A converter temporarily controls the voltage sequence while the others decode it, then returns to its assigned power-control role. During reception, the active outer voltage loop can otherwise demand unwanted negative interacting current as the bus rises. Isolating that loop and applying a positive or zero current reference limits the extra power burden on the signalling converter. The source returns to its normal assigned control mode after the signal sequence.
 
 <h2 id="signal-design">From Source Connection to Power Management</h2>
 

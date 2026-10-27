@@ -5,6 +5,7 @@ permalink: /research/pv_systems/
 author_profile: true
 body_class: microgrid-project-page
 project_stylesheet: /assets/css/marine-project.css
+project_contents: true
 excerpt: "Integrated MPPT and battery charging limits, with experimental comparison of two reduced-power PV operating points."
 ---
 
@@ -21,7 +22,7 @@ Our **ICRERA 2016 paper** combines maximum power point tracking (MPPT) with batt
   <figcaption><strong>Integrated PV-battery control.</strong> PV measurements guide power tracking; battery current and voltage determine when generation must be curtailed. <span class="figure-source">ICRERA 2016, Figure 1.</span></figcaption>
 </figure>
 
-The controller changes the P&O tracking direction when a battery limit is exceeded. This allows the same boost converter to move between maximum-power operation and reduced generation during bulk and absorption charging.
+At each update, the controller samples PV voltage/current and battery charging voltage/current, calculates PV power and updates the perturbation direction from the power change. If charging voltage or current exceeds its reference, it redirects the perturbation toward reduced PV power. The implementation uses a fixed 100 ms P&O update interval. The controller changes the P&O tracking direction when a battery limit is exceeded. This allows the same boost converter to move between maximum-power operation and reduced generation during bulk and absorption charging.
 
 <span id="operating-points"></span>
 <figure>

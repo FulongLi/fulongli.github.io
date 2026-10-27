@@ -5,12 +5,13 @@ permalink: /research/electrical-characterization/
 author_profile: true
 body_class: device-project-page
 project_stylesheet: /assets/css/marine-project.css
+project_contents: true
 excerpt: "A jointly built double-pulse test platform, device measurement campaign and waveform analysis for switching-loss data."
 ---
 
 <h2 id="overview">Turning Switching Waveforms into Device Data</h2>
 
-Electrical characterisation connects device behaviour to converter design. For the **Siemens project**, I worked with a colleague to build a **double-pulse test (DPT) platform**, modify the original board and carry out device testing. My contribution also included waveform post-processing.
+Electrical characterisation connects device behaviour to converter design. I jointly built a **double-pulse test (DPT) platform**, modified the original board and carried out device testing, with waveform post-processing to extract switching characteristics.
 
 <figure>
   <a href="/images/research/device-characterization/dpt-test-platform.png" target="_blank" rel="noopener"><img src="/images/research/device-characterization/dpt-test-platform.png" alt="Double-pulse test platform with capacitor bank, laminated busbars, load inductor, gate driver and heated device mounting" width="1500" height="836" fetchpriority="high"></a>
@@ -21,7 +22,9 @@ Electrical characterisation connects device behaviour to converter design. For t
 
 The platform establishes DC-link voltage and load current before capturing turn-on and turn-off transients. The reported campaign spans **more than 450 test points**, varying voltage, current, gate resistance and temperature. Static I–V and C–V measurements with the **Keysight B1505A** complement the dynamic tests.
 
-Post-processing aligns voltage and current channels, corrects offsets and integrates instantaneous power to obtain switching energy. It also extracts current and voltage slew rates and reverse-recovery quantities. Measurement quality and integration-window selection are central to interpreting the results.
+The first pulse builds current in the load inductor, and the second produces a turn-on event at the chosen current followed by turn-off. The rig includes a 2.12 mF capacitor bank and 52.8 µH inductor. The reported campaign measures at 25°C, 75°C and 125°C, with voltage, current and gate resistance varied across the test matrix.
+
+Post-processing aligns voltage and current channels, corrects offsets and integrates instantaneous power to obtain switching energy, **E = ∫ v(t)i(t) dt**. It also extracts current and voltage slew rates and reverse-recovery quantities. Measurement quality and integration-window selection are central to interpreting the results.
 
 <h2 id="switching-results">Representative Switching Results</h2>
 
