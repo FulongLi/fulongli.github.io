@@ -58,7 +58,7 @@ The BMT case reports **13.007 MWh of fuel-cell electrical energy** and **16.603 
 
 <h2 id="outcomes">Design Implications</h2>
 
-The project delivered a reusable modelling workflow for comparing duty cycles, battery allocations and operating rules. It showed why capacity and dispatch must be assessed together, and provided heat-load context for the subsequent [SinO-OFH thermal evaluation](/research/sino-ofh/), where I led WP4.1.
+The project delivered a reusable modelling workflow for comparing duty cycles, battery allocations and operating rules. It showed why capacity and dispatch must be assessed together, and provided heat-load context for the subsequent [thermal evaluation](/research/sino-ofh/).
 
 [Daily simulation results](/files/research/marine-fuel-cell/daily-energy-results.csv) · [Related public EMS code](https://github.com/FulongLi/MicrogridEnergyManagementSystermDesign)
 

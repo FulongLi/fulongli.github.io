@@ -15,7 +15,7 @@ My current-sensing work concerns compact PCB-integrated sensors for power conver
 
 A PCB Rogowski coil uses an air-cored winding and an integrator to recover the current signal. PCB geometry, shielding and signal integration shape its suitability for fast switching measurements.
 
-[PCB Rogowski coil project](https://github.com/FulongLi/Magnetics-PCBRogowskiCoil)
+I reviewed the development and specifications of Rogowski coils, then designed PCB coils and signal-conditioning circuits and compared their response with a commercial coil. [Explore the PCB Rogowski coil work](/research/pcb-rogowski-coil/).
 
 ## Embedded-Core PCB Current Transformer (PCB-CT)
 

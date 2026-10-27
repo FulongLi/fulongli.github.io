@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "SinO-OFH: WP4.1 Thermal Evaluation"
+title: "Thermal Evaluation"
 permalink: /research/sino-ofh/
 author_profile: true
 body_class: marine-project-page
@@ -12,7 +12,7 @@ excerpt: "Enclosure thermal modelling and ventilation behaviour across North Sea
 <h2 id="overview">The Thermal Environment Around a Marine Powertrain</h2>
 <span id="sino-ofh-wp41-thermal-evaluation"></span>
 
-Fuel-cell and converter equipment must operate inside an enclosure whose temperature depends on the equipment, construction and outdoor climate. I led **WP4.1, Thermal Evaluation, within SinO-OFH in 2024**, developing a room-temperature model to examine those interactions.
+Fuel-cell and converter equipment must operate inside an enclosure whose temperature depends on the equipment, construction and outdoor climate. I led the thermal evaluation in 2024, developing a room-temperature model to examine those interactions.
 
 This work followed the [3MW marine powertrain study](/research/3mw-marine-fuel-cell/). My contribution covered requirements, enclosure modelling and scenario assessment, connecting the equipment's thermal conditions to ventilation needs.
 

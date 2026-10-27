@@ -44,7 +44,7 @@ My work connects power-electronic components, converter design, and microgrid co
     <li>
       <a href="/research/sensing_devices/">Current Sensing</a>
       <ul>
-        <li><a href="/research/sensing_devices/#pcb-rogowski-coil-pcb-rc">PCB Rogowski Coil</a></li>
+        <li><a href="/research/pcb-rogowski-coil/">PCB Rogowski Coil</a></li>
         <li><a href="/research/sensing_devices/#embedded-core-pcb-current-transformer-pcb-ct">Current Transformer / Transducer</a></li>
       </ul>
     </li>
@@ -127,7 +127,7 @@ My work connects power-electronic components, converter design, and microgrid co
       <a href="/research/mgapp/">Microgrid Energy Management</a>
       <ul>
         <li><a href="/research/3mw-marine-fuel-cell/">3MW Marine Fuel-Cell Project</a></li>
-        <li><a href="/research/sino-ofh/">SinO-OFH: WP4.1 Thermal Evaluation</a></li>
+        <li><a href="/research/sino-ofh/">Thermal Evaluation</a></li>
       </ul>
     </li>
   </ul>
