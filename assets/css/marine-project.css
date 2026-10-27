@@ -36,9 +36,8 @@
 }
 .project-contents.is-sidebar ul { margin: 0; padding: 0; list-style: none; }
 .project-contents.is-sidebar li { margin: 0; }
-.project-contents.is-sidebar a { border-left: 2px solid transparent; overflow-wrap: anywhere; }
-.project-contents a[aria-current="location"] { text-decoration-thickness: 2px; }
-.project-contents.is-sidebar a[aria-current="location"] { border-left-color: currentColor; }
+.project-contents.is-sidebar a { overflow-wrap: anywhere; }
+.project-contents a[aria-current="location"] { font-weight: 700; }
 .project-contents.is-sidebar li { padding: .35em .65em; }
 .page__content h2[tabindex="-1"]:focus { outline: none; }
 .project-table-scroll { overflow-x: auto; }

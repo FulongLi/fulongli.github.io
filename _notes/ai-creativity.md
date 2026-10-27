@@ -1,4 +1,5 @@
 ---
+mathjax: true
 title: "The Last Test of AI"
 date: 2026-01-12
 permalink: /notes/ai-creativity/
