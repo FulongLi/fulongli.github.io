@@ -9,7 +9,7 @@ project_script: /assets/js/marine-project.js
 excerpt: "A complete project case study: leading the 3MW marine powertrain project, followed by SinO-OFH WP4.1 thermal evaluation."
 ---
 
-## Overview
+<h2 id="overview">Overview</h2>
 
 I led the 3MW marine fuel-cell hybrid powertrain project, developing a system modelling and operating-strategy workflow that connected vessel requirements to fuel-cell and battery behaviour. The subsequent SinO-OFH project extended this work into the equipment’s thermal environment, where I led Work Package 4.1.
 
@@ -22,6 +22,7 @@ The engineering problem covered a complete working day at sea: leaving port, tra
 <nav class="project-contents" aria-label="Project contents">
   <p><strong>On this page</strong></p>
   <ul>
+    <li><a href="#overview">Overview</a></li>
     <li><a href="#system-overview">System overview</a></li>
     <li><a href="#vessel-requirements">Vessel requirements</a></li>
     <li><a href="#design-development">Design development</a></li>
@@ -30,6 +31,7 @@ The engineering problem covered a complete working day at sea: leaving port, tra
     <li><a href="#bmt-results">BMT results</a></li>
     <li><a href="#sino-ofh-wp41-thermal-evaluation">SinO-OFH WP4.1</a></li>
     <li><a href="#outcomes">Outcomes</a></li>
+    <li><a href="#project-resources">Project resources</a></li>
   </ul>
 </nav>
 
