@@ -45,21 +45,6 @@
     "sha256": "d58367dab902b940e26c79462a2dd92ebb2ffb020734d077d4a4e5a449e8a95a"
   },
   {
-    "file": "passive-constant-gain-result.png",
-    "source": "Li_Fulong_-_2019.pdf",
-    "pdf_page": 105,
-    "figure": "5.13",
-    "crop_points": [
-      99,
-      68,
-      530,
-      216
-    ],
-    "width": 1293,
-    "height": 444,
-    "sha256": "0639a9060ab5f7763898b887b7e6826668f2e0ed42fe449a66f3487a9ddbb0b1"
-  },
-  {
     "file": "passive-hpf-result.png",
     "source": "Li_Fulong_-_2019.pdf",
     "pdf_page": 105,

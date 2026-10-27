@@ -5,31 +5,14 @@ permalink: /research/passive_components/
 author_profile: true
 ---
 
-## Overview
-
-This section covers the design, modelling, and optimisation of key passive components in power electronics systems, including:
-
-- Inductors
-- Transformers
-
-<img class="research-hero-image" src="/images/research/generated/passive-components.png" alt="Passive components technical illustration" />
-
-Passive components strongly influence converter efficiency, power density, thermal performance, and electromagnetic behaviour, especially at high switching frequency.
-
----
+Inductors and transformers link electromagnetic design to converter loss, size and thermal behaviour. My supporting work in this area concerns magnetic-component design and modelling for power electronics.
 
 ## PCB Inductor Design for High-Frequency Converters
-- Core material selection (ferrite vs. nanocrystalline)
-- Skin effect and winding techniques
 
-**Prototype Example**
+Core material, winding geometry and high-frequency effects shape the balance between magnetic performance, manufacturability and cooling. The public project provides the available design material.
 
-Prototype work connects electromagnetic design choices with manufacturability, thermal constraints, and converter-level performance.
+[Inductor design project](https://github.com/FulongLi/Inductor_Design)
 
-Full Details: [GitHub — Inductor Design](https://github.com/FulongLi/Inductor_Design)
+The [converter design framework](/research/converter_optimization/) places passive components alongside semiconductor and cooling models when comparing design trade-offs.
 
----
-
-[Converter Design Optimisation](/research/converter_optimization/) covers passive component selection and loss–volume trade-offs.
-
-[Back to Research](/research/) · **Feel free to reach out** via [email](mailto:fulong.li@ieee.org).
+[Back to Research](/research/)

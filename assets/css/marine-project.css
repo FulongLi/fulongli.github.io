@@ -1,7 +1,5 @@
-/* Use the site's shared single-page layout, typography and colour palette.
-   Keep only behaviour needed by the original technical figures and tables. */
-:is(.marine-project-page, .device-project-page, .microgrid-project-page) .page__content h2[id] { scroll-margin-top: 7rem; }
-:is(.marine-project-page, .device-project-page, .microgrid-project-page) .page__content h2[tabindex="-1"]:focus { outline: none; }
+/* Technical figure behaviour; typography, palette and article width use the shared theme. */
+:is(.marine-project-page, .device-project-page, .microgrid-project-page) .page__content [id] { scroll-margin-top: 7rem; }
 :is(.marine-project-page, .device-project-page, .microgrid-project-page) figure:not(.half) > a { width: 100%; }
 :is(.marine-project-page, .device-project-page, .microgrid-project-page) figure img { height: auto; }
 @media (min-width: 600px) {
@@ -11,50 +9,17 @@
     margin-right: auto;
   }
 }
-:is(.marine-project-page, .device-project-page, .microgrid-project-page) .project-table-scroll { overflow-x: auto; }
-:is(.marine-project-page, .device-project-page, .microgrid-project-page) .project-table-scroll table { min-width: 560px; }
-:is(.marine-project-page, .device-project-page, .microgrid-project-page) summary { cursor: pointer; }
-
-/* Use the existing right-hand gutter without changing the article width. */
-:is(.marine-project-page, .device-project-page, .microgrid-project-page) .project-contents.is-sidebar {
-  position: fixed;
-  top: var(--contents-top);
-  left: var(--contents-left);
-  width: var(--contents-width);
-  max-height: calc(100vh - var(--contents-top) - 1.5rem);
-  overflow-y: auto;
-  overscroll-behavior: contain;
-}
-:is(.marine-project-page, .device-project-page, .microgrid-project-page) .project-contents.is-sidebar ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-:is(.marine-project-page, .device-project-page, .microgrid-project-page) .project-contents.is-sidebar li { margin: 0; }
-:is(.marine-project-page, .device-project-page, .microgrid-project-page) .project-contents.is-sidebar a {
+.device-project-page .device-experiment-rotation {
+  position: relative;
   display: block;
-  padding: .35em .65em;
-  border-left: 2px solid transparent;
-  overflow-wrap: anywhere;
+  aspect-ratio: 2474 / 3301;
+  overflow: hidden;
 }
-:is(.marine-project-page, .device-project-page, .microgrid-project-page) .project-contents a[aria-current="location"] {
-  font-weight: 600;
-  text-decoration-thickness: 2px;
+.device-project-page .device-experiment-rotation img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% * 3301 / 2474);
+  max-width: none;
+  transform: translate(-50%, -50%) rotate(90deg);
 }
-:is(.marine-project-page, .device-project-page, .microgrid-project-page) .project-contents.is-sidebar a[aria-current="location"] {
-  border-left-color: currentColor;
-}
-@media (max-width: 1199px) {
-  :is(.marine-project-page, .device-project-page, .microgrid-project-page) .project-contents.is-sidebar {
-    position: static;
-    width: auto;
-    max-height: none;
-    overflow: visible;
-  }
-}
-@media print {
-  :is(.marine-project-page, .device-project-page, .microgrid-project-page) .project-contents.is-sidebar { display: none; }
-}
-
-/* Embedded device-characteristic plot: preserve its interactive viewport. */
-.device-project-page .device-ann-interactive { display: block; width: 100%; border: 0; }

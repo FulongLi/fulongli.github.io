@@ -5,24 +5,14 @@ permalink: /research/wireless_power_transfer/
 author_profile: true
 ---
 
-## Overview
-
-My wireless power transfer work spans two separate research experiences. Their topologies, individual responsibilities, and experimental outcomes will be documented separately once confirmed.
+My wireless power transfer experience spans undergraduate research involving underwater applications and a separate postdoctoral hardware/prototype project.
 
 ## Undergraduate Research: Underwater Applications
 
-**Overview:** Undergraduate wireless power transfer research involving underwater applications.
-
-**My contribution:** Participated in this research; specific design, simulation, and testing responsibilities require confirmation.
-
-**Outcome / evidence:** Public resources and results will be added when confirmed.
+I participated in wireless power transfer research for underwater applications during my undergraduate studies.
 
 ## Postdoctoral Hardware / Prototype Project
 
-**Overview:** A later postdoctoral wireless power transfer hardware/prototype project, distinct from the undergraduate research.
-
-**My contribution:** Specific hardware and prototype responsibilities require confirmation.
-
-**Outcome / evidence:** Topology, measured performance, and resources remain to be confirmed.
+A later postdoctoral project concerned wireless power transfer hardware and prototyping. It forms a separate research experience from the undergraduate work; this summary retains that distinction.
 
 [Isolated DC–DC Converters](/research/isolated_converters/) · [Back to Research](/research/)

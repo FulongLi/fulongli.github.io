@@ -3,6 +3,7 @@ layout: archive
 title: "Research"
 permalink: /research/
 author_profile: true
+body_class: research-index-page
 ---
 
 
@@ -106,7 +107,7 @@ My work connects power-electronic components, converter design, and microgrid co
     </li>
     <li><a href="/research/experimental_platforms/">Experimental Platforms</a></li>
     <li>
-      <a href="/research/mgapp/"><strong>Microgrid Energy Management</strong></a>
+      <a href="/research/mgapp/">Microgrid Energy Management</a>
       <ul>
         <li><a href="/research/3mw-marine-fuel-cell/">3MW Marine Fuel-Cell Project</a></li>
         <li><a href="/research/sino-ofh/">SinO-OFH: WP4.1 Thermal Evaluation</a></li>

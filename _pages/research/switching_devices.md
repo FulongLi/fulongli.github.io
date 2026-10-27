@@ -16,13 +16,13 @@ For the **Siemens project**, I worked with a colleague to build the double-pulse
 
 **Double-pulse testing (DPT)** measures switching transients and event energies. This work includes the jointly built test platform, board modifications, probe configuration and waveform post-processing. Static **I–V and C–V measurements** with the Keysight B1505A provide complementary device characteristics.
 
-[Explore Electrical Characterization: test equipment, DPT platform and switching results](/research/electrical-characterization/)
+[View electrical characterisation](/research/electrical-characterization/)
 
 <h2 id="thermal-characterization">Thermal Characterization</h2>
 
 **Thermal resistance and transient thermal impedance measurements** connect device power dissipation to junction-temperature rise. The workflow uses the PWT2400 power tester, T3STER measurement and analysis system, and a temperature-controlled cooling circuit, followed by comparison of dry and greased interfaces and extraction of thermal networks.
 
-[Explore Thermal Characterization: equipment, calibration and thermal resistance testing](/research/thermal-characterization/)
+[View thermal characterisation](/research/thermal-characterization/)
 
 ## Related Research
 
