@@ -4,6 +4,13 @@
 .marine-project-page .page__content h2[tabindex="-1"]:focus { outline: none; }
 .marine-project-page figure > a { width: 100%; }
 .marine-project-page figure img { height: auto; }
+@media (min-width: 600px) {
+  .marine-project-page figure:not(.project-blueprint) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .marine-project-page .project-table-scroll { overflow-x: auto; }
 .marine-project-page .project-table-scroll table { min-width: 560px; }
 .marine-project-page summary { cursor: pointer; }
