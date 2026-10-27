@@ -29,4 +29,4 @@ The primary project summary for GAMS-based EMS optimisation and battery degradat
 
 The existing EMS topic scope includes rule-based logic and expert knowledge; optimisation methods such as MILP, MPC, and genetic algorithms; forecasting; and real-time controller, communication, and data-flow constraints. Project-specific use of these methods requires confirmation before attribution.
 
-[DC Microgrid Control](/research/dcmg/) · [Back to Research](/research/)
+[DC Microgrid Control Strategies](/research/dcmg/) · [Back to Research](/research/)

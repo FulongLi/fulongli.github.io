@@ -23,7 +23,7 @@ These platforms place my microgrid research in its laboratory context. The entri
 
 **My contribution:** Used the existing platform for visiting research; specific operation, testing, and modification tasks will be documented when confirmed. The VSC was platform equipment, not a converter I independently designed or manufactured.
 
-**Related work:** [DC Microgrid Control](/research/dcmg/) · [AC–DC Converter Interfaces](/research/nonisolated_converters/#acdc-converter-interfaces).
+**Related work:** [DC Microgrid Control Strategies](/research/dcmg/) · [AC–DC Converter Interfaces](/research/nonisolated_converters/#acdc-converter-interfaces).
 
 ## Loughborough University: Plug-and-Play Low-Voltage DC Microgrid
 
@@ -39,4 +39,4 @@ These platforms place my microgrid research in its laboratory context. The entri
 
 **My contribution:** Platform-specific instrumentation, software, and data-acquisition responsibilities will be documented in a later update.
 
-[DC Microgrid Control](/research/dcmg/) · [Back to Research](/research/)
+[DC Microgrid Control Strategies](/research/dcmg/) · [Back to Research](/research/)

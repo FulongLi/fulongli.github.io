@@ -17,7 +17,7 @@ My non-isolated converter work connects converter-level control with earlier DC 
 
 **My contribution:** Investigated converter control in the microgrid context; specific design and implementation responsibilities will be confirmed in a later update.
 
-**Related work:** [Battery converter control](/research/battery_storage/#converter-level-control) · [DC Microgrid Control](/research/dcmg/).
+**Related work:** [Battery converter control](/research/battery_storage/#converter-level-control) · [DC Microgrid Control Strategies](/research/dcmg/).
 
 ## Buck / Boost Converter Control
 

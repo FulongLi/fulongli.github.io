@@ -25,7 +25,7 @@ My interest in this area focuses on modelling, control, and system-level integra
 
 ## Research Streams
 
-This page retains AC microgrids as a related technical interest. Specific personal projects and contributions will be added only when confirmed; current project summaries are organised under [DC Microgrid Control](/research/dcmg/) and [Energy Management Systems](/research/ems/).
+This page retains AC microgrids as a related technical interest. Specific personal projects and contributions will be added only when confirmed; current project summaries are organised under [DC Microgrid Control Strategies](/research/dcmg/) and [Energy Management Systems](/research/ems/).
 
 ---
 

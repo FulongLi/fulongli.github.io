@@ -73,7 +73,14 @@ My work connects power-electronic components, converter design, and microgrid co
   <ul class="research-topic__projects">
     <li><a href="/research/pv_systems/">PV Systems</a></li>
     <li><a href="/research/battery_storage/">Battery Energy Storage Systems</a></li>
-    <li><a href="/research/dcmg/">DC Microgrid Control</a></li>
+    <li>
+      <a href="/research/dcmg/">DC Microgrid Control Strategies</a>
+      <ul>
+        <li><a href="/research/dcmg/passive-control/">Passive Control</a></li>
+        <li><a href="/research/dcmg/dc-bus-signalling/">Dual-Window DC Bus Signalling</a></li>
+        <li><a href="/research/dcmg/rule-based-ems/">Rule-Based EMS</a></li>
+      </ul>
+    </li>
     <li><a href="/research/experimental_platforms/">Experimental Platforms</a></li>
     <li>
       <a href="/research/mgapp/"><strong>Microgrid Energy Management</strong></a>

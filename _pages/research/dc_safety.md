@@ -17,4 +17,4 @@ This category covers DC electrical safety, DC protection strategies, and relevan
 
 **Outcome / evidence:** No confidential partner information, circuit designs, internal reports, or experimental results are included.
 
-[DC Microgrid Control](/research/dcmg/) · [Back to Research](/research/)
+[DC Microgrid Control Strategies](/research/dcmg/) · [Back to Research](/research/)
