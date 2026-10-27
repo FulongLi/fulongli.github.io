@@ -1,8 +1,50 @@
 /* Use the site's shared single-page layout, typography and colour palette.
    Keep only behaviour needed by the original technical figures and tables. */
 .marine-project-page .page__content h2[id] { scroll-margin-top: 7rem; }
+.marine-project-page .page__content h2[tabindex="-1"]:focus { outline: none; }
 .marine-project-page figure > a { width: 100%; }
 .marine-project-page figure img { height: auto; }
 .marine-project-page .project-table-scroll { overflow-x: auto; }
 .marine-project-page .project-table-scroll table { min-width: 560px; }
 .marine-project-page summary { cursor: pointer; }
+
+/* Use the existing right-hand gutter without changing the article width. */
+.marine-project-page .project-contents.is-sidebar {
+  position: fixed;
+  top: var(--contents-top);
+  left: var(--contents-left);
+  width: var(--contents-width);
+  max-height: calc(100vh - var(--contents-top) - 1.5rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.marine-project-page .project-contents.is-sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.marine-project-page .project-contents.is-sidebar li { margin: 0; }
+.marine-project-page .project-contents.is-sidebar a {
+  display: block;
+  padding: .35em .65em;
+  border-left: 2px solid transparent;
+  overflow-wrap: anywhere;
+}
+.marine-project-page .project-contents a[aria-current="location"] {
+  font-weight: 600;
+  text-decoration-thickness: 2px;
+}
+.marine-project-page .project-contents.is-sidebar a[aria-current="location"] {
+  border-left-color: currentColor;
+}
+@media (max-width: 1199px) {
+  .marine-project-page .project-contents.is-sidebar {
+    position: static;
+    width: auto;
+    max-height: none;
+    overflow: visible;
+  }
+}
+@media print {
+  .marine-project-page .project-contents.is-sidebar { display: none; }
+}
