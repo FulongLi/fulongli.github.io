@@ -71,7 +71,7 @@ My work connects power-electronic components, converter design, and microgrid co
     <h3> Microgrids &amp; Energy Systems</h3>
   </div>
   <ul class="research-topic__projects">
-    <li><a href="/research/pv_systems/">PV Systems</a></li>
+    <li><a href="/research/pv_systems/">PV Battery System</a></li>
     <li><a href="/research/battery_storage/">Battery Energy Storage Systems</a></li>
     <li>
       <a href="/research/dcmg/">DC Microgrid Control Strategies</a>
