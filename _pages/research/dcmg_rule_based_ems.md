@@ -27,8 +27,10 @@ The first state-machine level manages communication and contains the normal-oper
 
 <figure>
   <a href="/images/research/dc-microgrid-control/signal-state-machine.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/signal-state-machine.png" alt="First-level signal state machine: initialisation, sending, normal operation and receiving, with transitions based on converter type, signalling voltage and completion flags" width="930" height="555" loading="lazy"></a>
-  <figcaption><strong>Signal-handling state machine.</strong> State III monitors the bus and contains the second-level operating-mode controller. <span class="figure-source">PhD thesis, Figure 6.14, p. 126.</span></figcaption>
+  <figcaption>Signal-handling state machine.</figcaption>
 </figure>
+
+State III monitors the bus and contains the second-level operating-mode controller.
 
 - **I — initialisation:** determine the interface role. The grid converter enters normal operation directly; another converter first enters the sending state.
 - **II — sending:** transmit the signal sequence, then return to normal operation. Sending can also be triggered by a request arising during normal operation.
@@ -41,8 +43,10 @@ The second level sits inside state III. It changes the local converter's operati
 
 <figure>
   <a href="/images/research/dc-microgrid-control/mode-state-machine.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/mode-state-machine.png" alt="Second-level state machine with sleep, droop and power modes, showing transitions controlled by received state and mode bits" width="720" height="615" loading="lazy"></a>
-  <figcaption><strong>Operating-mode state machine.</strong> The thesis labels the received signal fields with zero-based indices: <code>ss[1]</code> controls ON/OFF and <code>ss[3]</code> selects droop or power mode. <span class="figure-source">PhD thesis, Figure 6.15, p. 127.</span></figcaption>
+  <figcaption>Operating-mode state machine.</figcaption>
 </figure>
+
+The thesis labels the received signal fields with zero-based indices: <code>ss[1]</code> controls ON/OFF and <code>ss[3]</code> selects droop or power mode.
 
 In **sleep mode**, the interface monitors the bus and waits for a command. An ON command selects **droop mode** when the mode bit is 1, or **power mode** when it is 0. Droop mode allows an assigned converter to regulate the bus; power mode follows the commanded charge or discharge current while considering battery state of charge. A change in the mode bit switches between droop and power; an OFF command returns the interface to sleep. A fully charged battery also leaves power mode for sleep.
 
@@ -52,18 +56,22 @@ The grid interface starts in droop mode. Other converters initially enter sleep 
 
 <figure>
   <a href="/images/research/dc-microgrid-control/planned-islanding-result.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/planned-islanding-result.png" alt="Bus voltage and grid and battery currents during a signalled handover to islanded operation" width="1293" height="852" fetchpriority="high"></a>
-  <figcaption><strong>Planned transition to islanded operation.</strong> A command transfers bus regulation to a battery before the grid interface disconnects. <span class="figure-source">PhD thesis, Figure 6.21, p. 134.</span></figcaption>
+  <figcaption>Planned transition to islanded operation.</figcaption>
 </figure>
+
+A command transfers bus regulation to a battery before the grid interface disconnects.
 
 <figure>
   <a href="/images/research/dc-microgrid-control/pv-curtailment-result.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/pv-curtailment-result.png" alt="Bus voltage, battery current and PV power during surplus-generation limitation" width="1293" height="783" loading="lazy"></a>
-  <figcaption><strong>Power balance when storage is full.</strong> PV generation is reduced when the batteries cannot absorb the surplus. <span class="figure-source">PhD thesis, Figure 6.26, p. 137.</span></figcaption>
+  <figcaption>Power balance when storage is full.</figcaption>
 </figure>
+
+PV generation is reduced when the batteries cannot absorb the surplus.
 
 <h2 id="outcomes">A Demonstration of Coordinated Control</h2>
 
 The experiments show how local stability and bus-borne commands support source connection, battery coordination and planned handover. They demonstrate a rule-based sequence rather than optimal long-term scheduling. Charging stages were shortened with a timer, and the planned transition relies on advance signalling rather than an abrupt grid failure.
 
-[PhD thesis: Control Strategies for Low Voltage DC Microgrids](https://publications.aston.ac.uk/id/eprint/46135/), Chapter 6. · [Dual-window signalling paper](https://ieeexplore.ieee.org/document/8645723) · [Figure sources](/files/research/dc-microgrid-control/figure-sources.json)
+[PhD thesis: Control Strategies for Low Voltage DC Microgrids](https://publications.aston.ac.uk/id/eprint/46135/), Chapter 6. · [Dual-window signalling paper](https://ieeexplore.ieee.org/document/8645723)
 
 [DC Microgrid Control Strategies](/research/dcmg/) · [Energy Management Systems](/research/ems/) · [Back to Research](/research/)

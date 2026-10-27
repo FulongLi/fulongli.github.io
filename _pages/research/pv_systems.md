@@ -19,16 +19,20 @@ Our **ICRERA 2016 paper** combines maximum power point tracking (MPPT) with batt
 
 <figure>
   <a href="/images/research/pv-battery/system-architecture.png" target="_blank" rel="noopener"><img src="/images/research/pv-battery/system-architecture.png" alt="PV source and boost converter connected to batteries with shared MPPT and charging feedback" width="651" height="371" fetchpriority="high"></a>
-  <figcaption><strong>Integrated PV-battery control.</strong> PV measurements guide power tracking; battery current and voltage determine when generation must be curtailed. <span class="figure-source">ICRERA 2016, Figure 1.</span></figcaption>
+  <figcaption>Integrated PV-battery control.</figcaption>
 </figure>
+
+PV measurements guide power tracking; battery current and voltage determine when generation must be curtailed.
 
 At each update, the controller samples PV voltage/current and battery charging voltage/current, calculates PV power and updates the perturbation direction from the power change. If charging voltage or current exceeds its reference, it redirects the perturbation toward reduced PV power. The implementation uses a fixed 100 ms P&O update interval. This allows the same boost converter to move between maximum-power operation and reduced generation during bulk and absorption charging.
 
 <span id="operating-points"></span>
 <figure>
   <a href="/images/research/pv-battery/two-operating-points.png" target="_blank" rel="noopener"><img src="/images/research/pv-battery/two-operating-points.png" alt="Left and right reduced-power operating points on either side of the PV maximum power point" width="781" height="494" loading="lazy"></a>
-  <figcaption><strong>Two ways to reduce PV output.</strong> The same power limit can be reached on either side of the maximum power point, with different transient behaviour. <span class="figure-source">ICRERA 2016, Figure 4.</span></figcaption>
+  <figcaption>Two ways to reduce PV output.</figcaption>
 </figure>
+
+The same power limit can be reached on either side of the maximum power point, with different transient behaviour.
 
 <h2 id="experimental-validation">Experimental Comparison</h2>
 
@@ -36,8 +40,10 @@ The algorithm ran on a **TMS320F28335 controller** with a **200 W boost converte
 
 <figure>
   <a href="/images/research/pv-battery/dynamic-response-comparison.png" target="_blank" rel="noopener"><img src="/images/research/pv-battery/dynamic-response-comparison.png" alt="Battery-voltage responses showing a shorter response interval for the right-side operating point" width="571" height="494" loading="lazy"></a>
-  <figcaption><strong>Faster response on the right branch in the reported test.</strong> The comparison shows t₂ &lt; t₁ after a rapid irradiance increase. <span class="figure-source">ICRERA 2016, Figure 12.</span></figcaption>
+  <figcaption>Faster response on the right branch in the reported test.</figcaption>
 </figure>
+
+The comparison shows t₂ &lt; t₁ after a rapid irradiance increase.
 
 With irradiance increasing from **600 to 1,000 W/m² in one second**, the reported right-side operating point responds faster while the controller limits battery voltage. The paper does not tabulate numerical settling times or a percentage improvement.
 
@@ -46,6 +52,6 @@ With irradiance increasing from **600 to 1,000 W/m² in one second**, the report
 The study demonstrates feedback-based coordination between available PV power and battery charging constraints. Its evidence is short-term electrical behaviour; long-term battery-life improvement was not measured. The same power-limitation idea supports wider [DC microgrid energy management](/research/dcmg/rule-based-ems/).
 
 <span id="pv-integration-into-dc-microgrids"></span>
-[Paper: A modified MPPT algorithm with integrated active power control for PV-battery systems](https://ieeexplore.ieee.org/document/7884432), ICRERA 2016, pp. 742–746. · [Figure sources](/files/research/pv-battery/figure-sources.json)
+[Paper: A modified MPPT algorithm with integrated active power control for PV-battery systems](https://ieeexplore.ieee.org/document/7884432), ICRERA 2016, pp. 742–746.
 
 [Battery Energy Storage](/research/battery_storage/) · [DC Microgrid Control Strategies](/research/dcmg/) · [Back to Research](/research/)

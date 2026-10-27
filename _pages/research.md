@@ -17,19 +17,20 @@ My work connects power-electronic components, converter design, and microgrid co
 <div class="research-topic">
   <div class="research-topic__overview">
     <img src="/images/research/generated/aipe-overview.png" alt="AI-assisted power converter design in an electronics laboratory" width="1672" height="941">
-    <h3> <a href="/research/aipe/">AIPE</a></h3>
-    <p><small>AI for Power Engineering: open knowledge, engineering tools, and research.</small></p>
+    <h3><a href="https://aipel.co.uk/">AIPE</a></h3>
+    <p><small>AI for Power Engineering: an open hub for engineering data, models and tools.</small></p>
   </div>
   <ul class="research-topic__projects">
+    <li><a href="https://aipel.co.uk/hub/data/">Open Data &amp; Models</a></li>
     <li>
-      <a href="/research/mosfet_ann_modelling/">AI-Assisted Semiconductor Device Modelling</a>
+      <a href="https://aipel.co.uk/hub/tools/">Tools &amp; Agents</a>
       <ul>
-        <li><a href="/research/semiconductor-device-modelling/static-ann/">SiC Power Devices — Static ANN Modelling</a></li>
+        <li><a href="https://aipel.co.uk/resources/ai-agent-team/aipe-sketch/">AIPE Sketch — Schematic Generation</a></li>
+        <li><a href="https://github.com/FulongLi/AIPE-CAD-Agent">AIPE CAD Agent</a></li>
+        <li><a href="https://github.com/FulongLi/AIPE-PCB-Agent">AIPE PCB Agent</a></li>
+        <li><a href="https://github.com/FulongLi/AIPE-IEEE-Paper-Agent">AIPE IEEE Paper Agent</a></li>
       </ul>
     </li>
-    <li><a href="/research/converter_optimization/">Multi-Objective Converter Optimisation</a></li>
-    <li><a href="/research/aipe/#engineering-design-agents">Engineering Design Agents</a></li>
-    <li><a href="/research/aipe/#open-source-engineering-tools-and-resources">Open-Source Engineering Tools and Resources</a></li>
   </ul>
 </div>
 

@@ -42,8 +42,10 @@ The fitting sequence is to organise the reference tables, train the relevant fun
 
 <figure>
   <a href="/images/research/sumitomo-device-modelling/ann-conduction-characteristic.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/ann-conduction-characteristic.png" alt="ANN conduction-voltage surface versus current and temperature with reference samples" width="1490" height="850" loading="lazy"></a>
-  <figcaption><strong>Conduction characteristic.</strong> The fitted surface supplies the voltage drop at a selected current and junction temperature. <span class="figure-source">Device loss and thermal modelling report, slide 7.</span></figcaption>
+  <figcaption>Conduction characteristic.</figcaption>
 </figure>
+
+The fitted surface supplies the voltage drop at a selected current and junction temperature.
 
 <h2 id="loss-model">Loss Calculation and PLECS-Type Use</h2>
 
@@ -57,8 +59,10 @@ For a simplified buck operating point, the model evaluates:
 <figure class="half">
   <a href="/images/research/sumitomo-device-modelling/ann-turn-on-energy.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/ann-turn-on-energy.png" alt="Fitted turn-on energy surface against voltage and current" width="1149" height="931" loading="lazy"></a>
   <a href="/images/research/sumitomo-device-modelling/ann-turn-off-energy.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/ann-turn-off-energy.png" alt="Fitted turn-off energy surface against voltage and current" width="1137" height="923" loading="lazy"></a>
-  <figcaption><strong>Switching energy as an operating-point function.</strong> These fits return energy per event, rather than switching-time waveforms. <span class="figure-source">Device loss and thermal modelling report, slide 7.</span></figcaption>
+  <figcaption>Switching energy as an operating-point function.</figcaption>
 </figure>
+
+These fits return energy per event, rather than switching-time waveforms.
 
 The public implementation expands gate-resistance dependence using fitted scaling relations. Those generated samples extend the fitted data representation; they are not independent DPT measurements. The experimental loss breakdown below includes MOSFET conduction and switching and excludes body-diode loss.
 
@@ -68,15 +72,19 @@ The report fits the transient thermal-impedance response of a manufacturer Cauer
 
 <figure>
   <a href="/images/research/sumitomo-device-modelling/ann-thermal-impedance-fit.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/ann-thermal-impedance-fit.png" alt="Reference thermal impedance and ANN fit on linear and logarithmic time axes" width="1920" height="980" loading="lazy"></a>
-  <figcaption><strong>Thermal-response fitting.</strong> Linear and logarithmic views compare the reference response with the ANN representation. <span class="figure-source">Device loss and thermal modelling report, slides 8–9.</span></figcaption>
+  <figcaption>Thermal-response fitting.</figcaption>
 </figure>
+
+Linear and logarithmic views compare the reference response with the ANN representation.
 
 Separate C2M0080120D measurements use **10 mA TSEP calibration**, heating/cooling transients and dry/wet interface comparison. Structure-function analysis gives a four-section Cauer network with total **R<sub>th,jc</sub> ≈ 0.762 K/W**. The measured transient differs from the manufacturer-model response, so the selected thermal representation affects temperature estimation.
 
 <figure>
   <a href="/images/research/sumitomo-device-modelling/thermal-impedance-comparison.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/thermal-impedance-comparison.png" alt="Measured and manufacturer-model thermal-impedance curves for comparison" width="1003" height="813" loading="lazy"></a>
-  <figcaption><strong>Thermal-model comparison.</strong> The measured and PLECS-model responses differ across the transient. <span class="figure-source">Device loss and thermal modelling report, slide 15.</span></figcaption>
+  <figcaption>Thermal-model comparison.</figcaption>
 </figure>
+
+The measured and PLECS-model responses differ across the transient.
 
 <h2 id="experimental-validation">Buck-Converter Assessment</h2>
 
@@ -84,13 +92,17 @@ The test operates at approximately **400 V input, 200 V output and up to 3 kW**,
 
 <figure>
   <a class="device-experiment-rotation" href="/images/research/sumitomo-device-modelling/buck-thermal-test.jpeg" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/buck-thermal-test.jpeg" alt="Heatsink-mounted SiC buck-converter module and temperature-measurement equipment" width="3301" height="2474" loading="lazy"></a>
-  <figcaption><strong>The experimental check.</strong> A heatsink-mounted power module provides the temperature-rise comparison. <span class="figure-source">Modelling/experiment comparison, slide 4.</span></figcaption>
+  <figcaption>The experimental check.</figcaption>
 </figure>
+
+A heatsink-mounted power module provides the temperature-rise comparison.
 
 <figure>
   <a href="/images/research/sumitomo-device-modelling/measured-vs-ann-loss.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/measured-vs-ann-loss.png" alt="Thermally inferred and ANN-predicted total loss over the load-current sweep" width="947" height="593" loading="lazy"></a>
-  <figcaption><strong>Loss comparison over the load sweep.</strong> The predictions and thermally inferred losses follow a similar trend. <span class="figure-source">Modelling/experiment comparison, slide 7.</span></figcaption>
+  <figcaption>Loss comparison over the load sweep.</figcaption>
 </figure>
+
+The predictions and thermally inferred losses follow a similar trend.
 
 The report states **about 10% variation against a 20% target**. Its percentage metric is not defined as a maximum pointwise error. The comparison tests the combined loss and thermal assumptions under these operating conditions.
 
@@ -98,6 +110,6 @@ The report states **about 10% variation against a 20% target**. Its percentage m
 
 The model is intended for the reference-data ranges and characterised gate-drive conditions. The unconstrained networks do not impose zero-current behaviour or monotonicity. In the public repository, the thermal training file is labelled C2M0040120D and a switching table contains an unconfirmed 900°C entry; those inputs require review before using that code as a validated C2M0080120D device model.
 
-[Public training implementation](https://github.com/FulongLi/AIPE-MOSFET-ANN-Modelling/blob/720575683673259a6ddcd29a6c69771e43b6d17a/C2MSeries_ANN_full_model.py) · [Figure sources](/files/research/sumitomo-device-modelling/figure-sources.json)
+[Public training implementation](https://github.com/FulongLi/AIPE-MOSFET-ANN-Modelling/blob/720575683673259a6ddcd29a6c69771e43b6d17a/C2MSeries_ANN_full_model.py)
 
 [Semiconductor Device Modelling](/research/mosfet_ann_modelling/) · [Electrical Characterization](/research/electrical-characterization/) · [Converter Design Optimisation](/research/converter_optimization/) · [Back to Research](/research/)

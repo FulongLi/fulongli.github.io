@@ -19,8 +19,10 @@ My contribution was the overall architecture and the early and intermediate rese
 
 <figure class="project-blueprint">
   <a href="/images/research/converter-optimization/proposed-design-framework.png" target="_blank" rel="noopener"><img src="/images/research/converter-optimization/proposed-design-framework.png" alt="Proposed converter optimisation framework linking component databases, characterisation, loss and thermal models, optimisation and engineering review" width="657" height="477" fetchpriority="high"></a>
-  <figcaption><strong>The proposed design framework.</strong> Requirements and component evidence feed models, candidate designs and engineering review. <span class="figure-source">Original framework supplied by Fulong Li.</span></figcaption>
+  <figcaption>The proposed design framework.</figcaption>
 </figure>
+
+Requirements and component evidence feed models, candidate designs and engineering review.
 
 The framework brings together **semiconductors, magnetics, capacitors and cooling**. Manufacturer data and characterisation results support reusable models, allowing candidate designs to be evaluated under the same operating conditions. The [SiC device-modelling project](/research/mosfet_ann_modelling/) demonstrates one part of this approach by connecting ANN loss models to converter experiments.
 
@@ -40,4 +42,4 @@ The original architecture remains a proposed framework. My subsequent AIPE work 
 
 The value of the approach is a design process in which assumptions and trade-offs can be inspected together. The public repository provides a focused implementation example and supports further development of engineering design tools.
 
-[Public converter optimisation code](https://github.com/FulongLi/AIPE-Converter-Optimisation-Agent) · [AIPE](/research/aipe/) · [Passive Components](/research/passive_components/) · [Back to Research](/research/)
+[Public converter optimisation code](https://github.com/FulongLi/AIPE-Converter-Optimisation-Agent) · [AIPE](https://aipel.co.uk/) · [Passive Components](/research/passive_components/) · [Back to Research](/research/)

@@ -20,8 +20,10 @@ I led the **3MW project in 2023**, connecting vessel requirements and system arc
 
 <figure class="project-blueprint">
   <a href="/images/research/marine-fuel-cell/3mw-ems-blueprint.png" target="_blank" rel="noopener"><img src="/images/research/marine-fuel-cell/3mw-ems-blueprint.png" alt="Marine fuel-cell and battery modelling workflow from equipment and vessel inputs to power scheduling and thermal outputs" width="1156" height="644" fetchpriority="high"></a>
-  <figcaption><strong>From vessel requirements to an operating strategy.</strong> Equipment models and duty cycles feed the energy management study. <span class="figure-source">Project blueprint supplied by Fulong Li.</span></figcaption>
+  <figcaption>From vessel requirements to an operating strategy.</figcaption>
 </figure>
+
+Equipment models and duty cycles feed the energy management study.
 
 The **HST and BMT** duty-cycle profiles represent different working days. The model compares fuel-cell output, battery state and heat generation across those schedules. A key finding was that battery sizing depends on the dispatch policy: assigning electric manoeuvring and auxiliary loads to the batteries creates a different energy requirement from reserving them for fuel-cell-off periods.
 
@@ -37,16 +39,20 @@ The final scheduling study uses 15-minute intervals over a 24-hour day and 80% i
 
 <figure>
   <a href="/images/research/marine-fuel-cell/hst-power-schedule.png" target="_blank" rel="noopener"><img src="/images/research/marine-fuel-cell/hst-power-schedule.png" alt="HST Case 2 daily battery power, hotel loads, fuel-cell electrical output and heat, and propulsion demand" width="1381" height="956" loading="lazy"></a>
-  <figcaption><strong>HST working day.</strong> The power schedule exposes both the electrical demand and the associated fuel-cell heat load. <span class="figure-source">3MW overview, slide 58.</span></figcaption>
+  <figcaption>HST working day.</figcaption>
 </figure>
+
+The power schedule exposes both the electrical demand and the associated fuel-cell heat load.
 
 HST Case 2 reports **13.721 MWh of fuel-cell electrical energy** and **17.188 MWh of generated heat**. Across the minimum and maximum HST cases, electrical energy ranges from **10.704 to 17.190 MWh**, with heat generation of **12.968–22.623 MWh**. These outputs make thermal management a substantial design consideration alongside electrical dispatch.
 
 <span id="bmt-results"></span>
 <figure>
   <a href="/images/research/marine-fuel-cell/bmt-power-schedule.png" target="_blank" rel="noopener"><img src="/images/research/marine-fuel-cell/bmt-power-schedule.png" alt="BMT daily power schedule with repeated offshore demand changes" width="1381" height="956" loading="lazy"></a>
-  <figcaption><strong>A different mission changes the schedule.</strong> Repeated BMT demand changes produce a different fuel-cell and battery operating pattern. <span class="figure-source">3MW overview, slide 62.</span></figcaption>
+  <figcaption>A different mission changes the schedule.</figcaption>
 </figure>
+
+Repeated BMT demand changes produce a different fuel-cell and battery operating pattern.
 
 The BMT case reports **13.007 MWh of fuel-cell electrical energy** and **16.603 MWh of heat**. All results are simulations under the documented dispatch and assumed auxiliary-load profile.
 
@@ -54,6 +60,6 @@ The BMT case reports **13.007 MWh of fuel-cell electrical energy** and **16.603 
 
 The project delivered a reusable modelling workflow for comparing duty cycles, battery allocations and operating rules. It showed why capacity and dispatch must be assessed together, and provided heat-load context for the subsequent [SinO-OFH thermal evaluation](/research/sino-ofh/), where I led WP4.1.
 
-[Daily simulation results](/files/research/marine-fuel-cell/daily-energy-results.csv) · [Figure sources](/files/research/marine-fuel-cell/3mw-figure-sources.json) · [Related public EMS code](https://github.com/FulongLi/MicrogridEnergyManagementSystermDesign)
+[Daily simulation results](/files/research/marine-fuel-cell/daily-energy-results.csv) · [Related public EMS code](https://github.com/FulongLi/MicrogridEnergyManagementSystermDesign)
 
 [Microgrid Energy Management](/research/mgapp/) · [Back to Research](/research/)

@@ -31,4 +31,4 @@ The case study explains the neural-network branches, training and scaling, loss 
 
 The current models map operating conditions to characteristic values or event energies. Electrical switching-transient modelling remains outside this case study. [Electrical characterisation](/research/electrical-characterization/) supplies static and switching data, while [thermal characterisation](/research/thermal-characterization/) identifies the heat path needed for temperature estimation.
 
-[Converter Design Optimisation](/research/converter_optimization/) · [AIPE](/research/aipe/) · [Back to Research](/research/)
+[Converter Design Optimisation](/research/converter_optimization/) · [AIPE](https://aipel.co.uk/) · [Back to Research](/research/)

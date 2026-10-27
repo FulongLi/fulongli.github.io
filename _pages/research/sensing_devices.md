@@ -23,7 +23,7 @@ I designed a current transformer with a magnetic core embedded between PCB layer
 
 <figure>
   <a href="/images/research/pcb-current-transformer/pcb-ct-perspective.png" target="_blank" rel="noopener"><img src="/images/research/pcb-current-transformer/pcb-ct-perspective.png" alt="Perspective rendering of a rectangular PCB current transformer with distributed secondary traces and central aperture" width="602" height="459"></a>
-  <figcaption>PCB current transformer design with a distributed winding around the central aperture. <span class="figure-source"><a href="https://github.com/FulongLi/Magnetics-PCBCurrentTransformerTransducer">Design repository</a>, CC BY 4.0.</span></figcaption>
+  <figcaption>PCB current transformer design with a distributed winding around the central aperture.</figcaption>
 </figure>
 
 ### Design and Manufacturing Approach
@@ -32,7 +32,7 @@ The layout distributes the secondary turns around the aperture using PCB copper 
 
 <figure>
   <a href="/images/research/pcb-current-transformer/pcb-ct-top.png" target="_blank" rel="noopener"><img src="/images/research/pcb-current-transformer/pcb-ct-top.png" alt="Top view of the PCB current transformer showing winding traces around the rectangular aperture" width="602" height="268" loading="lazy"></a>
-  <figcaption>Top view of the PCB winding layout. <span class="figure-source"><a href="https://github.com/FulongLi/Magnetics-PCBCurrentTransformerTransducer">Design repository</a>, CC BY 4.0.</span></figcaption>
+  <figcaption>Top view of the PCB winding layout.</figcaption>
 </figure>
 
 ### Design Calculation
