@@ -23,7 +23,7 @@ I developed the stabiliser and signalling method, then integrated them with droo
 </figure>
 
 <span id="passive-control"></span>
-**[Passive control](/research/dcmg/passive-control/)** stabilises Boost interface converters. A high-pass-filtered compensator suppresses oscillation while avoiding the steady-state voltage shift of constant-gain compensation.
+**[Passive Control for Boost Converter](/research/dcmg/passive-control/)** stabilises Boost interface converters. A high-pass-filtered compensator suppresses oscillation while avoiding the steady-state voltage shift of constant-gain compensation.
 
 <span id="dc-bus-signalling"></span>
 **[Dual-window bus signalling](/research/dcmg/dc-bus-signalling/)** separates normal droop operation from intentional voltage messages, allowing converters to exchange coordination commands through the power bus.
