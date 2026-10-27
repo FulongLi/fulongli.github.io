@@ -133,5 +133,35 @@
     "width": 720,
     "height": 615,
     "sha256": "65848fce0ded3696404cf538e1317bb6218822d545337076fedabeceb658711f"
+  },
+  {
+    "file": "aston-system-architecture.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 63,
+    "figure": "3.2",
+    "crop_points": [
+      145,
+      408,
+      475,
+      623
+    ],
+    "width": 990,
+    "height": 645,
+    "sha256": "898875ae9dc0284223840522186a25ab61de8266c84266b497800e99924a1daa"
+  },
+  {
+    "file": "aston-converter-architecture.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 65,
+    "figure": "3.3",
+    "crop_points": [
+      108,
+      68,
+      510,
+      407
+    ],
+    "width": 1206,
+    "height": 1017,
+    "sha256": "7f24b4deeb04b647f1b0fa39eb611fc7dafea7ba7b2f6cc86c3edf5966f48cba"
   }
 ]

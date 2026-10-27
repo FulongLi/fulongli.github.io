@@ -10,7 +10,7 @@ My non-isolated converter work connects local control to DC microgrid operation,
 <h2 id="bidirectional-buck-boost-converter">Bidirectional Half-Bridge Buck–Boost Converter</h2>
 <span id="bidirectional-half-bridge-buckboost-converter"></span>
 
-Bidirectional battery interfaces form part of my earlier DC microgrid research, linking [battery coordination](/research/battery_storage/#converter-level-control) to charging, discharging and bus regulation.
+Bidirectional battery interfaces connect battery charging and discharging with DC bus regulation. The modular half-bridge prototype combines a power stage, sensing, isolated gate drives and DSP control. [Explore the converter architecture and ratings](/research/nonisolated-converters/bidirectional-buck-boost/).
 
 ## Buck / Boost Converter Control
 
