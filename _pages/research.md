@@ -110,7 +110,7 @@ My work connects power-electronic components, converter design, and microgrid co
     <li>
       <a href="/research/dcmg/">DC Microgrid Control Strategies</a>
       <ul>
-        <li><a href="/research/dcmg/passive-control/">Passive Control</a></li>
+        <li><a href="/research/dcmg/passive-control/">Passive Control for Boost Converter</a></li>
         <li><a href="/research/dcmg/dc-bus-signalling/">Dual-Window DC Bus Signalling</a></li>
         <li><a href="/research/dcmg/rule-based-ems/">Rule-Based EMS</a></li>
       </ul>

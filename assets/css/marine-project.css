@@ -42,6 +42,7 @@
 .page__content h2[tabindex="-1"]:focus { outline: none; }
 .project-table-scroll { overflow-x: auto; }
 .project-table-scroll table { min-width: 560px; }
+.math-display { overflow-x: auto; overflow-y: hidden; }
 @media (max-width: 1199px) {
   .project-contents.is-sidebar { position: static; width: auto; max-height: none; overflow: visible; }
 }

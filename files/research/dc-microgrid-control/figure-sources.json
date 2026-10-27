@@ -103,5 +103,35 @@
     "width": 1293,
     "height": 783,
     "sha256": "bf1784a028c930d86bfb5ebe959d2db8477e6f67b0cd5af954e670f59a669453"
+  },
+  {
+    "file": "signal-state-machine.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 126,
+    "figure": "6.14",
+    "crop_points": [
+      160,
+      55,
+      470,
+      240
+    ],
+    "width": 930,
+    "height": 555,
+    "sha256": "821e9c9b6e1f69b0e07779e4a8c9328765f396de392ad02ddcc131d88390d654"
+  },
+  {
+    "file": "mode-state-machine.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 127,
+    "figure": "6.15",
+    "crop_points": [
+      195,
+      150,
+      435,
+      355
+    ],
+    "width": 720,
+    "height": 615,
+    "sha256": "65848fce0ded3696404cf538e1317bb6218822d545337076fedabeceb658711f"
   }
 ]
