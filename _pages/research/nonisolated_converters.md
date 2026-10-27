@@ -11,7 +11,7 @@ My non-isolated converter work connects converter-level control with earlier DC 
 
 <img class="research-hero-image" src="/images/research/generated/non-isolated-converters.png" alt="Non-isolated converter technical illustration" />
 
-## Bidirectional Half-Bridge Buck–Boost Converter
+<h2 id="bidirectional-buck-boost-converter">Bidirectional Half-Bridge Buck–Boost Converter</h2>
 
 **Overview:** Bidirectional DC–DC converter work originating from my earlier DC microgrid research.
 

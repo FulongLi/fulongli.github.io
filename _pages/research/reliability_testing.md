@@ -7,7 +7,15 @@ author_profile: true
 
 ## Overview
 
-This category groups power-device reliability testing separately from electrical and thermal characterisation. Specific test responsibilities and public evidence remain to be confirmed before individual projects are described.
+My power-device reliability testing experience includes SiC power module HTRB / H3TRB testing and GaN thermal cycling, alongside electrical and thermal characterisation work.
+
+<h2 id="sic-power-module-htrb-h3trb-test">SiC Power Module HTRB / H3TRB Test</h2>
+
+My experience includes high-temperature reverse-bias (HTRB) and high-humidity, high-temperature reverse-bias (H3TRB) testing of SiC power modules.
+
+<h2 id="gan-thermal-cycling">GaN Thermal Cycling</h2>
+
+My experience also includes GaN device reliability testing under repeated thermal cycles.
 
 ## Testing Areas
 
