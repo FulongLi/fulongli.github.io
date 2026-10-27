@@ -1,0 +1,7 @@
+current_A,conduction_loss_W,switching_loss_W,total_loss_W,scope,source_deck,source_slide,note
+0.8,0.027,0.643,0.67,"single MOSFET, body diode excluded",WP3_summary.pptx,6,Transcribed displayed values; rounding retained; not digitised experimental data
+2,0.17,0.938,1.109,"single MOSFET, body diode excluded",WP3_summary.pptx,6,Transcribed displayed values; rounding retained; not digitised experimental data
+5.5,1.301,1.6,2.901,"single MOSFET, body diode excluded",WP3_summary.pptx,6,Transcribed displayed values; rounding retained; not digitised experimental data
+7.2,2.249,1.924,4.173,"single MOSFET, body diode excluded",WP3_summary.pptx,6,Transcribed displayed values; rounding retained; not digitised experimental data
+10.8,5.629,2.401,8.03,"single MOSFET, body diode excluded",WP3_summary.pptx,6,Transcribed displayed values; rounding retained; not digitised experimental data
+13.4,9.312,3.091,12.403,"single MOSFET, body diode excluded",WP3_summary.pptx,6,Transcribed displayed values; rounding retained; not digitised experimental data
