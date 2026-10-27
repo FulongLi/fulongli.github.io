@@ -23,3 +23,29 @@
   max-width: none;
   transform: translate(-50%, -50%) rotate(90deg);
 }
+
+/* Contents use the existing right-hand gutter; narrower screens keep them above the article. */
+.project-contents.is-sidebar {
+  position: fixed;
+  top: var(--contents-top);
+  left: var(--contents-left);
+  width: var(--contents-width);
+  max-height: calc(100vh - var(--contents-top) - 1.5rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.project-contents.is-sidebar ul { margin: 0; padding: 0; list-style: none; }
+.project-contents.is-sidebar li { margin: 0; }
+.project-contents.is-sidebar a { border-left: 2px solid transparent; overflow-wrap: anywhere; }
+.project-contents a[aria-current="location"] { text-decoration-thickness: 2px; }
+.project-contents.is-sidebar a[aria-current="location"] { border-left-color: currentColor; }
+.project-contents.is-sidebar li { padding: .35em .65em; }
+.page__content h2[tabindex="-1"]:focus { outline: none; }
+.project-table-scroll { overflow-x: auto; }
+.project-table-scroll table { min-width: 560px; }
+@media (max-width: 1199px) {
+  .project-contents.is-sidebar { position: static; width: auto; max-height: none; overflow: visible; }
+}
+@media print {
+  .project-contents { display: none; }
+}

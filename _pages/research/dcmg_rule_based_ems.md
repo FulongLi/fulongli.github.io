@@ -5,6 +5,7 @@ permalink: /research/dcmg/rule-based-ems/
 author_profile: true
 body_class: microgrid-project-page
 project_stylesheet: /assets/css/marine-project.css
+project_contents: true
 excerpt: "The thesis system demonstration: rule-based power management, six-bit bus commands, plug-and-play batteries and PV surplus limitation."
 ---
 
@@ -16,9 +17,9 @@ I integrated the control layers, defined the operating rules and six-bit signall
 
 <h2 id="operating-rules">Operating Roles Follow the System State</h2>
 
-The experimental system uses a grid interface, two battery interfaces and an emulated PV source. Operating rules assign bus regulation to the grid or a battery and coordinate charging, discharging and PV limitation. A finite-state machine translates received commands into converter roles.
+The experimental system uses a grid interface, two battery interfaces and an emulated PV source. Operating rules assign bus regulation to the grid or a battery and coordinate charging, discharging and PV limitation. A finite-state machine translates received commands into converter roles. Its first level handles initialisation, transmission, monitoring and reception; normal operation then selects sleep, droop or power mode. Droop mode assigns bus regulation, while power mode selects a current reference from the command and battery state.
 
-Messages travel through the [dual-window DBI method](/research/dcmg/dc-bus-signalling/), using **six bits at 100 ms per bit**. The power-management logic curtails surplus PV near **51 V**, distinct from the **52.5 V signalling level**.
+Messages travel through the [dual-window DBI method](/research/dcmg/dc-bus-signalling/), using **six bits at 100 ms per bit**. The command fields identify the start, converter state, battery-interface identity, droop/power mode, charge/discharge state and current selection. Grid-connected operation gives bus regulation to the grid interface; planned disconnection transfers that responsibility to a battery. The power-management logic curtails surplus PV near **51 V**, distinct from the **52.5 V signalling level**.
 
 <h2 id="experimental-validation">Two Representative System Responses</h2>
 
