@@ -1,11 +1,8 @@
 ---
-layout: single
+layout: research
+research_area: microgrids
 title: "DC Microgrid Control Strategies"
 permalink: /research/dcmg/
-author_profile: true
-body_class: microgrid-project-page
-project_stylesheet: /assets/css/marine-project.css
-project_script: /assets/js/marine-project.js
 excerpt: "Passive converter control, dual-window DC bus signalling and rule-based energy management within a three-layer DC microgrid hierarchy."
 ---
 
@@ -16,7 +13,7 @@ How can a DC microgrid coordinate renewable generation and battery storage while
 **My contribution:** I developed a passive stabiliser for interface converters and a dual-window DC bus interacting method, then combined them with droop control and rule-based power management on a low-voltage DC microgrid bench. The work examined plug-and-play operation, battery charging and discharging, planned grid/island transitions and surplus PV power limitation.
 
 <figure>
-  <a href="/images/research/dc-microgrid-control/laboratory-bench.png" target="_blank" rel="noopener" aria-label="View original: low-voltage DC microgrid bench"><img src="/images/research/dc-microgrid-control/laboratory-bench.png" alt="Original thesis photograph of the laboratory bench with interface converters, PV emulator, electronic load and oscilloscope" width="1212" height="915" fetchpriority="high"></a>
+  <a href="/images/research/dc-microgrid-control/laboratory-bench.jpg" target="_blank" rel="noopener" aria-label="View original: low-voltage DC microgrid bench"><img src="/images/research/dc-microgrid-control/laboratory-bench.jpg" alt="Original thesis photograph of the laboratory bench with interface converters, PV emulator, electronic load and oscilloscope" width="1212" height="915" fetchpriority="high"></a>
   <figcaption><strong>The experimental foundation.</strong> The bench connects source emulation, battery storage and loads through controlled interface converters. <span class="figure-source">PhD thesis, Figure 3.1, p. 63.</span></figcaption>
 </figure>
 

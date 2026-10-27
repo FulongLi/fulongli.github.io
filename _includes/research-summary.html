@@ -1,0 +1,25 @@
+{% comment %}
+  "At a glance" panel for a research page, built from _data/research.yml
+  entries whose `page` matches this page's URL.
+{% endcomment %}
+{% assign matches = site.data.research.projects | where: "page", page.url %}
+{% if matches.size > 0 %}
+<aside class="research-glance" aria-label="At a glance">
+  <p class="research-glance__label">At a glance</p>
+  {% for p in matches %}
+  <div class="research-glance__item">
+    {% if matches.size > 1 %}<p class="research-glance__title"><a href="{{ p.url }}">{{ p.title }}</a></p>{% endif %}
+    <dl>
+      <div><dt>Objective</dt><dd>{{ p.summary }}</dd></div>
+      <div><dt>My role</dt><dd>{{ p.role }}</dd></div>
+      <div><dt>Setting</dt><dd>{{ p.setting }}</dd></div>
+    </dl>
+    {% include research-tags.html project=p %}
+  </div>
+  {% endfor %}
+  {% assign under_review = matches | where: "review", true %}
+  {% if under_review.size > 0 %}
+  <p class="research-glance__note">Industry-funded project: this page summarises the engineering problem, the method and my role. Detailed results, figures and partner data are not reproduced here.</p>
+  {% endif %}
+</aside>
+{% endif %}

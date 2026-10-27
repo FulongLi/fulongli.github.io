@@ -1,5 +1,13 @@
 <div class="site-footer__primary">
-  <span>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.</span>
+  <span>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} · Power electronics research and engineering · {{ site.author.location }}</span>
+  <ul class="site-footer__links" aria-label="Footer">
+    <li><a href="{{ base_path }}/research/">Research</a></li>
+    <li><a href="{{ base_path }}/publications/">Publications</a></li>
+    <li><a href="{{ base_path }}/cv/">CV</a></li>
+    <li><a href="mailto:{{ site.author.email }}">Email</a></li>
+    <li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
+    <li><a href="{{ site.author.googlescholar }}">Google Scholar</a></li>
+  </ul>
   <span id="busuanzi_container_site_pv" style="display: none;">Total visits: <span id="busuanzi_value_site_pv"></span></span>
 </div>
 

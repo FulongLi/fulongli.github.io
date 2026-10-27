@@ -1,31 +1,20 @@
 ---
-layout: single
-title: "Power Device Characterization"
+layout: research
+research_area: components
+title: "Power Device Characterisation and Testing"
 permalink: /research/switching_devices/
-author_profile: true
-excerpt: "Electrical and thermal characterization of power devices: laboratory equipment, double-pulse testing, and thermal resistance measurements."
+excerpt: "Overview of power-device electrical and thermal characterisation and reliability testing for SiC, GaN and IGBT devices."
+lede: "Converter loss and lifetime estimates are only as good as the device data behind them. This overview links the test work that produced that data."
 ---
 
-## Overview
+At CSA Catapult (2022–2025) I designed and commissioned a test rig for SiC and GaN device characterisation and used it across several industry-funded projects. The rig supports five test types, which divide into the three pages below.
 
-My power-device characterization work centres on laboratory measurement: configuring the equipment, establishing the test conditions and turning recorded signals into useful device data. It covers electrical switching behaviour and the thermal path between the semiconductor junction and its cooling arrangement.
+| Question | Test | Page |
+|---|---|---|
+| How much energy does each switching event dissipate at a given voltage, current, gate resistance and temperature? | Double-pulse testing | [Electrical characterisation](/research/electrical-characterization/) |
+| How does junction temperature respond to dissipated power, and what is the junction-to-case thermal resistance? | Transient thermal-impedance measurement | [Thermal characterisation](/research/thermal-characterization/) |
+| Does the device or module degrade under humidity, bias, temperature cycling or high voltage? | H3TRB, temperature cycling, insulation testing | [Reliability testing](/research/reliability_testing/) |
 
-For the **Siemens project**, I worked with a colleague to build the double-pulse test platform and modify the original test board. We used this setup to characterize switching behaviour under different electrical and temperature conditions. The related thermal work focuses on operating the thermal-characterization equipment, calibrating temperature-sensitive electrical parameters and measuring device thermal resistance.
+The measured switching and thermal characteristics are the inputs to [ANN-based device loss and thermal models](/research/mosfet_ann_modelling/), which in turn feed [converter design optimisation](/research/converter_optimization/).
 
-<h2 id="electrical-characterization">Electrical Characterization</h2>
-
-**Double-pulse testing (DPT)** measures switching transients and event energies. This work includes the jointly built test platform, board modifications, probe configuration and waveform post-processing. Static **I–V and C–V measurements** with the Keysight B1505A provide complementary device characteristics.
-
-[Explore Electrical Characterization: test equipment, DPT platform and switching results](/research/electrical-characterization/)
-
-<h2 id="thermal-characterization">Thermal Characterization</h2>
-
-**Thermal resistance and transient thermal impedance measurements** connect device power dissipation to junction-temperature rise. The workflow uses the PWT2400 power tester, T3STER measurement and analysis system, and a temperature-controlled cooling circuit, followed by comparison of dry and greased interfaces and extraction of thermal networks.
-
-[Explore Thermal Characterization: equipment, calibration and thermal resistance testing](/research/thermal-characterization/)
-
-## Related Research
-
-The measured characteristics provide inputs to [Semiconductor Device Modelling](/research/mosfet_ann_modelling/) and [Converter Design Optimisation](/research/converter_optimization/). [Power Device Reliability Testing](/research/reliability_testing/) is a separate area of work.
-
-[Back to Research](/research/)
+The detailed test reports belong to industry-funded projects and are not reproduced. Each page describes the measurement problem, the method and my role.

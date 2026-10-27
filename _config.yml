@@ -67,6 +67,15 @@ exclude:
   - assets/js/_main.js
   - assets/js/plugins
   - assets/js/vendor
+  # Industry-project figures and data withheld pending owner disclosure review
+  # (see the PR). Remove these lines only after publication rights are confirmed.
+  - images/research/device-characterization
+  - images/research/sumitomo-device-modelling
+  - images/research/marine-fuel-cell
+  - files/research/device-characterization
+  - files/research/sumitomo-device-modelling
+  - files/research/marine-fuel-cell
+  - .claude
 keep_files:
   - .git
 encoding: "utf-8"

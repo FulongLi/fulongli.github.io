@@ -1,11 +1,11 @@
 ---
-layout: single
+layout: research
+research_area: microgrids
+parent:
+  title: "DC microgrid control"
+  url: /research/dcmg/
 title: "Rule-Based EMS and Hierarchical DC Microgrid Operation"
 permalink: /research/dcmg/rule-based-ems/
-author_profile: true
-body_class: microgrid-project-page
-project_stylesheet: /assets/css/marine-project.css
-project_script: /assets/js/marine-project.js
 excerpt: "The thesis system demonstration: rule-based power management, six-bit bus commands, plug-and-play batteries and PV surplus limitation."
 ---
 

@@ -1,40 +1,34 @@
 ---
-layout: single
-title: "Non-Isolated Converters"
+layout: research
+research_area: converters
+title: "Non-Isolated and Grid-Interface Converters"
 permalink: /research/nonisolated_converters/
-author_profile: true
+excerpt: "Bidirectional buck–boost interface converters for a laboratory DC microgrid, boost converter control, and work with a three-phase VSC on a 50 kW DC microgrid platform."
 ---
 
-## Overview
+These converters were not designed as standalone products. They are the interface converters of DC microgrid research, so their requirements come from the system: regulating a shared DC bus, sharing current under droop control, and remaining stable when sources and loads connect and disconnect.
 
-My non-isolated converter work connects converter-level control with earlier DC microgrid research, including bidirectional battery interfaces and Buck/Boost control.
+## Bidirectional half-bridge buck–boost converter {#bidirectional-half-bridge-buckboost-converter}
 
-<img class="research-hero-image" src="/images/research/generated/non-isolated-converters.png" alt="Non-isolated converter technical illustration" />
+**Problem.** A battery on a DC microgrid must both charge from and discharge into the bus, and a PV source or grid emulator must be interfaced to the same bus with a common control structure.
 
-## Bidirectional Half-Bridge Buck–Boost Converter
+**My contribution.** During my PhD at Aston University and at Loughborough University I built the bench converters for the [laboratory DC microgrid](/research/experimental_platforms/) and implemented their DSP-based control: double-loop voltage and current control, feedforward compensation for transient response, MPPT for the PV interface, and state-of-charge-based control for the battery units.
 
-**Overview:** Bidirectional DC–DC converter work originating from my earlier DC microgrid research.
+**Hardware.** Each interface is a half-bridge bidirectional buck–boost (bidirectional boost) converter with a TMS320F28335 DSP control card. The public design repository lists a 240 µH inductor and 470 µF input and output capacitors, and documents a second bench version with a higher power rating and improved gate drive and sensing.
 
-**My contribution:** Investigated converter control in the microgrid context; specific design and implementation responsibilities will be confirmed in a later update.
+**Evidence.** The converters are the hardware used for the experiments in my [PhD thesis](https://publications.aston.ac.uk/id/eprint/46135/); the bench and its configuration are described in the thesis and in the public repository.
 
-**Related work:** [Battery converter control](/research/battery_storage/#converter-level-control) · [DC Microgrid Control Strategies](/research/dcmg/).
+## Boost converter stability by passive control
 
-## Buck / Boost Converter Control
+The boost converter's right-half-plane zero (non-minimum-phase behaviour) limits how fast its voltage loop can be made, and a microgrid interface converter is exposed to constant-power loads and changes in terminal capacitance. I developed a feedforward passive stabiliser with a high-pass filter that damps the resulting oscillation without shifting the steady-state bus voltage, and validated it experimentally. The method, equations and measured waveforms are on the [passive control page](/research/dcmg/passive-control/); the work is published in IEEE JESTPE (2021).
 
-**Overview:** Buck/Boost converter control supports source and storage interfaces in DC systems.
+## AC–DC converter interface: three-phase VSC {#acdc-converter-interfaces}
 
-**My contribution:** Researched Boost converter stability control, as documented in the publication below; other Buck/Boost implementations will be described incrementally.
+During a visiting period at Zhejiang University (March–April 2018) I tested and operated an existing **50 kW DC microgrid platform** whose grid interface was a three-phase voltage-source converter (VSC), and modified primary control strategies to improve stability and dynamic response. The VSC was part of the platform; I did not design or build it. Details of the tests are not yet documented here.
 
-**Related publications:** [“Novel Passive Controller Design for Enhancing Boost Converter Stability in DC Microgrid Applications,” IEEE JESTPE 2021](https://ieeexplore.ieee.org/document/9391691).
+## References and resources
 
-**GitHub / external resources:** [Buck and Boost converter resources](https://github.com/FulongLi/NonisolatedCoverters).
-
-## AC–DC Converter Interfaces
-
-**Overview:** A three-phase voltage source converter (VSC) formed part of the existing DC microgrid experimental platform I used during visiting research at Zhejiang University.
-
-**My contribution:** The VSC was equipment used in that research, not a converter I independently designed or manufactured.
-
-**Related work:** The primary platform description is under [Zhejiang University: 50 kW DC Microgrid Platform](/research/experimental_platforms/#zhejiang-university-50-kw-dc-microgrid-platform).
-
-[Back to Research](/research/)
+- F. Li, Z. Lin, “[Novel Passive Controller Design for Enhancing Boost Converter Stability in DC Microgrid Applications](https://doi.org/10.1109/JESTPE.2021.3070234),” *IEEE JESTPE*, 9(6), 6901–6911, 2021.
+- [DCMicrogridTestBench (GitHub, CC BY 4.0)](https://github.com/FulongLi/DCMicrogridTestBench): power and control board description of the bench converters.
+- [NonisolatedCoverters (GitHub, CC BY 4.0)](https://github.com/FulongLi/NonisolatedCoverters): boost control design scripts and Simulink models.
+- Related: [Battery storage control](/research/battery_storage/) · [DC microgrid control strategies](/research/dcmg/)

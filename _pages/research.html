@@ -1,0 +1,88 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+excerpt: "Research and engineering portfolio: power device characterisation and modelling, converter design and control, DC microgrid control and energy management."
+---
+
+{% assign rdata = site.data.research %}
+
+<p class="research-lede">My work runs from power semiconductor devices to the systems they operate in: measuring and modelling device losses, designing and stabilising the converters built from them, and coordinating those converters in DC microgrids and hybrid energy systems. Each project below states the engineering objective, my role, and what evidence a reader can check.</p>
+
+<figure class="research-map">
+<svg viewBox="0 0 800 210" role="img" aria-labelledby="rm-title rm-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="rm-title">How the research areas connect</title>
+  <desc id="rm-desc">Three linked layers: components provide loss and thermal models to converters; converters provide controlled interfaces to microgrids and energy systems. AIPE spans all three as a layer of data-driven models and open tools.</desc>
+  <defs>
+    <marker id="rm-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="rm-arrowhead"/></marker>
+  </defs>
+  <a href="#components">
+    <rect class="rm-box" x="4" y="8" width="226" height="104" rx="6"/>
+    <text class="rm-num" x="20" y="34">02</text>
+    <text class="rm-title" x="20" y="58">Components</text>
+    <text class="rm-text" x="20" y="80">Devices · current sensors</text>
+    <text class="rm-text" x="20" y="98">magnetics</text>
+  </a>
+  <a href="#converters">
+    <rect class="rm-box" x="287" y="8" width="226" height="104" rx="6"/>
+    <text class="rm-num" x="303" y="34">03</text>
+    <text class="rm-title" x="303" y="58">Converters</text>
+    <text class="rm-text" x="303" y="80">Topology · control · stability</text>
+    <text class="rm-text" x="303" y="98">design optimisation</text>
+  </a>
+  <a href="#microgrids">
+    <rect class="rm-box" x="570" y="8" width="226" height="104" rx="6"/>
+    <text class="rm-num" x="586" y="34">04</text>
+    <text class="rm-title" x="586" y="58">Microgrids &amp; Energy Systems</text>
+    <text class="rm-text" x="586" y="80">Coordination · storage · PV</text>
+    <text class="rm-text" x="586" y="98">energy management</text>
+  </a>
+  <line class="rm-link" x1="232" y1="60" x2="284" y2="60" marker-end="url(#rm-arrow)"/>
+  <line class="rm-link" x1="515" y1="60" x2="567" y2="60" marker-end="url(#rm-arrow)"/>
+  <text class="rm-label" x="258" y="50" text-anchor="middle">losses</text>
+  <text class="rm-label" x="541" y="50" text-anchor="middle">interfaces</text>
+  <a href="#aipe">
+    <rect class="rm-band" x="4" y="140" width="792" height="62" rx="6"/>
+    <text class="rm-num" x="20" y="166">01</text>
+    <text class="rm-title" x="52" y="166">AIPE: AI for Power Engineering</text>
+    <text class="rm-text" x="20" y="188">Neural-network device models · surrogate-based design optimisation · open data and code</text>
+  </a>
+  <line class="rm-tie" x1="117" y1="112" x2="117" y2="140"/>
+  <line class="rm-tie" x1="400" y1="112" x2="400" y2="140"/>
+  <line class="rm-tie" x1="683" y1="112" x2="683" y2="140"/>
+</svg>
+<figcaption>How the four areas connect. Device measurements feed loss and thermal models for converter design; converters provide the controlled interfaces that system-level coordination relies on.</figcaption>
+</figure>
+
+<ul class="research-jump" aria-label="Research areas">
+{% for area in rdata.areas %}  <li><a href="#{{ area.id }}"><span>{{ area.number }}</span>{{ area.title }}</a></li>
+{% endfor %}</ul>
+
+{% for area in rdata.areas %}
+{% assign area_projects = rdata.projects | where_exp: "p", "p.areas contains area.id" %}
+<section class="research-area" id="{{ area.id }}" aria-labelledby="{{ area.id }}-title">
+  <header class="research-area__header">
+    <span class="research-area__number">{{ area.number }}</span>
+    <h2 class="research-area__title" id="{{ area.id }}-title">{{ area.title }}</h2>
+    <p class="research-area__description">{{ area.description }}</p>
+  </header>
+  <div class="research-cards">
+    {% for project in area_projects %}{% include research-card.html project=project %}{% endfor %}
+  </div>
+</section>
+{% endfor %}
+
+<section class="research-legend" aria-labelledby="legend-title">
+  <h2 id="legend-title">Reading the labels</h2>
+  <dl>
+    <div><dt><span class="research-tag research-tag--published">{{ rdata.evidence_levels.published }}</span></dt><dd>A journal or conference paper presents the method and results; the project page links it.</dd></div>
+    <div><dt><span class="research-tag research-tag--thesis">{{ rdata.evidence_levels.thesis }}</span></dt><dd>Documented in <a href="https://publications.aston.ac.uk/id/eprint/46135/">my PhD thesis</a>; chapter and figure numbers are cited on the page.</dd></div>
+    <div><dt><span class="research-tag research-tag--code">{{ rdata.evidence_levels.code }}</span></dt><dd>A public repository contains the models, scripts or design files. Repository descriptions are not by themselves measured results.</dd></div>
+    <div><dt><span class="research-tag research-tag--internal">{{ rdata.evidence_levels.internal }}</span></dt><dd>Industry-funded work documented in project reports that are not public. The page describes the problem, method and my role, without detailed results.</dd></div>
+    <div><dt><span class="research-tag research-tag--cv">{{ rdata.evidence_levels.cv }}</span></dt><dd>The work is listed in <a href="/files/FulongCV.pdf">my CV</a>; no further public material is available yet.</dd></div>
+    <div><dt><span class="research-tag research-tag--work">Experimental</span> <span class="research-tag research-tag--work">Simulation</span></dt><dd>Work-type labels distinguish laboratory measurement, simulation, modelling, hardware prototypes, optimisation and technical reviews. A simulation result is never labelled as experimental.</dd></div>
+  </dl>
+</section>
+
+<p class="research-related">Overview pages: <a href="/research/switching_devices/">Power device characterisation</a> · <a href="/research/mgapp/">Microgrid energy management projects</a> · <a href="/research/acmg/">AC microgrids (related topic)</a> · <a href="/publications/">Full publication list</a></p>

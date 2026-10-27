@@ -1,41 +1,42 @@
 ---
-layout: single
-title: "Battery Energy Storage Systems"
+layout: research
+research_area: microgrids
+title: "Battery Storage: Converter Control and Energy Management"
 permalink: /research/battery_storage/
-author_profile: true
+excerpt: "Battery storage in DC microgrids at two levels: plug-and-play converter control and current sharing, and degradation-aware energy management."
 ---
 
-## Converter-Level Control
+Battery storage enters a DC microgrid at two different levels, and the two are kept apart here. At **converter level** the question is how each battery interface regulates the bus and shares current with its peers, on a timescale of milliseconds. At **system level** the question is when to charge and discharge over a day, given prices, demand and the cost of battery wear.
 
-### Battery Converter Control and SoC-Based Control
+## Converter-level control {#converter-level-control}
 
-**Overview:** My DC microgrid research includes battery converter control, state-of-charge (SoC)-based control, and power sharing.
+### Plug-and-play operation and current sharing {#battery-power-sharing-and-plug-and-play-storage}
 
-**My contribution:** Investigated converter-level battery coordination; specific control implementations will be described in later project updates.
+**Problem.** Droop control lets battery modules share load without communication, so modules can be added and removed, but it trades away current-sharing accuracy and its coefficients must be chosen carefully: large droop coefficients move the operating point and can cause instability.
 
-**Related work:** [Bidirectional Half-Bridge Buck–Boost Converter](/research/nonisolated_converters/#bidirectional-half-bridge-buckboost-converter) · [DC Microgrid Control Strategies](/research/dcmg/).
+**My work.**
 
-### Battery Power Sharing and Plug-and-Play Storage
+- *Multifunctional control for modular plug-and-play storage* (IEEE ISIE 2020) reconfigures the hierarchical control scheme so that an automatic master–slave mechanism in the secondary layer handles cases where communication is absent or the master module fails.
+- *Reconstructed droop control* (IEEE ICDCM 2021) realises droop through a reconstructed control block with a natural droop coefficient, avoiding the need to select large coefficients, and provides a variable for integration with the hierarchical scheme.
 
-**Overview:** This work addresses power sharing and modular plug-and-play battery storage in DC microgrids.
+**Evidence.** Both papers validate the methods in MATLAB/Simulink simulation.
 
-**My contribution:** Developed control methods for battery storage coordination, documented in the publications below.
+### State-of-charge-based control on hardware
 
-**Related publications:**
+At Loughborough University I implemented state-of-charge-based control for the battery units of the [laboratory DC microgrid](/research/experimental_platforms/) on its DSP-controlled [interface converters](/research/nonisolated_converters/#bidirectional-half-bridge-buckboost-converter). The thesis demonstration of signalled battery charging and discharging is described under [Rule-based EMS](/research/dcmg/rule-based-ems/).
 
-- [“Multifunctional Control Design for Modular Plug-and-play Battery Storage in DC Microgrids,” IEEE ISIE 2020](https://ieeexplore.ieee.org/document/9152414).
-- [“Reconstructed Droop Control for Peer Current Sharing of Battery Storage in DC Microgrids,” IEEE ICDCM 2021](https://ieeexplore.ieee.org/document/9504641).
+## System-level energy management {#battery-degradation-modelling-and-energy-management-optimisation}
 
-## System-Level Energy Management
+**Problem.** In a DC microgrid the battery often holds the bus voltage, so scheduling that ignores wear cycles it more than necessary.
 
-### Battery Degradation Modelling and Energy Management Optimisation
+**My work.** As a visiting PhD student at the University of Waterloo (2019), supervised by Prof. Claudio Cañizares, I developed a GAMS-based energy management model for DC microgrids that includes a battery degradation cost, and improved the degradation modelling within the optimisation.
 
-**Overview:** My University of Waterloo research included GAMS-based EMS optimisation and battery degradation-aware energy management.
+**Evidence.** The IEEE PES General Meeting 2020 paper applies the model to the DC microgrid of a building at Xiamen University. In simulation, including the degradation cost avoided frequent charge–discharge cycling while maintaining the required bus voltage. See [Energy management](/research/ems/).
 
-**My contribution:** Modelled battery degradation within energy management optimisation for DC microgrids.
+## References
 
-**Related publications:** [“Energy Management System for DC Microgrids Considering Battery Degradation,” IEEE PESGM 2020](https://ieeexplore.ieee.org/document/9281580).
-
-The [Energy Management Systems](/research/ems/#battery-energy-scheduling-and-optimisation) page cross-links this project as part of system-level scheduling.
-
-[Experimental Platforms](/research/experimental_platforms/) · [Back to Research](/research/)
+<ol class="references">
+<li>F. Li, H. Xu, Z. Lin, “<a href="https://doi.org/10.1109/ISIE45063.2020.9152414">Multifunctional Control Design for Modular Plug-and-play Battery Storage in DC Microgrids</a>,” IEEE ISIE, 2020, pp. 1147–1152.</li>
+<li>F. Li, H. Xu, Z. Lin, “<a href="https://doi.org/10.1109/ICDCM50975.2021.9504641">Reconstructed Droop Control for Peer Current Sharing of Battery Storage in DC Microgrids</a>,” IEEE ICDCM, 2021.</li>
+<li>F. Li, C. A. Cañizares, Z. Lin, “<a href="https://doi.org/10.1109/PESGM41954.2020.9281580">Energy Management System for DC Microgrids Considering Battery Degradation</a>,” IEEE PES General Meeting, 2020.</li>
+</ol>

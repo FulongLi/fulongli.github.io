@@ -1,0 +1,9 @@
+{% comment %}
+  Work-type and evidence labels for one research project.
+  Usage: {% include research-tags.html project=project %}
+{% endcomment %}
+{% assign rdata = site.data.research %}
+<ul class="research-tags" aria-label="Type of work and evidence">
+  {% for w in include.project.work %}<li class="research-tag research-tag--work">{{ rdata.work_types[w] | default: w }}</li>{% endfor %}
+  {% for e in include.project.evidence %}<li class="research-tag research-tag--{{ e }}">{{ rdata.evidence_levels[e] | default: e }}</li>{% endfor %}
+</ul>

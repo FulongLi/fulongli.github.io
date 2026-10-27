@@ -1,32 +1,41 @@
 ---
-layout: single
-title: "Energy Management System (EMS) Design"
+layout: research
+research_area: microgrids
+title: "Energy Management for DC Microgrids"
 permalink: /research/ems/
-author_profile: true
+excerpt: "GAMS-based DC microgrid energy management with battery degradation cost, and how it relates to rule-based and marine energy-management work."
 ---
 
-## Overview
+## Engineering problem
 
-My energy management work concerns DC microgrid dispatch, battery scheduling, and hybrid powertrain strategy development. System-level scheduling is distinguished here from [battery converter control](/research/battery_storage/#converter-level-control).
+An energy management system (EMS) decides how generation, storage and grid exchange are scheduled over hours to days. In a DC microgrid the battery frequently holds the bus voltage, so an EMS that treats battery energy as free cycles it more than necessary and shortens its life. The question was how to include battery wear in the scheduling objective without losing the ability to maintain the bus.
 
-<img class="research-hero-image" src="/images/research/generated/energy-management-systems.png" alt="Energy management system technical illustration" />
+## Objective and scope
 
-## DC Microgrid Energy Management
+Formulate and solve a scheduling model for a building DC microgrid that includes a battery degradation cost. This was done as a visiting PhD student at the University of Waterloo (April–July 2019), supervised by Prof. Claudio Cañizares.
 
-**Overview:** Coordination of generation and storage to support renewable integration, operating cost objectives, and battery lifetime.
+## My contribution
 
-**My contribution:** Investigated energy management strategies for DC microgrids, including optimisation that accounts for battery degradation.
+I developed the EMS optimisation model in GAMS and improved the battery degradation model within it.
 
-**Related work:** [University of Waterloo battery energy management research](/research/battery_storage/#battery-degradation-modelling-and-energy-management-optimisation).
+## Results and evidence
 
-## Battery Energy Scheduling and Optimisation
+The model was applied in simulation to the DC microgrid of a building at Xiamen University. Accounting for the battery degradation cost avoided frequent charging and discharging while maintaining the required DC bus voltage. The method and case study are published at the IEEE PES General Meeting 2020.
 
-The primary project summary for GAMS-based EMS optimisation and battery degradation modelling is under [Battery Energy Storage Systems](/research/battery_storage/#battery-degradation-modelling-and-energy-management-optimisation).
+## Limitations
 
-**Related publications:** [“Energy Management System for DC Microgrids Considering Battery Degradation,” IEEE PESGM 2020](https://ieeexplore.ieee.org/document/9281580).
+The results are simulation results for one building case study. The EMS was not deployed on hardware in this work.
 
-## Related Engineering Methods
+## How this relates to my other energy-management work
 
-The existing EMS topic scope includes rule-based logic and expert knowledge; optimisation methods such as MILP, MPC, and genetic algorithms; forecasting; and real-time controller, communication, and data-flow constraints. Project-specific use of these methods requires confirmation before attribution.
+| Work | Type of EMS | Where |
+|---|---|---|
+| Waterloo (this page) | Optimisation-based scheduling with degradation cost | Simulation case study |
+| [Rule-based EMS](/research/dcmg/rule-based-ems/) | Finite-state rules carried by DC bus signals | Laboratory DC microgrid (PhD thesis) |
+| [3 MW marine powertrain](/research/3mw-marine-fuel-cell/) | Rule-based dispatch of fuel cells and batteries | System simulation (industrial project) |
 
-[DC Microgrid Control Strategies](/research/dcmg/) · [Back to Research](/research/)
+## References
+
+<ol class="references">
+<li>F. Li, C. A. Cañizares, Z. Lin, “<a href="https://doi.org/10.1109/PESGM41954.2020.9281580">Energy Management System for DC Microgrids Considering Battery Degradation</a>,” IEEE PES General Meeting, 2020. <a href="/files/PES2020_slides.pdf">Presentation slides (PDF)</a>.</li>
+</ol>

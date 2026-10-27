@@ -1,0 +1,44 @@
+---
+layout: default
+author_profile: true
+---
+
+{% include base_path %}
+{% assign area = site.data.research.areas | where: "id", page.research_area | first %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="page research-page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="{{ page.title | strip_html | escape_once }}">
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+
+    <div class="page__inner-wrap">
+      <header class="research-page__header">
+        <nav class="research-breadcrumb" aria-label="Breadcrumb">
+          <a href="{{ base_path }}/research/">Research</a>
+          {% if area %}<span aria-hidden="true">/</span> <a href="{{ base_path }}/research/#{{ area.id }}">{{ area.title }}</a>{% endif %}
+          {% if page.parent %}<span aria-hidden="true">/</span> <a href="{{ base_path }}{{ page.parent.url }}">{{ page.parent.title }}</a>{% endif %}
+        </nav>
+        <h1 class="page__title" itemprop="headline">{{ page.title }}</h1>
+        {% if page.lede %}<p class="research-page__lede">{{ page.lede }}</p>{% endif %}
+      </header>
+
+      {% include research-summary.html %}
+
+      <section class="page__content" itemprop="text">
+        {{ content }}
+      </section>
+
+      <footer class="research-page__footer">
+        <a href="{{ base_path }}/research/{% if area %}#{{ area.id }}{% endif %}">&larr; {% if area %}{{ area.title }}{% else %}All research{% endif %}</a>
+        <a href="{{ base_path }}/publications/">Publications</a>
+        <a href="mailto:{{ site.author.email }}">Contact</a>
+      </footer>
+    </div>
+  </article>
+</div>
+
+{% if content contains 'class="project-contents"' %}
+<script src="{{ base_path }}/assets/js/research-contents.js" defer></script>
+{% endif %}

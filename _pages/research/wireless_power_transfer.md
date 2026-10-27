@@ -1,28 +1,35 @@
 ---
-layout: single
+layout: research
+research_area: converters
 title: "Wireless Power Transfer"
 permalink: /research/wireless_power_transfer/
-author_profile: true
+excerpt: "Two separate wireless power transfer experiences: an undergraduate thesis on underwater wireless power transmission, and a later inductive WPT test bench."
 ---
 
-## Overview
+These are two separate pieces of work, years apart, and are described separately.
 
-My wireless power transfer work spans two separate research experiences. Their topologies, individual responsibilities, and experimental outcomes will be documented separately once confirmed.
+## Undergraduate thesis: underwater wireless power transmission
 
-## Undergraduate Research: Underwater Applications
+**Setting.** B.Sc. in Energy and Power Engineering, Yangzhou University (2011–2015), supervised by Prof. Wei Jiang.
 
-**Overview:** Undergraduate wireless power transfer research involving underwater applications.
+**Problem.** Underwater equipment such as sensors and vehicles needs power without exposed electrical contacts, which corrode or short in seawater. Inductive coupling transfers power across a sealed boundary, but the conductive medium and the coupling gap affect efficiency.
 
-**My contribution:** Participated in this research; specific design, simulation, and testing responsibilities require confirmation.
+**Outcome.** The thesis, *Wireless Power Transmission for Underwater Applications*, received Distinguished Undergraduate Thesis awards from Yangzhou University and Jiangsu Province. It is not available on this site.
 
-**Outcome / evidence:** Public resources and results will be added when confirmed.
+## Inductive WPT test bench
 
-## Postdoctoral Hardware / Prototype Project
+**Setting.** Postdoctoral hardware work.
 
-**Overview:** A later postdoctoral wireless power transfer hardware/prototype project, distinct from the undergraduate research.
+**What was built.** A laboratory test bench for inductive power transfer: two power-converter boards, a circular coil assembly and a resistive load, shown below as built.
 
-**My contribution:** Specific hardware and prototype responsibilities require confirmation.
+<figure>
+  <a href="/images/research/isolatedconverters/WPT_setup.png" target="_blank" rel="noopener"><img src="/images/research/isolatedconverters/WPT_setup.png" alt="Photograph of a wireless power transfer bench: two power-converter boards with heatsinked devices, a wirewound resistive load and a circular coil assembly in a grey enclosure" width="565" height="260" loading="lazy"></a>
+  <figcaption><span class="figure-kind">Hardware photograph</span><strong>Inductive WPT test bench.</strong> Background removed. <span class="figure-source">Public repository WirelessPowerTransferTestBench.</span></figcaption>
+</figure>
 
-**Outcome / evidence:** Topology, measured performance, and resources remain to be confirmed.
+**Evidence and limitations.** The public repository documents the bench at a descriptive level. Coil design, operating frequency, measured power and efficiency are not yet documented, so no performance claims are made.
 
-[Isolated DC–DC Converters](/research/isolated_converters/) · [Back to Research](/research/)
+## Resources
+
+- [WirelessPowerTransferTestBench (GitHub, CC BY 4.0)](https://github.com/FulongLi/WirelessPowerTransferTestBench)
+- Related: [LLC and DAB converters](/research/isolated_converters/)

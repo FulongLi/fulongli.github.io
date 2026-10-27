@@ -1,0 +1,19 @@
+{% comment %}
+  Level-1 project card for the Research landing page.
+  Usage: {% include research-card.html project=project %}
+{% endcomment %}
+{% assign p = include.project %}
+<article class="research-card">
+  <h4 class="research-card__title"><a href="{{ p.url }}">{{ p.title }}</a></h4>
+  <p class="research-card__summary">{{ p.summary }}</p>
+  <dl class="research-card__meta">
+    <div><dt>My role</dt><dd>{{ p.role }}</dd></div>
+    <div><dt>Setting</dt><dd>{{ p.setting }}</dd></div>
+  </dl>
+  {% include research-tags.html project=p %}
+  {% if p.children %}
+  <ul class="research-card__children" aria-label="Detailed pages">
+    {% for c in p.children %}<li><a href="{{ c.url }}">{{ c.title }}</a></li>{% endfor %}
+  </ul>
+  {% endif %}
+</article>

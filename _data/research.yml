@@ -1,0 +1,388 @@
+# Research portfolio registry.
+#
+# One entry per project or research stream. The Research landing page renders
+# the cards from this file, and each project page renders its "At a glance"
+# panel from the entries whose `page` matches the page URL.
+#
+# Labels must describe verified facts only:
+#   work      - what kind of work was done (see work_types)
+#   evidence  - what a visitor can check (see evidence_levels)
+#   review    - true while publication rights for the detailed material are
+#               being confirmed with the owner; the page then shows a neutral
+#               summary only.
+
+work_types:
+  design: "Design"
+  hardware: "Hardware prototype"
+  simulation: "Simulation"
+  modelling: "Modelling"
+  optimisation: "Optimisation"
+  experimental: "Experimental"
+  test-rig: "Test rig"
+  review: "Technical review"
+  lead: "Technical lead"
+
+evidence_levels:
+  published: "Peer-reviewed publication"
+  thesis: "PhD thesis"
+  preprint: "Preprint"
+  code: "Public code or design files"
+  cv: "Summarised in public CV"
+  internal: "Internal project reports (summary only)"
+  pending: "Details to be confirmed"
+
+areas:
+  - id: aipe
+    number: "01"
+    title: "AIPE: AI for Power Engineering"
+    url: /research/aipe/
+    description: >-
+      Data-driven models and open engineering tools that sit on top of the
+      component and converter work: neural-network device models, surrogate
+      models for converter optimisation, and public datasets and code.
+  - id: components
+    number: "02"
+    title: "Components"
+    url: /research/switching_devices/
+    description: >-
+      Power semiconductor characterisation and reliability testing,
+      PCB-integrated current sensors for fast-switching SiC converters, and
+      the device loss and thermal models that feed converter design.
+  - id: converters
+    number: "03"
+    title: "Converters"
+    url: /research/isolated_converters/
+    description: >-
+      Isolated and non-isolated DC–DC converter design and control, converter
+      stability with passivity-based compensation, wireless power transfer,
+      and multi-objective converter design optimisation.
+  - id: microgrids
+    number: "04"
+    title: "Microgrids & Energy Systems"
+    url: /research/dcmg/
+    description: >-
+      Hierarchical control of low-voltage DC microgrids, PV and battery
+      integration, laboratory DC microgrid platforms, and system-level energy
+      management for buildings and a marine fuel-cell powertrain.
+
+projects:
+  # ---------------------------------------------------------------- AIPE
+  - id: aipe-tools
+    areas: [aipe]
+    title: "Open-source AIPE tools and resources"
+    url: /research/aipe/#open-source-engineering-tools-and-resources
+    page: /research/aipe/
+    summary: >-
+      Public repositories that package device models, converter optimisation
+      and design examples so they can be inspected and reused.
+    role: "Author and maintainer of the public repositories"
+    setting: "Independent open-source work"
+    work: [modelling, design]
+    evidence: [code]
+
+  # ---------------------------------------------------------- Components
+  - id: rogowski
+    areas: [components]
+    title: "PCB Rogowski coil"
+    url: /research/sensing_devices/#pcb-rogowski-coil
+    page: /research/sensing_devices/
+    summary: >-
+      Air-cored PCB current sensors with on-board signal conditioning for
+      measuring fast current transients in SiC converters.
+    role: "Developed the coil and sensor-board designs with a colleague"
+    setting: "CSA Catapult, ELIPS project, 2022–2025"
+    work: [design]
+    evidence: [code, pending]
+  - id: pcb-ct
+    areas: [components]
+    title: "PCB embedded-core current transformer"
+    url: /research/sensing_devices/#pcb-embedded-core-current-transformer
+    page: /research/sensing_devices/
+    summary: >-
+      A current transformer whose magnetic core is embedded in the PCB, as a
+      galvanically isolated alternative to the air-cored Rogowski coil.
+    role: "Developed the embedded-core sensor design"
+    setting: "CSA Catapult, ELIPS project, 2022–2025"
+    work: [design]
+    evidence: [cv, pending]
+  - id: electrical-characterisation
+    areas: [components]
+    title: "Electrical characterisation (double-pulse testing)"
+    url: /research/electrical-characterization/
+    page: /research/electrical-characterization/
+    summary: >-
+      Double-pulse switching measurements of power modules, including IGBT
+      modules, to produce datasets for device modelling.
+    role: "Test-rig commissioning, device testing and waveform post-processing"
+    setting: "CSA Catapult, industrial characterisation projects, 2022–2025"
+    work: [experimental, test-rig]
+    evidence: [internal]
+    review: true
+  - id: thermal-characterisation
+    areas: [components]
+    title: "Thermal characterisation"
+    url: /research/thermal-characterization/
+    page: /research/thermal-characterization/
+    summary: >-
+      Transient thermal-impedance and junction-to-case thermal-resistance
+      measurement of power devices and modules.
+    role: "Operated the thermal test equipment and carried out measurements"
+    setting: "CSA Catapult, 2022–2025"
+    work: [experimental]
+    evidence: [internal]
+    review: true
+  - id: reliability
+    areas: [components]
+    title: "Power device reliability testing"
+    url: /research/reliability_testing/
+    page: /research/reliability_testing/
+    summary: >-
+      H3TRB, insulation and temperature-cycling tests of SiC and GaN devices
+      and modules, including PCB-embedded GaN devices.
+    role: "Designed and commissioned the test rig; conducted tests"
+    setting: "CSA Catapult, P3EP, @FutureBEV and ASSiST projects, 2022–2025"
+    work: [test-rig, experimental]
+    evidence: [internal]
+    review: true
+  - id: ann-device-modelling
+    areas: [components, aipe]
+    title: "ANN-based SiC MOSFET loss and thermal modelling"
+    url: /research/mosfet_ann_modelling/
+    page: /research/mosfet_ann_modelling/
+    summary: >-
+      Neural-network models of conduction, switching energy and thermal
+      impedance, compared against a laboratory buck converter.
+    role: "Technical lead"
+    setting: "CSA Catapult with Cardiff University and Sumitomo Heavy Industries, 2024–2025"
+    work: [lead, modelling, experimental]
+    evidence: [code, internal]
+    review: true
+  - id: magnetics
+    areas: [components]
+    title: "Supporting work: inductor design"
+    url: /research/passive_components/
+    page: /research/passive_components/
+    summary: >-
+      Inductor drawings and design documentation prepared as supporting work
+      for converter design.
+    role: "Prepared the inductor drawings and design documentation"
+    setting: "2024"
+    work: [design]
+    evidence: [code]
+
+  # ---------------------------------------------------------- Converters
+  - id: llc-dab
+    areas: [converters]
+    title: "10 kW LLC and dual active bridge converters"
+    url: /research/isolated_converters/
+    page: /research/isolated_converters/
+    summary: >-
+      Design and simulation of two isolated DC–DC stages for liquid-cooled
+      data-centre power supplies.
+    role: "Designed and simulated both converters"
+    setting: "CSA Catapult, ELIPS project, 2022–2025"
+    work: [design, simulation]
+    evidence: [code, internal]
+  - id: buck-boost
+    areas: [converters]
+    title: "Bidirectional half-bridge buck–boost interface converter"
+    url: /research/nonisolated_converters/#bidirectional-half-bridge-buckboost-converter
+    page: /research/nonisolated_converters/
+    summary: >-
+      DSP-controlled interface converters for batteries, PV and the grid
+      interface of a laboratory low-voltage DC microgrid.
+    role: "Built the bench converters and implemented their DSP control"
+    setting: "Aston University (PhD) and Loughborough University, 2016–2022"
+    work: [design, hardware, experimental]
+    evidence: [thesis, code]
+  - id: boost-passive
+    areas: [converters]
+    title: "Boost converter stabilisation by passive control"
+    url: /research/dcmg/passive-control/
+    page: /research/dcmg/passive-control/
+    summary: >-
+      A feedforward passive stabiliser with high-pass filtering that damps
+      non-minimum-phase oscillation without shifting the bus voltage.
+    role: "Developed the method; laboratory validation"
+    setting: "Aston University, PhD thesis, Chapter 5"
+    work: [modelling, experimental]
+    evidence: [published, thesis]
+  - id: vsc
+    areas: [converters]
+    title: "Three-phase VSC on a 50 kW DC microgrid platform"
+    url: /research/nonisolated_converters/#acdc-converter-interfaces
+    page: /research/nonisolated_converters/
+    summary: >-
+      Testing and operation of an existing DC microgrid platform with a
+      three-phase voltage-source converter grid interface.
+    role: "Tested and operated existing equipment; modified primary control"
+    setting: "Zhejiang University, visiting PhD student, 2018"
+    work: [experimental]
+    evidence: [cv, pending]
+  - id: wpt
+    areas: [converters]
+    title: "Wireless power transfer"
+    url: /research/wireless_power_transfer/
+    page: /research/wireless_power_transfer/
+    summary: >-
+      Two separate experiences: an undergraduate thesis on underwater
+      wireless power transmission, and a later inductive WPT test bench.
+    role: "Undergraduate thesis author; test-bench hardware"
+    setting: "Yangzhou University, 2015; later postdoctoral work"
+    work: [hardware]
+    evidence: [code, pending]
+  - id: sst
+    areas: [converters]
+    title: "Solid-state transformer technology assessment"
+    url: /research/sst/
+    page: /research/sst/
+    summary: >-
+      Review of 3.3 kV SiC devices and 10 kV / 500 kW solid-state
+      transformer architectures, controls and applications.
+    role: "Carried out the device and architecture review"
+    setting: "CSA Catapult, ASSiST project, 2022–2025"
+    work: [review]
+    evidence: [internal]
+  - id: converter-optimisation
+    areas: [converters, aipe]
+    title: "Multi-objective converter design optimisation"
+    url: /research/converter_optimization/
+    page: /research/converter_optimization/
+    summary: >-
+      Loss–volume trade-off study for a 1 kW buck-type inverter, with a
+      neural-network surrogate trained on the computed designs.
+    role: "Optimisation formulation, loss modelling and public Python reconstruction"
+    setting: "CSA Catapult with Cardiff University, 2022–2025"
+    work: [modelling, optimisation]
+    evidence: [code, preprint]
+
+  # --------------------------------------------- Microgrids & Energy Systems
+  - id: pv-battery
+    areas: [microgrids]
+    title: "PV-battery MPPT with integrated active power control"
+    url: /research/pv_systems/
+    page: /research/pv_systems/
+    summary: >-
+      A modified perturb-and-observe algorithm that respects battery charging
+      limits, compared at two reduced-power operating points.
+    role: "First author of the ICRERA 2016 paper"
+    setting: "Aston University, early PhD research, 2016"
+    work: [experimental]
+    evidence: [published]
+  - id: battery
+    areas: [microgrids]
+    title: "Battery storage: converter control and energy management"
+    url: /research/battery_storage/
+    page: /research/battery_storage/
+    summary: >-
+      Plug-and-play battery control and current sharing at converter level;
+      degradation-aware scheduling at system level.
+    role: "First author of the related publications"
+    setting: "Aston, Waterloo and Loughborough, 2019–2021"
+    work: [modelling, simulation, optimisation]
+    evidence: [published]
+  - id: dcmg
+    areas: [microgrids]
+    title: "Hierarchical control of low-voltage DC microgrids"
+    url: /research/dcmg/
+    page: /research/dcmg/
+    summary: >-
+      Passive converter stabilisation, dual-window DC bus signalling and
+      rule-based power management, demonstrated on a laboratory bench.
+    role: "Developed the methods; built and tested the bench (PhD)"
+    setting: "Aston University, PhD, 2016–2019"
+    work: [modelling, hardware, experimental]
+    evidence: [thesis, published]
+    children:
+      - title: "Passive control"
+        url: /research/dcmg/passive-control/
+      - title: "Dual-window DC bus signalling"
+        url: /research/dcmg/dc-bus-signalling/
+      - title: "Rule-based EMS"
+        url: /research/dcmg/rule-based-ems/
+  - id: dcmg-dbs
+    areas: []
+    title: "Dual-window DC bus signalling"
+    url: /research/dcmg/dc-bus-signalling/
+    page: /research/dcmg/dc-bus-signalling/
+    summary: >-
+      Converters exchange low-bandwidth commands through deliberate bus-voltage
+      changes, separated from normal droop operation.
+    role: "Developed the method; laboratory validation"
+    setting: "Aston University, PhD thesis, Chapters 4 and 6"
+    work: [modelling, experimental]
+    evidence: [published, thesis]
+  - id: dcmg-ems
+    areas: []
+    title: "Rule-based EMS and hierarchical operation"
+    url: /research/dcmg/rule-based-ems/
+    page: /research/dcmg/rule-based-ems/
+    summary: >-
+      A finite-state machine coordinates grid, battery and PV interface
+      converters using six-bit DC bus commands.
+    role: "System integration, operating rules and experiments"
+    setting: "Aston University, PhD thesis, Chapter 6"
+    work: [experimental]
+    evidence: [thesis]
+  - id: platforms
+    areas: [microgrids]
+    title: "DC microgrid experimental platforms"
+    url: /research/experimental_platforms/
+    page: /research/experimental_platforms/
+    summary: >-
+      A modular low-voltage DC microgrid bench built during the PhD and
+      extended at Loughborough; a 50 kW platform used at Zhejiang University.
+    role: "Built the LV bench; operated the 50 kW platform"
+    setting: "Aston, Loughborough and Zhejiang, 2016–2022"
+    work: [hardware, experimental]
+    evidence: [thesis, code]
+  - id: ems-waterloo
+    areas: [microgrids]
+    title: "DC microgrid EMS considering battery degradation"
+    url: /research/ems/
+    page: /research/ems/
+    summary: >-
+      GAMS-based scheduling model for a building DC microgrid that includes a
+      battery degradation cost, evaluated in simulation.
+    role: "First author; GAMS optimisation model"
+    setting: "University of Waterloo, visiting PhD student, 2019"
+    work: [modelling, optimisation, simulation]
+    evidence: [published]
+  - id: marine
+    areas: [microgrids]
+    title: "3 MW marine fuel-cell hybrid powertrain"
+    url: /research/3mw-marine-fuel-cell/
+    page: /research/3mw-marine-fuel-cell/
+    summary: >-
+      System architecture, component models and a rule-based energy
+      management strategy for a fuel-cell and battery vessel powertrain.
+    role: "Technical lead"
+    setting: "CSA Catapult, 2023"
+    work: [lead, modelling, simulation]
+    evidence: [internal]
+    review: true
+  - id: sino-ofh
+    areas: [microgrids]
+    title: "SinO-OFH WP4.1: engine-room thermal evaluation"
+    url: /research/sino-ofh/
+    page: /research/sino-ofh/
+    summary: >-
+      Thermal model of a fuel-cell equipment room used to compare ventilation
+      duty across climates and equipment temperatures.
+    role: "Work-package lead"
+    setting: "CSA Catapult, 2024"
+    work: [lead, modelling, simulation]
+    evidence: [internal]
+    review: true
+  - id: dc-safety
+    areas: [microgrids]
+    title: "DC safety and protection"
+    url: /research/dc_safety/
+    page: /research/dc_safety/
+    summary: >-
+      Evaluation of human-safety issues from DC electric shock and review of
+      DC protection strategies.
+    role: "Safety evaluation and protection review"
+    setting: "DC Systems BV, the Netherlands, visiting PhD student, 2017"
+    work: [review]
+    evidence: [cv, pending]

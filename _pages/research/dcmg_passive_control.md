@@ -1,11 +1,11 @@
 ---
-layout: single
+layout: research
+research_area: microgrids
+parent:
+  title: "DC microgrid control"
+  url: /research/dcmg/
 title: "Passive Control for DC Microgrid Interface Converters"
 permalink: /research/dcmg/passive-control/
-author_profile: true
-body_class: microgrid-project-page
-project_stylesheet: /assets/css/marine-project.css
-project_script: /assets/js/marine-project.js
 excerpt: "Passivity-based Boost converter stabilisation: feedforward compensation, high-pass filtering and experimental stability assessment."
 ---
 

@@ -1,31 +1,18 @@
 ---
-layout: single
-title: "Microgrid Energy Management"
+layout: research
+research_area: microgrids
+title: "Microgrid Energy Management Projects"
 permalink: /research/mgapp/
-author_profile: true
-excerpt: "Project case studies in microgrid energy management, including the 3MW marine fuel-cell powertrain and SinO-OFH WP4.1 thermal evaluation."
+excerpt: "Industry-funded marine energy-system projects: a 3 MW fuel-cell hybrid powertrain study and the SinO-OFH engine-room thermal evaluation."
 ---
 
-## Overview
+Two related industry-funded projects at CSA Catapult applied system modelling to a marine fuel-cell powertrain. They were distinct pieces of work with different roles, and the pages keep them separate.
 
-My work in microgrid energy management connects equipment and load models to system operating strategies. The projects below cover marine fuel-cell and battery power sharing, followed by evaluation of the equipment’s thermal environment.
+| Project | Question | My role | Work type |
+|---|---|---|---|
+| [3 MW Marinised Fuel Cell System and Powertrain](/research/3mw-marine-fuel-cell/) (2023) | How should fuel cells and batteries share a vessel's daily load, and how much battery does each dispatch policy need? | Technical lead for the whole project | System architecture, modelling, rule-based EMS, simulation |
+| [SinO-OFH, Work Package 4.1](/research/sino-ofh/) (2024) | Can ventilation hold the fuel-cell engine room at temperature across operating climates? | Work-package lead | Thermal modelling and scenario simulation |
 
-The two project pages distinguish my responsibilities: I led the **whole 3MW project**, and subsequently led **WP4.1 within SinO-OFH**.
+The first project quantified fuel-cell heat alongside the electrical schedule. The second examined the thermal environment that heat creates.
 
-<h2 id="3-mw-marine-fuel-cell-hybrid-powertrain">3MW Marine Fuel-Cell Project</h2>
-
-I led the 3MW marine fuel-cell hybrid powertrain project in 2023, covering system architecture, MATLAB/Simulink modelling and a central rule-based energy management strategy. The study compared battery sizing and operating policies over HST and BMT vessel duty cycles, with results for electrical energy use, component states and fuel-cell heat generation.
-
-[Explore the 3MW project: system blueprint, design development and simulation results](/research/3mw-marine-fuel-cell/)
-
-<h2 id="sino-ofh-wp41-thermal-evaluation">SinO-OFH: WP4.1 Thermal Evaluation</h2>
-
-I led the thermal-evaluation work package within SinO-OFH in 2024. The work developed an engine-room temperature and ventilation model, examined enclosure and fan sensitivity, and compared 45°C and 60°C equipment surface temperatures under North Sea, Persian Gulf and Singapore climate scenarios.
-
-[Explore SinO-OFH WP4.1: thermal modelling and climate comparison results](/research/sino-ofh/)
-
-## Related Research
-
-[Energy Management Systems](/research/ems/) · [Battery Energy Storage Systems](/research/battery_storage/)
-
-[Back to Research](/research/)
+Laboratory-scale DC microgrid energy management is covered separately under [Energy management](/research/ems/) and [Rule-based EMS](/research/dcmg/rule-based-ems/).

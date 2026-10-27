@@ -1,84 +1,56 @@
 ---
-layout: single
-title: "Current Sensing"
+layout: research
+research_area: components
+title: "PCB-Integrated Current Sensing"
 permalink: /research/sensing_devices/
-author_profile: true
+excerpt: "PCB Rogowski coils and a PCB embedded-core current transformer developed for current measurement in fast-switching SiC converters."
 ---
 
-## Overview
+## Engineering problem
 
-Accurate **current sensing** is essential for **closed-loop control**, **fault protection**, and **efficiency optimization** in power electronic converters.  
-Recent developments in **PCB-based magnetic sensors** enable compact, low-cost, and wide-bandwidth current measurement.
+SiC converters switch current in tens of nanoseconds, so the current sensor has to combine wide bandwidth with galvanic isolation and a small insertion footprint in a tightly laid-out power loop. Coaxial shunts and clamp-on probes work on a bench but are difficult to integrate into the converter itself. Building the sensor into the PCB keeps it in the commutation path without adding loop inductance or a separate mechanical part.
 
-This section highlights two key technologies:
+## Scope
 
-- **PCB Rogowski Coils (PCB-RC)**  
-- **Embedded-Core PCB Current Transformers (PCB-CT)**  
+Two sensor concepts were developed within the **ELIPS** (Enhanced Liquid-cooled Power Supplies) project at CSA Catapult, alongside the [LLC and DAB converter work](/research/isolated_converters/) for the same application:
 
-<img class="research-hero-image" src="/images/research/generated/sensing-devices.png" alt="Current sensing technical illustration" />
+- an **air-cored PCB Rogowski coil** with on-board signal conditioning; and
+- a **PCB current transformer with an embedded magnetic core**.
 
-My sensing work focuses on compact PCB-integrated current measurement for fast switching converters, where bandwidth, isolation, noise immunity, and manufacturability all matter.
+## My contribution
 
----
+I developed both sensor designs; the Rogowski sensor boards were designed together with a colleague. The coil variants and design drawings are published in a public repository under CC BY 4.0.
 
-## PCB Rogowski Coil (PCB-RC)
+## PCB Rogowski coil {#pcb-rogowski-coil}
 
-**Overview:** PCB-integrated current sensing for power electronics applications.
+A Rogowski coil is an air-cored winding around the conductor. Its output voltage is proportional to the rate of change of the enclosed current, *v* = *M* d*i*/d*t*, so the current waveform is recovered by integration. Because there is no core, the coil does not saturate, which suits the large d*i*/d*t* and current pulses in SiC switching cells. The design questions are the mutual inductance *M* (set by turn count and winding cross-section), the coil's self-resonance, which limits bandwidth, and rejection of external fields, which depends on the return conductor.
 
-**My contribution:** Worked on PCB Rogowski coil sensing; specific design, modelling, and testing responsibilities will be documented in the next project update.
+<figure>
+  <a href="/images/research/Rogcoil/RogT4_d.png" target="_blank" rel="noopener"><img src="/images/research/Rogcoil/RogT4_d.png" alt="3D CAD render of a PCB Rogowski coil board: a square coil around a circular conductor opening, followed by analogue conditioning stages with separate raw-output and final-output connectors" width="602" height="445" loading="lazy"></a>
+  <figcaption><span class="figure-kind">Design render</span><strong>PCB Rogowski coil sensor board.</strong> The coil surrounds the conductor opening; the analogue stages between the raw-output and final-output connectors condition and integrate the coil signal. This is a CAD render, not a photograph of tested hardware. <span class="figure-source">Public repository PCB-Rogowski-Coil, coil type 4.</span></figcaption>
+</figure>
 
-**Outcome / evidence:** The existing public repository is linked below. Project-specific performance and validation remain to be confirmed.
+The public repository contains five coil variants with top, bottom and layout views and a PDF design file for each.
 
-PCB Rogowski coils are air-cored current sensors printed directly onto a PCB.
+## PCB embedded-core current transformer {#pcb-embedded-core-current-transformer}
 
-**Key Features**
-- Wide bandwidth and excellent linearity — ideal for fast switching (SiC device).
-- No magnetic core → minimal saturation risk and wide dynamic range.
-- Flexible form factor — easily integrated into power modules or busbars.
-- Requires external integrator circuit to recover current signal.
+The second concept places a magnetic core inside the PCB, with the secondary winding formed by tracks and vias around it. Compared with the air-cored coil, the core gives higher sensitivity at lower frequencies and a current output that does not need integration, at the cost of core saturation limits and the manufacturing constraints of embedding a core in a laminated board.
 
-**Design Considerations**
-- **Winding geometry** (spiral, meander, differential pairs) affects mutual inductance and noise immunity.
-- **Shielding and return paths** reduce EMI coupling.
-- **Integrator circuit**: high-quality op-amp, RC time constant tuned for switching frequency.
+<figure>
+  <a href="/images/research/CT/CT1_d.png" target="_blank" rel="noopener"><img src="/images/research/CT/CT1_d.png" alt="3D CAD render of a rectangular PCB with a central slot surrounded by a dense array of vias forming the current-transformer winding" width="602" height="459" loading="lazy"></a>
+  <figcaption><span class="figure-kind">Design render</span><strong>PCB current-transformer winding.</strong> Vias and tracks around the rectangular opening form the secondary winding around the embedded core position. <span class="figure-source">Project design files.</span></figcaption>
+</figure>
 
-**Prototype Example**
+## Results and evidence
 
-Prototype design connects PCB geometry, signal integration, and electromagnetic compatibility in a compact sensor package.
+The evidence that is public at present is design evidence: the coil geometries, board layouts and design files. Measured sensitivity, bandwidth and comparison with a reference probe are not published here, so no performance figures are claimed for either sensor.
 
-Full Details: [GitHub — PCB Rogowski Coil Design](https://github.com/FulongLi/Magnetics-PCBRogowskiCoil)
+## Limitations
 
----
+- No measured frequency response or calibration data is presented.
+- The public current-transformer repository currently contains no documentation beyond its title.
 
-## Embedded-Core PCB Current Transformer (PCB-CT)
+## References and resources
 
-**Overview:** PCB-integrated current sensing using an embedded magnetic core.
-
-**My contribution:** Worked on PCB embedded-core current transformer sensing; individual design and experimental responsibilities will be documented in the next project update.
-
-**Outcome / evidence:** The existing public repository is linked below. Project-specific performance and validation remain to be confirmed.
-
-PCB-CT integrates a **ferromagnetic core** into the PCB stack-up, forming a compact, isolated current transformer.
-
-**Key Features**
-- Galvanic isolation and low insertion loss.
-- High sensitivity at lower frequencies compared to air-cored sensors.
-- Robust against external EMI due to magnetic core.
-
-**Design Considerations**
-- **Core material and geometry** — ferrite vs. nanocrystalline; cut core vs. planar core.
-- **Turns ratio** — primary busbar vs. multiple secondary PCB turns.
-- **Bandwidth trade-off** — core size, leakage inductance, and winding parasitics.
-- **Thermal stability** — embedded cores affect PCB lamination and soldering processes.
-
-**Prototype Example**
-
-Prototype design explores the trade-off between sensitivity, isolation, bandwidth, and embedded-core manufacturing constraints.
-
-Full Details: [GitHub — PCB Current Transformer Design](https://github.com/FulongLi/Magnetics-PCBCurrentTransformerTransducer)
-
----
-
-The technical considerations above describe the sensing methods; they are not measured specifications for these projects.
-
-[Back to Research](/research/) · **Feel free to reach out** via [email](mailto:fulong.li@ieee.org).
+- [PCB Rogowski coil designs (GitHub, CC BY 4.0)](https://github.com/FulongLi/PCB-Rogowski-Coil)
+- [PCB current transformer (GitHub)](https://github.com/FulongLi/Magnetics-PCBCurrentTransformerTransducer)

@@ -1,11 +1,11 @@
 ---
-layout: single
+layout: research
+research_area: microgrids
+parent:
+  title: "DC microgrid control"
+  url: /research/dcmg/
 title: "Dual-Window DC Bus Signalling"
 permalink: /research/dcmg/dc-bus-signalling/
-author_profile: true
-body_class: microgrid-project-page
-project_stylesheet: /assets/css/marine-project.css
-project_script: /assets/js/marine-project.js
 excerpt: "The dual-window DC bus interacting method: working and signalling voltage windows for coordination of sources and storage."
 ---
 

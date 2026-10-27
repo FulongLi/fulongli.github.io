@@ -1,11 +1,8 @@
 ---
-layout: single
+layout: research
+research_area: microgrids
 title: "PV Battery System"
 permalink: /research/pv_systems/
-author_profile: true
-body_class: microgrid-project-page
-project_stylesheet: /assets/css/marine-project.css
-project_script: /assets/js/marine-project.js
 excerpt: "Modified P&O MPPT with integrated battery charging limits: PV-battery architecture, active power control and experimental comparison of two operating points."
 ---
 
@@ -181,4 +178,3 @@ The controller is intended to avoid overcharging. The paper's evidence consists 
 - **System coordination:** [DC Microgrid Control Strategies](/research/dcmg/) and [Rule-Based EMS](/research/dcmg/rule-based-ems/) place PV power limitation within wider source-and-storage operation.
 - **Related work:** [Battery Energy Storage Systems](/research/battery_storage/), [Energy Management Systems](/research/ems/) and [Experimental Platforms](/research/experimental_platforms/).
 
-[Back to Research](/research/)

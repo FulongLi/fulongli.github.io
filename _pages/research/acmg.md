@@ -1,32 +1,15 @@
 ---
-layout: single
-title: "AC Microgrids"
+layout: research
+research_area: microgrids
+title: "AC Microgrids (Related Topic)"
 permalink: /research/acmg/
-author_profile: true
+excerpt: "AC microgrids as a related topic to my DC microgrid research."
 ---
 
-## Overview
+My microgrid research has been on **DC** systems. AC microgrids are a related topic rather than a project area, and this page is kept so that older links continue to work.
 
+The closest published work is on the interface between a DC microgrid and the AC grid: a grid interface current control strategy in which a battery DC–DC converter inside the DC microgrid directly controls the grid interface current, reducing the disturbance that PV and load variations pass to the main grid. The strategy was assessed experimentally.
 
-AC microgrids are localized energy networks that integrate distributed generators, 
-energy storage, and controllable loads within an AC-based architecture. 
-They can operate in both grid-connected and islanded modes, providing enhanced reliability, 
-power quality, and resilience for modern energy systems. 
-With increasing penetration of renewable energy sources, 
-AC microgrids play a key role in balancing intermittent generation, 
-enabling flexible control strategies, 
-and supporting the transition toward smarter and more sustainable power infrastructures.
+- M. Alshareef, Z. Lin, F. Li, F. Wang, “[A grid interface current control strategy for DC microgrids](https://doi.org/10.30941/CESTEMS.2021.00028),” *CES Transactions on Electrical Machines and Systems*, 5(3), 249–256, 2021. (Co-author.)
 
-<img class="research-hero-image" src="/images/research/generated/ac-microgrids.png" alt="AC microgrid technical illustration" />
-
-My interest in this area focuses on modelling, control, and system-level integration for reliable AC-based distributed energy networks.
-
----
-
-## Research Streams
-
-This page retains AC microgrids as a related technical interest. Specific personal projects and contributions will be added only when confirmed; current project summaries are organised under [DC Microgrid Control Strategies](/research/dcmg/) and [Energy Management Systems](/research/ems/).
-
----
-
-[Back to Research](/research/) · **Feel free to reach out** via [email](mailto:fulong.li@ieee.org).
+For my own project work see [DC microgrid control strategies](/research/dcmg/) and [Energy management](/research/ems/).
