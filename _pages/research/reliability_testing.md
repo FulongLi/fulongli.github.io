@@ -20,4 +20,4 @@ This category groups power-device reliability testing separately from electrical
 
 **Outcome / evidence:** No new test conditions, datasets, or results are published in this introductory category.
 
-[Power Device Characterisation](/research/switching_devices/) · [Back to Research](/research/)
+[Power Device Characterization](/research/switching_devices/) · [Back to Research](/research/)

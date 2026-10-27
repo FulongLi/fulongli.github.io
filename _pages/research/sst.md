@@ -19,4 +19,4 @@ My documented solid-state transformer (SST) work focused on technology assessmen
 
 **Outcome / evidence:** This work concerns technology and architecture assessment; it does not establish independent construction of a complete SST. Public supporting resources will be added when confirmed.
 
-[Power Device Characterisation](/research/switching_devices/) · [Isolated DC–DC Converters](/research/isolated_converters/) · [Back to Research](/research/)
+[Power Device Characterization](/research/switching_devices/) · [Isolated DC–DC Converters](/research/isolated_converters/) · [Back to Research](/research/)
