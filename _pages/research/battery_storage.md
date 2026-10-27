@@ -13,7 +13,7 @@ author_profile: true
 
 **My contribution:** Investigated converter-level battery coordination; specific control implementations will be described in later project updates.
 
-**Related work:** [Bidirectional Half-Bridge Buck–Boost Converter](/research/nonisolated_converters/#bidirectional-half-bridge-buckboost-converter) · [DC Microgrid Control](/research/dcmg/).
+**Related work:** [Bidirectional Half-Bridge Buck–Boost Converter](/research/nonisolated_converters/#bidirectional-half-bridge-buckboost-converter) · [DC Microgrid Control Strategies](/research/dcmg/).
 
 ### Battery Power Sharing and Plug-and-Play Storage
 

@@ -1,0 +1,122 @@
+[
+  {
+    "file": "laboratory-bench.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 63,
+    "figure": "3.1",
+    "crop_points": [
+      115,
+      69,
+      519,
+      374
+    ],
+    "width": 1212,
+    "height": 915,
+    "sha256": "8e7e5320a9f6ca6e6bcee02307145cd2b52f9d6d8141635c895a60bea8f6d84e"
+  },
+  {
+    "file": "control-hierarchy.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 109,
+    "figure": "6.1",
+    "crop_points": [
+      165,
+      505,
+      465,
+      637
+    ],
+    "width": 900,
+    "height": 396,
+    "sha256": "3c2d251b11d5cf18db20b1a0731b9e392438f4c1793b540ff76dfad4272e1ac0"
+  },
+  {
+    "file": "passive-control-block.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 100,
+    "figure": "5.9",
+    "crop_points": [
+      114,
+      68,
+      530,
+      249
+    ],
+    "width": 1248,
+    "height": 543,
+    "sha256": "d58367dab902b940e26c79462a2dd92ebb2ffb020734d077d4a4e5a449e8a95a"
+  },
+  {
+    "file": "passive-constant-gain-result.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 105,
+    "figure": "5.13",
+    "crop_points": [
+      99,
+      68,
+      530,
+      216
+    ],
+    "width": 1293,
+    "height": 444,
+    "sha256": "0639a9060ab5f7763898b887b7e6826668f2e0ed42fe449a66f3487a9ddbb0b1"
+  },
+  {
+    "file": "passive-hpf-result.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 105,
+    "figure": "5.14",
+    "crop_points": [
+      99,
+      475,
+      530,
+      623
+    ],
+    "width": 1293,
+    "height": 444,
+    "sha256": "bf04f1c015d593a94c0378a8622970eaebdbaabee79a1a16568560f164e18724"
+  },
+  {
+    "file": "dual-window-droop.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 77,
+    "figure": "4.4",
+    "crop_points": [
+      145,
+      411,
+      510,
+      642
+    ],
+    "width": 1095,
+    "height": 693,
+    "sha256": "e5b5e03557b40da2f2cc32be72e248001f459c0fb60683713b518b086b45dfe3"
+  },
+  {
+    "file": "planned-islanding-result.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 134,
+    "figure": "6.21",
+    "crop_points": [
+      99,
+      68,
+      530,
+      352
+    ],
+    "width": 1293,
+    "height": 852,
+    "sha256": "0d948dd7b36fa16c75bec4d9804cc05530b373623c48a998cea6a45378791fc7"
+  },
+  {
+    "file": "pv-curtailment-result.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 137,
+    "figure": "6.26",
+    "crop_points": [
+      99,
+      425,
+      530,
+      686
+    ],
+    "width": 1293,
+    "height": 783,
+    "sha256": "bf1784a028c930d86bfb5ebe959d2db8477e6f67b0cd5af954e670f59a669453"
+  }
+]

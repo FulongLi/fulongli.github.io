@@ -17,7 +17,7 @@ author_profile: true
 
 **Overview:** PV control forms part of the coordination of renewable sources and storage in my DC microgrid research.
 
-**My contribution:** Investigated source and storage coordination within the [DC Microgrid Control](/research/dcmg/) work.
+**My contribution:** Investigated source and storage coordination within the [DC Microgrid Control Strategies](/research/dcmg/) work.
 
 **Outcome / evidence:** See the linked control work and [experimental platforms](/research/experimental_platforms/); project-specific implementation details will be added later.
 
