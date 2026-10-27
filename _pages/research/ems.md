@@ -25,12 +25,6 @@ The primary project summary for GAMS-based EMS optimisation and battery degradat
 
 **Related publications:** [“Energy Management System for DC Microgrids Considering Battery Degradation,” IEEE PESGM 2020](https://ieeexplore.ieee.org/document/9281580).
 
-## 3 MW Marine Fuel-Cell Hybrid Powertrain
-
-I led the 3 MW marine fuel-cell hybrid powertrain project, developing the system architecture, MATLAB/Simulink models and a central rule-based EMS for HST and BMT vessel duty cycles. The work assessed fuel-cell and battery power sharing, charging scenarios, electrical energy use and fuel-cell heat generation.
-
-The [full project case study](/research/mgapp/#3-mw-marine-fuel-cell-hybrid-powertrain) includes the system blueprint and original simulation results. It also covers the subsequent [SinO-OFH WP4.1 thermal evaluation](/research/mgapp/#sino-ofh-wp41-thermal-evaluation), which I led at work-package level.
-
 ## Related Engineering Methods
 
 The existing EMS topic scope includes rule-based logic and expert knowledge; optimisation methods such as MILP, MPC, and genetic algorithms; forecasting; and real-time controller, communication, and data-flow constraints. Project-specific use of these methods requires confirmation before attribution.
