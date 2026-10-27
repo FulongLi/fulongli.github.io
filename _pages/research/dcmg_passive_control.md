@@ -37,7 +37,15 @@ L\frac{di_L}{dt}&=v_g-d'v,\\
 C\frac{dv}{dt}&=d'i_L-i_o,\qquad d'=1-d.
 \end{aligned}\]</div>
 
-Here <i>v</i><sub>g</sub> is the source voltage, <i>i</i><sub>L</sub> is the inductor current, <i>v</i> is the DC-bus voltage, <i>i</i><sub>o</sub> is the output current, and <i>d</i> is duty ratio. Linearising around an operating point gives the duty-to-voltage and duty-to-current transfer functions. With the inner current loop following its reference closely, their ratio gives the approximate outer-loop plant:
+Here <i>v</i><sub>g</sub> is the source voltage, <i>i</i><sub>L</sub> is the inductor current, <i>v</i> is the DC-bus voltage, <i>i</i><sub>o</sub> is the output current, and <i>d</i> is duty ratio. Linearising around an operating point gives the duty-to-voltage and duty-to-current transfer functions with a common denominator:
+
+<div class="math-display">\[\begin{aligned}
+\operatorname{den}(s)&=1+\frac{sL}{D'^2R}+\frac{s^2LC}{D'^2},\\
+G_{vd}(s)&=\frac{V}{D'}\frac{1-s\frac{L}{D'^2R}}{\operatorname{den}(s)},\\
+G_{id}(s)&=\frac{2V}{D'^2R}\frac{1+s\frac{RC}{2}}{\operatorname{den}(s)}.
+\end{aligned}\]</div>
+
+The steady-state output voltage is <i>V</i>. With the inner current loop following its reference closely, the common denominator cancels in their ratio, giving the approximate outer-loop plant:
 
 <div class="math-display">\[G_{vc}(s)=\frac{\Delta v}{\Delta v_c}\approx\frac{1}{R_f}\frac{G_{vd}(s)}{G_{id}(s)}
 =\frac{D'R}{2R_f}\frac{1-s\frac{L}{D'^2R}}{1+s\frac{RC}{2}}.\]</div>
