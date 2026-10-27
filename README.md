@@ -36,6 +36,12 @@ Source code for [fulongli.github.io](https://fulongli.github.io) — a personal 
 └── images/              # Site images (research, novels, timeline)
 ```
 
+## Research Content and Assets
+
+Research pages use a concise conference-poster narrative: the question, approach, representative results and implications. Keep original figure colours and proportions, and use the shared site theme. Figure-source manifests under `files/research/` record the provenance of the published figures.
+
+Keep only assets used by the site and its public downloads. Experimental scripts, regenerated simulation bundles and intermediate exports belong in their dedicated research repositories, linked from the relevant page.
+
 ## Local Development
 
 ```bash
@@ -48,4 +54,4 @@ Then visit `http://localhost:4000`.
 
 ---
 
-Last updated: June 2026
+Last updated: October 2026

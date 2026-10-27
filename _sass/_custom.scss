@@ -206,8 +206,11 @@ a:hover {
   padding: 0;
   list-style: none;
 }
-.research-topic__projects a { display: block; padding: 0.5rem 0; }
+.research-topic__projects a { display: inline; padding: 0; }
+.research-topic__projects > li { padding: 0.5rem 0; }
+.research-topic__projects li li { padding: 0.25rem 0; }
 .research-topic__projects a:focus-visible { outline: 2px solid #006d77; outline-offset: 4px; }
+.research-index-page .archive :is(h1, h2, h3, strong) { font-weight: 400; }
 .research-topic img {
   display: block;
   width: 100%;

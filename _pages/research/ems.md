@@ -5,28 +5,18 @@ permalink: /research/ems/
 author_profile: true
 ---
 
-## Overview
-
-My energy management work concerns DC microgrid dispatch, battery scheduling, and hybrid powertrain strategy development. System-level scheduling is distinguished here from [battery converter control](/research/battery_storage/#converter-level-control).
-
-<img class="research-hero-image" src="/images/research/generated/energy-management-systems.png" alt="Energy management system technical illustration" />
+My energy management work connects generation and storage models to operating decisions, from rule-based microgrid coordination to battery scheduling and marine hybrid powertrains.
 
 ## DC Microgrid Energy Management
 
-**Overview:** Coordination of generation and storage to support renewable integration, operating cost objectives, and battery lifetime.
-
-**My contribution:** Investigated energy management strategies for DC microgrids, including optimisation that accounts for battery degradation.
-
-**Related work:** [University of Waterloo battery energy management research](/research/battery_storage/#battery-degradation-modelling-and-energy-management-optimisation).
+The [rule-based DC microgrid study](/research/dcmg/rule-based-ems/) coordinates converter roles, battery charging and PV limitation through bus signalling. Laboratory sequences demonstrate planned grid/island handover and surplus-generation control.
 
 ## Battery Energy Scheduling and Optimisation
 
-The primary project summary for GAMS-based EMS optimisation and battery degradation modelling is under [Battery Energy Storage Systems](/research/battery_storage/#battery-degradation-modelling-and-energy-management-optimisation).
+My University of Waterloo work incorporates battery degradation into GAMS-based microgrid optimisation, linking scheduling choices to battery use. [Read the battery-storage summary](/research/battery_storage/#battery-degradation-modelling-and-energy-management-optimisation) or the [IEEE PESGM 2020 paper](https://ieeexplore.ieee.org/document/9281580).
 
-**Related publications:** [“Energy Management System for DC Microgrids Considering Battery Degradation,” IEEE PESGM 2020](https://ieeexplore.ieee.org/document/9281580).
+## Marine Hybrid Powertrains
 
-## Related Engineering Methods
+I led the [3MW marine fuel-cell project](/research/3mw-marine-fuel-cell/), connecting vessel duty cycles to battery sizing, dispatch and heat generation. The related [SinO-OFH thermal evaluation](/research/sino-ofh/) examines the enclosure environment around the equipment.
 
-The existing EMS topic scope includes rule-based logic and expert knowledge; optimisation methods such as MILP, MPC, and genetic algorithms; forecasting; and real-time controller, communication, and data-flow constraints. Project-specific use of these methods requires confirmation before attribution.
-
-[DC Microgrid Control Strategies](/research/dcmg/) · [Back to Research](/research/)
+[Microgrid Energy Management](/research/mgapp/) · [Back to Research](/research/)

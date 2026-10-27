@@ -1,14 +1,5 @@
 {
   "sources": {
-    "electrical": {
-      "file": "210430 - Training Outcomes - Electrical characterisation.pptx",
-      "title": "Keysight B1505A Power Device Analyzer/Curve Tracer: Training Outcomes",
-      "authors": [
-        "Alejandro Villarruel-Parra",
-        "Konstantinos Floros"
-      ],
-      "date_from_filename": "2021-04-30"
-    },
     "thermal": {
       "file": "210625 - Training Outcomes - Thermal characterisation.pptx",
       "title": "Thermal Characterisation: Training Outcomes",
@@ -44,42 +35,6 @@
       "width": 1500,
       "height": 836,
       "sha256": "e9bdb3716d3619a0a17d35d2fdef02e4c18365da039f7d5a05cca1c8754423da"
-    },
-    {
-      "file": "packaged-iv-connections.png",
-      "source": "electrical",
-      "page_or_slide": 17,
-      "extraction": {
-        "type": "original-embedded-image",
-        "picture_index": 12
-      },
-      "width": 2013,
-      "height": 983,
-      "sha256": "871dd91462459dd3423b3b5c00de4c8fa9c8b2a02206ea18e74164c31a5c43ec"
-    },
-    {
-      "file": "wafer-probe-station.jpg",
-      "source": "electrical",
-      "page_or_slide": 25,
-      "extraction": {
-        "type": "original-embedded-image",
-        "picture_index": 2
-      },
-      "width": 4032,
-      "height": 2268,
-      "sha256": "52f682c5b4cd4740ea2c9e62a77a13eb05981e73405989a928d924a50b7f9166"
-    },
-    {
-      "file": "sic-output-characteristics.png",
-      "source": "electrical",
-      "page_or_slide": 20,
-      "extraction": {
-        "type": "original-embedded-image",
-        "picture_index": 0
-      },
-      "width": 3216,
-      "height": 2461,
-      "sha256": "c2f127c604818481f723cec2d9db0536d00200aa513570c9ec93a3acbdddadda"
     },
     {
       "file": "sic-switching-transients.png",
@@ -118,50 +73,6 @@
       "sha256": "ed82c5e279217b28869b9b808b5d737f106bea22d343122b13f88d0447bd19d3"
     },
     {
-      "file": "temperature-switching-energy.png",
-      "source": "dpt",
-      "page_or_slide": 32,
-      "extraction": {
-        "type": "source-figure-render",
-        "crop_points": [
-          20,
-          85,
-          935,
-          425
-        ],
-        "scale": 2
-      },
-      "width": 1830,
-      "height": 680,
-      "sha256": "180cd5e66b9e1e3bbdf75a4ee20d81c3c62802c444919a4531775f34c9b82f5b"
-    },
-    {
-      "file": "power-tester-rack.jpeg",
-      "source": "thermal",
-      "page_or_slide": 18,
-      "extraction": {
-        "type": "original-embedded-image",
-        "picture_index": 1,
-        "rotation_clockwise_degrees": 90
-      },
-      "width": 770,
-      "height": 1027,
-      "sha256": "c1796b9d506367a696c759e5568f9f0b5d79a48b685d1f2f64b3bb3b09aad1b4"
-    },
-    {
-      "file": "temperature-control-unit.jpeg",
-      "source": "thermal",
-      "page_or_slide": 13,
-      "extraction": {
-        "type": "original-embedded-image",
-        "picture_index": 0,
-        "rotation_clockwise_degrees": 90
-      },
-      "width": 518,
-      "height": 691,
-      "sha256": "f7ed63a36b714c8c8008924326363cb2f33a4b62fe5b5451e2e7fdc89a16abe3"
-    },
-    {
       "file": "thermal-test-connections.png",
       "source": "thermal",
       "page_or_slide": 18,
@@ -172,54 +83,6 @@
       "width": 1144,
       "height": 721,
       "sha256": "719c4057ac61c7e2ff007eb412ecc32b98ab9a978d9ec03b2997e3b889e206c2"
-    },
-    {
-      "file": "tsep-calibration.png",
-      "source": "thermal",
-      "page_or_slide": 20,
-      "extraction": {
-        "type": "original-embedded-image",
-        "picture_index": 1
-      },
-      "width": 854,
-      "height": 487,
-      "sha256": "44fcb464b5a678b328ee8183f20f16013580ffa96ed6f4a1467a8c9e037aa66c"
-    },
-    {
-      "file": "junction-heatsink-impedance.png",
-      "source": "thermal",
-      "page_or_slide": 24,
-      "extraction": {
-        "type": "original-embedded-image",
-        "picture_index": 0
-      },
-      "width": 921,
-      "height": 925,
-      "sha256": "d6deb580d946e2ea98d118861c170e0cbe5bc3afddf3f1bf932a9f90c344aee8"
-    },
-    {
-      "file": "to247-dry-test.png",
-      "source": "thermal",
-      "page_or_slide": 31,
-      "extraction": {
-        "type": "original-embedded-image",
-        "picture_index": 2
-      },
-      "width": 570,
-      "height": 268,
-      "sha256": "2833d8ceb234384bd92f7125c1cbcdc6b599dde98a6e925e326e241e0bab6aa2"
-    },
-    {
-      "file": "to247-wet-test.png",
-      "source": "thermal",
-      "page_or_slide": 31,
-      "extraction": {
-        "type": "original-embedded-image",
-        "picture_index": 4
-      },
-      "width": 518,
-      "height": 395,
-      "sha256": "1fe8304bcb2b50776b3cffaccd1808d012a2e39308d8db5a5d7c02d2fe0ffa87"
     },
     {
       "file": "to247-structure-functions.png",

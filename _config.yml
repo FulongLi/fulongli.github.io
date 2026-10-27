@@ -62,6 +62,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - AGENTS.md
   - node_modules
   - vendor
   - assets/js/_main.js

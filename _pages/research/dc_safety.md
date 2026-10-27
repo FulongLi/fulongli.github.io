@@ -5,16 +5,8 @@ permalink: /research/dc_safety/
 author_profile: true
 ---
 
-## Overview
+My earlier industrial research included **DC electrical safety and protection**. This page records that technical area at a general level.
 
-This category covers DC electrical safety, DC protection strategies, and relevant earlier industrial research. Public descriptions will remain at the level of technical areas and confirmed personal contributions.
+Related public work on [DC microgrid control](/research/dcmg/) examines stable converter operation, coordinated power flow and planned transitions between operating modes.
 
-## DC Electrical Safety and Protection Strategies
-
-**Overview:** Earlier industrial research included DC safety and protection topics.
-
-**My contribution:** Specific assessment, modelling, and protection-strategy responsibilities require confirmation before project descriptions are expanded.
-
-**Outcome / evidence:** No confidential partner information, circuit designs, internal reports, or experimental results are included.
-
-[DC Microgrid Control Strategies](/research/dcmg/) · [Back to Research](/research/)
+[Experimental Platforms](/research/experimental_platforms/) · [Back to Research](/research/)

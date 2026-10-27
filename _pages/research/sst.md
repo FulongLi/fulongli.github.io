@@ -5,18 +5,10 @@ permalink: /research/sst/
 author_profile: true
 ---
 
-## Overview
-
-My documented solid-state transformer (SST) work focused on technology assessment and architectural review.
-
-<img class="research-hero-image" src="/images/research/generated/solid-state-transformers.png" alt="Solid state transformer technical illustration" />
+My solid-state transformer work focused on **technology assessment and architectural review**, considering how power devices, converter stages and control choices fit together at system level.
 
 ## SST Architecture and Technology Assessment
 
-**Overview:** Assessment of SST architectures and the technologies needed for their applications.
-
-**My contribution:** Reviewed high-voltage SiC device technology and assessed converter topologies, control approaches, and applications.
-
-**Outcome / evidence:** This work concerns technology and architecture assessment; it does not establish independent construction of a complete SST. Public supporting resources will be added when confirmed.
+I reviewed high-voltage SiC technology and assessed converter topologies, control approaches and applications. This work provides a technology and architecture perspective on the connections between devices and isolated conversion.
 
 [Power Device Characterization](/research/switching_devices/) · [Isolated DC–DC Converters](/research/isolated_converters/) · [Back to Research](/research/)
