@@ -34,15 +34,27 @@ My work connects power-electronic components, converter design, and microgrid co
     <h3> Components</h3>
   </div>
   <ul class="research-topic__projects">
-    <li><a href="/research/sensing_devices/">Current Sensing</a></li>
+    <li>
+      <a href="/research/sensing_devices/">Current Sensing</a>
+      <ul>
+        <li><a href="/research/sensing_devices/#pcb-rogowski-coil-pcb-rc">PCB Rogowski Coil</a></li>
+        <li><a href="/research/sensing_devices/#embedded-core-pcb-current-transformer-pcb-ct">Current Transformer / Transducer</a></li>
+      </ul>
+    </li>
     <li>
       <a href="/research/switching_devices/">Power Device Characterization</a>
       <ul>
-        <li><a href="/research/electrical-characterization/">Electrical Characterization</a></li>
-        <li><a href="/research/thermal-characterization/">Thermal Characterization</a></li>
+        <li><a href="/research/electrical-characterization/">SiC MOSFET Double Pulse Test</a></li>
+        <li><a href="/research/thermal-characterization/">GaN Thermal Characterization</a></li>
       </ul>
     </li>
-    <li><a href="/research/reliability_testing/">Power Device Reliability Testing</a></li>
+    <li>
+      <a href="/research/reliability_testing/">Power Device Reliability Testing</a>
+      <ul>
+        <li><a href="/research/reliability_testing/#sic-power-module-htrb-h3trb-test">SiC Power Module HTRB / H3TRB Test</a></li>
+        <li><a href="/research/reliability_testing/#gan-thermal-cycling">GaN Thermal Cycling</a></li>
+      </ul>
+    </li>
     <li><a href="/research/mosfet_ann_modelling/">Semiconductor Device Modelling</a></li>
     <li><a href="/research/passive_components/">Supporting Work: Passive Components (Magnetics)</a></li>
   </ul>
@@ -55,8 +67,19 @@ My work connects power-electronic components, converter design, and microgrid co
     <h3> Converters</h3>
   </div>
   <ul class="research-topic__projects">
-    <li><a href="/research/isolated_converters/">Isolated DC–DC Converters</a></li>
-    <li><a href="/research/nonisolated_converters/">Non-Isolated / Bidirectional DC–DC Converters</a></li>
+    <li>
+      <a href="/research/isolated_converters/">Isolated DC–DC Converters</a>
+      <ul>
+        <li><a href="/research/isolated_converters/#llc-resonant-converter">LLC Converter</a></li>
+        <li><a href="/research/isolated_converters/#dual-active-bridge-dab">DAB Converter</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="/research/nonisolated_converters/">Non-Isolated DC–DC Converters</a>
+      <ul>
+        <li><a href="/research/nonisolated_converters/#bidirectional-buck-boost-converter">Bidirectional Buck–Boost Converter</a></li>
+      </ul>
+    </li>
     <li><a href="/research/nonisolated_converters/#acdc-converter-interfaces">AC–DC Converter Interfaces</a></li>
     <li><a href="/research/wireless_power_transfer/">Wireless Power Transfer</a></li>
     <li><a href="/research/sst/">Solid-State Transformers</a></li>
@@ -89,8 +112,6 @@ My work connects power-electronic components, converter design, and microgrid co
         <li><a href="/research/sino-ofh/">SinO-OFH: WP4.1 Thermal Evaluation</a></li>
       </ul>
     </li>
-    <li><a href="/research/dc_safety/">DC Safety &amp; Protection</a></li>
-    <li><a href="/research/acmg/">Related Topic: AC Microgrids</a></li>
   </ul>
 </div>
 
