@@ -9,19 +9,28 @@ project_script: /assets/js/marine-project.js
 excerpt: "A complete project case study: leading the 3MW marine powertrain project, followed by SinO-OFH WP4.1 thermal evaluation."
 ---
 
-<p class="project-kicker">MARINE ELECTRIFICATION · PROJECT CASE STUDY · 2023–2024</p>
+## Overview
 
-<p class="project-intro">I led the 3MW marine fuel-cell hybrid powertrain project, developing a system modelling and operating-strategy workflow that connected vessel requirements to fuel-cell and battery behaviour. The subsequent SinO-OFH project extended this work into the equipment’s thermal environment, where I led Work Package 4.1.</p>
+I led the 3MW marine fuel-cell hybrid powertrain project, developing a system modelling and operating-strategy workflow that connected vessel requirements to fuel-cell and battery behaviour. The subsequent SinO-OFH project extended this work into the equipment’s thermal environment, where I led Work Package 4.1.
 
 The engineering problem covered a complete working day at sea: leaving port, travelling to a wind farm, transferring personnel and equipment, waiting onsite, and returning to shore. Each activity places different demands on the propulsion system. The project examined how fuel cells and batteries could meet those demands, what storage and operating assumptions were needed, and how much heat the fuel cells would generate.
 
-<div class="project-roles">
-  <div><span class="project-period">PHASE 1 · 3MW · 2023</span><h2>Lead for the whole project</h2><p>System architecture, component and vessel models, central energy management, scenario assessment and model handover.</p></div>
-  <div><span class="project-period">PHASE 2 · SinO-OFH · 2024</span><h2>WP4.1 lead</h2><p>Thermal evaluation of the engine-room enclosure, equipment heat sources and ventilation across different operating climates.</p></div>
-</div>
+**My role, 3MW (2023):** Lead for the whole project, covering system architecture, component and vessel models, central energy management, scenario assessment and model handover.
+
+**My role, SinO-OFH (2024):** WP4.1 lead, covering thermal evaluation of the engine-room enclosure, equipment heat sources and ventilation across different operating climates.
 
 <nav class="project-contents" aria-label="Project contents">
-  <a href="#system-overview">System overview</a><a href="#vessel-requirements">Vessel requirements</a><a href="#design-development">Design development</a><a href="#released-model">Released model</a><a href="#hst-results">HST results</a><a href="#bmt-results">BMT results</a><a href="#sino-ofh-wp41-thermal-evaluation">SinO-OFH WP4.1</a><a href="#outcomes">Outcomes</a>
+  <p><strong>On this page</strong></p>
+  <ul>
+    <li><a href="#system-overview">System overview</a></li>
+    <li><a href="#vessel-requirements">Vessel requirements</a></li>
+    <li><a href="#design-development">Design development</a></li>
+    <li><a href="#released-model">Released model</a></li>
+    <li><a href="#hst-results">HST results</a></li>
+    <li><a href="#bmt-results">BMT results</a></li>
+    <li><a href="#sino-ofh-wp41-thermal-evaluation">SinO-OFH WP4.1</a></li>
+    <li><a href="#outcomes">Outcomes</a></li>
+  </ul>
 </nav>
 
 <h2 id="system-overview">The system and the modelling workflow</h2>

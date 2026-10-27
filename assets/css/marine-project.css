@@ -1,79 +1,8 @@
-/* The 3 MW case study keeps the site theme, with room for technical figures. */
-.marine-project-page #main { max-width: 1440px; }
-.marine-project-page .page { min-width: 0; }
-.marine-project-page .page__title { line-height: 1.15; max-width: 24ch; }
-.marine-project-page .page__content { min-width: 0; }
-.marine-project-page .page__content > p,
-.marine-project-page .page__content > ul { max-width: 78ch; }
-.marine-project-page .page__content h2[id] { scroll-margin-top: 7rem; margin-top: 2.6rem; }
-.marine-project-page .page__content h3 { margin-top: 1.8rem; }
-.marine-project-page .project-kicker {
-  color: #63317b; font-size: .7rem; letter-spacing: .08em;
-  font-weight: 700; margin: .7rem 0 1rem;
-}
-.marine-project-page .project-intro { font-size: 1.08rem; line-height: 1.7; }
-.marine-project-page .project-roles {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
-  border-top: 3px solid #63317b; border-bottom: 1px solid #ded8e2;
-  padding: 1.3rem 0 .7rem; margin: 1.8rem 0;
-}
-.marine-project-page .project-period { color: #63317b; font-size: .65rem; font-weight: 700; letter-spacing: .05em; }
-.marine-project-page .project-roles h2 { font-size: 1rem; margin: .5rem 0; border: 0; padding: 0; }
-.marine-project-page .project-roles p { font-size: .82rem; line-height: 1.65; margin-bottom: .5rem; }
-.marine-project-page .project-contents {
-  display: flex; flex-wrap: wrap; gap: .6rem 1.2rem;
-  font-size: .75rem; margin: 1.4rem 0 2.5rem;
-}
-.marine-project-page .project-contents a { text-underline-offset: .2em; }
-.marine-project-page .page__content figure {
-  display: block; min-width: 0; margin: 1.6rem 0 2rem;
-}
-.marine-project-page .page__content figure > a { display: block; width: 100%; }
-.marine-project-page .page__content figure img {
-  display: block; width: 100%; max-width: 100%; height: auto;
-  margin: 0; border: 1px solid #e1dfe4; border-radius: 2px;
-  background: white;
-}
-.marine-project-page .page__content .project-blueprint img { border: 0; }
-.marine-project-page .page__content figcaption {
-  width: auto; font-size: .69rem; line-height: 1.65;
-  color: #55515a; margin: .65rem 0 0;
-}
-.marine-project-page .figure-source { color: #716b77; }
-.marine-project-page .project-figures {
-  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 1.4rem; align-items: start; margin: 1.5rem 0 2rem;
-}
-.marine-project-page .project-figures figure { margin: 0; }
-.marine-project-page .project-table-scroll { overflow-x: auto; margin: 1.5rem 0; }
-.marine-project-page .project-table-scroll table { margin: 0; min-width: 560px; }
-.marine-project-page .page__content table { width: 100%; font-size: .74rem; }
-.marine-project-page .page__content th { text-align: left; }
-.marine-project-page .page__content td,
-.marine-project-page .page__content th { padding: .65rem .7rem; vertical-align: top; }
-.marine-project-page .page__content tbody tr:nth-child(even) { background: #f7f5f8; }
-.marine-project-page .page__content caption { color: #63317b; font-size: .7rem; text-align: left; padding-bottom: .7rem; }
-.marine-project-page .project-table-scroll td { text-align: right; font-variant-numeric: tabular-nums; }
-.marine-project-page .project-appendix { border-top: 1px solid #ded8e2; border-bottom: 1px solid #ded8e2; margin: 1.6rem 0 2.5rem; padding: 1rem 0; }
-.marine-project-page .project-appendix summary { cursor: pointer; font-weight: 600; font-size: .83rem; color: #63317b; }
-.marine-project-page .project-appendix[open] summary { margin-bottom: 1.2rem; }
-.marine-project-page .project-appendix > p { font-size: .82rem; }
-.marine-project-page a:focus-visible,
-.marine-project-page summary:focus-visible,
-.marine-project-page .project-table-scroll:focus-visible { outline: 2px solid #63317b; outline-offset: 4px; }
-@media (min-width: 1024px) {
-  .marine-project-page .page { width: calc(100% - 255px); padding: 0; margin-left: 0; }
-}
-@media (max-width: 640px) {
-  .marine-project-page .project-roles,
-  .marine-project-page .project-figures { grid-template-columns: minmax(0, 1fr); gap: 1.3rem; }
-  .marine-project-page .project-roles { gap: .8rem; }
-  .marine-project-page .project-intro { font-size: 1rem; }
-  .marine-project-page .page__content > table { display: block; overflow-x: auto; }
-  .marine-project-page .project-kicker { font-size: .62rem; }
-}
-@media print {
-  .marine-project-page .project-contents { display: none; }
-  .marine-project-page .page { width: 100%; }
-  .marine-project-page figure { break-inside: avoid; }
-}
+/* Use the site's shared single-page layout, typography and colour palette.
+   Keep only behaviour needed by the original technical figures and tables. */
+.marine-project-page .page__content h2[id] { scroll-margin-top: 7rem; }
+.marine-project-page figure > a { width: 100%; }
+.marine-project-page figure img { height: auto; }
+.marine-project-page .project-table-scroll { overflow-x: auto; }
+.marine-project-page .project-table-scroll table { min-width: 560px; }
+.marine-project-page summary { cursor: pointer; }
