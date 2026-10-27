@@ -9,7 +9,7 @@ My wireless power transfer experience spans undergraduate research involving und
 
 <figure>
   <a href="/images/research/experimental-platforms/wireless-test-bench.png" target="_blank" rel="noopener"><img src="/images/research/experimental-platforms/wireless-test-bench.png" alt="Wireless power transfer prototype and laboratory setup" width="565" height="260" loading="lazy"></a>
-  <figcaption>Wireless power transfer test bench. <span class="figure-source"><a href="https://github.com/FulongLi/WirelessPowerTransferTestBench">Wireless Power Transfer Test Bench repository</a>, CC BY 4.0.</span></figcaption>
+  <figcaption>Wireless power transfer test bench.</figcaption>
 </figure>
 
 ## Undergraduate Research: Underwater Applications

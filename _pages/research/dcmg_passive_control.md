@@ -80,8 +80,10 @@ A first-order high-pass filter retains the high-frequency compensation while its
 
 <figure>
   <a href="/images/research/dc-microgrid-control/passive-control-block.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/passive-control-block.png" alt="Original Boost interface-converter control diagram with droop, inner current loop, outer voltage loop and filtered passive stabiliser" width="1248" height="543" fetchpriority="high"></a>
-  <figcaption><strong>Integration with the converter control loops.</strong> The stabiliser adds a filtered feedforward path alongside the outer voltage controller. <span class="figure-source">PhD thesis, Figure 5.9, p. 100.</span></figcaption>
+  <figcaption>Integration with the converter control loops.</figcaption>
 </figure>
+
+The stabiliser adds a filtered feedforward path alongside the outer voltage controller.
 
 The filtered plant approaches α at DC and the gain <i>K</i> minus the magnitude of the negative asymptote at high frequency. Its frequency-domain real part is:
 
@@ -101,6 +103,6 @@ The thesis also discretises the current controller, voltage controller and stabi
 
 <h2 id="sources">Sources</h2>
 
-[PhD thesis: Control Strategies for Low Voltage DC Microgrids](https://publications.aston.ac.uk/id/eprint/46135/), Chapter 5, pp. 88–102. · [Novel Passive Controller Design for Enhancing Boost Converter Stability in DC Microgrid Applications](https://ieeexplore.ieee.org/document/9391691), IEEE JESTPE, 2021. · [Figure sources](/files/research/dc-microgrid-control/figure-sources.json)
+[PhD thesis: Control Strategies for Low Voltage DC Microgrids](https://publications.aston.ac.uk/id/eprint/46135/), Chapter 5, pp. 88–102. · [Novel Passive Controller Design for Enhancing Boost Converter Stability in DC Microgrid Applications](https://ieeexplore.ieee.org/document/9391691), IEEE JESTPE, 2021.
 
 [DC Microgrid Control Strategies](/research/dcmg/) · [Dual-Window DC Bus Signalling](/research/dcmg/dc-bus-signalling/) · [Back to Research](/research/)

@@ -19,8 +19,10 @@ The laboratory method uses the **PWT2400 power tester**, **T3STER** transient me
 
 <figure>
   <a href="/images/research/device-characterization/thermal-test-connections.png" target="_blank" rel="noopener"><img src="/images/research/device-characterization/thermal-test-connections.png" alt="Device heating and electrical temperature-sensing circuits connected to a temperature-controlled fixture" width="1144" height="721" fetchpriority="high"></a>
-  <figcaption><strong>A controlled heating and cooling experiment.</strong> The same device is heated electrically and then monitored using a small sensing current. <span class="figure-source">Thermal training, slide 18.</span></figcaption>
+  <figcaption>A controlled heating and cooling experiment.</figcaption>
 </figure>
+
+The same device is heated electrically and then monitored using a small sensing current.
 
 The module training example calibrates forward voltage at 500 mA sensing current from 20°C to 80°C in 5°C steps. With the cooling boundary held constant, an 80 A heating stage establishes the temperature rise before switching to the calibrated sensing current. These are example settings for that device and fixture.
 
@@ -32,8 +34,10 @@ The response is evaluated as **Z<sub>th</sub>(t) = ΔT<sub>j</sub>(t) / P**, wit
 
 <figure>
   <a href="/images/research/device-characterization/to247-structure-functions.png" target="_blank" rel="noopener"><img src="/images/research/device-characterization/to247-structure-functions.png" alt="TO-247 device structure functions under dry, greased and additional interface conditions" width="768" height="751" loading="lazy"></a>
-  <figcaption><strong>Separating device and interface behaviour.</strong> Changes in mounting conditions reveal where the measured thermal paths diverge. <span class="figure-source">Thermal training, slide 33.</span></figcaption>
+  <figcaption>Separating device and interface behaviour.</figcaption>
 </figure>
+
+Changes in mounting conditions reveal where the measured thermal paths diverge.
 
 The training summary reports **0.05 K/W** for a CAS300M17BM2 module diode and **2.58 K/W** for a C3M0280090D SiC MOSFET. These are attributed worked examples from the training report. The separate [SiC ANN-modelling project](/research/semiconductor-device-modelling/static-ann/#thermal-modelling) includes later C2M0080120D measurements.
 
@@ -41,6 +45,6 @@ The training summary reports **0.05 K/W** for a CAS300M17BM2 module diode and **
 
 The outputs—transient thermal impedance, thermal resistance and Cauer networks—provide a link between loss calculations and temperature prediction. Useful results depend on calibration, stable cooling conditions and an appropriate sensing current for the device.
 
-Figures and worked examples: <em>Thermal Characterisation: Training Outcomes</em>, Usman Nasir, 25 June 2021. [Figure sources](/files/research/device-characterization/figure-sources.json) · [TIM Automation](https://github.com/FulongLi/TIM_Automation)
+[TIM Automation](https://github.com/FulongLi/TIM_Automation)
 
 [Electrical Characterization](/research/electrical-characterization/) · [Power Device Characterization](/research/switching_devices/) · [Back to Research](/research/)
