@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 668" width="760" height="668" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>AIPE Field Simulation architecture: model parameters and inputs from other AIPE stages feed geometry and meshing, materials and physics, and Elmer solver execution; post-processing verifies each case and repeats it on finer meshes, and the recorded outputs are handed to the AIPE workflow and engineering review</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a8288"/></marker></defs>
+<g text-anchor="middle">
+<rect x="40" y="16" width="310" height="80" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="195" y="40" font-size="15" font-weight="700" fill="#494e52">Model parameters</text>
+<text x="195" y="62" font-size="12.5" fill="#7a8288">geometry, materials, currents</text>
+<text x="195" y="82" font-size="12.5" fill="#7a8288">and film coefficients in SI units</text>
+<rect x="370" y="16" width="310" height="80" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="525" y="40" font-size="15" font-weight="700" fill="#494e52">Other AIPE stages</text>
+<text x="525" y="62" font-size="12.5" fill="#7a8288">operating point from the Engineering State</text>
+<text x="525" y="82" font-size="12.5" fill="#7a8288">STEP geometry from the CAD Agent</text>
+</g>
+<rect x="24" y="116" width="712" height="452" rx="8" fill="#eef7fa" stroke="#52adc8" stroke-width="2"/>
+<text x="360" y="138" font-size="13" font-weight="700" fill="#52adc8" text-anchor="middle">AIPE Field Simulation · Gmsh and Elmer</text>
+<g text-anchor="middle">
+<rect x="40" y="148" width="640" height="72" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="360" y="172" font-size="15" font-weight="700" fill="#494e52">Geometry and meshing</text>
+<text x="360" y="194" font-size="12.5" fill="#7a8288">parametric Gmsh builders or an imported STEP model</text>
+<text x="360" y="212" font-size="12.5" fill="#7a8288">mesh with named bodies and boundaries</text>
+<rect x="40" y="252" width="310" height="100" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="195" y="276" font-size="15" font-weight="700" fill="#494e52">Materials and physics</text>
+<text x="195" y="298" font-size="12.5" fill="#7a8288">SI material records with sources</text>
+<text x="195" y="318" font-size="12.5" fill="#7a8288">heat flux, convection, currents</text>
+<text x="195" y="338" font-size="12.5" fill="#7a8288">named boundaries, not solver ids</text>
+<rect x="370" y="252" width="310" height="100" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="525" y="276" font-size="15" font-weight="700" fill="#494e52">Solver execution</text>
+<text x="525" y="298" font-size="12.5" fill="#7a8288">explicit Elmer solver input file</text>
+<text x="525" y="318" font-size="12.5" fill="#7a8288">ElmerGrid conversion, ElmerSolver</text>
+<text x="525" y="338" font-size="12.5" fill="#7a8288">logs, fields and scalars per case</text>
+<rect x="40" y="384" width="640" height="72" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="360" y="408" font-size="15" font-weight="700" fill="#494e52">Post-processing and verification</text>
+<text x="360" y="430" font-size="12.5" fill="#7a8288">independent re-integration of the fields, energy balance</text>
+<text x="360" y="448" font-size="12.5" fill="#7a8288">mesh-refinement study and closed-form benchmarks</text>
+<rect x="40" y="480" width="640" height="72" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="360" y="504" font-size="15" font-weight="700" fill="#494e52">Outputs</text>
+<text x="360" y="526" font-size="12.5" fill="#7a8288">case directory with tool versions, commands and SHA-256 hashes</text>
+<text x="360" y="544" font-size="12.5" fill="#7a8288">summary of results and checks, figures, report, evidence records</text>
+<rect x="40" y="596" width="640" height="56" rx="6" fill="#f2f3f3" stroke="#bdc1c4"/>
+<text x="360" y="620" font-size="15" font-weight="700" fill="#494e52">Hand-off</text>
+<text x="360" y="640" font-size="12.5" fill="#7a8288">AIPE-Workflows field-simulation gate, then engineering review</text>
+</g>
+<g stroke="#7a8288" stroke-width="1.5" fill="none" marker-end="url(#arrow)">
+<line x1="195" y1="96" x2="195" y2="146"/>
+<line x1="525" y1="96" x2="525" y2="146"/>
+<line x1="195" y1="220" x2="195" y2="250"/>
+<line x1="350" y1="302" x2="368" y2="302"/>
+<line x1="525" y1="352" x2="525" y2="382"/>
+<line x1="360" y1="456" x2="360" y2="478"/>
+<line x1="360" y1="552" x2="360" y2="594"/>
+<path d="M680,420 H706 V184 H682"/>
+</g>
+<text x="723" y="302" font-size="12.5" fill="#7a8288" text-anchor="middle" transform="rotate(90 723 302)">refine the mesh and solve again</text>
+</svg>
