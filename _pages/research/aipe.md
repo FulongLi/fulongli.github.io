@@ -23,6 +23,8 @@ The [public converter optimisation repository](https://github.com/FulongLi/AIPE-
 
 [AIPE CAD Agent](/research/aipe-cad-agent/) builds parametric FreeCAD models of transformers, heat sinks, cold plates and converter assemblies, and checks them for interference, fit and clearance. The project page introduces its structure and the mechanical models of a 10 kW DAB converter.
 
+[AIPE Sketcher](/research/aipe-sketcher/) turns circuit descriptions into SVG schematics and checks each drawing by reading its connections back from the wires. The project page introduces its structure and a dual-active-bridge schematic.
+
 ## Open-Source Engineering Tools and Resources
 
 [AIPE Labs](https://github.com/FulongLi/Spirit-Connect-AIPE-Labs) · [Academy](https://aipel.co.uk/academy/) · [Data, Models & Tools](https://aipel.co.uk/hub/) · [Open Research](https://aipel.co.uk/frontiers/)

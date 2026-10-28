@@ -44,7 +44,7 @@ Keep only assets used by the site and its public downloads. Experimental scripts
 
 Agent project introductions follow one structure, in this order:
 
-1. **The AIPE Framework** — `{% include aipe-framework.html agent="<stage>" %}` inserts the shared AIPE introduction and workflow diagram with the agent's stage highlighted (`spec`, `electrical`, `simulation`, `components`, `field`, `cad`, `pcb` or `review`).
+1. **The AIPE Framework** — `{% include aipe-framework.html agent="<stage>" %}` inserts the shared AIPE introduction and workflow diagram with the agent's stage highlighted (`spec`, `electrical`, `sketch`, `simulation`, `components`, `field`, `cad`, `pcb` or `review`).
 2. **Role of the agent** — where it sits in that workflow, with its inputs, outputs and hand-offs.
 3. **How the agent is organised** — a flow chart of the agent's internal parts, drawn in the site palette, followed by a short table of their responsibilities.
 4. **Example** — one task the agent has run, from its requirements to the resulting artifacts, stating what has and has not been verified.

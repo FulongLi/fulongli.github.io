@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 668" width="760" height="668" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>AIPE Sketcher architecture: an agent skill or an Engineering State provides Circuit IR, which is validated, planned as relationships and turned into geometry; candidates are scored and their connectivity is read back from the wires, rejected candidates are replaced by the next geometry, and the SVG, report and provenance are written for documentation and review</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a8288"/></marker></defs>
+<g text-anchor="middle">
+<rect x="40" y="16" width="310" height="80" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="195" y="40" font-size="15" font-weight="700" fill="#494e52">Agent skill</text>
+<text x="195" y="62" font-size="12.5" fill="#7a8288">plain-language request in Codex or</text>
+<text x="195" y="82" font-size="12.5" fill="#7a8288">Claude Code, or a reference converter</text>
+<rect x="370" y="16" width="310" height="80" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="525" y="40" font-size="15" font-weight="700" fill="#494e52">Engineering State</text>
+<text x="525" y="62" font-size="12.5" fill="#7a8288">circuit carried in the aipe.sketch</text>
+<text x="525" y="82" font-size="12.5" fill="#7a8288">extension, with evidence references</text>
+</g>
+<rect x="24" y="116" width="712" height="452" rx="8" fill="#eef7fa" stroke="#52adc8" stroke-width="2"/>
+<text x="360" y="138" font-size="13" font-weight="700" fill="#52adc8" text-anchor="middle">AIPE Sketcher · Python standard-library engine</text>
+<g text-anchor="middle">
+<rect x="40" y="148" width="640" height="72" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="360" y="172" font-size="15" font-weight="700" fill="#494e52">Circuit IR and electrical validation</text>
+<text x="360" y="194" font-size="12.5" fill="#7a8288">components, named ports, nets and roles</text>
+<text x="360" y="212" font-size="12.5" fill="#7a8288">rejects unknown or floating ports and single-terminal nets</text>
+<rect x="40" y="252" width="310" height="100" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="195" y="276" font-size="15" font-weight="700" fill="#494e52">Graph planning</text>
+<text x="195" y="298" font-size="12.5" fill="#7a8288">motifs such as bridge legs</text>
+<text x="195" y="318" font-size="12.5" fill="#7a8288">power-flow direction</text>
+<text x="195" y="338" font-size="12.5" fill="#7a8288">relationships without coordinates</text>
+<rect x="370" y="252" width="310" height="100" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="525" y="276" font-size="15" font-weight="700" fill="#494e52">Geometry</text>
+<text x="525" y="298" font-size="12.5" fill="#7a8288">standard symbol library</text>
+<text x="525" y="318" font-size="12.5" fill="#7a8288">grid placement and Manhattan routing</text>
+<text x="525" y="338" font-size="12.5" fill="#7a8288">collision-free labels</text>
+<rect x="40" y="384" width="640" height="72" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="360" y="408" font-size="15" font-weight="700" fill="#494e52">Scoring and connectivity read-back</text>
+<text x="360" y="430" font-size="12.5" fill="#7a8288">12 deterministic geometry candidates scored for readability</text>
+<text x="360" y="448" font-size="12.5" fill="#7a8288">nets rebuilt from the drawn wires must equal the Circuit IR</text>
+<rect x="40" y="480" width="640" height="72" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="360" y="504" font-size="15" font-weight="700" fill="#494e52">Outputs</text>
+<text x="360" y="526" font-size="12.5" fill="#7a8288">SVG schematic and JSON report: validation, scores, assumptions, limits</text>
+<text x="360" y="544" font-size="12.5" fill="#7a8288">provenance file with SHA-256 hashes of the circuit and drawing</text>
+<rect x="40" y="596" width="640" height="56" rx="6" fill="#f2f3f3" stroke="#bdc1c4"/>
+<text x="360" y="620" font-size="15" font-weight="700" fill="#494e52">Hand-off</text>
+<text x="360" y="640" font-size="12.5" fill="#7a8288">design documents and review packages, then human engineering review</text>
+</g>
+<g stroke="#7a8288" stroke-width="1.5" fill="none" marker-end="url(#arrow)">
+<line x1="195" y1="96" x2="195" y2="146"/>
+<line x1="525" y1="96" x2="525" y2="146"/>
+<line x1="195" y1="220" x2="195" y2="250"/>
+<line x1="350" y1="302" x2="368" y2="302"/>
+<line x1="525" y1="352" x2="525" y2="382"/>
+<line x1="360" y1="456" x2="360" y2="478"/>
+<line x1="360" y1="552" x2="360" y2="594"/>
+<path d="M680,420 H706 V302 H682"/>
+</g>
+<text x="723" y="361" font-size="12.5" fill="#7a8288" text-anchor="middle" transform="rotate(90 723 361)">mismatch: reject, try next candidate</text>
+</svg>
