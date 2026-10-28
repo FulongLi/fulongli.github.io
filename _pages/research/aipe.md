@@ -19,6 +19,8 @@ I proposed an integrated component-modelling and converter-design framework, the
 
 The [public converter optimisation repository](https://github.com/FulongLi/AIPE-Converter-Optimisation-Agent) connects component calculations, optimisation and surrogate modelling as a focused example of AI-assisted engineering tools.
 
+[AIPE PCB Agent](/research/aipe-pcb-agent/) connects structured requirements to KiCad schematics, PCB layouts, checks and exports. The project page introduces its automation framework and a 5 kW SiC buck converter with separate power and DSP control boards.
+
 ## Open-Source Engineering Tools and Resources
 
 [AIPE Labs](https://github.com/FulongLi/Spirit-Connect-AIPE-Labs) · [Academy](https://aipel.co.uk/academy/) · [Data, Models & Tools](https://aipel.co.uk/hub/) · [Open Research](https://aipel.co.uk/frontiers/)
