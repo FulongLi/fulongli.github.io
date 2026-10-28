@@ -25,6 +25,8 @@ The [public converter optimisation repository](https://github.com/FulongLi/AIPE-
 
 [AIPE Sketcher](/research/aipe-sketcher/) turns circuit descriptions into SVG schematics and checks each drawing by reading its connections back from the wires. The project page introduces its structure and a dual-active-bridge schematic.
 
+[AIPE Field Simulation](/research/aipe-field-simulation/) drives Gmsh and Elmer to solve thermal, magnetostatic and eddy-current fields, checking analytical estimates against verified finite-element results. The project page introduces its structure and a heat-sink study for two TO-247 devices.
+
 ## Open-Source Engineering Tools and Resources
 
 [AIPE Labs](https://github.com/FulongLi/Spirit-Connect-AIPE-Labs) · [Academy](https://aipel.co.uk/academy/) · [Data, Models & Tools](https://aipel.co.uk/hub/) · [Open Research](https://aipel.co.uk/frontiers/)
