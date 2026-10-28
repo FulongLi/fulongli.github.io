@@ -3,28 +3,33 @@ layout: single
 title: "Bidirectional Buck–Boost Converter"
 permalink: /research/nonisolated-converters/bidirectional-buck-boost/
 author_profile: true
+excerpt: "A modular bidirectional half-bridge converter linking battery banks to the DC bus of a laboratory microgrid."
 body_class: microgrid-project-page
 project_stylesheet: /assets/css/marine-project.css
 project_contents: true
 ---
 
-## Role in the Microgrid
+I developed a modular bidirectional half-bridge converter as the building block of my low-voltage DC microgrid testbeds, connecting battery banks and other sources to the common DC bus with local DSP control.
 
-The bidirectional half-bridge converter is a building block of the low-voltage DC microgrid testbed. It links a lower-voltage battery bank to the common DC bus: Boost operation delivers stored energy to the bus, while Buck operation charges the battery. The same modular interface can also support a PV source or grid emulator with the appropriate control.
+## Bidirectional Power Flow with One Half Bridge
 
-## Power and Control Architecture
+A battery in a DC microgrid must both supply the bus and be charged from it. A half-bridge converter with an inductor on its low-voltage side does both: operating as a Boost converter, it delivers stored energy from the lower-voltage battery to the higher-voltage bus; operating as a Buck converter, the same switches and inductor charge the battery from the bus. The direction of current follows the control, so one converter serves as a two-way interface.
+
+## Power Stage and Control Design
+
+The power stage combines the inductor, the two switching devices and the input and output capacitors. Voltage and current transducers feed conditioned measurements to the control board, and isolated gate drives apply its switching commands. A **TMS320F28335 DSP** runs the local control and operating logic.
 
 <figure>
   <a href="/images/research/experimental-platforms/aston-converter-architecture.png" target="_blank" rel="noopener"><img src="/images/research/experimental-platforms/aston-converter-architecture.png" alt="Bidirectional interface converter with inductor, switches, voltage and current transducers, isolated sampling, gate drive and TMS320F28335 control board" width="1206" height="1017" loading="lazy"></a>
-  <figcaption>Interface converter power stage, sensing and digital control.</figcaption>
+  <figcaption>Interface converter power stage, isolated sensing and gate drive, and TMS320F28335 control board.</figcaption>
 </figure>
 
-The power stage combines an inductor, switching devices and input/output capacitors. Voltage and current transducers feed conditioned measurements to the control board, while isolated gate drives apply its switching commands. The **TMS320F28335 DSP** runs the local control and operating logic. Depending on the source, the controller can implement voltage or current regulation, battery charging, PV maximum-power-point tracking and DC bus signalling.
+Depending on the source it connects, the controller implements voltage or current regulation, battery charging, PV maximum-power-point tracking and DC bus signalling. The same modular interface can therefore connect a battery bank, a PV source or a grid emulator.
 
 ## Prototype Ratings and System Use
 
-The Aston PhD prototype is rated at **250 W per interface**, with a 240 µH inductor and 470 µF input and output capacitors. Two 12 V batteries in series form each 24 V battery bank. Four interfaces connect the grid emulator, two battery banks and PV emulator; the latter operates in the Boost direction. A separate, later converter version documented in the Loughborough test-bench repository is rated at **500 W per converter**.
+The Aston PhD prototype is rated at **250 W per interface**, with a 240 µH inductor and 470 µF input and output capacitors. Each battery bank uses two 12 V batteries in series. Four interfaces connect the grid emulator, two battery banks and the PV emulator, which operates in the Boost direction. A later version, documented with the Loughborough test bench, is rated at **500 W per converter**.
 
-The converter supports the wider hierarchy: local regulation shapes its response, droop control shares power between sources, and supervisory rules assign operating roles. [Read the DC microgrid control study](/research/dcmg/).
+These converters carried the stability, droop and supervisory-control studies of my [DC microgrid research](/research/dcmg/).
 
 [PhD thesis, Chapter 3](https://publications.aston.ac.uk/id/eprint/46135/) · [Aston testbed](/research/experimental-platforms/aston/) · [Loughborough testbed](/research/experimental-platforms/loughborough/) · [Non-isolated converters](/research/nonisolated_converters/)

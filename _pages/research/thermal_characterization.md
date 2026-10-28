@@ -6,45 +6,35 @@ author_profile: true
 body_class: device-project-page
 project_stylesheet: /assets/css/marine-project.css
 project_contents: true
-excerpt: "Thermal-resistance testing connects electrical temperature sensing, cooling transients and device thermal models."
+mathjax: true
+excerpt: "Transient thermal-impedance measurement of SiC power devices, from electrical temperature sensing to junction-to-case thermal resistance."
 ---
 
-<h2 id="overview">Measuring the Heat Path Through a Power Device</h2>
+I operated the thermal characterisation equipment and carried out transient thermal-impedance measurements of SiC power devices, identifying the junction-to-case thermal path used in device and converter temperature models.
 
-Thermal characterisation links power dissipation to junction-temperature rise. My work focuses on operating the characterisation equipment and carrying out thermal-resistance testing, providing measurements that support device and converter models.
+<h2 id="thermal-impedance">How Thermal Impedance Is Measured</h2>
 
-The laboratory method uses the **PWT2400 power tester**, **T3STER** transient measurement and analysis, and a temperature-controlled cooling circuit. The figures below illustrate the method through the group's training examples.
+A power device's junction temperature cannot be measured directly, yet it sets the device's losses, lifetime and safe operating limits. Thermal characterisation links the power a device dissipates to the temperature rise at its junction through the transient thermal impedance:
 
-<h2 id="thermal-transient">From Electrical Temperature Sensing to Thermal Response</h2>
+<div class="math-display">\[Z_{th}(t)=\frac{\Delta T_j(t)}{P}.\]</div>
 
-<figure>
-  <a href="/images/research/device-characterization/thermal-test-connections.png" target="_blank" rel="noopener"><img src="/images/research/device-characterization/thermal-test-connections.png" alt="Device heating and electrical temperature-sensing circuits connected to a temperature-controlled fixture" width="1144" height="721" fetchpriority="high"></a>
-  <figcaption>A controlled heating and cooling experiment.</figcaption>
-</figure>
+The device itself serves as the thermometer. A temperature-sensitive electrical parameter (TSEP), such as the forward voltage at a small sensing current, is first calibrated against temperature. The device is then heated with a large current until it reaches thermal equilibrium, and switched to the sensing current as it cools; the calibrated TSEP converts the cooling waveform into junction temperature over time.
 
-The same device is heated electrically and then monitored using a small sensing current.
+Repeating the measurement with a dry and a greased mounting interface changes only the outer part of the heat path. Comparing the two structure functions locates where the paths diverge, which identifies the junction-to-case boundary and its thermal resistance R<sub>th,jc</sub>.
 
-The module training example calibrates forward voltage at 500 mA sensing current from 20°C to 80°C in 5°C steps. With the cooling boundary held constant, an 80 A heating stage establishes the temperature rise before switching to the calibrated sensing current. These are example settings for that device and fixture.
+<h2 id="measurement">Measurement of a SiC MOSFET</h2>
 
-A calibrated temperature-sensitive electrical parameter converts the cooling waveform into junction temperature. The transient response is then evaluated to obtain thermal impedance and a thermal-network representation.
+The measurements use a PWT2400 power tester, the T3STER transient measurement and analysis system and a temperature-controlled cooling circuit. For a C2M0080120D SiC MOSFET, I calibrated the TSEP at a 10 mA sensing current, recorded heating and cooling transients, and compared dry and wet interface conditions. Structure-function analysis then gave a four-section Cauer thermal network for the device.
 
-<h2 id="thermal-resistance">Identifying Junction-to-Case Resistance</h2>
+<h2 id="thermal-results">Junction-to-Case Results</h2>
 
-The response is evaluated as **Z<sub>th</sub>(t) = ΔT<sub>j</sub>(t) / P**, with the reference boundary defined by the fixture. Paired dry and wet measurements in the module example use 200 s heating and 400 s cooling. Dry and greased mounting interfaces change the later part of the heat path. Comparing their structure functions helps locate the shared junction-to-case boundary.
+The measured network gives a total junction-to-case thermal resistance of **R<sub>th,jc</sub> ≈ 0.762 K/W**. The measured transient thermal impedance differs from the manufacturer's thermal model across the transient, so the choice of thermal representation changes the junction temperature predicted for a given loss.
 
 <figure>
-  <a href="/images/research/device-characterization/to247-structure-functions.png" target="_blank" rel="noopener"><img src="/images/research/device-characterization/to247-structure-functions.png" alt="TO-247 device structure functions under dry, greased and additional interface conditions" width="768" height="751" loading="lazy"></a>
-  <figcaption>Separating device and interface behaviour.</figcaption>
+  <a href="/images/research/sumitomo-device-modelling/thermal-impedance-comparison.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/thermal-impedance-comparison.png" alt="Measured and manufacturer-model thermal-impedance curves for the C2M0080120D SiC MOSFET" width="1003" height="813" loading="lazy"></a>
+  <figcaption>Measured and manufacturer-model transient thermal impedance of the C2M0080120D SiC MOSFET.</figcaption>
 </figure>
 
-Changes in mounting conditions reveal where the measured thermal paths diverge.
-
-The training summary reports **0.05 K/W** for a CAS300M17BM2 module diode and **2.58 K/W** for a C3M0280090D SiC MOSFET. These are attributed worked examples from the training report. The separate [SiC ANN-modelling project](/research/semiconductor-device-modelling/static-ann/#thermal-modelling) includes later C2M0080120D measurements.
-
-<h2 id="outcomes">Connecting Measurement and Modelling</h2>
-
-The outputs—transient thermal impedance, thermal resistance and Cauer networks—provide a link between loss calculations and temperature prediction. Useful results depend on calibration, stable cooling conditions and an appropriate sensing current for the device.
-
-[TIM Automation](https://github.com/FulongLi/TIM_Automation)
+These results feed the thermal branch of the [SiC static ANN model](/research/semiconductor-device-modelling/static-ann/#thermal-modelling) and its converter-level temperature estimates. Automation of the measurement workflow continues in the public [TIM Automation](https://github.com/FulongLi/TIM_Automation) repository.
 
 [Electrical Characterization](/research/electrical-characterization/) · [Power Device Characterization](/research/switching_devices/) · [Back to Research](/research/)
