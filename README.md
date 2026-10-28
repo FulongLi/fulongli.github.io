@@ -42,7 +42,14 @@ Research pages use a concise technical narrative: the question, modelling or exp
 
 Keep only assets used by the site and its public downloads. Experimental scripts, regenerated simulation bundles and intermediate exports belong in their dedicated research repositories, linked from the relevant page.
 
-Agent project introductions follow a consistent narrative: briefly explain the agent's purpose and framework; locate it within the wider AIPE agent workflow with its inputs, outputs and handoffs; explain its internal architecture and task execution logic; then show a task-derived example and its resulting artifacts. Section counts and titles can vary, but keep this order and connect each example to the workflow that produced it.
+Agent project introductions follow one structure, in this order:
+
+1. **The AIPE Framework** — `{% include aipe-framework.html agent="<stage>" %}` inserts the shared AIPE introduction and workflow diagram with the agent's stage highlighted (`spec`, `electrical`, `simulation`, `components`, `field`, `cad`, `pcb` or `review`).
+2. **Role of the agent** — where it sits in that workflow, with its inputs, outputs and hand-offs.
+3. **How the agent is organised** — a flow chart of the agent's internal parts, drawn in the site palette, followed by a short table of their responsibilities.
+4. **Example** — one task the agent has run, from its requirements to the resulting artifacts, stating what has and has not been verified.
+
+Section titles can vary slightly, but keep this order and connect each example to the workflow that produced it.
 
 ## Local Development
 
