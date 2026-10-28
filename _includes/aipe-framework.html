@@ -1,24 +1,27 @@
 {% comment %}
   Shared AIPE framework introduction for agent project pages.
   Usage: {% include aipe-framework.html agent="pcb" %}
-  agent: spec | electrical | simulation | components | field | cad | pcb | review
+  agent: spec | electrical | sketch | simulation | components | field | cad | pcb | review
   The named stage is highlighted with the site link colour.
 {% endcomment %}
 {% capture aipe_fw_on %}fill="#eef7fa" stroke="#52adc8" stroke-width="2"{% endcapture %}
 {% capture aipe_fw_off %}fill="#ffffff" stroke="#bdc1c4" stroke-width="1"{% endcapture %}
-<p><a href="https://aipel.co.uk/">AIPE (AI for Power Engineering)</a> is the open engineering ecosystem I am building through AIPE Labs. It treats power-converter design as a coordinated, iterative optimisation process rather than a chain of separate tools. Specialist agents each own one engineering step: electrical sizing, circuit simulation, device and magnetics selection, thermal and field analysis, mechanical CAD and PCB layout. They exchange explicit inputs, assumptions, results and evidence through a shared Engineering State.</p>
+<p><a href="https://aipel.co.uk/">AIPE (AI for Power Engineering)</a> is the open engineering ecosystem I am building through AIPE Labs. It treats power-converter design as a coordinated, iterative optimisation process rather than a chain of separate tools. Specialist agents each own one engineering step: electrical sizing, schematic drawing, circuit simulation, device and magnetics selection, thermal and field analysis, mechanical CAD and PCB layout. They exchange explicit inputs, assumptions, results and evidence through a shared Engineering State.</p>
 <p>A workflow engine runs these steps as a checkpointed task graph. Results from later stages, such as magnetics or finite-element parameters, feed back into the circuit model, and every result is recorded against a verification gate. Software checks do not replace engineering review, measurement or hardware qualification, which remain separate gates. The first full benchmark is a <a href="https://github.com/FulongLi/AIPE-Workflows/blob/main/examples/dab-10kw/README.md">10 kW dual-active-bridge converter</a> (800 V → 400 V, 100 kHz).</p>
 <figure class="project-blueprint">
 <svg viewBox="0 0 760 580" width="760" height="580" role="img" aria-labelledby="aipe-fw-title" style="width: 100%; height: auto;" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
-<title id="aipe-fw-title">AIPE design workflow: specification, electrical design, circuit simulation, device, magnetics and thermal design, field simulation, CAD and PCB agents and a review package, coordinated by AIPE-Workflows, AIPE-Core and AIPE-Registry</title>
+<title id="aipe-fw-title">AIPE design workflow: specification, electrical design and schematic sketching, circuit simulation, device, magnetics and thermal design, field simulation, CAD and PCB agents and a review package, coordinated by AIPE-Workflows, AIPE-Core and AIPE-Registry</title>
 <defs><marker id="aipe-fw-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a8288"/></marker></defs>
 <g text-anchor="middle">
 <rect x="60" y="20" width="380" height="56" rx="6" {% if include.agent == 'spec' %}{{ aipe_fw_on }}{% else %}{{ aipe_fw_off }}{% endif %}/>
 <text x="250" y="44" font-size="15" font-weight="700" fill="#494e52">Specification</text>
 <text x="250" y="64" font-size="12.5" fill="#7a8288">ratings, operating range and design constraints</text>
-<rect x="60" y="100" width="380" height="56" rx="6" {% if include.agent == 'electrical' %}{{ aipe_fw_on }}{% else %}{{ aipe_fw_off }}{% endif %}/>
-<text x="250" y="124" font-size="15" font-weight="700" fill="#494e52">Electrical design</text>
-<text x="250" y="144" font-size="12.5" fill="#7a8288">AIPE-Electrical-Design · analytical converter sizing</text>
+<rect x="60" y="100" width="184" height="56" rx="6" {% if include.agent == 'electrical' %}{{ aipe_fw_on }}{% else %}{{ aipe_fw_off }}{% endif %}/>
+<text x="152" y="124" font-size="15" font-weight="700" fill="#494e52">Electrical design</text>
+<text x="152" y="144" font-size="12.5" fill="#7a8288">analytical sizing</text>
+<rect x="256" y="100" width="184" height="56" rx="6" {% if include.agent == 'sketch' %}{{ aipe_fw_on }}{% else %}{{ aipe_fw_off }}{% endif %}/>
+<text x="348" y="124" font-size="15" font-weight="700" fill="#494e52">Sketcher</text>
+<text x="348" y="144" font-size="12.5" fill="#7a8288">checked SVG schematics</text>
 <rect x="60" y="180" width="380" height="56" rx="6" {% if include.agent == 'simulation' %}{{ aipe_fw_on }}{% else %}{{ aipe_fw_off }}{% endif %}/>
 <text x="250" y="204" font-size="15" font-weight="700" fill="#494e52">Circuit simulation</text>
 <text x="250" y="224" font-size="12.5" fill="#7a8288">AIPE-Simulation-Skills · switching waveforms, control</text>
@@ -39,8 +42,9 @@
 <text x="250" y="544" font-size="12.5" fill="#7a8288">report and evidence for human engineering review</text>
 </g>
 <g stroke="#7a8288" stroke-width="1.5" fill="none" marker-end="url(#aipe-fw-arrow)">
-<line x1="250" y1="76" x2="250" y2="98"/>
-<line x1="250" y1="156" x2="250" y2="178"/>
+<line x1="152" y1="76" x2="152" y2="98"/>
+<line x1="348" y1="76" x2="348" y2="98"/>
+<line x1="152" y1="156" x2="152" y2="178"/>
 <line x1="250" y1="236" x2="250" y2="258"/>
 <line x1="250" y1="316" x2="250" y2="338"/>
 <line x1="152" y1="396" x2="152" y2="418"/>
