@@ -21,6 +21,8 @@ The [public converter optimisation repository](https://github.com/FulongLi/AIPE-
 
 [AIPE PCB Agent](/research/aipe-pcb-agent/) connects structured requirements to KiCad schematics, PCB layouts, checks and exports. The project page introduces its automation framework and a 5 kW SiC buck converter with separate power and DSP control boards.
 
+[AIPE CAD Agent](/research/aipe-cad-agent/) builds parametric FreeCAD models of transformers, heat sinks, cold plates and converter assemblies, and checks them for interference, fit and clearance. The project page introduces its structure and the mechanical models of a 10 kW DAB converter.
+
 ## Open-Source Engineering Tools and Resources
 
 [AIPE Labs](https://github.com/FulongLi/Spirit-Connect-AIPE-Labs) · [Academy](https://aipel.co.uk/academy/) · [Data, Models & Tools](https://aipel.co.uk/hub/) · [Open Research](https://aipel.co.uk/frontiers/)

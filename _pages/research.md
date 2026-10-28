@@ -26,7 +26,7 @@ My work connects power-electronic components, converter design, and microgrid co
       <a href="https://aipel.co.uk/hub/tools/">Tools &amp; Agents</a>
       <ul>
         <li><a href="https://aipel.co.uk/resources/ai-agent-team/aipe-sketch/">AIPE Sketch — Schematic Generation</a></li>
-        <li><a href="https://github.com/FulongLi/AIPE-CAD-Agent">AIPE CAD Agent</a></li>
+        <li><a href="/research/aipe-cad-agent/">AIPE CAD Agent</a></li>
         <li><a href="/research/aipe-pcb-agent/">AIPE PCB Agent</a></li>
         <li><a href="https://github.com/FulongLi/AIPE-IEEE-Paper-Agent">AIPE IEEE Paper Agent</a></li>
       </ul>

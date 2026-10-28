@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 668" width="760" height="668" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>AIPE CAD Agent architecture: parameter files and workflow-derived inputs feed a pure-Python parameter resolver, which drives component and assembly builders in headless FreeCAD; geometric checks feed findings back to the parameters, and the models are exported with metadata for the AIPE workflow and human review</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a8288"/></marker></defs>
+<g text-anchor="middle">
+<rect x="40" y="16" width="310" height="80" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="195" y="40" font-size="15" font-weight="700" fill="#494e52">Parameter files</text>
+<text x="195" y="62" font-size="12.5" fill="#7a8288">transformer, heat sink, cold plate, assembly</text>
+<text x="195" y="82" font-size="12.5" fill="#7a8288">JSON in SI units, one schema per kind</text>
+<rect x="370" y="16" width="310" height="80" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="525" y="40" font-size="15" font-weight="700" fill="#494e52">Workflow-derived inputs</text>
+<text x="525" y="62" font-size="12.5" fill="#7a8288">selected core and winding layout</text>
+<text x="525" y="82" font-size="12.5" fill="#7a8288">heat-sink candidate and devices</text>
+</g>
+<rect x="24" y="116" width="712" height="452" rx="8" fill="#eef7fa" stroke="#52adc8" stroke-width="2"/>
+<text x="360" y="138" font-size="13" font-weight="700" fill="#52adc8" text-anchor="middle">AIPE CAD Agent · Python and headless FreeCAD</text>
+<g text-anchor="middle">
+<rect x="40" y="148" width="640" height="72" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="360" y="172" font-size="15" font-weight="700" fill="#494e52">Parameter resolver</text>
+<text x="360" y="194" font-size="12.5" fill="#7a8288">schema validation and derived-geometry rules in pure Python</text>
+<text x="360" y="212" font-size="12.5" fill="#7a8288">fin count, winding build, hole patterns; usable without FreeCAD</text>
+<rect x="40" y="252" width="310" height="100" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="195" y="276" font-size="15" font-weight="700" fill="#494e52">Component builders</text>
+<text x="195" y="298" font-size="12.5" fill="#7a8288">transformer: core, bobbin, windings, barriers</text>
+<text x="195" y="318" font-size="12.5" fill="#7a8288">heat sink and cold plate with devices</text>
+<text x="195" y="338" font-size="12.5" fill="#7a8288">material, net and role on every body</text>
+<rect x="370" y="252" width="310" height="100" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="525" y="276" font-size="15" font-weight="700" fill="#494e52">Assembly builder</text>
+<text x="525" y="298" font-size="12.5" fill="#7a8288">chassis, cooling and transformer</text>
+<text x="525" y="318" font-size="12.5" fill="#7a8288">boards with copper zones and keep-outs</text>
+<text x="525" y="338" font-size="12.5" fill="#7a8288">connectors from the component files</text>
+<rect x="40" y="384" width="640" height="72" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="360" y="408" font-size="15" font-weight="700" fill="#494e52">Geometric checks</text>
+<text x="360" y="430" font-size="12.5" fill="#7a8288">interference, keep-out and envelope intrusions, fit gaps</text>
+<text x="360" y="448" font-size="12.5" fill="#7a8288">net-to-net clearance reported as pass, fail or review</text>
+<rect x="40" y="480" width="640" height="72" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="360" y="504" font-size="15" font-weight="700" fill="#494e52">Exports and metadata</text>
+<text x="360" y="526" font-size="12.5" fill="#7a8288">editable FCStd, STEP and keep-out STEP files, rendered views</text>
+<text x="360" y="544" font-size="12.5" fill="#7a8288">volumes, masses, bounding boxes and mesh hints per body</text>
+<rect x="40" y="596" width="640" height="56" rx="6" fill="#f2f3f3" stroke="#bdc1c4"/>
+<text x="360" y="620" font-size="15" font-weight="700" fill="#494e52">Hand-off</text>
+<text x="360" y="640" font-size="12.5" fill="#7a8288">AIPE-Workflows CAD/PCB gate, then human engineering review</text>
+</g>
+<g stroke="#7a8288" stroke-width="1.5" fill="none" marker-end="url(#arrow)">
+<line x1="195" y1="96" x2="195" y2="146"/>
+<line x1="525" y1="96" x2="525" y2="146"/>
+<line x1="195" y1="220" x2="195" y2="250"/>
+<line x1="525" y1="220" x2="525" y2="250"/>
+<line x1="195" y1="352" x2="195" y2="382"/>
+<line x1="525" y1="352" x2="525" y2="382"/>
+<line x1="360" y1="456" x2="360" y2="478"/>
+<line x1="360" y1="552" x2="360" y2="594"/>
+<path d="M680,420 H706 V184 H682"/>
+</g>
+<text x="723" y="302" font-size="12.5" fill="#7a8288" text-anchor="middle" transform="rotate(90 723 302)">findings: revise parameters and rebuild</text>
+</svg>
