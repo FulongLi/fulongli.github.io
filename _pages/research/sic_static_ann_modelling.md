@@ -6,110 +6,87 @@ author_profile: true
 body_class: device-project-page
 project_stylesheet: /assets/css/marine-project.css
 project_contents: true
-excerpt: "Static neural-network fitting of SiC conduction and switching-energy characteristics, thermal response and converter-level loss assessment."
+excerpt: "Neural-network models of SiC conduction, switching energy and thermal response, assessed against a buck converter up to 3 kW."
 ---
 
-<h2 id="overview">Static Characteristic Fitting</h2>
+I led the development and experimental assessment of a data-based model of the **C2M0080120D SiC MOSFET** for converter loss and temperature calculations. Neural networks fit the device's conduction, switching-energy and thermal characteristics, and a buck-converter load sweep tests the resulting loss predictions.
 
-This work builds a data-based model of the **C2M0080120D SiC MOSFET** for converter loss and temperature calculations. I led the modelling and experimental assessment, connecting device-characteristic fitting to a buck-converter load sweep.
+<h2 id="overview">Device Characteristics for Loss Models</h2>
 
-The ANN learns a mapping between operating conditions and a device quantity: current and temperature determine conduction voltage, while switching conditions determine energy per event. The approach represents the characteristic surfaces needed by a loss model; it does not resolve the electrical waveform during a switching transition.
+A converter-level loss model treats each switch as a set of characteristic functions rather than simulating every switching waveform. Three are needed: the conduction voltage as a function of current and junction temperature, the energy lost at each turn-on and turn-off as a function of voltage, current, temperature and gate resistance, and the thermal impedance that turns dissipated power into temperature rise. Circuit simulators with thermal models use the same description while keeping the electrical switching ideal.
 
-<h2 id="data-and-model-functions">Data and Model Functions</h2>
+These characteristics come as tables from datasheets, manufacturer models and measurements. An artificial neural network (ANN) can learn each table as a continuous function, so the loss model can be evaluated smoothly at any operating point within the data. The model represents characteristic surfaces; it does not resolve the electrical waveform during a switching transition.
 
-The workflow starts with datasheet or semiconductor-model tables, complemented by electrical and thermal characterisation where needed. Conduction data are organised as current–temperature–voltage samples. Switching tables supply event energy at specified voltage, current and temperature. The body diode is treated separately from the MOSFET channel.
+<h2 id="data-and-model-functions">Building the ANN Model</h2>
 
-The accompanying public training implementation uses fully connected feedforward networks. Its layer structure is:
+<h3 id="network-structure">Model Branches</h3>
+
+I organised the reference data as current–temperature–voltage samples for conduction and as event energies at specified voltage, current and temperature for switching, treating the body diode separately from the MOSFET channel. The public training implementation uses fully connected feedforward networks with ReLU hidden layers and linear outputs:
 
 <div class="project-table-scroll" role="region" aria-label="Static ANN branches and layer structures" tabindex="0" markdown="1">
 
 | Model branch | Inputs | Hidden layers | Output |
 |---|---|---|---|
-| MOSFET conduction | I<sub>DS</sub>, T<sub>j</sub> | 32 → 32, ReLU | V<sub>DS</sub> |
-| Body-diode conduction | I<sub>D</sub>, T<sub>j</sub> | Separate 32 → 32, ReLU | V<sub>F</sub> |
-| Turn-on / turn-off energy | I, V, T<sub>j</sub>, R<sub>g,on</sub>, R<sub>g,off</sub> | Shared 32 → 32, ReLU | Separate E<sub>on</sub> and E<sub>off</sub> linear heads |
-| Thermal response | Time | Separate 64 → 64, ReLU | Z<sub>th</sub>(t) |
+| MOSFET conduction | I<sub>DS</sub>, T<sub>j</sub> | 32 → 32 | V<sub>DS</sub> |
+| Body-diode conduction | I<sub>D</sub>, T<sub>j</sub> | Separate 32 → 32 | V<sub>F</sub> |
+| Turn-on / turn-off energy | I, V, T<sub>j</sub>, R<sub>g,on</sub>, R<sub>g,off</sub> | Shared 32 → 32 | Separate E<sub>on</sub> and E<sub>off</sub> heads |
+| Thermal response | Time | Separate 64 → 64 | Z<sub>th</sub>(t) |
 
 </div>
 
-Each hidden neuron applies a learned weighted sum and bias followed by a ReLU activation; the output layer is linear. Separate conduction networks allow channel and diode characteristics to be fitted independently. The switching branches share their hidden representation and have separate scalar outputs for the two event energies. These widths describe the public training code; the report illustrates the fitted device functions and identifies a two-layer ANN thermal fit.
+Separate conduction networks let the channel and diode characteristics be fitted independently, while the two switching outputs share one hidden representation.
 
-<h2 id="network-training">Scaling and Network Training</h2>
+<h3 id="network-training">Training</h3>
 
-Electrical inputs are standardised using the training-set mean and standard deviation. The same scaler is retained for prediction. The implementation holds out **20% of electrical samples**, using **seed 42**, and minimises the sum of the five branch mean-square errors with **Adam**, a **0.01 learning rate** and **2,000 epochs**. The thermal branch uses its time/impedance samples without this electrical-input scaling.
-
-The fitting sequence is to organise the reference tables, train the relevant function and compare its predictions with the reference characteristic. The weights and input scalers are saved together for subsequent operating-point queries. The electrical hold-out split checks interpolation of those tables; the converter experiment provides a separate assessment of loss prediction.
+Electrical inputs are standardised with the training-set mean and standard deviation, and the same scaler is saved with the weights for later queries. Training holds out 20% of the electrical samples and minimises the sum of the five branch mean-square errors with the Adam optimiser at a 0.01 learning rate over 2,000 epochs. The hold-out split checks interpolation within the tables; the converter experiment below provides the independent test of loss prediction.
 
 <figure>
   <a href="/images/research/sumitomo-device-modelling/ann-conduction-characteristic.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/ann-conduction-characteristic.png" alt="ANN conduction-voltage surface versus current and temperature with reference samples" width="1490" height="850" loading="lazy"></a>
-  <figcaption>Conduction characteristic.</figcaption>
+  <figcaption>Fitted conduction-voltage surface against current and junction temperature, with the reference samples.</figcaption>
 </figure>
-
-The fitted surface supplies the voltage drop at a selected current and junction temperature.
-
-<h2 id="loss-model">Loss Calculation and PLECS-Type Use</h2>
-
-PLECS thermal descriptions use conduction characteristics and switching-energy data to calculate dissipation while retaining ideal electrical switching. The ANN functions represent the same kinds of characteristic data for a converter-level loss calculation. The fitted functions are evaluated in a Python loss workflow, with PLECS providing a reference for how the characteristic data are organised. [PLECS thermal modelling reference](https://www.plexim.com/products/plecs/thermal).
-
-For a simplified buck operating point, the model evaluates:
-
-- **Conduction:** P<sub>cond</sub> = V<sub>DS</sub>(I, T<sub>j</sub>) × I × D.
-- **Switching:** P<sub>sw</sub> = [E<sub>on</sub> + E<sub>off</sub>] × f<sub>sw</sub>, with energy converted to joules.
 
 <figure class="half">
   <a href="/images/research/sumitomo-device-modelling/ann-turn-on-energy.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/ann-turn-on-energy.png" alt="Fitted turn-on energy surface against voltage and current" width="1149" height="931" loading="lazy"></a>
   <a href="/images/research/sumitomo-device-modelling/ann-turn-off-energy.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/ann-turn-off-energy.png" alt="Fitted turn-off energy surface against voltage and current" width="1137" height="923" loading="lazy"></a>
-  <figcaption>Switching energy as an operating-point function.</figcaption>
+  <figcaption>Fitted turn-on (left) and turn-off (right) energy surfaces against voltage and current.</figcaption>
 </figure>
 
-These fits return energy per event, rather than switching-time waveforms.
+The public implementation extends the gate-resistance dependence with fitted scaling relations; those generated samples extend the data representation and are not independent double-pulse measurements.
 
-The public implementation expands gate-resistance dependence using fitted scaling relations. Those generated samples extend the fitted data representation; they are not independent DPT measurements. The experimental loss breakdown below includes MOSFET conduction and switching and excludes body-diode loss.
+<h3 id="loss-model">Loss Calculation</h3>
 
-<h2 id="thermal-modelling">Thermal Response and Measurement</h2>
+A Python loss workflow evaluates the fitted functions at the converter operating point. For a buck converter with duty ratio <i>D</i> and switching frequency <i>f</i><sub>sw</sub>:
 
-The report fits the transient thermal-impedance response of a manufacturer Cauer RC model with an ANN. This supplies a response function linking dissipated power to temperature rise.
+- **Conduction:** P<sub>cond</sub> = V<sub>DS</sub>(I, T<sub>j</sub>) × I × D.
+- **Switching:** P<sub>sw</sub> = [E<sub>on</sub> + E<sub>off</sub>] × f<sub>sw</sub>.
+
+<h3 id="thermal-modelling">Thermal Response</h3>
+
+An ANN branch fits the transient thermal impedance of the manufacturer's Cauer model, giving a response function from dissipated power to temperature rise.
 
 <figure>
   <a href="/images/research/sumitomo-device-modelling/ann-thermal-impedance-fit.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/ann-thermal-impedance-fit.png" alt="Reference thermal impedance and ANN fit on linear and logarithmic time axes" width="1920" height="980" loading="lazy"></a>
-  <figcaption>Thermal-response fitting.</figcaption>
+  <figcaption>Reference thermal impedance and its ANN fit on linear and logarithmic time axes.</figcaption>
 </figure>
 
-Linear and logarithmic views compare the reference response with the ANN representation.
-
-Separate C2M0080120D measurements use **10 mA TSEP calibration**, heating/cooling transients and dry/wet interface comparison. Structure-function analysis gives a four-section Cauer network with total **R<sub>th,jc</sub> ≈ 0.762 K/W**. The measured transient differs from the manufacturer-model response, so the selected thermal representation affects temperature estimation.
-
-<figure>
-  <a href="/images/research/sumitomo-device-modelling/thermal-impedance-comparison.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/thermal-impedance-comparison.png" alt="Measured and manufacturer-model thermal-impedance curves for comparison" width="1003" height="813" loading="lazy"></a>
-  <figcaption>Thermal-model comparison.</figcaption>
-</figure>
-
-The measured and PLECS-model responses differ across the transient.
+I also measured the device's thermal path directly, calibrating its temperature-sensitive electrical parameter at 10 mA and comparing dry and wet interfaces. Structure-function analysis gives a four-section Cauer network with **R<sub>th,jc</sub> ≈ 0.762 K/W**. The measured response differs from the manufacturer model across the transient, so the chosen thermal representation affects the estimated junction temperature. [Thermal characterization](/research/thermal-characterization/) describes this measurement.
 
 <h2 id="experimental-validation">Buck-Converter Assessment</h2>
 
-The test operates at approximately **400 V input, 200 V output and up to 3 kW**, with **20 kHz switching**, **D = 0.5** and **2.5 Ω turn-on/off gate resistances**. Heatsink and ambient temperature measurements give a thermal loss estimate, P = (T<sub>hs</sub> − T<sub>amb</sub>) / R<sub>th,hs</sub>. The estimated junction temperature then supplies the ANN operating point.
+I tested the model against a buck converter operating at about **400 V input, 200 V output and up to 3 kW**, with 20 kHz switching, D = 0.5 and 2.5 Ω turn-on and turn-off gate resistances. Heatsink and ambient temperatures give a thermally inferred loss, P = (T<sub>hs</sub> − T<sub>amb</sub>) / R<sub>th,hs</sub>, and the estimated junction temperature sets the ANN operating point.
 
 <figure>
   <a class="device-experiment-rotation" href="/images/research/sumitomo-device-modelling/buck-thermal-test.jpeg" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/buck-thermal-test.jpeg" alt="Heatsink-mounted SiC buck-converter module and temperature-measurement equipment" width="3301" height="2474" loading="lazy"></a>
-  <figcaption>The experimental check.</figcaption>
+  <figcaption>Heatsink-mounted SiC buck-converter module with temperature measurement.</figcaption>
 </figure>
 
-A heatsink-mounted power module provides the temperature-rise comparison.
+Over the load-current sweep, the ANN-predicted losses and the thermally inferred losses follow a similar trend, with about **10% variation against a 20% target**. The loss breakdown includes MOSFET conduction and switching and excludes body-diode loss.
 
 <figure>
   <a href="/images/research/sumitomo-device-modelling/measured-vs-ann-loss.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/measured-vs-ann-loss.png" alt="Thermally inferred and ANN-predicted total loss over the load-current sweep" width="947" height="593" loading="lazy"></a>
-  <figcaption>Loss comparison over the load sweep.</figcaption>
+  <figcaption>Thermally inferred and ANN-predicted total loss over the load-current sweep.</figcaption>
 </figure>
 
-The predictions and thermally inferred losses follow a similar trend.
-
-The report states **about 10% variation against a 20% target**. Its percentage metric is not defined as a maximum pointwise error. The comparison tests the combined loss and thermal assumptions under these operating conditions.
-
-<h2 id="scope-and-sources">Scope and Sources</h2>
-
-The model is intended for the reference-data ranges and characterised gate-drive conditions. The unconstrained networks do not impose zero-current behaviour or monotonicity. In the public repository, the thermal training file is labelled C2M0040120D and a switching table contains an unconfirmed 900°C entry; those inputs require review before using that code as a validated C2M0080120D device model.
-
-[Public training implementation](https://github.com/FulongLi/AIPE-MOSFET-ANN-Modelling/blob/720575683673259a6ddcd29a6c69771e43b6d17a/C2MSeries_ANN_full_model.py)
+The model applies within the ranges of its reference data and characterised gate-drive conditions. The networks are unconstrained, so they do not enforce zero-current behaviour or monotonicity outside those ranges. The [public training implementation](https://github.com/FulongLi/AIPE-MOSFET-ANN-Modelling/blob/720575683673259a6ddcd29a6c69771e43b6d17a/C2MSeries_ANN_full_model.py) is a reference implementation; its input tables should be reviewed before it is used as a validated C2M0080120D model.
 
 [Semiconductor Device Modelling](/research/mosfet_ann_modelling/) · [Electrical Characterization](/research/electrical-characterization/) · [Converter Design Optimisation](/research/converter_optimization/) · [Back to Research](/research/)

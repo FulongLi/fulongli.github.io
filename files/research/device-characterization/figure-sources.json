@@ -1,11 +1,5 @@
 {
   "sources": {
-    "thermal": {
-      "file": "210625 - Training Outcomes - Thermal characterisation.pptx",
-      "title": "Thermal Characterisation: Training Outcomes",
-      "author": "Usman Nasir",
-      "date_from_filename": "2021-06-25"
-    },
     "dpt": {
       "file": "DPT.pdf",
       "title": "Double Pulse Test: Fundamentals, Tips and Tricks",
@@ -16,7 +10,7 @@
       "date_on_cover": "2023-10-12"
     }
   },
-  "attribution": "Training materials document equipment and example measurements. Fulong Li supplied the account of his role in joint platform construction, board modifications and Siemens project testing. DPT page 24 separately credits Fulong in the post-processing workflow.",
+  "attribution": "Training materials document the double-pulse test equipment and example measurements. Fulong Li supplied the account of his role in joint platform construction, board modifications and Siemens project testing. DPT page 24 separately credits Fulong in the post-processing workflow. The thermal-characterisation training figures were removed in October 2026; the thermal page now uses Fulong Li's own C2M0080120D measurement, recorded in files/research/sumitomo-device-modelling.",
   "figures": [
     {
       "file": "dpt-test-platform.png",
@@ -71,30 +65,6 @@
       "width": 1210,
       "height": 770,
       "sha256": "ed82c5e279217b28869b9b808b5d737f106bea22d343122b13f88d0447bd19d3"
-    },
-    {
-      "file": "thermal-test-connections.png",
-      "source": "thermal",
-      "page_or_slide": 18,
-      "extraction": {
-        "type": "original-embedded-image",
-        "picture_index": 0
-      },
-      "width": 1144,
-      "height": 721,
-      "sha256": "719c4057ac61c7e2ff007eb412ecc32b98ab9a978d9ec03b2997e3b889e206c2"
-    },
-    {
-      "file": "to247-structure-functions.png",
-      "source": "thermal",
-      "page_or_slide": 33,
-      "extraction": {
-        "type": "original-embedded-image",
-        "picture_index": 1
-      },
-      "width": 768,
-      "height": 751,
-      "sha256": "aa07bfb2dc92e3b3c6c582163e1b69ad3aa255a8e68610badaeadafd5c87d3b1"
     }
   ]
 }

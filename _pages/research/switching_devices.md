@@ -3,29 +3,23 @@ layout: single
 title: "Power Device Characterization"
 permalink: /research/switching_devices/
 author_profile: true
-excerpt: "Electrical and thermal characterization of power devices: laboratory equipment, double-pulse testing, and thermal resistance measurements."
+excerpt: "Electrical and thermal characterization of SiC power devices: double-pulse testing and transient thermal-impedance measurement."
 ---
 
-## Overview
-
-My power-device characterization work centres on laboratory measurement: configuring the equipment, establishing the test conditions and turning recorded signals into useful device data. It covers electrical switching behaviour and the thermal path between the semiconductor junction and its cooling arrangement.
-
-I jointly built the double-pulse test platform and modified the original test board. We used this setup to characterize switching behaviour under different electrical and temperature conditions. The related thermal work focuses on operating the thermal-characterization equipment, calibrating temperature-sensitive electrical parameters and measuring device thermal resistance.
+Converter design depends on device data that datasheets do not fully provide: how much energy each switching event costs under real operating conditions, and how quickly that heat reaches the cooling system. My device characterisation work produces both, from configuring the laboratory equipment and test conditions to turning recorded signals into device data.
 
 <h2 id="electrical-characterization">Electrical Characterization</h2>
 
-**Double-pulse testing (DPT)** measures switching transients and event energies. This work includes the jointly built test platform, board modifications, probe configuration and waveform post-processing. Static **I–V and C–V measurements** with the Keysight B1505A provide complementary device characteristics.
+I jointly built a double-pulse test platform, modified its test board and ran a SiC measurement campaign of more than 450 test points across voltage, current, gate resistance and temperature. Waveform post-processing extracts turn-on and turn-off energies, slew rates and reverse-recovery quantities, complemented by static I–V and C–V measurements.
 
-[View electrical characterisation](/research/electrical-characterization/)
+[Read the electrical characterization project](/research/electrical-characterization/)
 
 <h2 id="thermal-characterization">Thermal Characterization</h2>
 
-**Thermal resistance and transient thermal impedance measurements** connect device power dissipation to junction-temperature rise. The workflow uses the PWT2400 power tester, T3STER measurement and analysis system, and a temperature-controlled cooling circuit, followed by comparison of dry and greased interfaces and extraction of thermal networks.
+I operated the transient thermal-impedance test system and measured the junction-to-case thermal path of a SiC MOSFET, calibrating its temperature-sensitive electrical parameter and comparing dry and greased interfaces to extract a Cauer thermal network.
 
-[View thermal characterisation](/research/thermal-characterization/)
+[Read the thermal characterization project](/research/thermal-characterization/)
 
-## Related Research
-
-The measured characteristics provide inputs to [Semiconductor Device Modelling](/research/mosfet_ann_modelling/) and [Converter Design Optimisation](/research/converter_optimization/). [Power Device Reliability Testing](/research/reliability_testing/) is a separate area of work.
+The measured characteristics feed [Semiconductor Device Modelling](/research/mosfet_ann_modelling/) and [Converter Design Optimisation](/research/converter_optimization/). [Power Device Reliability Testing](/research/reliability_testing/) is a separate area of work.
 
 [Back to Research](/research/)

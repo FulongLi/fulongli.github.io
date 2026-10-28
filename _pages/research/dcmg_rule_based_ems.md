@@ -9,68 +9,56 @@ project_contents: true
 excerpt: "The thesis system demonstration: rule-based power management, six-bit bus commands, plug-and-play batteries and PV surplus limitation."
 ---
 
-<h2 id="overview">Coordinating Generation, Storage and Bus Regulation</h2>
+My PhD system study brings **passive control, droop coordination and dual-window bus signalling** together under a rule-based energy management system (EMS). I integrated the control layers, defined the operating rules and six-bit signalling scheme, analysed terminal admittance and demonstrated the coordinated sequences on a laboratory DC microgrid.
 
-A microgrid must decide which converter regulates the bus, when batteries charge or discharge, and what happens when PV generation exceeds demand. My PhD system study brings **passive control, droop coordination and dual-window bus signalling** together under a rule-based EMS.
+<h2 id="overview">Who Regulates the Bus?</h2>
 
-I integrated the control layers, defined the operating rules and six-bit signalling scheme, analysed terminal admittance, and demonstrated the coordinated sequences on the bench.
+A DC microgrid must continually decide which converter regulates the bus voltage, when batteries charge or discharge, and what happens when PV generation exceeds demand and storage is full. A rule-based EMS answers these questions with explicit operating rules tied to the system state. Compared with optimisation-based scheduling, it is transparent and simple to implement on the converters' own controllers.
 
-<h2 id="operating-rules">Operating Roles Follow the System State</h2>
+<h2 id="operating-rules">Operating Rules and State Machines</h2>
 
-The experimental system uses a grid interface, two battery interfaces and an emulated PV source. Operating rules assign bus regulation to the grid or a battery and coordinate charging, discharging and PV limitation. A finite-state machine translates received commands into converter roles. Its first level handles initialisation, transmission, monitoring and reception; normal operation then selects sleep, droop or power mode. Droop mode assigns bus regulation, while power mode selects a current reference from the command and battery state.
+The experimental system uses a grid interface, two battery interfaces and an emulated PV source. Grid-connected operation gives bus regulation to the grid interface; planned disconnection transfers it to a battery. The power-management logic curtails surplus PV near **51 V**, distinct from the **52.5 V signalling level**. Commands travel through the [dual-window bus signalling method](/research/dcmg/dc-bus-signalling/) as **six bits at 100 ms per bit**, identifying the start, converter state, battery-interface identity, droop or power mode, charge or discharge state and current selection.
 
-Messages travel through the [dual-window DBI method](/research/dcmg/dc-bus-signalling/), using **six bits at 100 ms per bit**. The command fields identify the start, converter state, battery-interface identity, droop/power mode, charge/discharge state and current selection. Grid-connected operation gives bus regulation to the grid interface; planned disconnection transfers that responsibility to a battery. The power-management logic curtails surplus PV near **51 V**, distinct from the **52.5 V signalling level**.
+Each converter turns received commands into an operating role through a two-level finite-state machine.
 
-<h2 id="signal-state-machine">First Level: Signal Sending and Receiving</h2>
-
-The first state-machine level manages communication and contains the normal-operation controller. The original diagram uses four states:
+<h3 id="signal-state-machine">First Level: Sending and Receiving Signals</h3>
 
 <figure>
   <a href="/images/research/dc-microgrid-control/signal-state-machine.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/signal-state-machine.png" alt="First-level signal state machine: initialisation, sending, normal operation and receiving, with transitions based on converter type, signalling voltage and completion flags" width="930" height="555" loading="lazy"></a>
-  <figcaption>Signal-handling state machine.</figcaption>
+  <figcaption>First-level state machine for signal handling; state III contains the operating-mode controller.</figcaption>
 </figure>
 
-State III monitors the bus and contains the second-level operating-mode controller.
-
 - **I — initialisation:** determine the interface role. The grid converter enters normal operation directly; another converter first enters the sending state.
-- **II — sending:** transmit the signal sequence, then return to normal operation. Sending can also be triggered by a request arising during normal operation.
-- **III — normal operation:** monitor the DC bus, run the operating-mode state machine and initiate signalling when another source needs to be switched.
-- **IV — receiving:** detect and decode a signal, then return to normal operation. Current compensation is applied during reception while another interface regulates the bus for signalling.
+- **II — sending:** transmit the signal sequence, then return to normal operation. Sending can also be triggered during normal operation.
+- **III — normal operation:** monitor the bus, run the operating-mode state machine and initiate signalling when another source needs to be switched.
+- **IV — receiving:** detect and decode a signal, then return to normal operation, applying current compensation while another interface drives the signal.
 
-<h2 id="mode-state-machine">Second Level: Sleep, Droop and Power Modes</h2>
-
-The second level sits inside state III. It changes the local converter's operating mode according to the received command and battery condition:
+<h3 id="mode-state-machine">Second Level: Sleep, Droop and Power Modes</h3>
 
 <figure>
   <a href="/images/research/dc-microgrid-control/mode-state-machine.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/mode-state-machine.png" alt="Second-level state machine with sleep, droop and power modes, showing transitions controlled by received state and mode bits" width="720" height="615" loading="lazy"></a>
-  <figcaption>Operating-mode state machine.</figcaption>
+  <figcaption>Second-level state machine selecting sleep, droop or power mode from the received command bits.</figcaption>
 </figure>
 
-The thesis labels the received signal fields with zero-based indices: <code>ss[1]</code> controls ON/OFF and <code>ss[3]</code> selects droop or power mode.
+In **sleep mode**, the interface monitors the bus and waits for a command. An ON command selects **droop mode**, in which the converter helps regulate the bus, or **power mode**, in which it follows a commanded charge or discharge current while considering battery state of charge. A change in the mode bit switches between them; an OFF command, or a fully charged battery, returns the interface to sleep. The grid interface starts in droop mode, and other converters start in sleep after their signalling exchange.
 
-In **sleep mode**, the interface monitors the bus and waits for a command. An ON command selects **droop mode** when the mode bit is 1, or **power mode** when it is 0. Droop mode allows an assigned converter to regulate the bus; power mode follows the commanded charge or discharge current while considering battery state of charge. A change in the mode bit switches between droop and power; an OFF command returns the interface to sleep. A fully charged battery also leaves power mode for sleep.
+<h2 id="experimental-validation">Experimental Results</h2>
 
-The grid interface starts in droop mode. Other converters initially enter sleep after their signalling interaction. The two levels therefore connect the bus-voltage message to the local control mode: receive and decode the command first, then select the appropriate controller and current reference.
-
-<h2 id="experimental-validation">Two Representative System Responses</h2>
+The first test shows a planned transition to islanded operation: a bus command transfers regulation to a battery before the grid interface disconnects.
 
 <figure>
   <a href="/images/research/dc-microgrid-control/planned-islanding-result.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/planned-islanding-result.png" alt="Bus voltage and grid and battery currents during a signalled handover to islanded operation" width="1293" height="852" fetchpriority="high"></a>
-  <figcaption>Planned transition to islanded operation.</figcaption>
+  <figcaption>Planned islanding: bus voltage and grid and battery currents as regulation passes from the grid interface to a battery.</figcaption>
 </figure>
 
-A command transfers bus regulation to a battery before the grid interface disconnects.
+The second test shows power balance when storage is full: PV generation is reduced once the batteries can no longer absorb the surplus.
 
 <figure>
   <a href="/images/research/dc-microgrid-control/pv-curtailment-result.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/pv-curtailment-result.png" alt="Bus voltage, battery current and PV power during surplus-generation limitation" width="1293" height="783" loading="lazy"></a>
-  <figcaption>Power balance when storage is full.</figcaption>
+  <figcaption>PV surplus limitation: bus voltage, battery current and PV power as generation is curtailed.</figcaption>
 </figure>
 
-PV generation is reduced when the batteries cannot absorb the surplus.
-
-<h2 id="outcomes">A Demonstration of Coordinated Control</h2>
-
-The experiments show how local stability and bus-borne commands support source connection, battery coordination and planned handover. They demonstrate a rule-based sequence rather than optimal long-term scheduling. Charging stages were shortened with a timer, and the planned transition relies on advance signalling rather than an abrupt grid failure.
+The experiments show local stability and bus-borne commands working together for source connection, battery coordination and planned handover. They demonstrate a rule-based sequence rather than optimal long-term scheduling; charging stages were shortened with a timer, and the planned transition relies on advance signalling rather than an abrupt grid failure.
 
 [PhD thesis: Control Strategies for Low Voltage DC Microgrids](https://publications.aston.ac.uk/id/eprint/46135/), Chapter 6. · [Dual-window signalling paper](https://ieeexplore.ieee.org/document/8645723)
 

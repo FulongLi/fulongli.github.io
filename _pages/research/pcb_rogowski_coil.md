@@ -3,49 +3,45 @@ layout: single
 title: "PCB Rogowski Coil Current Sensing"
 permalink: /research/pcb-rogowski-coil/
 author_profile: true
+excerpt: "PCB Rogowski coils and signal-conditioning circuits for measuring fast current transients in power converters."
 body_class: microgrid-project-page
 project_stylesheet: /assets/css/marine-project.css
 project_contents: true
 mathjax: true
 ---
 
-## Review, Design and Testing
+I designed PCB Rogowski coils and their signal-conditioning circuits for measuring fast current transients in power converters, then tested the complete sensing chain against a commercial Rogowski coil.
 
-I reviewed Rogowski coil current-sensing research and commercial specifications, then designed PCB coils and their signal-conditioning circuits. The work examined coil geometry, sensing performance and the complete measurement chain. In tests, the prototype's response was broadly comparable to a commercial Rogowski coil.
+## How a Rogowski Coil Measures Current
 
-## Rogowski Coil Development
+A Rogowski coil is an air-cored winding placed around the conductor carrying the current to be measured. The changing magnetic field of that current induces a voltage in the winding proportional to the rate of change of current:
 
-The review compared historical and contemporary designs, including flexible coils, rigid PCB windings and compact sensors integrated near power devices. The comparison considered winding geometry and size, current range, sensitivity, bandwidth and external circuits. The timeline below captures the development paths surveyed in 2022.
+<div class="math-display">\[v_{\mathrm{coil}}(t)=M\frac{di(t)}{dt},\]</div>
 
-<figure>
-  <a href="/images/research/pcb-rogowski/rogowski-timeline.png" target="_blank" rel="noopener"><img src="/images/research/pcb-rogowski/rogowski-timeline.png" alt="Rogowski coil development timeline through 2022, with flexible coils and rigid and flexible PCB windings" width="846" height="373"></a>
-  <figcaption>Rogowski coil development timeline.</figcaption>
-</figure>
+where <i>M</i> is the mutual inductance between the conductor and the coil. An integrator in the signal-conditioning circuit converts this voltage back into a signal proportional to the current. Because there is no magnetic core to saturate, the coil suits large, fast-changing currents such as the switching transients of SiC converters; it does not measure steady DC current.
 
-The review includes examples from literature and commercial products. Their specifications describe different geometries, test conditions and measurement chains, so individual bandwidth and sensitivity figures should be compared in context.
+Building the winding on a PCB makes the coil compact, repeatable and easy to place close to power devices. Its geometry, return path and shielding set the sensitivity and the rejection of interference, and the conditioning circuit must manage gain, bandwidth and integrator offset.
 
-## PCB Coil and Signal Conditioning
+## Coil and Signal-Conditioning Design
 
-A Rogowski coil is an air-cored winding around the conductor. Its induced voltage is proportional to the rate of change of primary current; a signal-conditioning circuit integrates that voltage to recover a current-proportional signal. Winding geometry, return paths and shielding influence sensitivity and susceptibility to interference. The coil does not directly measure steady DC current.
-
-<div class="math-display">\[v_{\mathrm{coil}}(t)=M\frac{di(t)}{dt}.\]</div>
-
-Here <i>M</i> is the mutual inductance between the conductor and coil. The practical signal chain also needs to manage gain, bandwidth and integrator offset.
+Starting from a review of existing coil designs and commercial specifications, I designed several PCB winding layouts and the amplification and integration circuitry that follows them. Each board places the coil and its conditioning electronics together, so the sensing element and output circuit can be assessed as one measurement chain.
 
 <figure>
-  <a href="/images/research/pcb-rogowski/circular-coil-pcb.png" target="_blank" rel="noopener"><img src="/images/research/pcb-rogowski/circular-coil-pcb.png" alt="PCB Rogowski coil design with a circular winding and integrated signal-conditioning circuitry" width="602" height="432" loading="lazy"></a>
-  <figcaption>Circular PCB coil and signal-conditioning circuit.</figcaption>
+  <a href="/images/research/pcb-rogowski/circular-coil-pcb.png" target="_blank" rel="noopener"><img src="/images/research/pcb-rogowski/circular-coil-pcb.png" alt="PCB Rogowski coil design with a circular winding and integrated signal-conditioning circuitry" width="602" height="432"></a>
+  <figcaption>Circular PCB winding with on-board amplification and integration stages.</figcaption>
 </figure>
 
-I designed several PCB winding layouts and the accompanying amplification and signal-conditioning circuitry. The board designs place the coil and conditioning electronics together so the sensing element and its output circuit can be assessed as a system.
+An alternative layout uses a rectangular winding around the aperture with the same conditioning chain.
 
 <figure>
   <a href="/images/research/pcb-rogowski/rectangular-coil-pcb.png" target="_blank" rel="noopener"><img src="/images/research/pcb-rogowski/rectangular-coil-pcb.png" alt="PCB Rogowski sensor design with a rectangular winding and signal-conditioning components" width="602" height="457" loading="lazy"></a>
-  <figcaption>Alternative PCB coil layout.</figcaption>
+  <figcaption>Rectangular PCB winding with the same signal-conditioning chain.</figcaption>
 </figure>
 
-## Experimental Comparison
+## Comparison with a Commercial Coil
 
-The designed sensing chain was tested against a commercial Rogowski coil. Its measured response was broadly in line with the commercial reference in the project tests. This comparison is qualitative here: the available summary does not establish a numerical error, frequency range or test uncertainty for the prototype.
+I tested the designed sensing chain alongside a commercial Rogowski coil measuring the same current. The prototype's measured response was broadly in line with the commercial reference in these project tests. The comparison is qualitative: numerical error, bandwidth and measurement uncertainty for the prototype were not established in the published summary.
 
-[PCB Rogowski coil design repository](https://github.com/FulongLi/PCB-Rogowski-Coil) · [Current Sensing](/research/sensing_devices/) · [Back to Research](/research/)
+The design files are available in the [PCB Rogowski coil repository](https://github.com/FulongLi/PCB-Rogowski-Coil).
+
+[PCB Current Transformer](/research/pcb-current-transformer/) · [Current Sensing](/research/sensing_devices/) · [Back to Research](/research/)

@@ -3,40 +3,41 @@ layout: single
 title: "Loughborough University DC Microgrid Testbed"
 permalink: /research/experimental-platforms/loughborough/
 author_profile: true
+excerpt: "A modular low-voltage DC microgrid test bench and its successive interface-converter prototypes."
 body_class: microgrid-project-page
 project_stylesheet: /assets/css/marine-project.css
 project_contents: true
 ---
 
+I built and developed a low-voltage DC microgrid test bench at Loughborough University around modular interface converters, supporting grid-connected and islanded operation so that converter control and system-level power management can be studied together.
+
 ## A Modular Test Bench
 
-I built and developed a low-voltage DC microgrid test bench around modular interface converters. The platform supports grid-connected and islanded operation and allows converter control and system-level power management to be studied together.
-
-<figure>
-  <a href="/images/research/experimental-platforms/loughborough-setup.png" target="_blank" rel="noopener"><img src="/images/research/experimental-platforms/loughborough-setup.png" alt="Low-voltage DC microgrid experimental bench with modular converters, batteries, instruments and computer" width="602" height="425" loading="lazy"></a>
-  <figcaption>The complete experimental setup.</figcaption>
-</figure>
-
-## System Architecture
-
-The documented setup uses four interfaces: a grid emulator, two battery banks and a PV emulator. The converters connect these resources to the DC bus, alongside electronic and resistive loads, with a computer and instruments for monitoring. A DC supply and soaking resistor emulate the grid interface.
+The test bench follows the same four-interface structure as my earlier PhD microgrid: a grid emulator, two battery banks and a PV emulator connect to the DC bus through interface converters, alongside electronic and resistive loads. A DC supply and soaking resistor emulate the grid, and a computer and instruments monitor the system.
 
 <figure>
   <a href="/images/research/experimental-platforms/aston-system-architecture.png" target="_blank" rel="noopener"><img src="/images/research/experimental-platforms/aston-system-architecture.png" alt="Schematic showing grid, photovoltaic and battery interfaces connected to a common DC bus with loads" width="990" height="645" loading="lazy"></a>
-  <figcaption>DC microgrid configuration.</figcaption>
+  <figcaption>Four-interface DC microgrid configuration shared with the earlier thesis platform; a system-level reference, not a wiring diagram of this prototype.</figcaption>
 </figure>
-
-This earlier thesis diagram illustrates the same four-interface system configuration described in the test-bench repository; it is a system-level reference, not a wiring diagram of the later prototype.
 
 ## Converter Development
 
+The first interface converter was a **100 W** bidirectional Boost converter on a 48 V bus. I then developed a second version rated at **500 W per converter**, improving gate drive and sensing, reducing switching ringing and adding wireless communication support. Stacked power and control boards provide voltage and current sensing, gate drive and DSP-based control.
+
 <figure>
   <a href="/images/research/experimental-platforms/loughborough-v2.png" target="_blank" rel="noopener"><img src="/images/research/experimental-platforms/loughborough-v2.png" alt="Second-version interface converter with stacked power and control boards and a group of converter modules" width="602" height="302" loading="lazy"></a>
-  <figcaption>Second-version converter hardware and assembled modules.</figcaption>
+  <figcaption>Second-version interface converter with stacked power and control boards, and a group of assembled modules.</figcaption>
 </figure>
 
-The repository describes a first **100 W** bidirectional Boost converter on a 48 V bus, followed by a second version rated at **500 W per converter**. The upgrade improved gate drive and sensing, reduced switching ringing and added wireless communication support. Power and control boards provide voltage and current sensing, gate drive and DSP-based control.
+The converters implement current and voltage regulation, battery charging, droop control and PV maximum-power-point tracking.
 
-The documented functions include current and voltage regulation, battery charging, droop control and PV maximum-power-point tracking. The repository contains hardware designs and schematics for further detail.
+## The Completed Setup
 
-[DC Microgrid Test Bench repository](https://github.com/FulongLi/DCMicrogridTestBench) · [Bidirectional Buck–Boost converter](/research/nonisolated-converters/bidirectional-buck-boost/) · [All experimental platforms](/research/experimental_platforms/)
+<figure>
+  <a href="/images/research/experimental-platforms/loughborough-setup.png" target="_blank" rel="noopener"><img src="/images/research/experimental-platforms/loughborough-setup.png" alt="Low-voltage DC microgrid experimental bench with modular converters, batteries, instruments and computer" width="602" height="425" loading="lazy"></a>
+  <figcaption>The complete test bench with modular converters, batteries, instruments and monitoring computer.</figcaption>
+</figure>
+
+Hardware designs and schematics are available in the [DC Microgrid Test Bench repository](https://github.com/FulongLi/DCMicrogridTestBench).
+
+[Bidirectional Buck–Boost converter](/research/nonisolated-converters/bidirectional-buck-boost/) · [All experimental platforms](/research/experimental_platforms/) · [Back to Research](/research/)

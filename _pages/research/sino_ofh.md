@@ -9,53 +9,47 @@ project_contents: true
 excerpt: "Enclosure thermal modelling and ventilation behaviour across North Sea, Persian Gulf and Singapore climate scenarios."
 ---
 
+I led the thermal evaluation in 2024, following the [3 MW marine powertrain study](/research/3mw-marine-fuel-cell/). I developed a room-temperature model of the equipment enclosure and assessed its ventilation needs across three climates, covering the requirements, enclosure modelling and scenario assessment.
+
 <h2 id="overview">The Thermal Environment Around a Marine Powertrain</h2>
 <span id="sino-ofh-wp41-thermal-evaluation"></span>
 
-Fuel-cell and converter equipment must operate inside an enclosure whose temperature depends on the equipment, construction and outdoor climate. I led the thermal evaluation in 2024, developing a room-temperature model to examine those interactions.
+Fuel-cell and converter equipment operates inside an enclosure whose air temperature depends on the heat the equipment releases, how well the walls conduct heat away and the outdoor climate. If the room becomes too hot, equipment performance and lifetime suffer. Ventilation with outdoor air removes heat, but only while the outdoor air is cooler than the room, so the same enclosure can behave very differently in a cold sea and a hot gulf.
 
-This work followed the [3MW marine powertrain study](/research/3mw-marine-fuel-cell/). My contribution covered requirements, enclosure modelling and scenario assessment, connecting the equipment's thermal conditions to ventilation needs.
+<h2 id="model-development">Enclosure and Ventilation Model</h2>
 
-<h2 id="model-development">Modelling the Enclosure and Ventilation</h2>
+The model represents the thermal capacity of the internal air, heat transfer through the enclosure, equipment heat input and fan-driven air exchange. Sensitivity studies of enclosure resistance and fan capacity tested those parts of the model separately and informed an updated **6 m × 2.4 m × 3.5 m** enclosure with 5 mm aluminium walls and door, insulation, no windows and a 50% air-filled fraction.
 
-The model represents internal air thermal capacity, heat transfer through the enclosure, equipment heat input and fan-driven air exchange. Sensitivity studies of enclosure resistance and airflow informed an updated **6 m × 2.4 m × 3.5 m** enclosure model.
-
-The enclosure description uses revised 5 mm aluminium walls and door, insulation assumptions, no windows and a 50% air-filled fraction. The air thermal capacity stores heat; boundary heat exchange and fan-driven airflow determine how the room responds to the equipment and outdoor temperature. Changing enclosure resistance and fan capacity tests those parts of the model separately.
-
-The climate scenarios use ambient ranges of 6–14°C for the North Sea, 14–46.6°C for the Persian Gulf and 24.3–32.4°C for Singapore. These are study inputs, with the same enclosure assessed across the three cases.
-
-The climate comparison uses equipment surface temperatures of **45°C and 60°C** and a **25°C room-temperature reference**. The representative plots below show the 60°C case under the updated enclosure assumptions.
+The climate scenarios use ambient ranges of 6–14 °C for the North Sea, 14–46.6 °C for the Persian Gulf and 24.3–32.4 °C for Singapore, with equipment surface temperatures of **45 °C and 60 °C** and a **25 °C room-temperature reference**.
 
 <h2 id="climate-scenarios">One Enclosure, Three Climates</h2>
-
 <span id="north-sea"></span>
+<span id="persian-gulf"></span>
+<span id="singapore"></span>
+
+The plots below show the 60 °C equipment case under the updated enclosure assumptions. In the North Sea, cool ambient air keeps the room below the reference with the fan off.
+
 <figure>
   <a href="/images/research/marine-fuel-cell/sino-north-sea-60c.png" target="_blank" rel="noopener"><img src="/images/research/marine-fuel-cell/sino-north-sea-60c.png" alt="North Sea room temperature and fan state with 60 degree equipment surface temperature" width="875" height="645" fetchpriority="high"></a>
-  <figcaption>North Sea: fan off.</figcaption>
+  <figcaption>North Sea: room temperature and fan state with 60 °C equipment; the fan stays off.</figcaption>
 </figure>
 
-Cool ambient conditions keep the simulated room below the 25°C reference.
+In the Persian Gulf, the room exceeds the reference as the outdoor air heats up, and the fan runs during hot periods.
 
-<span id="persian-gulf"></span>
 <figure>
   <a href="/images/research/marine-fuel-cell/sino-persian-gulf-60c.png" target="_blank" rel="noopener"><img src="/images/research/marine-fuel-cell/sino-persian-gulf-60c.png" alt="Persian Gulf room temperature and fan state with 60 degree equipment surface temperature" width="875" height="645" loading="lazy"></a>
-  <figcaption>Persian Gulf: ventilation during hot periods.</figcaption>
+  <figcaption>Persian Gulf: room temperature and fan state with 60 °C equipment; ventilation runs during hot periods.</figcaption>
 </figure>
 
-The room exceeds the reference as outdoor air becomes hotter.
+In Singapore, sustained warm conditions keep the room above the reference for much of the day, with the fan running continuously.
 
-<span id="singapore"></span>
 <figure>
   <a href="/images/research/marine-fuel-cell/sino-singapore-60c.png" target="_blank" rel="noopener"><img src="/images/research/marine-fuel-cell/sino-singapore-60c.png" alt="Singapore room temperature and continuous fan operation with 60 degree equipment surface temperature" width="875" height="645" loading="lazy"></a>
-  <figcaption>Singapore: continuous fan operation.</figcaption>
+  <figcaption>Singapore: room temperature and fan state with 60 °C equipment; the fan runs continuously.</figcaption>
 </figure>
-
-Sustained warm conditions keep the room above the reference for much of the simulation.
-
-Both equipment-temperature cases show the same broad difference in ventilation duty between regions. Ambient-air ventilation is constrained by the outdoor temperature; achieving one room-temperature target across these climates requires assessment beyond fan capacity alone.
 
 <h2 id="outcomes">Implications for System Integration</h2>
 
-The study provided a basis for reviewing enclosure construction, insulation and airflow alongside equipment temperature. Its results are conditional on the modelled heat transfer and operating scenarios, and help identify the thermal assumptions that need attention before equipment integration.
+Both equipment-temperature cases show the same difference in ventilation duty between regions. Because ambient-air ventilation is limited by the outdoor temperature, holding one room-temperature target across these climates needs more than fan capacity alone. The study provided a basis for reviewing enclosure construction, insulation and airflow alongside equipment temperature before integration; its results depend on the modelled heat transfer and operating scenarios.
 
-[3MW Marine Fuel-Cell Project](/research/3mw-marine-fuel-cell/) · [Microgrid Energy Management](/research/mgapp/) · [Back to Research](/research/)
+[3 MW Marine Fuel-Cell Project](/research/3mw-marine-fuel-cell/) · [Microgrid Energy Management](/research/mgapp/) · [Back to Research](/research/)

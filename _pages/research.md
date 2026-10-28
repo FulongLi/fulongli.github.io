@@ -45,7 +45,7 @@ My work connects power-electronic components, converter design, and microgrid co
       <a href="/research/sensing_devices/">Current Sensing</a>
       <ul>
         <li><a href="/research/pcb-rogowski-coil/">PCB Rogowski Coil</a></li>
-        <li><a href="/research/sensing_devices/#embedded-core-pcb-current-transformer-pcb-ct">Current Transformer / Transducer</a></li>
+        <li><a href="/research/pcb-current-transformer/">Current Transformer / Transducer</a></li>
       </ul>
     </li>
     <li>
