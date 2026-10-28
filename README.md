@@ -42,6 +42,8 @@ Research pages use a concise technical narrative: the question, modelling or exp
 
 Keep only assets used by the site and its public downloads. Experimental scripts, regenerated simulation bundles and intermediate exports belong in their dedicated research repositories, linked from the relevant page.
 
+Agent project introductions follow a consistent narrative: briefly explain the agent's purpose and framework; locate it within the wider AIPE agent workflow with its inputs, outputs and handoffs; explain its internal architecture and task execution logic; then show a task-derived example and its resulting artifacts. Section counts and titles can vary, but keep this order and connect each example to the workflow that produced it.
+
 ## Local Development
 
 ```bash

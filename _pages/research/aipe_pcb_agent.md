@@ -9,36 +9,45 @@ project_stylesheet: /assets/css/marine-project.css
 project_contents: true
 ---
 
-AIPE PCB Agent is my open-source project for automating power-electronics PCB design. It connects structured engineering requirements to editable KiCad projects, with Python generators for schematics, component placement, routing, checks and exports. Within the AIPE workflow, it sits downstream of electrical design and turns circuit and layout inputs into a traceable CAD package.
+AIPE PCB Agent is my open-source project for turning power-electronics design requirements into editable KiCad schematics and PCB layouts. Its framework combines structured design inputs, reusable engineering knowledge, Python automation and native KiCad checks. The 5 kW SiC buck example below shows how a task moves through that framework to a set of board designs and engineering files.
 
 [Explore the repository](https://github.com/FulongLi/AIPE-PCB-Agent)
 
-## Framework
+## Role in the AIPE Agent Framework
 
-The framework separates the electrical circuit model from its schematic presentation and PCB geometry. A shared model records components, pins and nets; separate generators decide how to draw the circuit and arrange the board. This lets the automation reuse common tools across converter projects.
+In the AIPE workflow, PCB Agent sits downstream of **AIPE Electrical Design**. It receives the converter specification, component and connection data, interface definitions and physical design constraints, then translates them into a board-level implementation.
 
-| Layer | Role |
+> Electrical design → PCB Agent → CAD projects, check reports and engineering review package
+
+Its outputs include native KiCad projects, schematic and layout views, connectivity and rule-check reports, and manufacturing exports. These give the engineer a consistent set of files to inspect and revise. The [repository overview](https://github.com/FulongLi/AIPE-PCB-Agent) and [agent interface](https://github.com/FulongLi/AIPE-PCB-Agent/blob/main/aipe.yaml) describe its place in the wider workflow and its input/output contracts.
+
+## Internal Architecture
+
+The implementation connects three main parts around a shared circuit model. That model records components, pins and nets; schematic presentation and PCB geometry are generated separately from it.
+
+| Part | Responsibility |
 | --- | --- |
-| Requirements | Capture specifications, components, interfaces, insulation constraints, floorplans and routing inputs in YAML/JSON files. |
-| Engineering knowledge | Retrieve reference-derived circuit blocks, component records and layout rules with links to their sources. |
-| Circuit and CAD generation | Build the circuit model, hierarchical schematics, project libraries, board stack-up, net classes and design rules. |
-| Placement and routing | Arrange functional regions, define copper zones and keep-outs, and route connections with a grid-based router. |
-| Checks and outputs | Run native KiCad ERC/DRC, compare netlists, inspect routing geometry and export files with SHA-256 manifests. |
+| Design inputs and knowledge | YAML/JSON requirements define specifications, parts, interfaces, insulation constraints and board plans. A reference-derived knowledge base supplies circuit blocks, component records and layout rules. |
+| Generation tools | Converter-specific Python modules build the circuit model. Shared KiCad utilities generate hierarchical schematics, libraries, board rules, placement, copper regions and routed connections. |
+| Checks and records | Native KiCad ERC/DRC, netlist comparisons and geometry checks produce reports. Export tools generate review and manufacturing files with SHA-256 manifests. |
 
-The main implementation lives in `automation/`: `kicad_tools/` provides shared CAD and routing utilities, `knowledge/` handles engineering references, and converter-specific modules such as `sic_v3/` and `dab_v1/` assemble the design pipelines. `examples/` holds design inputs and generated projects; `docs/` explains the architecture and workflow.
+The converter modules supply design-specific data and policies while shared tools handle CAD generation and checking. This separation lets different converter projects reuse the same underlying operations. See the [automation architecture](https://github.com/FulongLi/AIPE-PCB-Agent/blob/main/docs/architecture.md) for the module interfaces.
 
-The resulting workflow is:
+## How a Task Runs
 
-1. Define requirements and document engineering assumptions.
-2. Build the circuit model and generate schematics and board rules.
-3. Place components, construct copper regions and route connections.
-4. Run checks and produce review views and manufacturing exports.
+The task follows a sequence from requirements to board design, with checks feeding corrections back into the relevant stage:
 
-See the [automation architecture](https://github.com/FulongLi/AIPE-PCB-Agent/blob/main/docs/architecture.md) for the module interfaces and generation flow.
+1. **Define the task.** Capture operating conditions, parts, interfaces and physical constraints, and record engineering assumptions alongside the requirements.
+2. **Build the electrical model.** Use calculations and component references to establish the parts and pin-to-net connections, then generate schematics and run electrical rule checks.
+3. **Construct the boards.** Define stack-ups and design rules, place functional groups, form copper zones and keep-outs, and route the connections.
+4. **Check and revise.** Compare the CAD netlists with the model, run PCB design-rule checks and inspect layout metrics. Findings identify where the model, placement or routing needs another pass; unresolved connections remain in the reports.
+5. **Package the outputs.** Export editable projects, review views and manufacturing files, with manifests linking the results to the checked source files.
+
+The [task workflow](https://github.com/FulongLi/AIPE-PCB-Agent/blob/main/docs/agent-workflow.md) describes the stages and their acceptance gates.
 
 ## Example: 5 kW SiC Buck Converter
 
-The SiC synchronous buck example illustrates the workflow with separate power and control boards. Its [design requirements](https://github.com/FulongLi/AIPE-PCB-Agent/blob/main/examples/sic-buck-400v-200v-5kw/input/requirements.yaml) specify:
+For this task, the agent takes a SiC synchronous buck specification through circuit generation, board design and output packaging. Its [design requirements](https://github.com/FulongLi/AIPE-PCB-Agent/blob/main/examples/sic-buck-400v-200v-5kw/input/requirements.yaml) specify:
 
 | Parameter | Design value |
 | --- | --- |
@@ -49,6 +58,8 @@ The SiC synchronous buck example illustrates the workflow with separate power an
 | Switching frequency | 50 kHz |
 | Power devices | Wolfspeed SiC MOSFETs |
 | Controller | TI TMS320F28335 DSP |
+
+The example uses a two-board architecture: a power board for conversion, gate drive, sensing and protection, and a DSP control board connected through a mezzanine interface. The CAD views below show the physical arrangement produced for those two roles.
 
 ### Power Board
 
@@ -68,6 +79,8 @@ The control board brings together the TMS320F28335 DSP, local supplies, signal c
   <figcaption>DSP control-board CAD view with local supplies, signal interfaces and mezzanine connection.</figcaption>
 </figure>
 
-The example connects requirements, circuit records, editable schematics and PCB layouts with BOMs, placement files, Gerbers, drill files and STEP models. The repository also records successive design revisions and their associated review outputs in the [example history](https://github.com/FulongLi/AIPE-PCB-Agent/blob/main/docs/history.md).
+### Task Outputs
+
+The task produces the two editable KiCad board projects and their schematics, alongside BOMs, placement files, Gerbers, drill files, STEP models and check reports. These files connect the original specification to the illustrated board arrangement. The [example history](https://github.com/FulongLi/AIPE-PCB-Agent/blob/main/docs/history.md) links successive revisions to their design records and review packages.
 
 [AIPE Overview](/research/aipe/) · [Source Code](https://github.com/FulongLi/AIPE-PCB-Agent) · [Back to Research](/research/)
