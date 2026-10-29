@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 374" width="760" height="374" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>Single-stage, two-stage and three-stage solid-state transformer configurations between the medium-voltage and low-voltage AC grids, distinguished by having no DC link, one DC link, or both high-voltage and low-voltage DC links</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a8288"/></marker></defs>
+<text x="20" y="34" font-size="14.5" font-weight="700" fill="#494e52">Single-stage SST</text><text x="164" y="34" font-size="12.5" fill="#7a8288">no DC link</text>
+<text x="38" y="81.0" font-size="13" fill="#494e52" text-anchor="middle">MV AC</text>
+<text x="733" y="81.0" font-size="13" fill="#494e52" text-anchor="middle">LV AC</text>
+<line x1="60" y1="76.0" x2="80" y2="76.0" stroke="#7a8288" stroke-width="1.5"/>
+<rect x="80" y="48" width="610" height="56" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="385.0" y="73.0" font-size="14" font-weight="700" fill="#494e52" text-anchor="middle">Isolated AC–AC converter</text>
+<text x="385.0" y="92.0" font-size="12" fill="#7a8288" text-anchor="middle">direct conversion through a high-frequency transformer</text>
+<line x1="690" y1="76.0" x2="712" y2="76.0" stroke="#7a8288" stroke-width="1.5"/>
+<text x="20" y="152" font-size="14.5" font-weight="700" fill="#494e52">Two-stage SST</text><text x="139" y="152" font-size="12.5" fill="#7a8288">one DC link</text>
+<text x="38" y="199.0" font-size="13" fill="#494e52" text-anchor="middle">MV AC</text>
+<text x="733" y="199.0" font-size="13" fill="#494e52" text-anchor="middle">LV AC</text>
+<line x1="60" y1="194.0" x2="80" y2="194.0" stroke="#7a8288" stroke-width="1.5"/>
+<rect x="80" y="166" width="390" height="56" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="275.0" y="191.0" font-size="14" font-weight="700" fill="#494e52" text-anchor="middle">Isolated AC–DC converter</text>
+<text x="275.0" y="210.0" font-size="12" fill="#7a8288" text-anchor="middle">rectifier with high-frequency transformer</text>
+<line x1="470" y1="194.0" x2="501.0" y2="194.0" stroke="#7a8288" stroke-width="1.5"/><line x1="509.0" y1="194.0" x2="540" y2="194.0" stroke="#7a8288" stroke-width="1.5"/>
+<line x1="501.0" y1="180.0" x2="501.0" y2="208.0" stroke="#52adc8" stroke-width="2.6"/><line x1="509.0" y1="180.0" x2="509.0" y2="208.0" stroke="#52adc8" stroke-width="2.6"/>
+<text x="505.0" y="238" font-size="12" font-weight="700" fill="#52adc8" text-anchor="middle">LV DC</text>
+<rect x="540" y="166" width="150" height="56" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="615.0" y="199.0" font-size="14" font-weight="700" fill="#494e52" text-anchor="middle">DC–AC inverter</text>
+<line x1="690" y1="194.0" x2="712" y2="194.0" stroke="#7a8288" stroke-width="1.5"/>
+<rect x="8" y="250" width="744" height="114" rx="8" fill="#eef7fa" stroke="#52adc8" stroke-width="2"/>
+<text x="20" y="270" font-size="14.5" font-weight="700" fill="#494e52">Three-stage SST</text><text x="156" y="270" font-size="12.5" fill="#7a8288">HV and LV DC links</text>
+<text x="38" y="317.0" font-size="13" fill="#494e52" text-anchor="middle">MV AC</text>
+<text x="733" y="317.0" font-size="13" fill="#494e52" text-anchor="middle">LV AC</text>
+<line x1="60" y1="312.0" x2="80" y2="312.0" stroke="#7a8288" stroke-width="1.5"/>
+<rect x="80" y="284" width="170" height="56" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="165.0" y="309.0" font-size="14" font-weight="700" fill="#494e52" text-anchor="middle">AC–DC rectifier</text>
+<text x="165.0" y="328.0" font-size="12" fill="#7a8288" text-anchor="middle">MV side</text>
+<line x1="250" y1="312.0" x2="281.0" y2="312.0" stroke="#7a8288" stroke-width="1.5"/><line x1="289.0" y1="312.0" x2="320" y2="312.0" stroke="#7a8288" stroke-width="1.5"/>
+<line x1="281.0" y1="298.0" x2="281.0" y2="326.0" stroke="#52adc8" stroke-width="2.6"/><line x1="289.0" y1="298.0" x2="289.0" y2="326.0" stroke="#52adc8" stroke-width="2.6"/>
+<text x="285.0" y="356" font-size="12" font-weight="700" fill="#52adc8" text-anchor="middle">HV DC</text>
+<rect x="320" y="284" width="170" height="56" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="405.0" y="309.0" font-size="14" font-weight="700" fill="#494e52" text-anchor="middle">Isolated DC–DC</text>
+<text x="405.0" y="328.0" font-size="12" fill="#7a8288" text-anchor="middle">DAB, HF transformer</text>
+<line x1="490" y1="312.0" x2="521.0" y2="312.0" stroke="#7a8288" stroke-width="1.5"/><line x1="529.0" y1="312.0" x2="560" y2="312.0" stroke="#7a8288" stroke-width="1.5"/>
+<line x1="521.0" y1="298.0" x2="521.0" y2="326.0" stroke="#52adc8" stroke-width="2.6"/><line x1="529.0" y1="298.0" x2="529.0" y2="326.0" stroke="#52adc8" stroke-width="2.6"/>
+<text x="525.0" y="356" font-size="12" font-weight="700" fill="#52adc8" text-anchor="middle">LV DC</text>
+<rect x="560" y="284" width="130" height="56" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="625.0" y="309.0" font-size="14" font-weight="700" fill="#494e52" text-anchor="middle">DC–AC inverter</text>
+<text x="625.0" y="328.0" font-size="12" fill="#7a8288" text-anchor="middle">LV side</text>
+<line x1="690" y1="312.0" x2="712" y2="312.0" stroke="#7a8288" stroke-width="1.5"/>
+</svg>

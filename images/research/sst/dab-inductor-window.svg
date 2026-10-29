@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 150" width="760" height="150" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>Inductor selection window for the 15 kW DAB on a logarithmic inductance axis: below 28 microhenries the power steps are too coarse at 7.5 kW, above 1.1 millihenries the converter cannot reach 15 kW, and 250 microhenries is selected inside the window</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a8288"/></marker></defs>
+<rect x="50" y="56" width="238.8" height="40" fill="#f2f3f3"/>
+<rect x="551.8" y="56" width="158.2" height="40" fill="#f2f3f3"/>
+<rect x="288.8" y="56" width="263.0" height="40" fill="#eef7fa" stroke="#52adc8" stroke-width="1.5"/>
+<text x="368.4" y="81" font-size="13" font-weight="700" fill="#52adc8" text-anchor="middle">feasible window</text>
+<line x1="50" y1="96" x2="710" y2="96" stroke="#7a8288" stroke-width="1.2"/>
+<line x1="50.0" y1="96" x2="50.0" y2="101" stroke="#7a8288"/><text x="50.0" y="116" font-size="12" fill="#7a8288" text-anchor="middle">1 µH</text>
+<line x1="215.0" y1="96" x2="215.0" y2="101" stroke="#7a8288"/><text x="215.0" y="116" font-size="12" fill="#7a8288" text-anchor="middle">10 µH</text>
+<line x1="380.0" y1="96" x2="380.0" y2="101" stroke="#7a8288"/><text x="380.0" y="116" font-size="12" fill="#7a8288" text-anchor="middle">100 µH</text>
+<line x1="545.0" y1="96" x2="545.0" y2="101" stroke="#7a8288"/><text x="545.0" y="116" font-size="12" fill="#7a8288" text-anchor="middle">1 mH</text>
+<line x1="710.0" y1="96" x2="710.0" y2="101" stroke="#7a8288"/><text x="710.0" y="116" font-size="12" fill="#7a8288" text-anchor="middle">10 mH</text>
+<text x="380.0" y="136" font-size="12.5" fill="#494e52" text-anchor="middle">Total series inductance L<tspan font-size="9" dy="3">tot</tspan> (log scale)</text>
+<line x1="288.8" y1="44" x2="288.8" y2="96" stroke="#494e52" stroke-width="1.6"/><text x="282.8" y="50" font-size="12.5" font-weight="700" fill="#494e52" text-anchor="end">28 µH</text>
+<line x1="551.8" y1="44" x2="551.8" y2="96" stroke="#494e52" stroke-width="1.6"/><text x="557.8" y="50" font-size="12.5" font-weight="700" fill="#494e52" text-anchor="start">1.1 mH</text>
+<text x="169.4" y="72" font-size="12" fill="#7a8288" text-anchor="middle">power steps too coarse</text><text x="169.4" y="87" font-size="12" fill="#7a8288" text-anchor="middle">at 7.5 kW</text>
+<text x="630.9" y="72" font-size="12" fill="#7a8288" text-anchor="middle">cannot reach</text><text x="630.9" y="87" font-size="12" fill="#7a8288" text-anchor="middle">15 kW</text>
+<circle cx="445.7" cy="96" r="7" fill="#eb6834" stroke="#ffffff" stroke-width="2"/>
+<text x="445.7" y="36" font-size="13" font-weight="700" fill="#494e52" text-anchor="middle">selected 250 µH</text><line x1="445.7" y1="41" x2="445.7" y2="88" stroke="#494e52" stroke-width="1.2" stroke-dasharray="3 3"/>
+</svg>
