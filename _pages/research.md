@@ -6,11 +6,6 @@ author_profile: true
 body_class: research-index-page
 ---
 
-
-## Research Projects and Engineering Experience
-
-This research connects power-electronic components, converter design, and microgrid control and energy management. The categories below give concise project summaries, contributions, and public papers, code and resources.
-
 <div class="research-topics">
 
 <!-- AIPE -->
