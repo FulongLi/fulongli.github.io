@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 676" width="760" height="676" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>Optimal converter design process: specification, design variables and constraints feed component models and a multi-objective search that yields a Pareto front, from which a design is selected and verified, with verified data fed back to update the models</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a8288"/></marker></defs>
+<rect x="40" y="16" width="640" height="72" rx="6" fill="#ffffff" stroke="#bdc1c4" stroke-width="1"/>
+<text x="360.0" y="40" font-size="15" font-weight="700" fill="#494e52" text-anchor="middle">1  Specification</text>
+<text x="360.0" y="62" font-size="12.5" fill="#7a8288" text-anchor="middle">power, input and output voltage, operating range</text>
+<text x="360.0" y="82" font-size="12.5" fill="#7a8288" text-anchor="middle">limits on efficiency, temperature, volume and cost</text>
+<rect x="40" y="112" width="310" height="92" rx="6" fill="#ffffff" stroke="#bdc1c4" stroke-width="1"/>
+<text x="195.0" y="136" font-size="15" font-weight="700" fill="#494e52" text-anchor="middle">2  Design variables</text>
+<text x="195.0" y="158" font-size="12.5" fill="#7a8288" text-anchor="middle">switch die area, switching frequency</text>
+<text x="195.0" y="178" font-size="12.5" fill="#7a8288" text-anchor="middle">current ripple, junction temperature rise</text>
+<text x="195.0" y="198" font-size="12.5" fill="#7a8288" text-anchor="middle">each within physical bounds</text>
+<rect x="370" y="112" width="310" height="92" rx="6" fill="#ffffff" stroke="#bdc1c4" stroke-width="1"/>
+<text x="525.0" y="136" font-size="15" font-weight="700" fill="#494e52" text-anchor="middle">3  Constraints</text>
+<text x="525.0" y="158" font-size="12.5" fill="#7a8288" text-anchor="middle">junction temperature, output ripple</text>
+<text x="525.0" y="178" font-size="12.5" fill="#7a8288" text-anchor="middle">core saturation, current density</text>
+<text x="525.0" y="198" font-size="12.5" fill="#7a8288" text-anchor="middle">clearance and insulation</text>
+<rect x="24" y="228" width="672" height="256" rx="6" fill="#eef7fa" stroke="#52adc8" stroke-width="2"/>
+<text x="360" y="250" font-size="13" font-weight="700" fill="#52adc8" text-anchor="middle">Optimisation loop</text>
+<rect x="40" y="262" width="640" height="92" rx="6" fill="#ffffff" stroke="#bdc1c4" stroke-width="1"/>
+<text x="360.0" y="286" font-size="15" font-weight="700" fill="#494e52" text-anchor="middle">4  Component models</text>
+<text x="360.0" y="308" font-size="12.5" fill="#7a8288" text-anchor="middle">semiconductors: conduction, switching, output-capacitance, recovery and gate loss</text>
+<text x="360.0" y="328" font-size="12.5" fill="#7a8288" text-anchor="middle">magnetics: copper and core loss, volume  ·  capacitors: ESR loss, volume</text>
+<text x="360.0" y="348" font-size="12.5" fill="#7a8288" text-anchor="middle">thermal: junction temperature and heat-sink size</text>
+<rect x="40" y="378" width="310" height="92" rx="6" fill="#ffffff" stroke="#bdc1c4" stroke-width="1"/>
+<text x="195.0" y="402" font-size="15" font-weight="700" fill="#494e52" text-anchor="middle">5  Multi-objective search</text>
+<text x="195.0" y="424" font-size="12.5" fill="#7a8288" text-anchor="middle">weighted-sum scalarisation</text>
+<text x="195.0" y="444" font-size="12.5" fill="#7a8288" text-anchor="middle">genetic algorithms (GA, NSGA-II)</text>
+<text x="195.0" y="464" font-size="12.5" fill="#7a8288" text-anchor="middle">or sampling of the design space</text>
+<rect x="370" y="378" width="310" height="92" rx="6" fill="#ffffff" stroke="#bdc1c4" stroke-width="1"/>
+<text x="525.0" y="402" font-size="15" font-weight="700" fill="#494e52" text-anchor="middle">6  Pareto front</text>
+<text x="525.0" y="424" font-size="12.5" fill="#7a8288" text-anchor="middle">the non-dominated designs:</text>
+<text x="525.0" y="444" font-size="12.5" fill="#7a8288" text-anchor="middle">no gain in one objective</text>
+<text x="525.0" y="464" font-size="12.5" fill="#7a8288" text-anchor="middle">without a loss in another</text>
+<rect x="40" y="508" width="640" height="72" rx="6" fill="#ffffff" stroke="#bdc1c4" stroke-width="1"/>
+<text x="360.0" y="532" font-size="15" font-weight="700" fill="#494e52" text-anchor="middle">7  Design selection</text>
+<text x="360.0" y="554" font-size="12.5" fill="#7a8288" text-anchor="middle">choose a point on the front from the project priorities</text>
+<text x="360.0" y="574" font-size="12.5" fill="#7a8288" text-anchor="middle">compare candidates across efficiency, density and component sizes</text>
+<rect x="40" y="604" width="640" height="56" rx="6" fill="#f2f3f3" stroke="#bdc1c4" stroke-width="1"/>
+<text x="360.0" y="628" font-size="15" font-weight="700" fill="#494e52" text-anchor="middle">8  Verification</text>
+<text x="360.0" y="646" font-size="12.5" fill="#7a8288" text-anchor="middle">detailed circuit and field simulation, then prototype and measurement</text>
+<line x1="195" y1="88" x2="195" y2="110" stroke="#7a8288" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="525" y1="88" x2="525" y2="110" stroke="#7a8288" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="195" y1="204" x2="195" y2="260" stroke="#7a8288" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="525" y1="204" x2="525" y2="260" stroke="#7a8288" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="195" y1="354" x2="195" y2="376" stroke="#7a8288" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="350" y1="424" x2="368" y2="424" stroke="#7a8288" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="525" y1="470" x2="525" y2="506" stroke="#7a8288" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="360" y1="580" x2="360" y2="602" stroke="#7a8288" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M680,632 H716 V308 H682" fill="none" stroke="#7a8288" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="734" y="470" font-size="12.5" fill="#7a8288" text-anchor="middle" transform="rotate(90 734 470)">update the models with verified data</text>
+</svg>

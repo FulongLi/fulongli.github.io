@@ -26,4 +26,4 @@ In 2024 I led the thermal evaluation that followed. It developed an engine-room 
 
 [Read the thermal evaluation](/research/sino-ofh/)
 
-[Energy Management Systems](/research/ems/) · [Battery Energy Storage Systems](/research/battery_storage/) · [Back to Research](/research/)
+[Energy Management Systems](/research/ems/) · [Back to Research](/research/)

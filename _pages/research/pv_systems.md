@@ -39,4 +39,4 @@ I implemented the controller on a **TMS320F28335** DSP driving a **200 W Boost c
 <span id="pv-integration-into-dc-microgrids"></span>
 [A modified MPPT algorithm with integrated active power control for PV-battery systems](https://ieeexplore.ieee.org/document/7884432), ICRERA 2016, pp. 742–746.
 
-[Battery Energy Storage](/research/battery_storage/) · [DC Microgrid Control Strategies](/research/dcmg/) · [Back to Research](/research/)
+[DC Microgrid Control Strategies](/research/dcmg/) · [Back to Research](/research/)
