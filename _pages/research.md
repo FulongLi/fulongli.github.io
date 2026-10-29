@@ -54,6 +54,7 @@ My work connects power-electronic components, converter design, and microgrid co
       <ul>
         <li><a href="/research/electrical-characterization/">SiC MOSFET Double Pulse Test</a></li>
         <li><a href="/research/thermal-characterization/">GaN Thermal Characterization</a></li>
+        <li><a href="/research/gan-current-capability/">GaN Current Capability Test</a></li>
       </ul>
     </li>
     <li>

@@ -2,7 +2,7 @@
 
 ## Development timeline
 
-`/images/research/pcb-rogowski/development-timeline.webp` is Fulong Li's own timeline figure from his 2022 review of Rogowski coil development (40 references), supplied by him on 29 October 2026 and published unchanged (2000 × 900 pixels). The bracketed numbers refer to the reference list of that review.
+`/images/research/pcb-rogowski/development-timeline.webp` is Fulong Li's own timeline figure from the 2022 review of Rogowski coil development (40 references), supplied by the author on 29 October 2026 and published unchanged (2000 × 900 pixels). The bracketed numbers refer to the reference list of that review.
 
 ## Drawn figure
 

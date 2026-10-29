@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>Calibration of the GaN package temperature-sensing resistance: temperature rises linearly from about 20 degrees C at 956 ohms to 61 degrees C at 1332 ohms</title>
+<line x1="88.0" y1="24" x2="88.0" y2="358" stroke="#e6e8e9"/><text x="88.0" y="378" font-size="12.5" fill="#7a8288" text-anchor="middle">950</text>
+<line x1="168.3" y1="24" x2="168.3" y2="358" stroke="#e6e8e9"/><text x="168.3" y="378" font-size="12.5" fill="#7a8288" text-anchor="middle">1000</text>
+<line x1="248.5" y1="24" x2="248.5" y2="358" stroke="#e6e8e9"/><text x="248.5" y="378" font-size="12.5" fill="#7a8288" text-anchor="middle">1050</text>
+<line x1="328.8" y1="24" x2="328.8" y2="358" stroke="#e6e8e9"/><text x="328.8" y="378" font-size="12.5" fill="#7a8288" text-anchor="middle">1100</text>
+<line x1="409.0" y1="24" x2="409.0" y2="358" stroke="#e6e8e9"/><text x="409.0" y="378" font-size="12.5" fill="#7a8288" text-anchor="middle">1150</text>
+<line x1="489.3" y1="24" x2="489.3" y2="358" stroke="#e6e8e9"/><text x="489.3" y="378" font-size="12.5" fill="#7a8288" text-anchor="middle">1200</text>
+<line x1="569.5" y1="24" x2="569.5" y2="358" stroke="#e6e8e9"/><text x="569.5" y="378" font-size="12.5" fill="#7a8288" text-anchor="middle">1250</text>
+<line x1="649.8" y1="24" x2="649.8" y2="358" stroke="#e6e8e9"/><text x="649.8" y="378" font-size="12.5" fill="#7a8288" text-anchor="middle">1300</text>
+<line x1="730.0" y1="24" x2="730.0" y2="358" stroke="#e6e8e9"/><text x="730.0" y="378" font-size="12.5" fill="#7a8288" text-anchor="middle">1350</text>
+<line x1="72" y1="324.6" x2="730" y2="324.6" stroke="#e6e8e9"/><text x="64" y="328.6" font-size="12.5" fill="#7a8288" text-anchor="end">20</text>
+<line x1="72" y1="257.8" x2="730" y2="257.8" stroke="#e6e8e9"/><text x="64" y="261.8" font-size="12.5" fill="#7a8288" text-anchor="end">30</text>
+<line x1="72" y1="191.0" x2="730" y2="191.0" stroke="#e6e8e9"/><text x="64" y="195.0" font-size="12.5" fill="#7a8288" text-anchor="end">40</text>
+<line x1="72" y1="124.2" x2="730" y2="124.2" stroke="#e6e8e9"/><text x="64" y="128.2" font-size="12.5" fill="#7a8288" text-anchor="end">50</text>
+<line x1="72" y1="57.4" x2="730" y2="57.4" stroke="#e6e8e9"/><text x="64" y="61.4" font-size="12.5" fill="#7a8288" text-anchor="end">60</text>
+<line x1="72" y1="358" x2="730" y2="358" stroke="#7a8288"/>
+<text x="401.0" y="404" font-size="13" fill="#494e52" text-anchor="middle">Sensing resistance (Ω)</text>
+<text x="20" y="191.0" font-size="13" fill="#494e52" text-anchor="middle" transform="rotate(-90 20 191.0)">Temperature (°C)</text>
+<line x1="80.0" y1="323.3" x2="722.0" y2="36.5" stroke="#2a78d6" stroke-width="2" stroke-dasharray="6 4" opacity="0.8"/>
+<circle cx="98.1" cy="323.3" r="5" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="193.6" cy="269.8" r="5" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="296.7" cy="222.4" r="5" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="371.5" cy="188.3" r="5" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="485.5" cy="140.4" r="5" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="600.4" cy="91.9" r="5" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="701.4" cy="50.0" r="5" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<text x="409.0" y="257.8" font-size="12.5" fill="#494e52" text-anchor="start">T ≈ 0.107 R − 81.2 °C  (R in Ω)</text>
+</svg>
