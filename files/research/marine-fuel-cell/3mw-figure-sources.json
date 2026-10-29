@@ -3,19 +3,5 @@
     "file": "3mw-ems-blueprint.png",
     "source": "User-supplied 3 MW EMS overview image",
     "sha256": "67b0b75337aa9c63d45fbb5152d72b64541a0be7182e38ecf354a1d80f7b7e12"
-  },
-  {
-    "file": "hst-power-schedule.png",
-    "source_deck": "3MW overview_Fulong.pptx",
-    "slide": 58,
-    "pptx_member": "ppt/media/image96.png",
-    "sha256": "b8c8eab4bfe20ee14abd341f134b552ea09a109d1febf156d19d83b865527c5e"
-  },
-  {
-    "file": "bmt-power-schedule.png",
-    "source_deck": "3MW overview_Fulong.pptx",
-    "slide": 62,
-    "pptx_member": "ppt/media/image106.png",
-    "sha256": "570b8f2fb78ae82fb5cb6eaedcba3974654f39e5d2a36ab6e529a2906dc5a4e7"
   }
 ]

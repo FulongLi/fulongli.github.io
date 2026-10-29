@@ -10,7 +10,7 @@ project_contents: true
 mathjax: true
 ---
 
-In my PhD I developed a passive stabiliser for Boost interface converters in DC microgrids. Derived from an averaged converter model, it adds a high-pass-filtered feedforward path that suppresses oscillation without shifting the steady-state bus voltage, and I verified it experimentally on a single converter and on parallel converters.
+In my PhD I developed a passive stabiliser for Boost interface converters in DC microgrids. Derived from an averaged converter model, it adds a high-pass-filtered feedforward path that suppresses oscillation without shifting the steady-state bus voltage.
 
 <h2 id="overview">Passivity and Boost Converter Stability</h2>
 
@@ -89,36 +89,7 @@ The gain compensates the high-frequency deficit, and the filter corner sits belo
   <figcaption>The filtered passive stabiliser added in parallel with the outer voltage controller, alongside droop and the inner current loop.</figcaption>
 </figure>
 
-In the control structure, the current controller regulates the inductor current and the voltage controller supplies its reference; droop control adjusts the voltage reference for power sharing, and the stabiliser shapes the outer-loop dynamics in parallel. I discretised the current controller, voltage controller and stabiliser with a bilinear approximation for implementation on the converter's DSP.
-
-<h2 id="results">Simulation and Experimental Results</h2>
-
-<h3 id="numerical-comparison">Frequency-Domain Comparison</h3>
-
-For the thesis example parameters, numerical Nyquist plots confirm the distinction between the two approaches: a constant gain shifts both real-axis endpoints, while the filtered gain leaves the low-frequency endpoint unchanged as the gain increases.
-
-<figure class="project-blueprint">
-  <a href="/images/research/dc-microgrid-control/nyquist-comparison.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/nyquist-comparison.png" alt="Numerical Nyquist plots comparing constant gain and high-pass-filtered gain for increasing compensation" width="1995" height="810" loading="lazy"></a>
-  <figcaption>Numerical Nyquist plots for increasing compensation gain: constant gain (left) and high-pass-filtered gain (right).</figcaption>
-</figure>
-
-<h3 id="experimental-results">Experimental Results</h3>
-
-To expose an oscillatory case on the laboratory converter, I reduced the terminal capacitor from **470 µF to 100 µF**. Enabling constant-gain compensation suppressed the oscillation, but with the predicted drop in bus voltage.
-
-<figure>
-  <a href="/images/research/dc-microgrid-control/passive-constant-gain-result.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/passive-constant-gain-result.png" alt="Oscilloscope trace showing oscillation suppression and a voltage drop when constant-gain passive control is switched on" width="1293" height="444" loading="lazy"></a>
-  <figcaption>Constant-gain compensation: the oscillation is suppressed, but the DC bus voltage shifts when passive control is enabled.</figcaption>
-</figure>
-
-The high-pass-filtered stabiliser suppressed the same oscillation without the steady-state voltage shift.
-
-<figure>
-  <a href="/images/research/dc-microgrid-control/passive-hpf-result.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/passive-hpf-result.png" alt="DC bus voltage trace with oscillations suppressed after enabling high-pass-filtered passive control at K equals 1.9" width="1293" height="444" loading="lazy"></a>
-  <figcaption>High-pass-filtered compensation with K = 1.9: the oscillation is suppressed and the bus voltage keeps its operating point.</figcaption>
-</figure>
-
-Further tests covered **K = 2.5** and two parallel converters sharing current through droop control. Removing the stabilisers from the parallel-converter test produced oscillation, linking the local design to operation with multiple converters. The design applies to the analysed converter and its operating assumptions; the gain, filter corner and terminal capacitance must be reviewed for a different operating point or load.
+In the control structure, the current controller regulates the inductor current and the voltage controller supplies its reference; droop control adjusts the voltage reference for power sharing, and the stabiliser shapes the outer-loop dynamics in parallel. I discretised the current controller, voltage controller and stabiliser with a bilinear approximation for implementation on the converter's DSP. The gain, filter corner and terminal capacitance are chosen for the analysed converter and its operating point, and must be reviewed for a different operating point or load. The same stabiliser applies to each converter when several Boost interfaces share current through droop control.
 
 [PhD thesis: Control Strategies for Low Voltage DC Microgrids](https://publications.aston.ac.uk/id/eprint/46135/), Chapter 5. · [Novel Passive Controller Design for Enhancing Boost Converter Stability in DC Microgrid Applications](https://ieeexplore.ieee.org/document/9391691), IEEE JESTPE, 2021.
 

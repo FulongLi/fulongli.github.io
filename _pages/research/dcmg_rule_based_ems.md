@@ -6,10 +6,10 @@ author_profile: true
 body_class: microgrid-project-page
 project_stylesheet: /assets/css/marine-project.css
 project_contents: true
-excerpt: "The thesis system demonstration: rule-based power management, six-bit bus commands, plug-and-play batteries and PV surplus limitation."
+excerpt: "Rule-based power management for a DC microgrid: six-bit bus commands, two-level state machines, battery coordination and PV surplus limitation."
 ---
 
-My PhD system study brings **passive control, droop coordination and dual-window bus signalling** together under a rule-based energy management system (EMS). I integrated the control layers, defined the operating rules and six-bit signalling scheme, analysed terminal admittance and demonstrated the coordinated sequences on a laboratory DC microgrid.
+My PhD system study brings **passive control, droop coordination and dual-window bus signalling** together under a rule-based energy management system (EMS). I integrated the control layers, defined the operating rules and six-bit signalling scheme, and analysed terminal admittance.
 
 <h2 id="overview">Who Regulates the Bus?</h2>
 
@@ -17,7 +17,7 @@ A DC microgrid must continually decide which converter regulates the bus voltage
 
 <h2 id="operating-rules">Operating Rules and State Machines</h2>
 
-The experimental system uses a grid interface, two battery interfaces and an emulated PV source. Grid-connected operation gives bus regulation to the grid interface; planned disconnection transfers it to a battery. The power-management logic curtails surplus PV near **51 V**, distinct from the **52.5 V signalling level**. Commands travel through the [dual-window bus signalling method](/research/dcmg/dc-bus-signalling/) as **six bits at 100 ms per bit**, identifying the start, converter state, battery-interface identity, droop or power mode, charge or discharge state and current selection.
+The scheme is designed for a microgrid with a grid interface, two battery interfaces and a PV source. Grid-connected operation gives bus regulation to the grid interface; planned disconnection transfers it to a battery. The power-management logic curtails surplus PV near **51 V**, distinct from the **52.5 V signalling level**. Commands travel through the [dual-window bus signalling method](/research/dcmg/dc-bus-signalling/) as **six bits at 100 ms per bit**, identifying the start, converter state, battery-interface identity, droop or power mode, charge or discharge state and current selection.
 
 Each converter turns received commands into an operating role through a two-level finite-state machine.
 
@@ -42,23 +42,7 @@ Each converter turns received commands into an operating role through a two-leve
 
 In **sleep mode**, the interface monitors the bus and waits for a command. An ON command selects **droop mode**, in which the converter helps regulate the bus, or **power mode**, in which it follows a commanded charge or discharge current while considering battery state of charge. A change in the mode bit switches between them; an OFF command, or a fully charged battery, returns the interface to sleep. The grid interface starts in droop mode, and other converters start in sleep after their signalling exchange.
 
-<h2 id="experimental-validation">Experimental Results</h2>
-
-The first test shows a planned transition to islanded operation: a bus command transfers regulation to a battery before the grid interface disconnects.
-
-<figure>
-  <a href="/images/research/dc-microgrid-control/planned-islanding-result.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/planned-islanding-result.png" alt="Bus voltage and grid and battery currents during a signalled handover to islanded operation" width="1293" height="852" fetchpriority="high"></a>
-  <figcaption>Planned islanding: bus voltage and grid and battery currents as regulation passes from the grid interface to a battery.</figcaption>
-</figure>
-
-The second test shows power balance when storage is full: PV generation is reduced once the batteries can no longer absorb the surplus.
-
-<figure>
-  <a href="/images/research/dc-microgrid-control/pv-curtailment-result.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/pv-curtailment-result.png" alt="Bus voltage, battery current and PV power during surplus-generation limitation" width="1293" height="783" loading="lazy"></a>
-  <figcaption>PV surplus limitation: bus voltage, battery current and PV power as generation is curtailed.</figcaption>
-</figure>
-
-The experiments show local stability and bus-borne commands working together for source connection, battery coordination and planned handover. They demonstrate a rule-based sequence rather than optimal long-term scheduling; charging stages were shortened with a timer, and the planned transition relies on advance signalling rather than an abrupt grid failure.
+The EMS defines rule-based operating sequences for source connection, battery coordination and planned handover of bus regulation, rather than optimal long-term scheduling.
 
 [PhD thesis: Control Strategies for Low Voltage DC Microgrids](https://publications.aston.ac.uk/id/eprint/46135/), Chapter 6. · [Dual-window signalling paper](https://ieeexplore.ieee.org/document/8645723)
 

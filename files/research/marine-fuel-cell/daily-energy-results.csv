@@ -1,9 +1,0 @@
-vessel_profile,scenario,fuel_cell_electrical_energy_MWh,propulsion_energy_MWh,assumed_hotel_load_energy_kWh,fuel_cell_heat_MWh,battery_energy_kWh_negative_means_charged,initial_battery_soc_percent,model_battery_capacity_kWh_source_case,source_slide
-HST,Minimum,10.7037,10.4857,331.695,12.9681,-20.3625,80,103.68,61
-HST,Case 1,14.1426,13.9247,331.695,17.8045,-20.3625,80,103.68,61
-HST,Case 2,13.721,13.503,331.695,17.188,-20.3625,80,103.68,61
-HST,Case 3,13.5002,13.2823,331.695,16.8453,-20.3625,80,103.68,61
-HST,Case 4,13.494,13.276,331.695,16.858,-20.3625,80,103.68,61
-HST,Case 5,13.6102,13.392,331.695,16.9931,-20.3625,80,103.68,61
-HST,Maximum,17.1897,16.9717,331.695,22.623,-20.3625,80,103.68,61
-BMT,Daily case,13.0071,12.7774,331.695,16.6033,-53.631,80,276.48,62

@@ -26,7 +26,7 @@ The power stage combines the inductor, the two switching devices and the input a
 
 Depending on the source it connects, the controller implements voltage or current regulation, battery charging, PV maximum-power-point tracking and DC bus signalling. The same modular interface can therefore connect a battery bank, a PV source or a grid emulator.
 
-## Prototype Ratings and System Use
+## Ratings and System Use
 
 The Aston PhD prototype is rated at **250 W per interface**, with a 240 µH inductor and 470 µF input and output capacitors. Each battery bank uses two 12 V batteries in series. Four interfaces connect the grid emulator, two battery banks and the PV emulator, which operates in the Boost direction. A later version, documented with the Loughborough test bench, is rated at **500 W per converter**.
 

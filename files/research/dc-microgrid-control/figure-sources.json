@@ -45,36 +45,6 @@
     "sha256": "d58367dab902b940e26c79462a2dd92ebb2ffb020734d077d4a4e5a449e8a95a"
   },
   {
-    "file": "passive-constant-gain-result.png",
-    "source": "Li_Fulong_-_2019.pdf",
-    "pdf_page": 105,
-    "figure": "5.13",
-    "crop_points": [
-      99,
-      68,
-      530,
-      216
-    ],
-    "width": 1293,
-    "height": 444,
-    "sha256": "0639a9060ab5f7763898b887b7e6826668f2e0ed42fe449a66f3487a9ddbb0b1"
-  },
-  {
-    "file": "passive-hpf-result.png",
-    "source": "Li_Fulong_-_2019.pdf",
-    "pdf_page": 105,
-    "figure": "5.14",
-    "crop_points": [
-      99,
-      475,
-      530,
-      623
-    ],
-    "width": 1293,
-    "height": 444,
-    "sha256": "bf04f1c015d593a94c0378a8622970eaebdbaabee79a1a16568560f164e18724"
-  },
-  {
     "file": "dual-window-droop.png",
     "source": "Li_Fulong_-_2019.pdf",
     "pdf_page": 77,
@@ -88,36 +58,6 @@
     "width": 1095,
     "height": 693,
     "sha256": "e5b5e03557b40da2f2cc32be72e248001f459c0fb60683713b518b086b45dfe3"
-  },
-  {
-    "file": "planned-islanding-result.png",
-    "source": "Li_Fulong_-_2019.pdf",
-    "pdf_page": 134,
-    "figure": "6.21",
-    "crop_points": [
-      99,
-      68,
-      530,
-      352
-    ],
-    "width": 1293,
-    "height": 852,
-    "sha256": "0d948dd7b36fa16c75bec4d9804cc05530b373623c48a998cea6a45378791fc7"
-  },
-  {
-    "file": "pv-curtailment-result.png",
-    "source": "Li_Fulong_-_2019.pdf",
-    "pdf_page": 137,
-    "figure": "6.26",
-    "crop_points": [
-      99,
-      425,
-      530,
-      686
-    ],
-    "width": 1293,
-    "height": 783,
-    "sha256": "bf1784a028c930d86bfb5ebe959d2db8477e6f67b0cd5af954e670f59a669453"
   },
   {
     "file": "signal-state-machine.png",
@@ -217,34 +157,5 @@
     "width": 1860,
     "height": 459,
     "sha256": "575df5e8c3c78267aa0467c13d5bc09b6490ee2f1d8de960e903b60fefff123c"
-  },
-  {
-    "file": "nyquist-comparison.png",
-    "source": "Li_Fulong_-_2019.pdf",
-    "panels": [
-      {
-        "pdf_page": 103,
-        "figure": "5.10",
-        "crop_points": [
-          150,
-          83,
-          475,
-          353
-        ]
-      },
-      {
-        "pdf_page": 103,
-        "figure": "5.11",
-        "crop_points": [
-          150,
-          405,
-          475,
-          675
-        ]
-      }
-    ],
-    "width": 1995,
-    "height": 810,
-    "sha256": "d825877e560bbc3e78c744ea773d338d65a1c1aaa98992ec6972db28ebddb52e"
   }
 ]

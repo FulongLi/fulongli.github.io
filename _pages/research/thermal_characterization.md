@@ -7,7 +7,7 @@ body_class: device-project-page
 project_stylesheet: /assets/css/marine-project.css
 project_contents: true
 mathjax: true
-excerpt: "Transient thermal-impedance measurement of SiC power devices, from electrical temperature sensing to junction-to-case thermal resistance."
+excerpt: "Transient thermal-impedance measurement of SiC power devices, from electrical temperature sensing to the junction-to-case thermal network."
 ---
 
 I operated the thermal characterisation equipment and carried out transient thermal-impedance measurements of SiC power devices, identifying the junction-to-case thermal path used in device and converter temperature models.
@@ -24,17 +24,8 @@ Repeating the measurement with a dry and a greased mounting interface changes on
 
 <h2 id="measurement">Measurement of a SiC MOSFET</h2>
 
-The measurements use a PWT2400 power tester, the T3STER transient measurement and analysis system and a temperature-controlled cooling circuit. For a C2M0080120D SiC MOSFET, I calibrated the TSEP at a 10 mA sensing current, recorded heating and cooling transients, and compared dry and wet interface conditions. Structure-function analysis then gave a four-section Cauer thermal network for the device.
+The measurements use a PWT2400 power tester, the T3STER transient measurement and analysis system and a temperature-controlled cooling circuit. For a C2M0080120D SiC MOSFET, I calibrated the TSEP at a 10 mA sensing current, recorded heating and cooling transients, and compared dry and wet interface conditions. Structure-function analysis then extracts a Cauer thermal network for the device.
 
-<h2 id="thermal-results">Junction-to-Case Results</h2>
-
-The measured network gives a total junction-to-case thermal resistance of **R<sub>th,jc</sub> ≈ 0.762 K/W**. The measured transient thermal impedance differs from the manufacturer's thermal model across the transient, so the choice of thermal representation changes the junction temperature predicted for a given loss.
-
-<figure>
-  <a href="/images/research/sumitomo-device-modelling/thermal-impedance-comparison.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/thermal-impedance-comparison.png" alt="Measured and manufacturer-model thermal-impedance curves for the C2M0080120D SiC MOSFET" width="1003" height="813" loading="lazy"></a>
-  <figcaption>Measured and manufacturer-model transient thermal impedance of the C2M0080120D SiC MOSFET.</figcaption>
-</figure>
-
-These results feed the thermal branch of the [SiC static ANN model](/research/semiconductor-device-modelling/static-ann/#thermal-modelling) and its converter-level temperature estimates. Automation of the measurement workflow continues in the public [TIM Automation](https://github.com/FulongLi/TIM_Automation) repository.
+The extracted network feeds the thermal branch of the [SiC static ANN model](/research/semiconductor-device-modelling/static-ann/#thermal-modelling) and its converter-level temperature estimates. Automation of the measurement workflow continues in the public [TIM Automation](https://github.com/FulongLi/TIM_Automation) repository.
 
 [Electrical Characterization](/research/electrical-characterization/) · [Power Device Characterization](/research/switching_devices/) · [Back to Research](/research/)

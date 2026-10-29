@@ -28,29 +28,10 @@ The released model represents two propulsion engines with nine cabinets per engi
 
 The scheduling study uses 15-minute intervals over a 24-hour day, starting at 80% battery state of charge. Two duty cycles, **HST and BMT**, represent different working days, with the project's **110 kWh HST** and **280 kWh BMT** battery cases under the revised dispatch rule. Outputs include component voltage and current, battery state of charge, and fuel-cell efficiency, reactant flow and generated heat.
 
-<h2 id="hst-results">Simulation Results</h2>
-<span id="bmt-results"></span>
+<h2 id="outcomes">Design Workflow</h2>
 
-On the HST working day, Case 2 uses **13.721 MWh of fuel-cell electrical energy** and generates **17.188 MWh of heat**. Across the minimum and maximum HST cases, electrical energy ranges from **10.704 to 17.190 MWh** and heat generation from **12.968 to 22.623 MWh**.
+The project delivered a reusable workflow for comparing duty cycles, battery allocations and operating rules. Because the fuel cells' generated heat is modelled alongside their electrical output, the same workflow provides the heat-load context for the subsequent [thermal evaluation](/research/sino-ofh/).
 
-<figure>
-  <a href="/images/research/marine-fuel-cell/hst-power-schedule.png" target="_blank" rel="noopener"><img src="/images/research/marine-fuel-cell/hst-power-schedule.png" alt="HST Case 2 daily battery power, hotel loads, fuel-cell electrical output and heat, and propulsion demand" width="1381" height="956" loading="lazy"></a>
-  <figcaption>HST Case 2 working day: battery power, hotel loads, fuel-cell electrical output and heat, and propulsion demand.</figcaption>
-</figure>
-
-The BMT day, with repeated offshore demand changes, produces a different fuel-cell and battery operating pattern, using **13.007 MWh of fuel-cell electrical energy** and generating **16.603 MWh of heat**.
-
-<figure>
-  <a href="/images/research/marine-fuel-cell/bmt-power-schedule.png" target="_blank" rel="noopener"><img src="/images/research/marine-fuel-cell/bmt-power-schedule.png" alt="BMT daily power schedule with repeated offshore demand changes" width="1381" height="956" loading="lazy"></a>
-  <figcaption>BMT working day: power schedule under repeated offshore demand changes.</figcaption>
-</figure>
-
-<h2 id="outcomes">Design Implications</h2>
-
-The study showed that battery sizing depends on the dispatch policy: assigning electric manoeuvring and auxiliary loads to the batteries creates a different energy requirement from reserving them for fuel-cell-off periods. In each reported case, the fuel cells' generated heat over the day exceeds their electrical output, making thermal management a primary design consideration alongside electrical dispatch. All results are simulations under the documented dispatch rule and assumed auxiliary-load profile.
-
-The project delivered a reusable workflow for comparing duty cycles, battery allocations and operating rules, and provided the heat-load context for the subsequent [thermal evaluation](/research/sino-ofh/).
-
-[Daily simulation results (CSV)](/files/research/marine-fuel-cell/daily-energy-results.csv) · [Related public EMS code](https://github.com/FulongLi/MicrogridEnergyManagementSystermDesign)
+[Related public EMS code](https://github.com/FulongLi/MicrogridEnergyManagementSystermDesign)
 
 [Microgrid Energy Management](/research/mgapp/) · [Back to Research](/research/)
