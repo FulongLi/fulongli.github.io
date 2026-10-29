@@ -45,4 +45,4 @@ Related work examines how voltage variation and line resistance affect droop pow
 
 [PhD thesis: Control Strategies for Low Voltage DC Microgrids](https://publications.aston.ac.uk/id/eprint/46135/), Chapters 4–6. · [Passive-control paper](https://ieeexplore.ieee.org/document/9391691) · [Dual-window signalling paper](https://ieeexplore.ieee.org/document/8645723)
 
-[Battery Energy Storage](/research/battery_storage/) · [PV Battery System](/research/pv_systems/) · [All publications](/publications/) · [Back to Research](/research/)
+[PV Battery System](/research/pv_systems/) · [All publications](/publications/) · [Back to Research](/research/)

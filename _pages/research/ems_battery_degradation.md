@@ -77,4 +77,4 @@ The air-conditioning and EV loads are treated as non-dispatchable; making them c
 
 [Energy Management System for DC Microgrids Considering Battery Degradation](https://ieeexplore.ieee.org/document/9281580), IEEE PES General Meeting, 2020 · [Accepted manuscript](https://repository.lboro.ac.uk/articles/conference_contribution/Energy_management_system_for_DC_microgrids_considering_battery_degradation/13619312)
 
-[Microgrid Energy Management](/research/mgapp/) · [Battery Energy Storage Systems](/research/battery_storage/) · [Back to Research](/research/)
+[Microgrid Energy Management](/research/mgapp/) · [Energy Management Systems](/research/ems/) · [Back to Research](/research/)
