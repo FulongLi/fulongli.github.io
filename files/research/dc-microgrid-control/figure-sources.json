@@ -277,5 +277,34 @@
     "width": 1368,
     "height": 411,
     "sha256": "bdab960196bd3fdd14e4eb614470c7a5d084c562007db16dd3d8cb951415c512"
+  },
+  {
+    "file": "nyquist-comparison.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "panels": [
+      {
+        "pdf_page": 103,
+        "figure": "5.10",
+        "crop_points": [
+          150,
+          83,
+          475,
+          353
+        ]
+      },
+      {
+        "pdf_page": 103,
+        "figure": "5.11",
+        "crop_points": [
+          150,
+          405,
+          475,
+          675
+        ]
+      }
+    ],
+    "width": 1995,
+    "height": 810,
+    "sha256": "d825877e560bbc3e78c744ea773d338d65a1c1aaa98992ec6972db28ebddb52e"
   }
 ]

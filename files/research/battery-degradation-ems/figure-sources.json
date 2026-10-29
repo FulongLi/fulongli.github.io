@@ -1,5 +1,20 @@
 [
   {
+    "file": "lead-acid-cycle-life.png",
+    "source": "PESGM_revised.pdf (accepted manuscript, Loughborough University repository, https://repository.lboro.ac.uk/articles/conference_contribution/Energy_management_system_for_DC_microgrids_considering_battery_degradation/13619312)",
+    "pdf_page": 3,
+    "figure": "5",
+    "crop_points": [
+      54.0,
+      62.0,
+      298.7,
+      205.0
+    ],
+    "width": 734,
+    "height": 429,
+    "sha256": "3fb53575086b0e691a849ad8fcc8e2927930fa5963465452f488cd898501464d"
+  },
+  {
     "file": "dc-test-microgrid.png",
     "source": "PESGM_revised.pdf (accepted manuscript, Loughborough University repository, https://repository.lboro.ac.uk/articles/conference_contribution/Energy_management_system_for_DC_microgrids_considering_battery_degradation/13619312)",
     "pdf_page": 4,
@@ -15,18 +30,93 @@
     "sha256": "40524931e3ff8882b4030cc00c3e18e90224c96d265b3fe03dc6cc661dfb485d"
   },
   {
-    "file": "lead-acid-cycle-life.png",
+    "file": "pv-generation-profile.png",
     "source": "PESGM_revised.pdf (accepted manuscript, Loughborough University repository, https://repository.lboro.ac.uk/articles/conference_contribution/Energy_management_system_for_DC_microgrids_considering_battery_degradation/13619312)",
-    "pdf_page": 3,
-    "figure": "5",
+    "pdf_page": 4,
+    "figure": "7",
     "crop_points": [
-      54.0,
-      62.0,
-      298.7,
-      205.0
+      51.0,
+      228.7,
+      301.3,
+      356.3
     ],
-    "width": 734,
-    "height": 429,
-    "sha256": "3fb53575086b0e691a849ad8fcc8e2927930fa5963465452f488cd898501464d"
+    "width": 751,
+    "height": 383,
+    "sha256": "869464dbf44af699bc622a039f741b18c207bc8ae162eab7da9067abfbcbe35f"
+  },
+  {
+    "file": "daily-load-profiles.png",
+    "source": "PESGM_revised.pdf (accepted manuscript, Loughborough University repository, https://repository.lboro.ac.uk/articles/conference_contribution/Energy_management_system_for_DC_microgrids_considering_battery_degradation/13619312)",
+    "pdf_page": 4,
+    "figure": "8",
+    "crop_points": [
+      50.3,
+      379.0,
+      299.7,
+      499.7
+    ],
+    "width": 748,
+    "height": 362,
+    "sha256": "b141c9da825643201f893bf6f1b9bf4ece252e77365a1a6ae8210722119e2862"
+  },
+  {
+    "file": "soc-alpha.png",
+    "source": "PESGM_revised.pdf (accepted manuscript, Loughborough University repository, https://repository.lboro.ac.uk/articles/conference_contribution/Energy_management_system_for_DC_microgrids_considering_battery_degradation/13619312)",
+    "pdf_page": 4,
+    "figure": "9",
+    "crop_points": [
+      313.3,
+      123.3,
+      562.0,
+      261.7
+    ],
+    "width": 746,
+    "height": 415,
+    "sha256": "7cc88435178be6f73763f6a89cd2a3d1eb17106192a1b4684edfadf3bf832d92"
+  },
+  {
+    "file": "battery-power-alpha.png",
+    "source": "PESGM_revised.pdf (accepted manuscript, Loughborough University repository, https://repository.lboro.ac.uk/articles/conference_contribution/Energy_management_system_for_DC_microgrids_considering_battery_degradation/13619312)",
+    "pdf_page": 4,
+    "figure": "10",
+    "crop_points": [
+      313.3,
+      282.3,
+      562.0,
+      421.3
+    ],
+    "width": 746,
+    "height": 417,
+    "sha256": "84b0a5984fde0c6d3189cb827f8e896a839b7127fba3c7445e2e13bc16e3e2aa"
+  },
+  {
+    "file": "dispatch-alpha-095.png",
+    "source": "PESGM_revised.pdf (accepted manuscript, Loughborough University repository, https://repository.lboro.ac.uk/articles/conference_contribution/Energy_management_system_for_DC_microgrids_considering_battery_degradation/13619312)",
+    "pdf_page": 5,
+    "figure": "11",
+    "crop_points": [
+      49.3,
+      61.3,
+      300.7,
+      200.7
+    ],
+    "width": 754,
+    "height": 418,
+    "sha256": "c4a63d98febd6ad38fca503c65c589958e79592fd48f50b6a21a398ea594248f"
+  },
+  {
+    "file": "dispatch-alpha-080.png",
+    "source": "PESGM_revised.pdf (accepted manuscript, Loughborough University repository, https://repository.lboro.ac.uk/articles/conference_contribution/Energy_management_system_for_DC_microgrids_considering_battery_degradation/13619312)",
+    "pdf_page": 5,
+    "figure": "12",
+    "crop_points": [
+      50.0,
+      220.0,
+      302.0,
+      359.7
+    ],
+    "width": 756,
+    "height": 419,
+    "sha256": "d95c570cfc94bc1832519383d778ad9f2924d76f3d677ebae24c81d43be13b14"
   }
 ]

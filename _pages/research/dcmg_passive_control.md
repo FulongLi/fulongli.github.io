@@ -105,6 +105,15 @@ The gain compensates the high-frequency deficit, and the filter corner sits belo
 
 In the control structure, the current controller regulates the inductor current and the voltage controller supplies its reference; droop control adjusts the voltage reference for power sharing, and the stabiliser shapes the outer-loop dynamics in parallel. I discretised the current controller, voltage controller and stabiliser with a bilinear approximation for implementation on the converter's DSP. The gain, filter corner and terminal capacitance are chosen for the analysed converter and its operating point, and must be reviewed for a different operating point or load. The same stabiliser applies to each converter when several Boost interfaces share current through droop control.
 
+<h2 id="results">Simulation Results</h2>
+
+For the thesis example parameters, numerical Nyquist plots confirm the distinction between the two approaches: a constant gain shifts both real-axis endpoints, while the filtered gain leaves the low-frequency endpoint unchanged as the gain increases.
+
+<figure class="project-blueprint">
+  <a href="/images/research/dc-microgrid-control/nyquist-comparison.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/nyquist-comparison.png" alt="Numerical Nyquist plots comparing constant gain and high-pass-filtered gain for increasing compensation" width="1995" height="810" loading="lazy"></a>
+  <figcaption>Numerical Nyquist plots for increasing compensation gain: constant gain (left) and high-pass-filtered gain (right).</figcaption>
+</figure>
+
 [PhD thesis: Control Strategies for Low Voltage DC Microgrids](https://publications.aston.ac.uk/id/eprint/46135/), Chapter 5. · [Novel Passive Controller Design for Enhancing Boost Converter Stability in DC Microgrid Applications](https://ieeexplore.ieee.org/document/9391691), IEEE JESTPE, 2021.
 
 [DC Microgrid Control Strategies](/research/dcmg/) · [Dual-Window DC Bus Signalling](/research/dcmg/dc-bus-signalling/) · [Back to Research](/research/)

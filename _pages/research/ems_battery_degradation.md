@@ -73,7 +73,33 @@ The EMS is formulated for a model of the DC microgrid of a building at Xiamen Un
 | Electricity price | 0.077 $/kWh from 8 am to 10 pm, 0.044 $/kWh otherwise |
 | Dispatch interval | 15 minutes |
 
-The air-conditioning and EV loads are treated as non-dispatchable; making them controllable is a natural extension of the model.
+The PV profile represents a summer day, the EV charging station is used after working hours, and the air conditioning cycles intermittently during working hours.
+
+<figure class="half">
+  <a href="/images/research/battery-degradation-ems/pv-generation-profile.png" target="_blank" rel="noopener"><img src="/images/research/battery-degradation-ems/pv-generation-profile.png" alt="Summer PV generation over a day, peaking at about 80 kW around midday" width="751" height="383" loading="lazy"></a>
+  <a href="/images/research/battery-degradation-ems/daily-load-profiles.png" target="_blank" rel="noopener"><img src="/images/research/battery-degradation-ems/daily-load-profiles.png" alt="Daily load profiles of the intermittent air conditioning, the evening EV charging and the LED lighting" width="748" height="362" loading="lazy"></a>
+  <figcaption>Summer PV generation (left) and daily load profiles of air conditioning, EV charging and LED lighting (right).</figcaption>
+</figure>
+
+## Simulation Results
+
+Solving the EMS for different weighting factors shows how pricing battery wear changes the schedule. As α decreases and the degradation cost carries more weight, the battery's state of charge flattens out and its charging and discharging power tends to zero, while the battery still holds the DC bus voltage.
+
+<figure class="half">
+  <a href="/images/research/battery-degradation-ems/soc-alpha.png" target="_blank" rel="noopener"><img src="/images/research/battery-degradation-ems/soc-alpha.png" alt="Battery state of charge over a day for alpha from 1 to 0.8, swinging between 40% and 95% at alpha of 1 and staying flat at 80% at alpha of 0.8" width="746" height="415" loading="lazy"></a>
+  <a href="/images/research/battery-degradation-ems/battery-power-alpha.png" target="_blank" rel="noopener"><img src="/images/research/battery-degradation-ems/battery-power-alpha.png" alt="Battery power over a day for alpha from 1 to 0.8, with large charge and discharge swings at alpha of 1 and near-zero power at alpha of 0.8" width="746" height="417" loading="lazy"></a>
+  <figcaption>Battery state of charge (left) and power (right) over the day for weighting factors from α = 1 to 0.8.</figcaption>
+</figure>
+
+The dispatch for two weightings shows the difference. At α = 0.95, part of the surplus PV around midday charges the battery and the battery supports the evening load. At α = 0.8, the battery is barely used: the grid absorbs the PV surplus and supplies the evening EV and air-conditioning demand, so the battery cycles far less and lasts longer.
+
+<figure class="half">
+  <a href="/images/research/battery-degradation-ems/dispatch-alpha-095.png" target="_blank" rel="noopener"><img src="/images/research/battery-degradation-ems/dispatch-alpha-095.png" alt="Optimal dispatch at alpha of 0.95 with PV, total load, battery power and grid power over a day" width="754" height="418" loading="lazy"></a>
+  <a href="/images/research/battery-degradation-ems/dispatch-alpha-080.png" target="_blank" rel="noopener"><img src="/images/research/battery-degradation-ems/dispatch-alpha-080.png" alt="Optimal dispatch at alpha of 0.8 with PV, total load, near-zero battery power and grid power over a day" width="756" height="419" loading="lazy"></a>
+  <figcaption>Optimal dispatch of PV, load, battery and grid power for α = 0.95 (left) and α = 0.8 (right).</figcaption>
+</figure>
+
+The weighting factor therefore gives the operator a direct handle on how much the battery contributes to the microgrid against how long it lasts. The air-conditioning and EV loads were treated as non-dispatchable; making them controllable is a natural extension of the model.
 
 [Energy Management System for DC Microgrids Considering Battery Degradation](https://ieeexplore.ieee.org/document/9281580), IEEE PES General Meeting, 2020 · [Accepted manuscript](https://repository.lboro.ac.uk/articles/conference_contribution/Energy_management_system_for_DC_microgrids_considering_battery_degradation/13619312)
 
