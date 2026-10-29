@@ -16,9 +16,15 @@ I jointly built a double-pulse test platform, modified its test board and ran a 
 
 <h2 id="thermal-characterization">Thermal Characterization</h2>
 
-I operated the transient thermal-impedance test system and measured the junction-to-case thermal path of a SiC MOSFET, calibrating its temperature-sensitive electrical parameter and comparing dry and greased interfaces to extract a Cauer thermal network.
+I measured the thermal resistance of a packaged GaN device, about 0.2 K/W, using a temperature-dependent resistance on the chip as its thermometer and a six-seat cooling plate I designed. Earlier, I measured the transient thermal impedance of a SiC MOSFET and extracted its Cauer thermal network.
 
 [Read the thermal characterization project](/research/thermal-characterization/)
+
+<h2 id="gan-current-capability">GaN Current Capability</h2>
+
+With the same packaged GaN device, I tested how much current it can carry, stepping the drain current and tracking the junction temperature through the calibrated on-chip resistance, with separate calibrations for the gate off and on.
+
+[Read the GaN current capability test](/research/gan-current-capability/)
 
 The measured characteristics feed [Semiconductor Device Modelling](/research/mosfet_ann_modelling/) and [Converter Design Optimisation](/research/converter_optimization/). [Power Device Reliability Testing](/research/reliability_testing/) is a separate area of work.
 

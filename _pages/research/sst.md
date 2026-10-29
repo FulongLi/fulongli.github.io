@@ -45,14 +45,16 @@ A supervisory layer coordinates the three stages through start-up, shutdown and 
 
 ## Designing the DAB Stage
 
-### Phase-Shift Operation
+### How the DAB Works
 
-A DAB connects two full bridges through a series inductance <i>L</i><sub>tot</sub> (the transformer leakage plus any added inductor) and a high-frequency transformer. Under phase-shift modulation, both bridges produce 50% square waves at the switching frequency <i>f</i><sub>sw</sub>, and the shift ϕ between them, as a fraction of the switching period, sets the voltage across the inductance and therefore the power.
+A DAB connects two full bridges, each across its own DC link, through a series inductance <i>L</i><sub>tot</sub> (the transformer leakage plus any added inductor) and an <i>n</i> : 1 high-frequency transformer. The transformer provides galvanic isolation and scales the voltage; the inductance is where power is transferred.
 
 <figure class="project-blueprint">
-  <a href="/images/research/sst/dab-phase-shift.svg" target="_blank" rel="noopener"><img src="/images/research/sst/dab-phase-shift.svg" alt="DAB block diagram and ideal phase-shift waveforms: primary and secondary square-wave voltages shifted by phi, and the resulting inductor current" width="760" height="398" loading="lazy"></a>
-  <figcaption>Dual active bridge and its ideal phase-shift waveforms.</figcaption>
+  <a href="/images/research/sst/dab-topology.png" target="_blank" rel="noopener"><img src="/images/research/sst/dab-topology.png" alt="Dual active bridge schematic: a primary full bridge across V1 and C1, series inductance Ltot, an n to 1 high-frequency transformer, and a secondary full bridge across C2 and V2" width="1418" height="362" loading="lazy"></a>
+  <figcaption>Dual active bridge: two full bridges linked by the series inductance and the high-frequency transformer.</figcaption>
 </figure>
+
+Each bridge applies a square-wave voltage to its side of the transformer. Under phase-shift modulation, both bridges run at 50% duty at the switching frequency <i>f</i><sub>sw</sub>, and the shift ϕ between them, as a fraction of the switching period, places a voltage across the inductance and so sets the power. The bridge that leads delivers power, so the same circuit transfers power in either direction, and the inductor current naturally discharges the switch capacitances before each turn-on, giving zero-voltage switching over a wide load range.
 
 For a lossless DAB with DC voltages <i>V</i><sub>1</sub> and <i>V</i><sub>2</sub> and turns ratio <i>n</i>, the transferred power is
 

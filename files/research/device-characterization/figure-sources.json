@@ -10,7 +10,7 @@
       "date_on_cover": "2023-10-12"
     }
   },
-  "attribution": "Training materials document the double-pulse test equipment and example measurements. Fulong Li supplied the account of his role in joint platform construction, board modifications and Siemens project testing. DPT page 24 separately credits Fulong in the post-processing workflow. The thermal-characterisation training figures were removed in October 2026. On 29 October 2026 the measured switching waveforms and energies were also removed, so the characterisation pages describe principles and the test platform only.",
+  "attribution": "Training materials document the double-pulse test equipment and example measurements. Fulong Li supplied the account of the author's role in joint platform construction, board modifications and Siemens project testing. DPT page 24 separately credits Fulong in the post-processing workflow. The thermal-characterisation training figures were removed in October 2026. On 29 October 2026 the measured switching waveforms and energies were also removed, so the characterisation pages describe principles and the test platform only.",
   "figures": [
     {
       "file": "dpt-test-platform.png",
