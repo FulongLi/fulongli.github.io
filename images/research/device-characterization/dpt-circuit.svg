@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 345" width="760" height="345" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>Double-pulse test circuit: a DC source and capacitor bank feed a half-bridge whose lower device is the device under test, switched by a double gate pulse, with the load inductor across the upper device, which is held off; voltage and current probes on the device under test; illustrative waveforms of gate voltage, drain current and drain-source voltage, with turn-off and turn-on at the same load current</title>
+<polyline points="80,50 410,50" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="80,330 330,330" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="80,50 80,174" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="80,206 80,330" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="80" cy="190" r="16" fill="#ffffff" stroke="#494e52" stroke-width="1.6"/>
+<text x="80" y="187" font-size="13" fill="#494e52" text-anchor="middle">+</text>
+<text x="80" y="202" font-size="13" fill="#494e52" text-anchor="middle">−</text>
+<text x="56" y="196" font-size="15" fill="#494e52" text-anchor="end" font-style="italic">V<tspan font-size="11" dy="4">DC</tspan></text>
+<circle cx="130" cy="50" r="2.6" fill="#494e52"/>
+<circle cx="130" cy="330" r="2.6" fill="#494e52"/>
+<polyline points="130,50 130,186.0" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="130,194.0 130,330" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="117,186.0 143,186.0" fill="none" stroke="#494e52" stroke-width="2.2" stroke-linejoin="round"/>
+<polyline points="117,194.0 143,194.0" fill="none" stroke="#494e52" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="113" y="181.0" font-size="12" fill="#494e52" text-anchor="middle">+</text>
+<text x="150" y="195.0" font-size="15" fill="#494e52" text-anchor="start" font-style="italic">C<tspan font-size="11" dy="4">DC</tspan></text>
+<rect x="300" y="226" width="52" height="70" rx="4" fill="#eef7fa" stroke="#52adc8" stroke-width="1.2" stroke-dasharray="4 3"/>
+<polyline points="330,50 330,90" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="330,90 330,108 318,108" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="318,132 330,132 330,150" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="318,102 318,138" fill="none" stroke="#494e52" stroke-width="2.4" stroke-linejoin="round"/>
+<polyline points="311,106 311,134" fill="none" stroke="#494e52" stroke-width="2.0" stroke-linejoin="round"/>
+<path d="M329,132 L322.7,135.375 L322.7,128.625 z" fill="#494e52"/>
+<polyline points="311,120 291,120" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="330,150 330,230" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="330" cy="190" r="2.6" fill="#494e52"/>
+<polyline points="330,230 330,248 318,248" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="318,272 330,272 330,290" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="318,242 318,278" fill="none" stroke="#494e52" stroke-width="2.4" stroke-linejoin="round"/>
+<polyline points="311,246 311,274" fill="none" stroke="#494e52" stroke-width="2.0" stroke-linejoin="round"/>
+<path d="M329,272 L322.7,275.375 L322.7,268.625 z" fill="#494e52"/>
+<polyline points="311,260 291,260" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="330,290 330,330" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<rect x="205" y="102" width="86" height="36" rx="4" fill="#ffffff" stroke="#494e52" stroke-width="1.4"/>
+<text x="248.0" y="124.5" font-size="11.5" fill="#494e52" text-anchor="middle">Gate drive off</text>
+<rect x="205" y="242" width="86" height="36" rx="4" fill="#ffffff" stroke="#494e52" stroke-width="1.4"/>
+<text x="248.0" y="264.5" font-size="11.5" fill="#494e52" text-anchor="middle">Gate driver</text>
+<polyline points="160,266 166,266 166,256 176,256 176,266 180,266 180,256 186,256 186,266 192,266" fill="none" stroke="#52adc8" stroke-width="1.4" stroke-linejoin="round"/>
+<polyline points="192,266 205,266" fill="none" stroke="#52adc8" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="176" y="290" font-size="11.5" fill="#7a8288" text-anchor="middle">pulses</text>
+<text x="342" y="116" font-size="12" fill="#7a8288" text-anchor="start">Upper</text>
+<text x="342" y="130" font-size="12" fill="#7a8288" text-anchor="start">device</text>
+<text x="296" y="318" font-size="13" fill="#52adc8" text-anchor="end" font-weight="600">DUT</text>
+<polyline points="330,190 410,190 410,166" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M410,118 a6,6 0 0 1 0,12 a6,6 0 0 1 0,12 a6,6 0 0 1 0,12 a6,6 0 0 1 0,12" fill="none" stroke="#494e52" stroke-width="1.6"/>
+<polyline points="410,118 410,50" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="410" cy="50" r="2.6" fill="#494e52"/>
+<text x="424" y="148" font-size="15" fill="#494e52" text-anchor="start" font-style="italic">L</text>
+<path d="M368,190 L375.0,186.25 L375.0,193.75 z" fill="#494e52"/>
+<text x="380" y="182" font-size="15" fill="#494e52" text-anchor="middle" font-style="italic">i<tspan font-size="11" dy="4">L</tspan></text>
+<polyline points="366,290 366,240" fill="none" stroke="#52adc8" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M366,232 L369.75,239.0 L362.25,239.0 z" fill="#52adc8"/>
+<text x="366" y="226" font-size="12" fill="#52adc8" text-anchor="middle">+</text>
+<text x="366" y="304" font-size="12" fill="#52adc8" text-anchor="middle">−</text>
+<text x="374" y="266.0" font-size="15" fill="#52adc8" text-anchor="start" font-style="italic">v<tspan font-size="11" dy="4">DS</tspan></text>
+<ellipse cx="330" cy="211" rx="9" ry="4" fill="none" stroke="#52adc8" stroke-width="1.6"/>
+<text x="316" y="216" font-size="15" fill="#52adc8" text-anchor="end" font-style="italic">i<tspan font-size="11" dy="4">D</tspan></text>
+<polyline points="605,42 605,312" fill="none" stroke="#bdc1c4" stroke-width="1" stroke-linejoin="round" stroke-dasharray="4 3"/>
+<polyline points="650,42 650,312" fill="none" stroke="#bdc1c4" stroke-width="1" stroke-linejoin="round" stroke-dasharray="4 3"/>
+<polyline points="500,90 515,90 515,55 605,55 605,90 650,90 650,55 690,55 690,90 740,90" fill="none" stroke="#52adc8" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="492" y="78" font-size="15" fill="#494e52" text-anchor="end" font-style="italic">v<tspan font-size="11" dy="4">GS</tspan></text>
+<text x="560" y="80" font-size="13" fill="#7a8288" text-anchor="middle" font-style="italic">t<tspan font-size="9" dy="4">1</tspan></text>
+<polyline points="500,185 515,185 605,140 605,185 650,185 652,132 655,141 690,129 690,185 740,185" fill="none" stroke="#494e52" stroke-width="1.8" stroke-linejoin="round"/>
+<polyline points="605,140 650,140" fill="none" stroke="#7a8288" stroke-width="1" stroke-linejoin="round" stroke-dasharray="3 3"/>
+<text x="627" y="133" font-size="13" fill="#7a8288" text-anchor="middle" font-style="italic">I<tspan font-size="9" dy="4">L</tspan></text>
+<text x="492" y="166" font-size="15" fill="#494e52" text-anchor="end" font-style="italic">i<tspan font-size="11" dy="4">D</tspan></text>
+<polyline points="500,255 515,255 515,300 605,300 607,244 611,255 650,255 650,300 690,300 692,242 696,255 740,255" fill="none" stroke="#494e52" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="492" y="282" font-size="15" fill="#494e52" text-anchor="end" font-style="italic">v<tspan font-size="11" dy="4">DS</tspan></text>
+<text x="605" y="333" font-size="14" fill="#7a8288" text-anchor="middle" font-style="italic">E<tspan font-size="10" dy="4">off</tspan></text>
+<text x="650" y="333" font-size="14" fill="#7a8288" text-anchor="middle" font-style="italic">E<tspan font-size="10" dy="4">on</tspan></text>
+</svg>

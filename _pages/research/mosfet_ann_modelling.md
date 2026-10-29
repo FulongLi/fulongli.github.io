@@ -19,6 +19,6 @@ Neural networks fit the conduction voltage, turn-on and turn-off energy and ther
 <h2 id="scope">Related Measurements</h2>
 <span id="outcomes"></span>
 
-The models map operating conditions to characteristic values and event energies; switching-transient waveform modelling is outside their scope. [Electrical characterisation](/research/electrical-characterization/) supplies switching-energy data, and [thermal characterisation](/research/thermal-characterization/) identifies the heat path needed for temperature estimation.
+The models map operating conditions to characteristic values and event energies; switching-transient waveform modelling is outside their scope. [Double-pulse testing](/research/electrical-characterization/) supplies switching-energy data, and [thermal characterisation](/research/thermal-characterization/) identifies the heat path needed for temperature estimation.
 
 [Converter Design Optimisation](/research/converter_optimization/) · [AIPE](/research/aipe/) · [Back to Research](/research/)

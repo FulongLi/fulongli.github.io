@@ -22,7 +22,12 @@ A power device's current rating is set less by the semiconductor than by heat: t
 
 ## Test Method
 
-The device sits in an enclosure, with its on-chip sensing resistance read alongside the drain current.
+The device sits in an enclosure with its gate on. A supply steps the drain current, and the on-chip sensing resistance is read alongside it as the junction thermometer.
+
+<figure class="project-blueprint">
+  <a href="/images/research/gan-characterization/current-test-circuit.svg" target="_blank" rel="noopener"><img src="/images/research/gan-characterization/current-test-circuit.svg" alt="Current-capability test circuit: a supply steps the drain current through the GaN device with its gate on inside an enclosure while an ohmmeter reads the on-chip sensing resistance; illustrative traces of drain current steps with rests and the junction temperature rising to a higher plateau at each step" width="760" height="262" loading="lazy"></a>
+  <figcaption>Current-capability test circuit, with illustrative traces of the stepped drain current and the junction temperature it produces.</figcaption>
+</figure>
 
 1. **Calibrate:** map the sensing resistance against temperature, with the gate both off and on, because driving the gate shifts the reading.
 2. **Step the current:** drive the drain current through a series of increasing steps, each held long enough for the temperature to settle.

@@ -3,16 +3,16 @@ layout: single
 title: "Power Device Characterization"
 permalink: /research/switching_devices/
 author_profile: true
-excerpt: "Electrical and thermal characterization of SiC power devices: double-pulse testing and transient thermal-impedance measurement."
+excerpt: "Electrical and thermal characterization of SiC and GaN power devices: double-pulse testing, thermal resistance and impedance, and current capability."
 ---
 
 Converter design depends on device data that datasheets do not fully provide: how much energy each switching event costs under real operating conditions, and how quickly that heat reaches the cooling system. My device characterisation work produces both, from configuring the laboratory equipment and test conditions to turning recorded signals into device data.
 
-<h2 id="electrical-characterization">Electrical Characterization</h2>
+<h2 id="electrical-characterization">Double Pulse Test</h2>
 
-I jointly built a double-pulse test platform, modified its test board and ran a SiC measurement campaign of more than 450 test points across voltage, current, gate resistance and temperature. Waveform post-processing extracts turn-on and turn-off energies, slew rates and reverse-recovery quantities, complemented by static I–V and C–V measurements.
+I jointly built a double-pulse test platform, modified its test board and ran a SiC measurement campaign of more than 450 test points across voltage, current, gate resistance and temperature. Waveform post-processing extracts turn-on and turn-off energies, slew rates and reverse-recovery quantities, complemented by static I–V and C–V measurements. For GaN devices, I designed a half-bridge double-pulse test board.
 
-[Read the electrical characterization project](/research/electrical-characterization/)
+[Read the double pulse test project](/research/electrical-characterization/)
 
 <h2 id="thermal-characterization">Thermal Characterization</h2>
 
