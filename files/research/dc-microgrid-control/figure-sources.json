@@ -157,5 +157,125 @@
     "width": 1860,
     "height": 459,
     "sha256": "575df5e8c3c78267aa0467c13d5bc09b6490ee2f1d8de960e903b60fefff123c"
+  },
+  {
+    "file": "boost-interface-converter.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 91,
+    "figure": "5.1",
+    "crop_points": [
+      129.3,
+      619.0,
+      494.7,
+      754.0
+    ],
+    "width": 1096,
+    "height": 405,
+    "sha256": "1f23434138c7d2aa6734ff4cb714eeb7d5b588dee4b25dc4ab8efdaa82dc4746"
+  },
+  {
+    "file": "boost-small-signal-model.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 92,
+    "figure": "5.2",
+    "crop_points": [
+      125.0,
+      486.0,
+      492.3,
+      592.7
+    ],
+    "width": 1102,
+    "height": 320,
+    "sha256": "0b2a8fbfae387c6ad95d07bd6efca2b16a0dbeb6624189aa55269faa5d1e2ed3"
+  },
+  {
+    "file": "vls-dbs-mechanism.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 46,
+    "figure": "2.8",
+    "crop_points": [
+      157.7,
+      78.3,
+      465.0,
+      291.0
+    ],
+    "width": 922,
+    "height": 638,
+    "sha256": "9426fc5676e550b90770caac008c299c4fd8b9941db96bd86e0e9ef4ceda810f"
+  },
+  {
+    "file": "dbi-mechanism.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 73,
+    "figure": "4.1",
+    "crop_points": [
+      180.3,
+      200.7,
+      441.7,
+      418.3
+    ],
+    "width": 784,
+    "height": 653,
+    "sha256": "9a22b812cb8986bc8674bb17b6b45606fa0fb73595fab364d41d2d91aac761ae"
+  },
+  {
+    "file": "system-control-configuration.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 111,
+    "figure": "6.2",
+    "crop_points": [
+      97.3,
+      98.3,
+      746.3,
+      488.3
+    ],
+    "width": 1947,
+    "height": 1170,
+    "sha256": "288a69e6451c5fa487b749524e63c664dd18b15dda896f9b89439f2f2db59fa8"
+  },
+  {
+    "file": "interface-converter-prototype.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 65,
+    "figure": "3.4",
+    "crop_points": [
+      104.0,
+      462.3,
+      504.0,
+      698.3
+    ],
+    "width": 1200,
+    "height": 708,
+    "sha256": "3126d4772e9fb2725247d202ab55722801fdfeaa1902849591ba0045dd83b3be"
+  },
+  {
+    "file": "power-board-pcb.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 157,
+    "figure": "A.3",
+    "crop_points": [
+      95.0,
+      96.0,
+      551.7,
+      441.7
+    ],
+    "width": 1370,
+    "height": 1037,
+    "sha256": "bc0368e0a8c3f00614ff2d98f8e6245a5ed3d01bd6ec17119fe7c710792bc296"
+  },
+  {
+    "file": "control-board-pcb.png",
+    "source": "Li_Fulong_-_2019.pdf",
+    "pdf_page": 157,
+    "figure": "A.4",
+    "crop_points": [
+      96.7,
+      503.7,
+      552.7,
+      640.7
+    ],
+    "width": 1368,
+    "height": 411,
+    "sha256": "bdab960196bd3fdd14e4eb614470c7a5d084c562007db16dd3d8cb951415c512"
   }
 ]

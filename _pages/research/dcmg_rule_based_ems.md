@@ -15,9 +15,20 @@ My PhD system study brings **passive control, droop coordination and dual-window
 
 A DC microgrid must continually decide which converter regulates the bus voltage, when batteries charge or discharge, and what happens when PV generation exceeds demand and storage is full. A rule-based EMS answers these questions with explicit operating rules tied to the system state. Compared with optimisation-based scheduling, it is transparent and simple to implement on the converters' own controllers.
 
+<h2 id="system-configuration">The Microgrid System</h2>
+
+The scheme is designed for a household-scale DC microgrid in which four interface converters share a DC bus held between 45 and 52.5 V. IC1 connects the 220 V AC grid through a rectifier, with a soaking resistor to absorb surplus power; IC2 and IC3 connect two 24 V battery banks; IC4 connects the PV panels with maximum-power-point tracking and power limitation. Electronic and resistive loads draw from the bus.
+
+<figure class="project-blueprint">
+  <a href="/images/research/dc-microgrid-control/system-control-configuration.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/system-control-configuration.png" alt="DC microgrid with grid, two battery and PV interface converters on a 45 to 52.5 V DC bus with loads; each grid and battery converter has droop, passive stabiliser, voltage and current loops and a state machine driven by bus signal series" width="1947" height="1170" fetchpriority="high"></a>
+  <figcaption>System control configuration: grid (IC1), battery (IC2, IC3) and PV (IC4) interface converters on the DC bus, with each converter's control loops and state machine.</figcaption>
+</figure>
+
+Each grid and battery converter combines the layers of the hierarchy: droop and the passive stabiliser set the voltage reference, voltage and current loops regulate the converter, and a state machine reads the signal series on the bus and sets the converter's operating role.
+
 <h2 id="operating-rules">Operating Rules and State Machines</h2>
 
-The scheme is designed for a microgrid with a grid interface, two battery interfaces and a PV source. Grid-connected operation gives bus regulation to the grid interface; planned disconnection transfers it to a battery. The power-management logic curtails surplus PV near **51 V**, distinct from the **52.5 V signalling level**. Commands travel through the [dual-window bus signalling method](/research/dcmg/dc-bus-signalling/) as **six bits at 100 ms per bit**, identifying the start, converter state, battery-interface identity, droop or power mode, charge or discharge state and current selection.
+Grid-connected operation gives bus regulation to the grid interface; planned disconnection transfers it to a battery. The power-management logic curtails surplus PV near **51 V**, distinct from the **52.5 V signalling level**. Commands travel through the [dual-window bus signalling method](/research/dcmg/dc-bus-signalling/) as **six bits at 100 ms per bit**, identifying the start, converter state, battery-interface identity, droop or power mode, charge or discharge state and current selection.
 
 Each converter turns received commands into an operating role through a two-level finite-state machine.
 

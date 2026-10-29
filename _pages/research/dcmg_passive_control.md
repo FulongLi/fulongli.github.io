@@ -14,6 +14,13 @@ In my PhD I developed a passive stabiliser for Boost interface converters in DC 
 
 <h2 id="overview">Passivity and Boost Converter Stability</h2>
 
+The target is the Boost interface converter that connects a distributed source, such as a battery or PV array, to the common DC bus. Its switches step the source voltage up to the bus voltage, and its output capacitor and the bus loads form the terminal it must keep stable.
+
+<figure>
+  <a href="/images/research/dc-microgrid-control/boost-interface-converter.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/boost-interface-converter.png" alt="Boost interface converter connecting a source through an inductor and two switches to an output capacitor on the DC bus, with a load resistance" width="1096" height="405" fetchpriority="high"></a>
+  <figcaption>Boost interface converter connecting a distributed source to the DC bus.</figcaption>
+</figure>
+
 A Boost converter's voltage-control plant contains a right-half-plane zero: a change in duty cycle first drives the output voltage in the opposite direction to its final response. This non-minimum-phase behaviour constrains the voltage-loop design and, in a DC microgrid with several interacting converters, can contribute to instability.
 
 Passivity offers a design criterion that holds as systems are connected together. A passive system cannot deliver more energy than it receives plus its initially stored energy. For input <i>u</i>, output <i>y</i>, stored energy <i>H</i> and dissipated energy ε, the energy balance is:
@@ -37,7 +44,14 @@ L\frac{di_L}{dt}&=v_g-d'v,\\
 C\frac{dv}{dt}&=d'i_L-i_o,\qquad d'=1-d,
 \end{aligned}\]</div>
 
-where <i>v</i><sub>g</sub> is the source voltage, <i>i</i><sub>L</sub> the inductor current, <i>v</i> the DC-bus voltage, <i>i</i><sub>o</sub> the output current and <i>d</i> the duty ratio. Linearising around an operating point gives the duty-to-voltage and duty-to-current transfer functions:
+where <i>v</i><sub>g</sub> is the source voltage, <i>i</i><sub>L</sub> the inductor current, <i>v</i> the DC-bus voltage, <i>i</i><sub>o</sub> the output current and <i>d</i> the duty ratio. Applying small variations around an operating point gives the equivalent small-signal model:
+
+<figure>
+  <a href="/images/research/dc-microgrid-control/boost-small-signal-model.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/boost-small-signal-model.png" alt="Small-signal equivalent circuit of the Boost converter with a duty-controlled voltage source, a D-prime to one ideal transformer, a duty-controlled current source, output capacitor and load" width="1102" height="320" loading="lazy"></a>
+  <figcaption>Small-signal equivalent model of the Boost converter.</figcaption>
+</figure>
+
+From this model follow the duty-to-voltage and duty-to-current transfer functions:
 
 <div class="math-display">\[\begin{aligned}
 \operatorname{den}(s)&=1+\frac{sL}{D'^2R}+\frac{s^2LC}{D'^2},\\
@@ -85,7 +99,7 @@ The gain compensates the high-frequency deficit, and the filter corner sits belo
 <div class="math-display">\[K\ge\frac{\alpha\beta}{\gamma},\qquad 0<\delta<\omega_N.\]</div>
 
 <figure>
-  <a href="/images/research/dc-microgrid-control/passive-control-block.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/passive-control-block.png" alt="Boost interface-converter control diagram with droop, inner current loop, outer voltage loop and filtered passive stabiliser" width="1248" height="543" fetchpriority="high"></a>
+  <a href="/images/research/dc-microgrid-control/passive-control-block.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/passive-control-block.png" alt="Boost interface-converter control diagram with droop, inner current loop, outer voltage loop and filtered passive stabiliser" width="1248" height="543" loading="lazy"></a>
   <figcaption>The filtered passive stabiliser added in parallel with the outer voltage controller, alongside droop and the inner current loop.</figcaption>
 </figure>
 
