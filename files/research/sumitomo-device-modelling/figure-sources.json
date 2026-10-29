@@ -1,0 +1,59 @@
+[
+  {
+    "file": "ann-conduction-characteristic.png",
+    "source_deck": "CU_Sumitomo_WP2_final.pptx",
+    "slide": 7,
+    "pptx_members": [
+      "ppt/media/image33.png",
+      "ppt/media/image34.png",
+      "ppt/media/image35.png"
+    ],
+    "operation": "Crop of the original PowerPoint-rendered conduction figure, including its title, legend and temperature colour scale; no recolouring or redrawing",
+    "source_slide_render_size": [
+      3840,
+      2160
+    ],
+    "crop_pixels": [
+      2040,
+      120,
+      3530,
+      970
+    ],
+    "width": 1490,
+    "height": 850,
+    "sha256": "85b16598f860cdc8882d8567cda6066efe3e8748ba90abc36481487ea7821b58"
+  },
+  {
+    "file": "ann-turn-on-energy.png",
+    "source_deck": "CU_Sumitomo_WP2_final.pptx",
+    "slide": 7,
+    "pptx_member": "ppt/media/image31.png",
+    "operation": "Original embedded image, unchanged",
+    "width": 1149,
+    "height": 931,
+    "sha256": "b723ddb6c1e2a00aa2c1d320e10acce1d8881ebf8bf910086a4b38a55c5a5bf8",
+    "source_sha256": "b723ddb6c1e2a00aa2c1d320e10acce1d8881ebf8bf910086a4b38a55c5a5bf8"
+  },
+  {
+    "file": "ann-turn-off-energy.png",
+    "source_deck": "CU_Sumitomo_WP2_final.pptx",
+    "slide": 7,
+    "pptx_member": "ppt/media/image32.png",
+    "operation": "Original embedded image, unchanged",
+    "width": 1137,
+    "height": 923,
+    "sha256": "473ecea553a21afbb00b245b12b368490836b11db9a45b5d52889e75c7df2cb4",
+    "source_sha256": "473ecea553a21afbb00b245b12b368490836b11db9a45b5d52889e75c7df2cb4"
+  },
+  {
+    "file": "ann-thermal-impedance-fit.png",
+    "source_deck": "CU_Sumitomo_WP2_final.pptx",
+    "slide": 9,
+    "pptx_member": "ppt/media/image41.png",
+    "operation": "Original embedded image, unchanged",
+    "width": 1920,
+    "height": 980,
+    "sha256": "231f7800c3ba4e7b824d5bc0e05c9c67370c655888495c8b94cd6f03dd875b9f",
+    "source_sha256": "231f7800c3ba4e7b824d5bc0e05c9c67370c655888495c8b94cd6f03dd875b9f"
+  }
+]

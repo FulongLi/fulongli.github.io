@@ -5,5 +5,18 @@
     "slide": 2,
     "shape_index": 8,
     "sha256": "699adde975d4caae4cf4dd4c5b3a58ec448458443c4a306207bd8b74157b7695"
+  },
+  {
+    "file": "llc-output-transient.png",
+    "source": "LLC converter summary.pptx",
+    "slide": 6,
+    "shape_index": 8,
+    "sha256": "213c005d3e1abfd57343db76e95b831b7901c42f745d52035ff26b7f831a1cea",
+    "crop_pixels": [
+      0,
+      274,
+      644,
+      548
+    ]
   }
 ]

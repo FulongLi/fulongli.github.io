@@ -6,7 +6,7 @@ author_profile: true
 body_class: marine-project-page
 project_stylesheet: /assets/css/marine-project.css
 project_contents: true
-excerpt: "Enclosure thermal and ventilation modelling for marine equipment, set up for North Sea, Persian Gulf and Singapore climate scenarios."
+excerpt: "Enclosure thermal modelling and ventilation behaviour across North Sea, Persian Gulf and Singapore climate scenarios."
 ---
 
 I led the thermal evaluation in 2024, following the [3 MW marine powertrain study](/research/3mw-marine-fuel-cell/). I developed a room-temperature model of the equipment enclosure and assessed its ventilation needs across three climates, covering the requirements, enclosure modelling and scenario assessment.
@@ -22,6 +22,34 @@ The model represents the thermal capacity of the internal air, heat transfer thr
 
 The climate scenarios use ambient ranges of 6–14 °C for the North Sea, 14–46.6 °C for the Persian Gulf and 24.3–32.4 °C for Singapore, with equipment surface temperatures of **45 °C and 60 °C** and a **25 °C room-temperature reference**.
 
-For each climate and equipment temperature, the model is run over the day to give the room temperature and the fan duty needed to approach the reference. Because ambient-air ventilation only helps while the outdoor air is cooler than the room, the scenarios are set up to show where fan capacity is enough and where enclosure construction, insulation and airflow need to be reviewed alongside equipment temperature before integration.
+<h2 id="climate-scenarios">One Enclosure, Three Climates</h2>
+<span id="north-sea"></span>
+<span id="persian-gulf"></span>
+<span id="singapore"></span>
+
+The plots below show the 60 °C equipment case under the updated enclosure assumptions. In the North Sea, cool ambient air keeps the room below the reference with the fan off.
+
+<figure>
+  <a href="/images/research/marine-fuel-cell/sino-north-sea-60c.png" target="_blank" rel="noopener"><img src="/images/research/marine-fuel-cell/sino-north-sea-60c.png" alt="North Sea room temperature and fan state with 60 degree equipment surface temperature" width="875" height="645" fetchpriority="high"></a>
+  <figcaption>North Sea: room temperature and fan state with 60 °C equipment; the fan stays off.</figcaption>
+</figure>
+
+In the Persian Gulf, the room exceeds the reference as the outdoor air heats up, and the fan runs during hot periods.
+
+<figure>
+  <a href="/images/research/marine-fuel-cell/sino-persian-gulf-60c.png" target="_blank" rel="noopener"><img src="/images/research/marine-fuel-cell/sino-persian-gulf-60c.png" alt="Persian Gulf room temperature and fan state with 60 degree equipment surface temperature" width="875" height="645" loading="lazy"></a>
+  <figcaption>Persian Gulf: room temperature and fan state with 60 °C equipment; ventilation runs during hot periods.</figcaption>
+</figure>
+
+In Singapore, sustained warm conditions keep the room above the reference for much of the day, with the fan running continuously.
+
+<figure>
+  <a href="/images/research/marine-fuel-cell/sino-singapore-60c.png" target="_blank" rel="noopener"><img src="/images/research/marine-fuel-cell/sino-singapore-60c.png" alt="Singapore room temperature and continuous fan operation with 60 degree equipment surface temperature" width="875" height="645" loading="lazy"></a>
+  <figcaption>Singapore: room temperature and fan state with 60 °C equipment; the fan runs continuously.</figcaption>
+</figure>
+
+<h2 id="outcomes">Implications for System Integration</h2>
+
+Both equipment-temperature cases show the same difference in ventilation duty between regions. Because ambient-air ventilation is limited by the outdoor temperature, holding one room-temperature target across these climates needs more than fan capacity alone. The study provided a basis for reviewing enclosure construction, insulation and airflow alongside equipment temperature before integration; its results depend on the modelled heat transfer and operating scenarios.
 
 [3 MW Marine Fuel-Cell Project](/research/3mw-marine-fuel-cell/) · [Microgrid Energy Management](/research/mgapp/) · [Back to Research](/research/)

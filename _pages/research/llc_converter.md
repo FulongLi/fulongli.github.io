@@ -3,13 +3,13 @@ layout: single
 title: "10 kW LLC Resonant Converter"
 permalink: /research/isolated-converters/llc/
 author_profile: true
-excerpt: "Resonant-tank design and closed-loop control of a 10 kW, 750 V to 50 V LLC converter for data-centre power."
+excerpt: "Resonant-tank design and closed-loop simulation of a 10 kW, 750 V to 50 V LLC converter for data-centre power."
 body_class: microgrid-project-page
 project_stylesheet: /assets/css/marine-project.css
 project_contents: true
 ---
 
-I studied an isolated 10 kW LLC resonant converter for a data-centre power application, from resonant-tank design calculations to closed-loop control.
+I studied an isolated 10 kW LLC resonant converter for a data-centre power application, from resonant-tank design calculations to closed-loop simulation. The work remained at the simulation stage; no hardware prototype was built or tested.
 
 ## How an LLC Converter Regulates Its Output
 
@@ -42,8 +42,15 @@ I swept the quality factor <i>Q</i> and inductance ratio <i>m</i> to examine the
 
 The sweep also considered reducing <i>m</i> to 9 or 8 to increase the maximum gain, and a later alternative investigated <i>Q</i> = 0.9 with a changed turns ratio and a 100 kHz resonant frequency. These are design alternatives, not measured component values or a final hardware specification.
 
-## Closed-Loop Control
+## Closed-Loop Simulation
 
-A PI controller regulates the output voltage by adjusting the switching frequency, holding 50 V as the input voltage moves across its 675–825 V range and the load changes. The low-frequency end of that range, where the tank must provide its highest gain, sets the tightest margin and drives the choice of <i>Q</i> and <i>m</i>.
+A PI controller regulates the output voltage by adjusting the switching frequency, holding 50 V as the input voltage moves across its 675–825 V range and the load changes. In simulation, when the input falls from 825 V to 675 V, the output voltage dips and then returns towards 50 V; a subsequent load reduction produces a smaller transient.
+
+<figure>
+  <a href="/images/research/llc-converter/llc-output-transient.png" target="_blank" rel="noopener"><img src="/images/research/llc-converter/llc-output-transient.png" alt="Simulated LLC output voltage and output power during changes in input voltage and load" width="644" height="274" loading="lazy"></a>
+  <figcaption>Simulated output voltage and power during an input-voltage step from 825 V to 675 V and a load reduction.</figcaption>
+</figure>
+
+The simulation shows that the operating margin is tight at the low-frequency end of the range, where the tank must provide its highest gain, which motivated further exploration of the resonant tank. Switching performance, losses, thermal behaviour and manufacturability would need further design and experimental verification.
 
 [Isolated Converters](/research/isolated_converters/) · [Converter Design Optimisation](/research/converter_optimization/) · [Back to Research](/research/)

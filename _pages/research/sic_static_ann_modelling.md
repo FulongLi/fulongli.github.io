@@ -40,6 +40,17 @@ Separate conduction networks let the channel and diode characteristics be fitted
 
 Electrical inputs are standardised with the training-set mean and standard deviation, and the same scaler is saved with the weights for later queries. Training holds out 20% of the electrical samples and minimises the sum of the five branch mean-square errors with the Adam optimiser at a 0.01 learning rate over 2,000 epochs. The hold-out split checks interpolation within the tables.
 
+<figure>
+  <a href="/images/research/sumitomo-device-modelling/ann-conduction-characteristic.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/ann-conduction-characteristic.png" alt="ANN conduction-voltage surface versus current and temperature with reference samples" width="1490" height="850" loading="lazy"></a>
+  <figcaption>Fitted conduction-voltage surface against current and junction temperature, with the reference samples.</figcaption>
+</figure>
+
+<figure class="half">
+  <a href="/images/research/sumitomo-device-modelling/ann-turn-on-energy.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/ann-turn-on-energy.png" alt="Fitted turn-on energy surface against voltage and current" width="1149" height="931" loading="lazy"></a>
+  <a href="/images/research/sumitomo-device-modelling/ann-turn-off-energy.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/ann-turn-off-energy.png" alt="Fitted turn-off energy surface against voltage and current" width="1137" height="923" loading="lazy"></a>
+  <figcaption>Fitted turn-on (left) and turn-off (right) energy surfaces against voltage and current.</figcaption>
+</figure>
+
 The public implementation extends the gate-resistance dependence with fitted scaling relations; those generated samples extend the data representation and are not independent double-pulse measurements.
 
 <h3 id="loss-model">Loss Calculation</h3>
@@ -52,6 +63,11 @@ A Python loss workflow evaluates the fitted functions at the converter operating
 <h3 id="thermal-modelling">Thermal Response</h3>
 
 An ANN branch fits the transient thermal impedance of the manufacturer's Cauer model, giving a response function from dissipated power to temperature rise.
+
+<figure>
+  <a href="/images/research/sumitomo-device-modelling/ann-thermal-impedance-fit.png" target="_blank" rel="noopener"><img src="/images/research/sumitomo-device-modelling/ann-thermal-impedance-fit.png" alt="Reference thermal impedance and ANN fit on linear and logarithmic time axes" width="1920" height="980" loading="lazy"></a>
+  <figcaption>Reference thermal impedance and its ANN fit on linear and logarithmic time axes.</figcaption>
+</figure>
 
 A Cauer network extracted from the device's own thermal measurement, described under [thermal characterization](/research/thermal-characterization/), can replace the manufacturer model in the same role.
 
