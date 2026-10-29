@@ -3,14 +3,14 @@ layout: single
 title: "PCB Rogowski Coil Current Sensing"
 permalink: /research/pcb-rogowski-coil/
 author_profile: true
-excerpt: "A review of PCB Rogowski coil winding shapes and their trade-offs, and five coil designs with on-board signal conditioning for fast current transients in power converters."
+excerpt: "A review of how the Rogowski coil developed and how PCB winding patterns trade off, and five PCB coil designs with on-board signal conditioning for fast current transients in power converters."
 body_class: microgrid-project-page
 project_stylesheet: /assets/css/marine-project.css
 project_contents: true
 mathjax: true
 ---
 
-I reviewed how PCB Rogowski coils have developed and how their winding shape affects sensing, then designed a family of five PCB coils, each with its own signal-conditioning circuit, for measuring fast current transients in power converters.
+I reviewed how the Rogowski coil developed, from its origins to coils built into power modules, and how PCB winding patterns trade off against each other. Building on that review, I designed a family of five PCB coils, each with its own signal-conditioning circuit, for measuring fast current transients in power converters.
 
 ## How a Rogowski Coil Measures Current
 
@@ -30,54 +30,67 @@ More turns, a thicker board or a wider winding raise the sensitivity. An integra
 
 The integrator's gain, bandwidth and offset drift therefore matter as much as the coil itself.
 
-## Winding Shapes and Their Trade-Offs
+## Development of the Rogowski Coil
 
-My review traced three development paths: coils wound on flexible formers, rigid windings on PCB, and windings on flexible PCB. It compared literature and commercial designs by winding shape and size, current range, sensitivity, bandwidth and external circuitry. On a rigid PCB, the winding shape is the main design choice, and four features recur.
+My review, completed in 2022, followed the coil through some 40 publications. The principle predates the coil itself: Chattock's magnetic potentiometer of 1887 measured the line integral of the magnetic field, and Rogowski and Steinhaus described the coil in 1912. From the 1960s, flexible wound coils were developed for wideband and pulsed-power measurement, with currents up to the megampere range. A 1995 patent placed the winding on a printed circuit board, and PCB coils were soon applied to fast power-electronic switching. Since 2014, the coils have moved into the converter itself: compact sensors beside SiC MOSFETs, gate-drive protection, and micro coils embedded in IGBT modules, busbars and GaN half-bridges.
 
 <figure class="project-blueprint">
-  <a href="/images/research/pcb-rogowski/winding-shapes.svg" target="_blank" rel="noopener"><img src="/images/research/pcb-rogowski/winding-shapes.svg" alt="Schematic top views of a radial sawtooth winding, a square fishbone winding, a radial winding with a return line along its mean path, and a square winding with a cutout" width="760" height="290" fetchpriority="high"></a>
-  <figcaption>PCB winding shapes: radial sawtooth, square fishbone, a return line along the mean path, and a cutout that opens the coil.</figcaption>
+  <a href="/images/research/pcb-rogowski/development-timeline.svg" target="_blank" rel="noopener"><img src="/images/research/pcb-rogowski/development-timeline.svg" alt="Timeline of the Rogowski coil from Chattock in 1887 and Rogowski in 1912, through wideband and pulsed-power coils and rigid PCB coils, to coils integrated into SiC, GaN and IGBT modules, followed by my review and designs" width="760" height="398" fetchpriority="high"></a>
+  <figcaption>Development of the Rogowski coil, from my review; the key references are listed at the end of this page.</figcaption>
 </figure>
 
-| Shape or feature | Advantages | Limitations |
-| --- | --- | --- |
-| Radial, sawtooth traces | Uniform turn density around the aperture, so the output depends little on the conductor's position; symmetric and simple to lay out | Turn count limited by the via pitch on the inner circle; board area grows with the aperture; a poor fit around rectangular busbars |
-| Square, fishbone traces | Straight, parallel turns use board area efficiently and suit rectangular conductors and busbars | Turn density changes at the corners, so the output is more sensitive to conductor position and nearby conductors |
-| Without return line | Simplest routing, with the fewest layers and vias | A winding that advances once around the aperture also forms one large turn in the board plane, which picks up fields perpendicular to the board |
-| With return line | A conductor brought back along the mean path cancels that turn, improving rejection of external fields | Needs an extra trace or layer, and the return path must follow the winding's mean path closely |
-| Split or cutout | Fits around an existing conductor without disconnecting it | The gap breaks the closed path, adding position sensitivity and pickup from external fields; alignment at the gap matters |
-| Flexible former or flexible PCB | Wraps conductors of different shapes and sizes | Turn spacing and cross-section are less repeatable than on a rigid PCB, and the output varies with bending and placement |
+## Winding Patterns and Their Trade-Offs
+
+On a PCB, the pattern of the turns decides how well the coil rejects current that flows outside it. A coil that responds only to the current through its aperture must close its path completely and must not form loops that link external fields. Koga, Tsukuda, Nakashima and Omura compared four patterns built on four-layer boards, using 9 mm coils whose main winding runs on the outer layers and through-holes [(Koga et al., 2016)](http://hdl.handle.net/10228/5769).
+
+<figure class="project-blueprint">
+  <a href="/images/research/pcb-rogowski/winding-shapes.svg" target="_blank" rel="noopener"><img src="/images/research/pcb-rogowski/winding-shapes.svg" alt="Schematic of four PCB winding patterns seen from above: fishbone with return line, saw, triangle, and fishbone without return line" width="760" height="248" loading="lazy"></a>
+  <figcaption>The four winding patterns compared by Koga et al., redrawn schematically.</figcaption>
+</figure>
+
+| Pattern | Construction | Trade-off | Maximum error from an outside current |
+| --- | --- | --- | --- |
+| Fishbone | Each turn stands perpendicular to the coil path, with short steps between turns and a return line | Removes unwanted flux paths as far as the PCB process allows; its rejection improves as trace and via pitch shrink | 7% |
+| Saw | Traces on one layer cross the path at right angles; traces on the other slant forward to the next turn | Simple to route, and lowest error on one scan path (4%), but the slanted traces leave flux paths that external fields couple into | 10% |
+| Triangle | Traces on both layers slant, in opposite directions | Symmetric zigzag, but both slanted layers open the largest unwanted flux paths | 26% |
+| Fishbone without return line | Fishbone turns, no return line | Simplest routing, but the winding's advance around the aperture forms a single loop that links external fields | 218% |
+
+The error is the signal from a current flowing outside the coil, relative to the same current through the centre of the aperture, taken as the maximum over four scan paths with the conductor touching the board through 0.1 mm of insulation. The comparison shows two lessons. A return line is essential: without it, the outside-current error rises by more than an order of magnitude. Among the patterns with a return line, the fishbone keeps the turns closest to ideal and rejects outside current best. The same study found the sensitivity to the inside current uniform within −1.1% to +0.7% across the aperture thanks to the return line, and developed both closed and clamp-type coils, the latter opening to fit around an existing conductor.
 
 ## My Coil Designs
 
-From the review, I designed five PCB coils in July 2024 that vary one feature at a time: the winding shape, the return line and the cutout. Each board places the coil beside the same signal-conditioning chain, with amplification and integration stages and coaxial connectors for the raw coil output and the final output, so the coil designs can be assessed with identical electronics.
+From the review, I designed five PCB coils in July 2024 that vary one feature at a time: the winding pattern, the return line and the outline. Types 1 and 2 use the saw (sawtooth) pattern on a circular outline, without and with a return line. Types 3 and 4 use the fishbone pattern on a square outline, without and with a return line. Type 5 adds a cutout from the aperture to the board edge, so that the coil can be slid around a conductor that is already in place, in the manner of a clamp-type coil. Each board places its coil beside the same signal-conditioning chain, with amplification and integration stages and coaxial connectors for the raw coil output and the final output, so the coils can be compared with identical electronics.
 
-| Design | Winding | Return line | Shape |
-| --- | --- | --- | --- |
-| Type 1 | Sawtooth | No | Radial |
-| Type 2 | Sawtooth | Yes | Radial |
-| Type 3 | Fishbone | No | Square |
-| Type 4 | Fishbone | Yes | Square |
-| Type 5 | Fishbone | Yes | Square with cutout |
-
-### Radial Sawtooth Coil
-
-Type 1 uses the circular, radial winding: traces run outwards on one layer and step back at an angle on the other, giving the sawtooth pattern and an even turn density around the aperture. Type 2 adds the return line to the same winding.
-
-<figure>
-  <a href="/images/research/pcb-rogowski/circular-coil-pcb.png" target="_blank" rel="noopener"><img src="/images/research/pcb-rogowski/circular-coil-pcb.png" alt="Type 1 PCB Rogowski coil board with a radial sawtooth winding beside its signal-conditioning circuit" width="602" height="432" loading="lazy"></a>
-  <figcaption>Type 1: radial sawtooth winding without return line, beside the signal-conditioning chain.</figcaption>
+<figure class="project-blueprint">
+  <a href="/images/research/pcb-rogowski/coil-designs.png" target="_blank" rel="noopener"><img src="/images/research/pcb-rogowski/coil-designs.png" alt="Five PCB Rogowski coils side by side: two circular saw windings, without and with return line, two square fishbone windings, without and with return line, and a square fishbone winding with a cutout to the board edge" width="1046" height="236" loading="lazy"></a>
+  <figcaption>The five coil designs, Types 1 to 5 from left to right, cropped from the board renders.</figcaption>
 </figure>
 
-### Square Fishbone Coil with Cutout
+| | Type 1 | Type 2 | Type 3 | Type 4 | Type 5 |
+| --- | --- | --- | --- | --- | --- |
+| Pattern | Saw | Saw | Fishbone | Fishbone | Fishbone |
+| Return line | No | Yes | No | Yes | Yes |
+| Outline | Circular | Circular | Square | Square | Square with cutout |
 
-Type 5 uses the square fishbone winding with a return line, and a cutout from the aperture to the board edge, so the board can be slid around a conductor that is already in place.
+The complete boards and design files of all five coils are in the [PCB Rogowski coil repository](https://github.com/FulongLi/PCB-Rogowski-Coil).
 
-<figure>
-  <a href="/images/research/pcb-rogowski/square-cutout-coil-pcb.png" target="_blank" rel="noopener"><img src="/images/research/pcb-rogowski/square-cutout-coil-pcb.png" alt="Type 5 PCB Rogowski coil board with a square fishbone winding, return line and a cutout from the aperture to the board edge" width="602" height="462" loading="lazy"></a>
-  <figcaption>Type 5: square fishbone winding with return line and cutout.</figcaption>
-</figure>
+## Key References
 
-The board renders and design files of all five coils are in the [PCB Rogowski coil repository](https://github.com/FulongLi/PCB-Rogowski-Coil).
+1. A. P. Chattock, "On a magnetic potentiometer," *Philosophical Magazine*, 1887.
+2. W. Rogowski and W. Steinhaus, "Die Messung der magnetischen Spannung," *Archiv für Elektrotechnik*, 1912.
+3. J. Cooper, "On the high-frequency response of a Rogowski coil," *Journal of Nuclear Energy, Part C*, 1963.
+4. D. G. Pellinen et al., "Rogowski coil for measuring fast, high-level pulsed currents," *Review of Scientific Instruments*, 1980.
+5. J. A. J. Pettinga and J. Siersema, "A polyphase 500 kA current measuring system with Rogowski coils," *IEE Proceedings B*, 1983.
+6. W. F. Ray and C. R. Hewson, "High performance Rogowski current transducers," IEEE IAS Annual Meeting, 2000.
+7. C. Baudart, "Device for measuring an electrical current in a conductor using a Rogowski coil," US Patent 5,442,280, 1995.
+8. N. Karrer and P. Hofer-Noser, "PCB Rogowski coils for high di/dt current measurement," IEEE PESC, 2000.
+9. L. Dalessandro et al., "Online and offline isolated current monitoring of parallel switched high-voltage multi-chip IGBT modules," IEEE PESC, 2008.
+10. T. Guillod, D. Gerber, J. Biela and A. Müsing, "Design of a PCB Rogowski coil based on the PEEC method," CIPS, 2012.
+11. Y. Xue et al., "A compact planar Rogowski coil current sensor for active current balancing of parallel-connected silicon carbide MOSFETs," IEEE ECCE, 2014.
+12. J. Wang, Z. Shen, R. Burgos and D. Boroyevich, "Design of a high-bandwidth Rogowski current sensor for gate-drive short-circuit protection of 1.7 kV SiC MOSFET power modules," IEEE WiPDA, 2015.
+13. M. Koga, M. Tsukuda, K. Nakashima and I. Omura, "[Application-specific micro Rogowski coil for power modules: design tool, novel coil pattern and demonstration](http://hdl.handle.net/10228/5769)," CIPS, 2016.
+14. Y. Kuwabara, K. Wada, J.-M. Guichon, J.-L. Schanen and J. Roudet, "Bus bar embedded Rogowski coil," IEEE APEC, 2018.
+15. J. Walter, J. Acuna and I. Kallfass, "Design and implementation of an integrated current sensor for a gallium nitride half-bridge," PCIM Europe, 2018.
+16. C. Jiao, Z. Zhang, Z. Zhao and X. Zhang, "Integrated Rogowski coil sensor for press-pack insulated gate bipolar transistor chips," *Sensors*, 2020.
 
 [PCB Current Transformer](/research/pcb-current-transformer/) · [Current Sensing](/research/sensing_devices/) · [Back to Research](/research/)

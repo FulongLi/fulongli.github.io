@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 398" width="760" height="398" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>Development of the Rogowski coil from its origins in 1887 and 1912, through wideband and pulsed-power coils and rigid PCB coils, to coils integrated into SiC, GaN and IGBT power modules, followed by my review and PCB coil designs</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a8288"/></marker></defs>
+<line x1="12" y1="30" x2="742" y2="30" stroke="#7a8288" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="18" y1="24" x2="18" y2="36" stroke="#7a8288" stroke-width="1.5"/>
+<text x="24" y="20" font-size="12.5" fill="#7a8288">1887–1912</text>
+<rect x="12" y="56" width="176" height="122" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="24" y="80" font-size="14" font-weight="700" fill="#494e52">Origins</text>
+<text x="24" y="104" font-size="12.5" fill="#494e52"><tspan font-weight="700">1887</tspan> Chattock</text>
+<text x="24" y="120" font-size="12" fill="#7a8288">magnetic potentiometer</text>
+<text x="24" y="142" font-size="12.5" fill="#494e52"><tspan font-weight="700">1912</tspan> Rogowski, Steinhaus</text>
+<text x="24" y="158" font-size="12" fill="#7a8288">line integral of the field</text>
+<line x1="202" y1="24" x2="202" y2="36" stroke="#7a8288" stroke-width="1.5"/>
+<text x="208" y="20" font-size="12.5" fill="#7a8288">1963–2006</text>
+<rect x="196" y="56" width="176" height="236" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="208" y="80" font-size="14" font-weight="700" fill="#494e52">Wideband and pulsed</text>
+<text x="208" y="104" font-size="12.5" fill="#494e52"><tspan font-weight="700">1963</tspan> Cooper</text>
+<text x="208" y="120" font-size="12" fill="#7a8288">high-frequency response</text>
+<text x="208" y="142" font-size="12.5" fill="#494e52"><tspan font-weight="700">1971–80</tspan> Pellinen</text>
+<text x="208" y="158" font-size="12" fill="#7a8288">megampere pulses</text>
+<text x="208" y="180" font-size="12.5" fill="#494e52"><tspan font-weight="700">1983</tspan> Pettinga</text>
+<text x="208" y="196" font-size="12" fill="#7a8288">500 kA measuring system</text>
+<text x="208" y="218" font-size="12.5" fill="#494e52"><tspan font-weight="700">1993–2000</tspan> Ray</text>
+<text x="208" y="234" font-size="12" fill="#7a8288">wideband transducers</text>
+<text x="208" y="256" font-size="12.5" fill="#494e52"><tspan font-weight="700">2006</tspan> Hewson, Ray</text>
+<text x="208" y="272" font-size="12" fill="#7a8288">fast switching transients</text>
+<line x1="386" y1="24" x2="386" y2="36" stroke="#7a8288" stroke-width="1.5"/>
+<text x="392" y="20" font-size="12.5" fill="#7a8288">1995–2012</text>
+<rect x="380" y="56" width="176" height="274" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="392" y="80" font-size="14" font-weight="700" fill="#494e52">Rigid PCB coils</text>
+<text x="392" y="104" font-size="12.5" fill="#494e52"><tspan font-weight="700">1995</tspan> Baudart</text>
+<text x="392" y="120" font-size="12" fill="#7a8288">PCB coil patent</text>
+<text x="392" y="142" font-size="12.5" fill="#494e52"><tspan font-weight="700">2000</tspan> Karrer</text>
+<text x="392" y="158" font-size="12" fill="#7a8288">high di/dt PCB coils</text>
+<text x="392" y="180" font-size="12.5" fill="#494e52"><tspan font-weight="700">2007</tspan> Bortis</text>
+<text x="392" y="196" font-size="12" fill="#7a8288">parallel IGBT balancing</text>
+<text x="392" y="218" font-size="12.5" fill="#494e52"><tspan font-weight="700">2008</tspan> Dalessandro</text>
+<text x="392" y="234" font-size="12" fill="#7a8288">multi-chip IGBT modules</text>
+<text x="392" y="256" font-size="12.5" fill="#494e52"><tspan font-weight="700">2011</tspan> Votzi</text>
+<text x="392" y="272" font-size="12" fill="#7a8288">capacitor current sensor</text>
+<text x="392" y="294" font-size="12.5" fill="#494e52"><tspan font-weight="700">2012</tspan> Guillod</text>
+<text x="392" y="310" font-size="12" fill="#7a8288">PEEC-based coil design</text>
+<line x1="570" y1="24" x2="570" y2="36" stroke="#7a8288" stroke-width="1.5"/>
+<text x="576" y="20" font-size="12.5" fill="#7a8288">2014–2020</text>
+<rect x="564" y="56" width="176" height="274" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="576" y="80" font-size="14" font-weight="700" fill="#494e52">Integrated coils</text>
+<text x="576" y="104" font-size="12.5" fill="#494e52"><tspan font-weight="700">2014</tspan> Xue</text>
+<text x="576" y="120" font-size="12" fill="#7a8288">planar coil, parallel SiC</text>
+<text x="576" y="142" font-size="12.5" fill="#494e52"><tspan font-weight="700">2015</tspan> Wang</text>
+<text x="576" y="158" font-size="12" fill="#7a8288">SiC short-circuit sensing</text>
+<text x="576" y="180" font-size="12.5" fill="#494e52"><tspan font-weight="700">2016–19</tspan> Koga, Omura et al.</text>
+<text x="576" y="196" font-size="12" fill="#7a8288">fishbone, in-module coils</text>
+<text x="576" y="218" font-size="12.5" fill="#494e52"><tspan font-weight="700">2018</tspan> Kuwabara</text>
+<text x="576" y="234" font-size="12" fill="#7a8288">busbar-embedded coil</text>
+<text x="576" y="256" font-size="12.5" fill="#494e52"><tspan font-weight="700">2018</tspan> Walter</text>
+<text x="576" y="272" font-size="12" fill="#7a8288">GaN half-bridge sensor</text>
+<text x="576" y="294" font-size="12.5" fill="#494e52"><tspan font-weight="700">2020</tspan> Jiao</text>
+<text x="576" y="310" font-size="12" fill="#7a8288">press-pack IGBT chips</text>
+<rect x="12" y="346" width="728" height="44" rx="6" fill="#eef7fa" stroke="#52adc8" stroke-width="2"/>
+<text x="376" y="373" font-size="13.5" fill="#494e52" text-anchor="middle"><tspan font-weight="700">2022–2024 my work:</tspan> review of the field, then five PCB coil designs with on-board signal conditioning</text>
+</svg>
