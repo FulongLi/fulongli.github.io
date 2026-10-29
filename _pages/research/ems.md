@@ -9,7 +9,7 @@ My energy management work connects generation and storage models to operating de
 
 ## DC Microgrid Energy Management
 
-The [rule-based DC microgrid study](/research/dcmg/rule-based-ems/) coordinates converter roles, battery charging and PV limitation through bus signalling. Laboratory sequences demonstrate planned grid/island handover and surplus-generation control.
+The [rule-based DC microgrid study](/research/dcmg/rule-based-ems/) coordinates converter roles, battery charging and PV limitation through bus signalling. Its operating rules cover planned grid/island handover and surplus-generation control.
 
 ## Battery Energy Scheduling and Optimisation
 

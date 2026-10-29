@@ -10,7 +10,7 @@ project_contents: true
 mathjax: true
 ---
 
-I designed PCB Rogowski coils and their signal-conditioning circuits for measuring fast current transients in power converters, then tested the complete sensing chain against a commercial Rogowski coil.
+I designed PCB Rogowski coils and their signal-conditioning circuits for measuring fast current transients in power converters.
 
 ## How a Rogowski Coil Measures Current
 
@@ -37,10 +37,6 @@ An alternative layout uses a rectangular winding around the aperture with the sa
   <a href="/images/research/pcb-rogowski/rectangular-coil-pcb.png" target="_blank" rel="noopener"><img src="/images/research/pcb-rogowski/rectangular-coil-pcb.png" alt="PCB Rogowski sensor design with a rectangular winding and signal-conditioning components" width="602" height="457" loading="lazy"></a>
   <figcaption>Rectangular PCB winding with the same signal-conditioning chain.</figcaption>
 </figure>
-
-## Comparison with a Commercial Coil
-
-I tested the designed sensing chain alongside a commercial Rogowski coil measuring the same current. The prototype's measured response was broadly in line with the commercial reference in these project tests. The comparison is qualitative: numerical error, bandwidth and measurement uncertainty for the prototype were not established in the published summary.
 
 The design files are available in the [PCB Rogowski coil repository](https://github.com/FulongLi/PCB-Rogowski-Coil).
 

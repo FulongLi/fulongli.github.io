@@ -10,7 +10,7 @@ Energy management decides how the sources and storage in a microgrid share deman
 
 <h2 id="3-mw-marine-fuel-cell-hybrid-powertrain">3 MW Marine Fuel-Cell Project</h2>
 
-In 2023 I led the 3 MW marine fuel-cell hybrid powertrain project, covering system architecture, MATLAB/Simulink modelling and a central rule-based energy management strategy. The study compared battery sizing and operating policies over HST and BMT vessel duty cycles, with results for electrical energy use, component states and fuel-cell heat generation.
+In 2023 I led the 3 MW marine fuel-cell hybrid powertrain project, covering system architecture, MATLAB/Simulink modelling and a central rule-based energy management strategy. The study compared battery sizing and operating policies over HST and BMT vessel duty cycles, modelling electrical energy use, component states and fuel-cell heat generation.
 
 [Read the 3 MW marine powertrain study](/research/3mw-marine-fuel-cell/)
 

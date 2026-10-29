@@ -20,6 +20,4 @@ I carried out high-temperature reverse-bias (HTRB) and high-humidity, high-tempe
 
 I tested GaN devices under repeated thermal cycles.
 
-Lifetime and qualification results from these projects are not published here.
-
 [Power Device Characterization](/research/switching_devices/) · [Back to Research](/research/)

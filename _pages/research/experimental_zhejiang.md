@@ -14,6 +14,6 @@ A DC microgrid usually exchanges power with the AC grid through a three-phase vo
 
 ## Platform and My Work
 
-The platform operates at up to 50 kW and includes a three-phase voltage-source converter interface between the AC grid and the DC microgrid. I worked with this platform and its AC–DC interface during the visit. Detailed results from this work are not published here.
+The platform operates at up to 50 kW and includes a three-phase voltage-source converter interface between the AC grid and the DC microgrid. I worked with this platform and its AC–DC interface during the visit.
 
 [Non-Isolated Converters](/research/nonisolated_converters/#acdc-converter-interfaces) · [All experimental platforms](/research/experimental_platforms/) · [Back to Research](/research/)

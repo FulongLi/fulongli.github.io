@@ -11,9 +11,8 @@ Semiconductor models connect device characteristics to converter loss and temper
 <h2 id="static-ann-modelling">SiC Power Devices — Static ANN Modelling</h2>
 <span id="device-loss-models"></span>
 <span id="thermal-modelling"></span>
-<span id="experimental-validation"></span>
 
-Neural networks fit the conduction voltage, turn-on and turn-off energy and thermal impedance of the C2M0080120D SiC MOSFET, treating the MOSFET channel and body diode separately. I led the modelling and its assessment against a buck converter at about 400 V / 200 V and up to 3 kW, where predicted and thermally inferred losses showed about 10% variation against a 20% target.
+Neural networks fit the conduction voltage, turn-on and turn-off energy and thermal impedance of the C2M0080120D SiC MOSFET, treating the MOSFET channel and body diode separately. I led the modelling, from organising the reference data and structuring the networks to the loss and thermal calculations they feed.
 
 [Read the static ANN modelling study](/research/semiconductor-device-modelling/static-ann/)
 

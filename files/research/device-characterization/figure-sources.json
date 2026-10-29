@@ -10,7 +10,7 @@
       "date_on_cover": "2023-10-12"
     }
   },
-  "attribution": "Training materials document the double-pulse test equipment and example measurements. Fulong Li supplied the account of his role in joint platform construction, board modifications and Siemens project testing. DPT page 24 separately credits Fulong in the post-processing workflow. The thermal-characterisation training figures were removed in October 2026; the thermal page now uses Fulong Li's own C2M0080120D measurement, recorded in files/research/sumitomo-device-modelling.",
+  "attribution": "Training materials document the double-pulse test equipment and example measurements. Fulong Li supplied the account of his role in joint platform construction, board modifications and Siemens project testing. DPT page 24 separately credits Fulong in the post-processing workflow. The thermal-characterisation training figures were removed in October 2026. On 29 October 2026 the measured switching waveforms and energies were also removed, so the characterisation pages describe principles and the test platform only.",
   "figures": [
     {
       "file": "dpt-test-platform.png",
@@ -29,42 +29,6 @@
       "width": 1500,
       "height": 836,
       "sha256": "e9bdb3716d3619a0a17d35d2fdef02e4c18365da039f7d5a05cca1c8754423da"
-    },
-    {
-      "file": "sic-switching-transients.png",
-      "source": "dpt",
-      "page_or_slide": 28,
-      "extraction": {
-        "type": "source-figure-render",
-        "crop_points": [
-          65,
-          100,
-          915,
-          418
-        ],
-        "scale": 2
-      },
-      "width": 1700,
-      "height": 636,
-      "sha256": "7aaf3929359c6ef991fe48725afff9e162ac5298c156c271f7760463b8bf1baa"
-    },
-    {
-      "file": "sic-switching-energy.png",
-      "source": "dpt",
-      "page_or_slide": 29,
-      "extraction": {
-        "type": "source-figure-render",
-        "crop_points": [
-          175,
-          75,
-          780,
-          460
-        ],
-        "scale": 2
-      },
-      "width": 1210,
-      "height": 770,
-      "sha256": "ed82c5e279217b28869b9b808b5d737f106bea22d343122b13f88d0447bd19d3"
     }
   ]
 }

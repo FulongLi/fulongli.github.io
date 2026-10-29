@@ -6,10 +6,10 @@ author_profile: true
 body_class: microgrid-project-page
 project_stylesheet: /assets/css/marine-project.css
 project_contents: true
-excerpt: "Passive converter control, DC bus signalling and rule-based energy management demonstrated on a laboratory microgrid."
+excerpt: "A hierarchical control scheme for low-voltage DC microgrids: passive converter control, DC bus signalling and rule-based energy management."
 ---
 
-My PhD research developed a hierarchical control scheme for low-voltage DC microgrids, connecting **passive converter control**, **dual-window DC bus signalling** and **rule-based power management**. I developed the stabiliser and signalling method, integrated them with droop control and demonstrated the complete scheme on a laboratory microgrid.
+My PhD research developed a hierarchical control scheme for low-voltage DC microgrids, connecting **passive converter control**, **dual-window DC bus signalling** and **rule-based power management**. I developed the stabiliser and signalling method and integrated them with droop control into one scheme.
 
 <h2 id="overview">Stable Converters, Coordinated Sources</h2>
 
@@ -31,9 +31,9 @@ A DC microgrid connects generation, storage and loads to a common DC bus through
 <span id="rule-based-ems"></span>
 **[Rule-based EMS](/research/dcmg/rule-based-ems/)** assigns bus regulation, charging and discharging roles, and limits PV output when storage cannot absorb the surplus.
 
-<h2 id="experimental-validation">Laboratory Demonstration</h2>
+<h2 id="laboratory-microgrid">Laboratory Microgrid</h2>
 
-I demonstrated the scheme on a low-voltage laboratory microgrid in which interface converters connect emulated generation, battery storage and loads. The experiments link converter stability to coordinated source behaviour, including a signalled handover of bus regulation before planned grid disconnection and the limitation of surplus PV generation.
+I implemented the scheme on a low-voltage laboratory microgrid in which interface converters connect emulated generation, battery storage and loads.
 
 <figure>
   <a href="/images/research/dc-microgrid-control/laboratory-bench.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/laboratory-bench.png" alt="Low-voltage DC microgrid bench with source emulation, battery interfaces, loads and measurement equipment" width="1212" height="915" loading="lazy"></a>

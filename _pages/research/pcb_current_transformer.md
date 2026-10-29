@@ -10,7 +10,7 @@ project_contents: true
 mathjax: true
 ---
 
-I designed a current transformer whose magnetic core is embedded between PCB layers, with a secondary winding formed by PCB traces and vias. The aim was to assess both the sensing concept and whether the construction could be manufactured repeatably at scale.
+I designed a current transformer whose magnetic core is embedded between PCB layers, with a secondary winding formed by PCB traces and vias. The construction aims at compact, isolated current sensing that can be manufactured repeatably at scale.
 
 ## How a PCB Current Transformer Works
 
@@ -50,10 +50,6 @@ where <i>A</i><sub>c</sub> and <i>l</i><sub>c</sub> are the core cross-section a
 | Secondary burden resistance | 10 Ω |
 | Estimated magnetising inductance | 0.942 mH |
 | Estimated lower corner frequency | approximately 1.8 kHz |
-
-## Experimental Assessment
-
-I evaluated the prototype for manufacturability as well as sensing performance. In the experiments, its sensitivity and dynamic response were broadly comparable to a commercial Rogowski coil measuring the same current. This is a qualitative comparison: numerical accuracy, bandwidth and production yield were not established in the published summary.
 
 The design files are available in the [PCB current transformer repository](https://github.com/FulongLi/Magnetics-PCBCurrentTransformerTransducer).
 

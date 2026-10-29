@@ -30,7 +30,7 @@ The workflow turns converter requirements into a design vector and evaluates the
 
 <h2 id="aipe-continuation">Implementation and Continuation</h2>
 
-Parts of the framework have been implemented. The [SiC device-modelling project](/research/mosfet_ann_modelling/) demonstrates the semiconductor branch, connecting ANN loss models to converter experiments. The [public optimisation code](https://github.com/FulongLi/AIPE-Converter-Optimisation-Agent) implements a focused example: a nominal 1 kW, 430 V / 230 V buck-type inverter whose switch area, switching frequency, current ripple and junction-temperature rise are optimised for a weighted loss–volume objective with an SLSQP solver. Its thermal treatment is simplified and its component volume excludes the heat sink.
+Parts of the framework have been implemented. The [SiC device-modelling project](/research/mosfet_ann_modelling/) demonstrates the semiconductor branch, connecting ANN loss models to converter loss calculations. The [public optimisation code](https://github.com/FulongLi/AIPE-Converter-Optimisation-Agent) implements a focused example: a nominal 1 kW, 430 V / 230 V buck-type inverter whose switch area, switching frequency, current ripple and junction-temperature rise are optimised for a weighted loss–volume objective with an SLSQP solver. Its thermal treatment is simplified and its component volume excludes the heat sink.
 
 The complete architecture remains a proposed framework. My subsequent AIPE work builds on it, connecting component calculations to optimisation and neural-network surrogate modelling within a wider design workflow.
 
