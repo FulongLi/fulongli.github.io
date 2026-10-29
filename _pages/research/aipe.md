@@ -27,6 +27,8 @@ The [public converter optimisation repository](https://github.com/FulongLi/AIPE-
 
 [AIPE Field Simulation](/research/aipe-field-simulation/) drives Gmsh and Elmer to solve thermal, magnetostatic and eddy-current fields, checking analytical estimates against verified finite-element results. The project page introduces its structure and the heat sink of a 10 kW DAB converter, solved from the CAD Agent's model.
 
+[AIPE IEEE Paper Agent](/research/aipe-ieee-paper-agent/) turns a research idea and the evidence recorded by the design agents into an evidence-linked paper plan and a manuscript workspace on the official IEEE template of the chosen venue, without inventing results or references. The project page introduces its structure and a paper plan for the 10 kW DAB benchmark.
+
 ## Open-Source Engineering Tools and Resources
 
 [AIPE Labs](https://github.com/FulongLi/Spirit-Connect-AIPE-Labs) · [Academy](https://aipel.co.uk/academy/) · [Data, Models & Tools](https://aipel.co.uk/hub/) · [Open Research](https://aipel.co.uk/frontiers/)

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 668" width="760" height="668" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>AIPE IEEE Paper Agent architecture: a research idea and AIPE evidence feed research planning, venue profiles and the manuscript workspace, then evidence-based drafting and audits; missing evidence returns to the plan, and the author reviews, compiles and submits</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a8288"/></marker></defs>
+<g text-anchor="middle">
+<rect x="40" y="16" width="310" height="80" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="195" y="40" font-size="15" font-weight="700" fill="#494e52">Research idea</text>
+<text x="195" y="62" font-size="12.5" fill="#7a8288">problem, scope and research questions</text>
+<text x="195" y="82" font-size="12.5" fill="#7a8288">target IEEE venue</text>
+<rect x="370" y="16" width="310" height="80" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="525" y="40" font-size="15" font-weight="700" fill="#494e52">AIPE evidence</text>
+<text x="525" y="62" font-size="12.5" fill="#7a8288">Engineering State and evidence IDs</text>
+<text x="525" y="82" font-size="12.5" fill="#7a8288">executed results, figures and limits</text>
+</g>
+<rect x="24" y="116" width="712" height="452" rx="8" fill="#eef7fa" stroke="#52adc8" stroke-width="2"/>
+<text x="360" y="138" font-size="13" font-weight="700" fill="#52adc8" text-anchor="middle">AIPE IEEE Paper Agent · core workflows</text>
+<g text-anchor="middle">
+<rect x="40" y="148" width="640" height="72" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="360" y="172" font-size="15" font-weight="700" fill="#494e52">Research planning</text>
+<text x="360" y="194" font-size="12.5" fill="#7a8288">research spine, testable questions, two to four verifiable claims</text>
+<text x="360" y="212" font-size="12.5" fill="#7a8288">evidence matrix with blocking, important and optional gaps</text>
+<rect x="40" y="252" width="310" height="100" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="195" y="276" font-size="15" font-weight="700" fill="#494e52">Venue profiles</text>
+<text x="195" y="298" font-size="12.5" fill="#7a8288">six official IEEE templates</text>
+<text x="195" y="318" font-size="12.5" fill="#7a8288">class, front matter and assets</text>
+<text x="195" y="338" font-size="12.5" fill="#7a8288">preserved, never edited</text>
+<rect x="370" y="252" width="310" height="100" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="525" y="276" font-size="15" font-weight="700" fill="#494e52">Manuscript workspace</text>
+<text x="525" y="298" font-size="12.5" fill="#7a8288">main.tex, sections, figures, references</text>
+<text x="525" y="318" font-size="12.5" fill="#7a8288">notes for plan, evidence and audits</text>
+<text x="525" y="338" font-size="12.5" fill="#7a8288">explicit TODOs, no sample prose</text>
+<rect x="40" y="384" width="640" height="72" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="360" y="408" font-size="15" font-weight="700" fill="#494e52">Evidence-based drafting</text>
+<text x="360" y="430" font-size="12.5" fill="#7a8288">method, setup and results first; introduction and abstract last</text>
+<text x="360" y="448" font-size="12.5" fill="#7a8288">only against available evidence; optional power-electronics domain pack</text>
+<rect x="40" y="480" width="640" height="72" rx="6" fill="#ffffff" stroke="#bdc1c4"/>
+<text x="360" y="504" font-size="15" font-weight="700" fill="#494e52">Audits</text>
+<text x="360" y="526" font-size="12.5" fill="#7a8288">citation audit against the reference index, LaTeX and venue audit</text>
+<text x="360" y="544" font-size="12.5" fill="#7a8288">publication-readiness review, blockers first</text>
+<rect x="40" y="596" width="640" height="56" rx="6" fill="#f2f3f3" stroke="#bdc1c4"/>
+<text x="360" y="620" font-size="15" font-weight="700" fill="#494e52">Hand-off</text>
+<text x="360" y="640" font-size="12.5" fill="#7a8288">author review, PDF compilation and submission by the author</text>
+</g>
+<g stroke="#7a8288" stroke-width="1.5" fill="none" marker-end="url(#arrow)">
+<line x1="195" y1="96" x2="195" y2="146"/>
+<line x1="525" y1="96" x2="525" y2="146"/>
+<line x1="195" y1="220" x2="195" y2="250"/>
+<line x1="350" y1="302" x2="368" y2="302"/>
+<line x1="525" y1="352" x2="525" y2="382"/>
+<line x1="360" y1="456" x2="360" y2="478"/>
+<line x1="360" y1="552" x2="360" y2="594"/>
+<path d="M680,516 H706 V184 H682"/>
+</g>
+<text x="723" y="350" font-size="12.5" fill="#7a8288" text-anchor="middle" transform="rotate(90 723 350)">missing evidence returns to the plan</text>
+</svg>
