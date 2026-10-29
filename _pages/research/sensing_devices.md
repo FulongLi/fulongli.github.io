@@ -10,7 +10,7 @@ Fast-switching SiC converters need current sensors that are compact, fit close t
 
 ## PCB Rogowski Coil (PCB-RC)
 
-An air-cored PCB winding senses the rate of change of current, and an on-board integrator recovers the current signal. With no core to saturate, it suits large, fast transients. I reviewed how the winding shape affects sensing, then designed five coils, radial and square, with and without a return line and with a cutout, each with its own signal-conditioning circuit.
+An air-cored PCB winding senses the rate of change of current, and an on-board integrator recovers the current signal. With no core to saturate, it suits large, fast transients. I reviewed the coil's development and how PCB winding patterns trade off, then designed five coils with saw and fishbone patterns, circular and square outlines, with and without a return line and with a cutout, each with its own signal-conditioning circuit.
 
 [Read the PCB Rogowski coil project](/research/pcb-rogowski-coil/)
 
