@@ -18,5 +18,37 @@
       644,
       548
     ]
+  },
+  {
+    "file": "llc-fha-equivalent.png",
+    "source": "LLC converter summary.pptx",
+    "slide": 2,
+    "shape_index": 9,
+    "sha256": "566b029d40dbac6c9f15a84262e341f9c578d8162db4478ace142efdfbb23bf5"
+  },
+  {
+    "file": "llc-switching-waveforms.png",
+    "source": "LLC converter summary.pptx",
+    "slide": 8,
+    "shape_index": 9,
+    "crop_pixels": [
+      0,
+      0,
+      848,
+      939
+    ],
+    "note": "Left half of the 1716 x 939 image; the right half holds four empty channels.",
+    "sha256": "58015326287a84c3ee791899dcff8e9b6317bf93e2c836856d9ea04e4f531e29"
+  },
+  {
+    "file": "llc-gain-sweeps.svg",
+    "source": "Drawn for the website on 29 October 2026 from the first-harmonic LLC gain model; it reproduces the slides' peak gains (1.115 at m = 10, 1.155 at m = 9, 1.209 at m = 8, all with Q = 0.4). Swept curves use an ordinal blue ramp; the selected design is orange.",
+    "slides": [
+      3,
+      4,
+      5,
+      7
+    ],
+    "sha256": "c1dd28a3302d4aff49e31715573c84cf92001ba0d36a95f84de9d77b08aa4e73"
   }
 ]
