@@ -26,6 +26,6 @@ I developed control methods for coordinating modular batteries in DC microgrids:
 
 At the University of Waterloo, I modelled battery degradation within a GAMS-based energy management optimisation for DC microgrids, bringing battery use and its degradation cost into the scheduling problem.
 
-[Energy Management System for DC Microgrids Considering Battery Degradation](https://ieeexplore.ieee.org/document/9281580), IEEE PESGM 2020.
+[Read the battery-degradation EMS](/research/mgapp/battery-degradation-ems/) · [IEEE PESGM 2020 paper](https://ieeexplore.ieee.org/document/9281580)
 
 [Energy Management Systems](/research/ems/) · [Experimental Platforms](/research/experimental_platforms/) · [Back to Research](/research/)
