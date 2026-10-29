@@ -10,7 +10,7 @@ project_contents: true
 mathjax: true
 ---
 
-I studied an isolated 10 kW LLC resonant converter for a data-centre power application, from resonant-tank design by first-harmonic analysis to closed-loop simulation. The work remained at the simulation stage; no hardware prototype was built or tested.
+This study examined an isolated 10 kW LLC resonant converter for a data-centre power application, from resonant-tank design by first-harmonic analysis to closed-loop simulation. The work remained at the simulation stage; no hardware prototype was built or tested.
 
 ## How an LLC Converter Regulates Its Output
 
@@ -32,7 +32,7 @@ The converter must supply a regulated 50 V output from a 750 V input that varies
 | Maximum output power | 10 kW |
 | Target operating frequency | 200 kHz |
 
-I designed the tank by first-harmonic approximation: the square-wave bridge voltage is replaced by its fundamental, and the rectifier and load by an equivalent AC resistance <i>R</i><sub>ac</sub>, which turns the converter into a linear resonant circuit.
+The tank was designed by first-harmonic approximation: the square-wave bridge voltage is replaced by its fundamental, and the rectifier and load by an equivalent AC resistance <i>R</i><sub>ac</sub>, which turns the converter into a linear resonant circuit.
 
 <figure>
   <a href="/images/research/llc-converter/llc-fha-equivalent.png" target="_blank" rel="noopener"><img src="/images/research/llc-converter/llc-fha-equivalent.png" alt="First-harmonic equivalent circuit with series resonant capacitor and inductor, magnetising inductance and equivalent AC load resistance" width="642" height="227" loading="lazy"></a>
@@ -53,7 +53,7 @@ With a 15 : 1 transformer, the nominal 750 V input needs a gain of 1, and the 67
 
 ## Choosing Q and m
 
-I swept <i>Q</i> at <i>m</i> = 10, then <i>m</i> at <i>Q</i> = 0.4. A low <i>Q</i> gives a high, sharp gain peak but makes the gain very sensitive to frequency; a high <i>Q</i> flattens the peak below the required gain. Reducing <i>m</i>, a smaller magnetising inductance, raises the peak gain at the cost of more circulating magnetising current.
+<i>Q</i> was swept at <i>m</i> = 10, then <i>m</i> at <i>Q</i> = 0.4. A low <i>Q</i> gives a high, sharp gain peak but makes the gain very sensitive to frequency; a high <i>Q</i> flattens the peak below the required gain. Reducing <i>m</i>, a smaller magnetising inductance, raises the peak gain at the cost of more circulating magnetising current.
 
 <figure class="project-blueprint">
   <a href="/images/research/llc-converter/llc-gain-sweeps.svg" target="_blank" rel="noopener"><img src="/images/research/llc-converter/llc-gain-sweeps.svg" alt="LLC voltage gain against normalised frequency for Q from 0.1 to 1 at m of 10 and for m from 2 to 15 at Q of 0.4, with the selected design highlighted and the required gain band shaded" width="760" height="410" loading="lazy"></a>
@@ -70,7 +70,7 @@ The selected <i>Q</i> = 0.4 and <i>m</i> = 10 give a peak gain of 1.115 at <i>F<
 | Transformer turns ratio | 15 : 1 |
 | Minimum switching frequency | 100.8 kHz |
 
-Because the margin is small, I also examined lower <i>m</i> and a lower resonant frequency:
+Because the margin is small, lower <i>m</i> and a lower resonant frequency were also examined:
 
 | Variant | Peak gain | Minimum frequency | Tank values |
 | --- | --- | --- | --- |

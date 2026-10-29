@@ -5,7 +5,7 @@ permalink: /research/passive_components/
 author_profile: true
 ---
 
-Inductors and transformers link electromagnetic design to converter loss, size and thermal behaviour. My supporting work in this area concerns magnetic-component design and modelling for power electronics.
+Inductors and transformers link electromagnetic design to converter loss, size and thermal behaviour. Supporting work in this area concerns magnetic-component design and modelling for power electronics.
 
 ## PCB Inductor Design for High-Frequency Converters
 

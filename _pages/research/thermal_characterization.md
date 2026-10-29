@@ -10,7 +10,7 @@ mathjax: true
 excerpt: "Thermal resistance of a packaged GaN power device from an on-chip temperature-sensing resistance, and transient thermal impedance of a SiC MOSFET."
 ---
 
-I characterise how heat leaves power devices. For the P3EP project, I built a thermal-resistance measurement for a GaN power device in an embedded package, using a temperature-dependent resistance on the chip as its thermometer; earlier, I measured the transient thermal impedance of a SiC MOSFET.
+Thermal characterisation determines how heat leaves power devices. For the P3EP project, a thermal-resistance measurement was built for a GaN power device in an embedded package, using a temperature-dependent resistance on the chip as its thermometer; earlier work measured the transient thermal impedance of a SiC MOSFET.
 
 <h2 id="thermal-impedance">How Thermal Resistance Is Measured</h2>
 
@@ -38,7 +38,7 @@ The device is switched on and heated by its own drain current, while the sensing
   <figcaption>Thermal-resistance test circuit: the drain current heats the device, the sensing resistance <i>R</i><sub>S</sub> gives the junction temperature <i>T</i><sub>j</sub>, and a thermocouple gives the package-bottom temperature <i>T</i><sub>c</sub>.</figcaption>
 </figure>
 
-I designed a base cooling plate with six seats, each a 1 mm-deep pocket for the 1.685 mm-thick package, so several devices can be prepared and tested in turn. A Peltier module sets the plate temperature, both for calibration and for temperature cycling. The bench combines a precision power analyser, a dual DC power supply, a data-acquisition unit and a thermocouple logger, recorded from a laptop.
+A base cooling plate was designed with six seats, each a 1 mm-deep pocket for the 1.685 mm-thick package, so several devices can be prepared and tested in turn. A Peltier module sets the plate temperature, both for calibration and for temperature cycling. The bench combines a precision power analyser, a dual DC power supply, a data-acquisition unit and a thermocouple logger, recorded from a laptop.
 
 <figure class="half">
   <a href="/images/research/gan-characterization/cooling-plate.png" target="_blank" rel="noopener"><img src="/images/research/gan-characterization/cooling-plate.png" alt="CAD model of the base cooling plate with six device seats and mounting holes" width="1200" height="779" loading="lazy"></a>
@@ -67,7 +67,7 @@ With this mapping, the junction-to-package-bottom thermal resistance of the devi
 
 <h2 id="measurement">Transient Thermal Impedance of a SiC MOSFET</h2>
 
-For a C2M0080120D SiC MOSFET, I used a PWT2400 power tester, the T3STER transient measurement system and a temperature-controlled cooling circuit. I calibrated the forward voltage at a 10 mA sensing current, heated the device to equilibrium, and recorded its cooling transient. Repeating the measurement with a dry and a greased mounting interface changes only the outer part of the heat path, so comparing the two structure functions locates the junction-to-case boundary. Structure-function analysis then extracts a Cauer thermal network for the device.
+The C2M0080120D SiC MOSFET was measured with a PWT2400 power tester, the T3STER transient measurement system and a temperature-controlled cooling circuit. The forward voltage was calibrated at a 10 mA sensing current, the device heated to equilibrium, and its cooling transient recorded. Repeating the measurement with a dry and a greased mounting interface changes only the outer part of the heat path, so comparing the two structure functions locates the junction-to-case boundary. Structure-function analysis then extracts a Cauer thermal network for the device.
 
 The extracted network feeds the thermal branch of the [SiC static ANN model](/research/semiconductor-device-modelling/static-ann/#thermal-modelling) and its converter-level temperature estimates. Automation of the measurement workflow continues in the public [TIM Automation](https://github.com/FulongLi/TIM_Automation) repository.
 

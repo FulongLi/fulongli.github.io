@@ -5,15 +5,15 @@ permalink: /research/aipe/
 author_profile: true
 ---
 
-AIPE connects my work on device modelling, converter optimisation and open engineering tools. The aim is to make engineering data and models useful within an inspectable design workflow.
+AIPE connects research on device modelling, converter optimisation and open engineering tools. The aim is to make engineering data and models useful within an inspectable design workflow.
 
 ## AI-Assisted Semiconductor Device Modelling
 
-I developed the modelling and assessment workflow linking fitted device characteristics to converter losses. The [SiC static ANN study](/research/semiconductor-device-modelling/static-ann/) explains the network branches, training and a buck-converter comparison up to 3 kW. [Semiconductor modelling overview](/research/mosfet_ann_modelling/).
+A modelling and assessment workflow was developed to link fitted device characteristics to converter losses. The [SiC static ANN study](/research/semiconductor-device-modelling/static-ann/) explains the network branches, training and a buck-converter comparison up to 3 kW. [Semiconductor modelling overview](/research/mosfet_ann_modelling/).
 
 ## Multi-Objective Converter Optimisation
 
-I proposed an integrated component-modelling and converter-design framework, then continued its development through AIPE. [Explore the design framework](/research/converter_optimization/).
+An integrated component-modelling and converter-design framework was proposed, and its development continued through AIPE. [Explore the design framework](/research/converter_optimization/).
 
 ## Engineering Design Agents
 

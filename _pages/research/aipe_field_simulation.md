@@ -10,7 +10,7 @@ project_contents: true
 mathjax: true
 ---
 
-AIPE Field Simulation is the finite-element agent in my AIPE framework. It drives the open-source tools Gmsh and Elmer to solve the thermal, magnetostatic and eddy-current problems of power-electronics design, and records every solve as an auditable case. This page explains the framework it belongs to, its role there, how the agent is organised, and the heat sink of a 10 kW DAB converter that it has solved.
+AIPE Field Simulation is the finite-element agent in the AIPE framework. It drives the open-source tools Gmsh and Elmer to solve the thermal, magnetostatic and eddy-current problems of power-electronics design, and records every solve as an auditable case. This page explains the framework it belongs to, its role there, how the agent is organised, and the heat sink of a 10 kW DAB converter that it has solved.
 
 [Explore the repository](https://github.com/FulongLi/AIPE-Field-Simulation)
 

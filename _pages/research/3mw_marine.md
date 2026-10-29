@@ -9,7 +9,7 @@ project_contents: true
 excerpt: "Marine fuel-cell and battery modelling: vessel duty cycles, operating strategy, energy use and heat generation."
 ---
 
-I led the **3 MW marine fuel-cell hybrid powertrain project in 2023**, connecting vessel requirements and system architecture to MATLAB/Simulink component models and a central rule-based energy management strategy, and comparing battery sizing and dispatch policies over two vessel duty cycles.
+The **3 MW marine fuel-cell hybrid powertrain project (2023)**, led by the author, connected vessel requirements and system architecture to MATLAB/Simulink component models and a central rule-based energy management strategy, and compared battery sizing and dispatch policies over two vessel duty cycles.
 
 <h2 id="overview">Matching a Hybrid Powertrain to a Day at Sea</h2>
 

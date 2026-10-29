@@ -10,11 +10,11 @@ project_contents: true
 mathjax: true
 ---
 
-My solid-state transformer (SST) work has two parts. For the ASSIST project, I reviewed SST technology: high-voltage semiconductor devices, converter configurations, smart-grid functions, reported prototypes and applications. Later, in collaboration with Cardiff University, I worked on the design of a three-stage SST in simulation, focusing on its isolated dual-active-bridge (DAB) stage.
+The solid-state transformer (SST) work has two parts. For the ASSIST project, a review covered SST technology: high-voltage semiconductor devices, converter configurations, smart-grid functions, reported prototypes and applications. Later, in collaboration with Cardiff University, a three-stage SST was designed in simulation, with a focus on its isolated dual-active-bridge (DAB) stage.
 
 ## What a Solid-State Transformer Is
 
-A solid-state transformer replaces a bulky line-frequency transformer with power-electronic conversion stages around a compact medium-frequency isolation transformer. Raising the isolation frequency shrinks the transformer, and because the conversion is actively controlled, an SST can also regulate voltage, control active and reactive power, isolate faults, and provide DC ports for renewable generation, storage and DC microgrids. Its feasibility at medium voltage depends strongly on high-voltage semiconductors: my review followed SiC MOSFETs of 10 kV and above in research, against commercial devices that were then mostly SiC modules up to 1.7 kV and silicon IGBTs at 3.3 to 6.5 kV.
+A solid-state transformer replaces a bulky line-frequency transformer with power-electronic conversion stages around a compact medium-frequency isolation transformer. Raising the isolation frequency shrinks the transformer, and because the conversion is actively controlled, an SST can also regulate voltage, control active and reactive power, isolate faults, and provide DC ports for renewable generation, storage and DC microgrids. Its feasibility at medium voltage depends strongly on high-voltage semiconductors: the review followed SiC MOSFETs of 10 kV and above in research, against commercial devices that were then mostly SiC modules up to 1.7 kV and silicon IGBTs at 3.3 to 6.5 kV.
 
 ## Single-, Two- and Three-Stage SSTs
 
@@ -22,7 +22,7 @@ SSTs fall into three configurations, distinguished by how many DC links they hav
 
 <figure class="project-blueprint">
   <a href="/images/research/sst/sst-stage-configurations.svg" target="_blank" rel="noopener"><img src="/images/research/sst/sst-stage-configurations.svg" alt="Block diagrams of single-stage, two-stage and three-stage SSTs between the MV and LV AC grids, with no DC link, one DC link, and both HV and LV DC links" width="760" height="374" fetchpriority="high"></a>
-  <figcaption>The three SST configurations; the three-stage SST, with both HV and LV DC links, is the one I worked on.</figcaption>
+  <figcaption>The three SST configurations; the three-stage SST, with both HV and LV DC links, is the configuration designed in this work.</figcaption>
 </figure>
 
 | Configuration | Structure | Strengths | Limitations |
@@ -31,7 +31,7 @@ SSTs fall into three configurations, distinguished by how many DC links they hav
 | Two-stage | An isolated AC–DC stage and a DC–AC stage around one DC link, on the high- or the low-voltage side | The DC link enables reactive power compensation, voltage-sag ride-through, fault isolation and DC-link protection | More switching devices, higher losses and ripple current, and harder to build modularly |
 | Three-stage | An AC–DC rectifier, an isolated DC–DC stage and a DC–AC inverter, with DC links on both sides | Independent control of each side, fault isolation and ride-through, reactive power support, and HV and LV DC ports for renewables and storage | The most semiconductor stages, so lower efficiency and more components to keep reliable |
 
-The three-stage configuration offers the most complete set of grid functions, including voltage regulation, current limiting, protection and power-factor control, and its two DC links can be brought out as ports for storage, renewables and DC microgrids. This is why most recent research prototypes in my review used it, and it is the configuration I went on to design. The review also covered the applications that motivate SSTs, from data centres and fast EV charging to DC microgrids, ships and offshore wind.
+The three-stage configuration offers the most complete set of grid functions, including voltage regulation, current limiting, protection and power-factor control, and its two DC links can be brought out as ports for storage, renewables and DC microgrids. This is why most recent research prototypes in the review used it, and why it was chosen for the design. The review also covered the applications that motivate SSTs, from data centres and fast EV charging to DC microgrids, ships and offshore wind.
 
 ## The Three-Stage SST
 
@@ -41,7 +41,7 @@ A three-stage SST for medium-voltage to low-voltage distribution has three power
 - **Isolated DC–DC stage.** Dual active bridges provide galvanic isolation and bidirectional power transfer between the DC links, often with their secondaries feeding a common LV DC bus. An outer loop on the LV DC voltage sets the phase shift that controls their power.
 - **LV-side inverter.** A three-phase inverter, usually grid-forming, sets the low-voltage magnitude and frequency.
 
-A supervisory layer coordinates the three stages through start-up, shutdown and faults. My work concentrated on the middle stage.
+A supervisory layer coordinates the three stages through start-up, shutdown and faults. The design work concentrated on the middle stage.
 
 ## Designing the DAB Stage
 
@@ -75,7 +75,7 @@ For the 15 kW stage, with operation down to 7.5 kW, the ZVS limit was negligible
   <figcaption>Feasible inductance window for the 15 kW DAB, and the selected value.</figcaption>
 </figure>
 
-I selected 250 µH, made up of about 10 µH of transformer leakage and 240 µH of external inductance. The design model predicts:
+A value of 250 µH was selected, made up of about 10 µH of transformer leakage and 240 µH of external inductance. The design model predicts:
 
 | At 15 kW with <i>L</i><sub>tot</sub> = 250 µH | Predicted value |
 | --- | --- |

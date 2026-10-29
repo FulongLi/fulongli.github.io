@@ -17,10 +17,13 @@
 <polyline points="400,60 400,115" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
 <polyline points="400,115 400,133 388,133" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
 <polyline points="388,157 400,157 400,175" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
-<polyline points="388,127 388,163" fill="none" stroke="#494e52" stroke-width="2.4" stroke-linejoin="round"/>
-<polyline points="381,131 381,159" fill="none" stroke="#494e52" stroke-width="2.0" stroke-linejoin="round"/>
-<path d="M399,157 L392.7,160.375 L392.7,153.625 z" fill="#494e52"/>
-<polyline points="381,145 330,145" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="388,128 388,138" fill="none" stroke="#494e52" stroke-width="2.6" stroke-linejoin="round"/>
+<polyline points="388,140 388,150" fill="none" stroke="#494e52" stroke-width="2.6" stroke-linejoin="round"/>
+<polyline points="388,152 388,162" fill="none" stroke="#494e52" stroke-width="2.6" stroke-linejoin="round"/>
+<polyline points="380,130 380,160" fill="none" stroke="#494e52" stroke-width="2.0" stroke-linejoin="round"/>
+<polyline points="396,145 400,145 400,157" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M389,145 L394.88,141.85 L394.88,148.15 z" fill="#494e52"/>
+<polyline points="380,145 330,145" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
 <polyline points="400,175 400,240" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
 <polyline points="330,145 330,166" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
 <circle cx="330" cy="180" r="14" fill="#ffffff" stroke="#494e52" stroke-width="1.6"/>

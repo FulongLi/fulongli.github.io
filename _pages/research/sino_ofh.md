@@ -9,7 +9,7 @@ project_contents: true
 excerpt: "Enclosure thermal modelling and ventilation behaviour across North Sea, Persian Gulf and Singapore climate scenarios."
 ---
 
-I led the thermal evaluation in 2024, following the [3 MW marine powertrain study](/research/3mw-marine-fuel-cell/). I developed a room-temperature model of the equipment enclosure and assessed its ventilation needs across three climates, covering the requirements, enclosure modelling and scenario assessment.
+The thermal evaluation, led by the author in 2024, followed the [3 MW marine powertrain study](/research/3mw-marine-fuel-cell/). It developed a room-temperature model of the equipment enclosure and assessed its ventilation needs across three climates, covering the requirements, enclosure modelling and scenario assessment.
 
 <h2 id="overview">The Thermal Environment Around a Marine Powertrain</h2>
 <span id="sino-ofh-wp41-thermal-evaluation"></span>

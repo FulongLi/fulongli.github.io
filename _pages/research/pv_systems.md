@@ -9,7 +9,7 @@ project_stylesheet: /assets/css/marine-project.css
 project_contents: true
 ---
 
-In my early PhD work I developed a modified maximum power point tracking (MPPT) algorithm that lets a single PV converter switch smoothly between harvesting the maximum solar power and limiting generation to protect the battery.
+Early PhD work developed a modified maximum power point tracking (MPPT) algorithm that lets a single PV converter switch smoothly between harvesting the maximum solar power and limiting generation to protect the battery.
 
 <h2 id="overview">Tracking Solar Power Within Battery Limits</h2>
 
@@ -25,7 +25,7 @@ In an off-grid PV-battery system, maximum power is not always wanted. Once the b
 
 <h2 id="modified-mppt-and-integrated-active-power-control">Modified MPPT with Integrated Power Control</h2>
 
-I combined MPPT and battery charging limits in one modified P&O controller, so that the same Boost converter moves between maximum-power operation and reduced generation during bulk and absorption charging.
+MPPT and battery charging limits are combined in one modified P&O controller, so that the same Boost converter moves between maximum-power operation and reduced generation during bulk and absorption charging.
 
 <figure>
   <a href="/images/research/pv-battery/system-architecture.png" target="_blank" rel="noopener"><img src="/images/research/pv-battery/system-architecture.png" alt="PV source and boost converter connected to batteries with shared MPPT and charging feedback" width="651" height="371" fetchpriority="high"></a>
@@ -34,7 +34,7 @@ I combined MPPT and battery charging limits in one modified P&O controller, so t
 
 At each 100 ms update, the controller samples PV voltage and current and battery charging voltage and current, calculates PV power and updates the perturbation direction from the change in power. If the charging voltage or current exceeds its reference, it redirects the perturbation towards reduced PV power.
 
-I implemented the controller on a **TMS320F28335** DSP driving a **200 W Boost converter**, which charges four 12 V VRLA batteries from a PV emulator. The same power-limitation idea supports the wider [DC microgrid energy management](/research/dcmg/rule-based-ems/).
+The controller was implemented on a **TMS320F28335** DSP driving a **200 W Boost converter**, which charges four 12 V VRLA batteries from a PV emulator. The same power-limitation idea supports the wider [DC microgrid energy management](/research/dcmg/rule-based-ems/).
 
 <span id="pv-integration-into-dc-microgrids"></span>
 [A modified MPPT algorithm with integrated active power control for PV-battery systems](https://ieeexplore.ieee.org/document/7884432), ICRERA 2016, pp. 742–746.

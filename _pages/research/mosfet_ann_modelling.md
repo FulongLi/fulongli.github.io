@@ -6,13 +6,13 @@ author_profile: true
 excerpt: "Semiconductor modelling for power conversion, with a SiC static ANN model for conduction, switching energy and thermal response."
 ---
 
-Semiconductor models connect device characteristics to converter loss and temperature calculations. My work in this area builds models from measured and reference data that can be evaluated at any electrical operating point, so that loss and temperature can be predicted early in converter design.
+Semiconductor models connect device characteristics to converter loss and temperature calculations. The work in this area builds models from measured and reference data that can be evaluated at any electrical operating point, so that loss and temperature can be predicted early in converter design.
 
 <h2 id="static-ann-modelling">SiC Power Devices — Static ANN Modelling</h2>
 <span id="device-loss-models"></span>
 <span id="thermal-modelling"></span>
 
-Neural networks fit the conduction voltage, turn-on and turn-off energy and thermal impedance of the C2M0080120D SiC MOSFET, treating the MOSFET channel and body diode separately. I led the modelling, from organising the reference data and structuring the networks to the loss and thermal calculations they feed.
+Neural networks fit the conduction voltage, turn-on and turn-off energy and thermal impedance of the C2M0080120D SiC MOSFET, treating the MOSFET channel and body diode separately. The modelling, led by the author, ranges from organising the reference data and structuring the networks to the loss and thermal calculations they feed.
 
 [Read the static ANN modelling study](/research/semiconductor-device-modelling/static-ann/)
 

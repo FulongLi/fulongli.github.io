@@ -10,7 +10,7 @@ project_contents: true
 mathjax: true
 ---
 
-During my research at the University of Waterloo, I developed an optimisation-based energy management system (EMS) for DC microgrids that prices battery wear alongside grid electricity. The battery holds the DC bus voltage, and the EMS schedules it so that it is not charged and discharged more than the system needs.
+Research at the University of Waterloo developed an optimisation-based energy management system (EMS) for DC microgrids that prices battery wear alongside grid electricity. The battery holds the DC bus voltage, and the EMS schedules it so that it is not charged and discharged more than the system needs.
 
 ## Why Battery Degradation Matters in DC Microgrids
 

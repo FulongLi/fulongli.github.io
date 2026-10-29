@@ -9,7 +9,7 @@ project_stylesheet: /assets/css/marine-project.css
 project_contents: true
 ---
 
-I developed a modular bidirectional half-bridge converter as the building block of my low-voltage DC microgrid testbeds, connecting battery banks and other sources to the common DC bus with local DSP control.
+A modular bidirectional half-bridge converter was developed as the building block of the low-voltage DC microgrid testbeds, connecting battery banks and other sources to the common DC bus with local DSP control.
 
 ## Bidirectional Power Flow with One Half Bridge
 
@@ -55,6 +55,6 @@ Each converter is built as a power board and a control board, galvanically isola
 
 The Aston PhD prototype is rated at **250 W per interface**, with a 240 µH inductor and 470 µF input and output capacitors. Each battery bank uses two 12 V batteries in series. Four interfaces connect the grid emulator, two battery banks and the PV emulator, which operates in the Boost direction. A later version, documented with the Loughborough test bench, is rated at **500 W per converter**.
 
-These converters carried the stability, droop and supervisory-control studies of my [DC microgrid research](/research/dcmg/).
+These converters carried the stability, droop and supervisory-control studies of the [DC microgrid research](/research/dcmg/).
 
 [PhD thesis, Chapter 3 and Appendix A1](https://publications.aston.ac.uk/id/eprint/46135/) · [Aston testbed](/research/experimental-platforms/aston/) · [Loughborough testbed](/research/experimental-platforms/loughborough/) · [Non-isolated converters](/research/nonisolated_converters/)

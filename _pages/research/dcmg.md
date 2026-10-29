@@ -9,7 +9,7 @@ project_contents: true
 excerpt: "A hierarchical control scheme for low-voltage DC microgrids: passive converter control, DC bus signalling and rule-based energy management."
 ---
 
-My PhD research developed a hierarchical control scheme for low-voltage DC microgrids, connecting **passive converter control**, **dual-window DC bus signalling** and **rule-based power management**. I developed the stabiliser and signalling method and integrated them with droop control into one scheme.
+This PhD research developed a hierarchical control scheme for low-voltage DC microgrids, connecting **passive converter control**, **dual-window DC bus signalling** and **rule-based power management**. The stabiliser and signalling method were developed in this work and integrated with droop control into one scheme.
 
 <h2 id="overview">Stable Converters, Coordinated Sources</h2>
 
@@ -33,7 +33,7 @@ A DC microgrid connects generation, storage and loads to a common DC bus through
 
 <h2 id="laboratory-microgrid">Laboratory Microgrid</h2>
 
-I implemented the scheme on a low-voltage laboratory microgrid in which interface converters connect emulated generation, battery storage and loads.
+The scheme was implemented on a low-voltage laboratory microgrid in which interface converters connect emulated generation, battery storage and loads.
 
 <figure>
   <a href="/images/research/dc-microgrid-control/laboratory-bench.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/laboratory-bench.png" alt="Low-voltage DC microgrid bench with source emulation, battery interfaces, loads and measurement equipment" width="1212" height="915" loading="lazy"></a>

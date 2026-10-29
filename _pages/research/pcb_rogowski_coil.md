@@ -10,7 +10,7 @@ project_contents: true
 mathjax: true
 ---
 
-I reviewed how the Rogowski coil developed, from its origins to coils built into power modules, and how PCB winding patterns trade off against each other. Building on that review, I designed a family of five PCB coils, each with its own signal-conditioning circuit, for measuring fast current transients in power converters.
+This work reviewed how the Rogowski coil developed, from its origins to coils built into power modules, and how PCB winding patterns trade off against each other. Building on that review, a family of five PCB coils was designed, each with its own signal-conditioning circuit, for measuring fast current transients in power converters.
 
 ## How a Rogowski Coil Measures Current
 
@@ -32,11 +32,11 @@ The integrator's gain, bandwidth and offset drift therefore matter as much as th
 
 ## Development of the Rogowski Coil
 
-My review, completed in 2022, traced the coil through some 40 publications, from Rogowski's description of 1912 to coils built into power modules. After a preparation period in the 1970s and 1980s, development followed three paths: coils wound on flexible skeletons, rigid windings on PCB after the first PCB Rogowski coil patent in 1995, and windings on flexible PCB.
+The review, completed in 2022, traced the coil through some 40 publications, from Rogowski's description of 1912 to coils built into power modules. After a preparation period in the 1970s and 1980s, development followed three paths: coils wound on flexible skeletons, rigid windings on PCB after the first PCB Rogowski coil patent in 1995, and windings on flexible PCB.
 
 <figure class="project-blueprint">
   <a href="/images/research/pcb-rogowski/development-timeline.webp" target="_blank" rel="noopener"><img src="/images/research/pcb-rogowski/development-timeline.webp" alt="Rogowski coil development timeline from 1912 to 2022, branching into flexible skeleton coils, rigid windings on PCB and flexible windings on PCB, with example coils from the literature" width="2000" height="900" fetchpriority="high"></a>
-  <figcaption>Rogowski coil development from 1912 to 2022, from my review; bracketed numbers refer to its reference list.</figcaption>
+  <figcaption>Rogowski coil development from 1912 to 2022, from the review; bracketed numbers refer to its reference list.</figcaption>
 </figure>
 
 ## Winding Patterns and Their Trade-Offs
@@ -57,9 +57,9 @@ On a PCB, the pattern of the turns decides how well the coil rejects current tha
 
 The error is the signal from a current outside the coil relative to the same current through the aperture centre, the maximum over four scan paths. Two lessons follow: a return line is essential, and among patterns with one, the fishbone keeps the turns closest to ideal and rejects outside current best.
 
-## My Coil Designs
+## Coil Designs
 
-From the review, I designed five PCB coils in July 2024 that vary one feature at a time: the winding pattern, the return line and the outline. Types 1 and 2 use the saw (sawtooth) pattern on a circular outline, without and with a return line. Types 3 and 4 use the fishbone pattern on a square outline, without and with a return line. Type 5 adds a cutout from the aperture to the board edge, so that the coil can be slid around a conductor that is already in place, in the manner of a clamp-type coil. Each board places its coil beside the same signal-conditioning chain, with amplification and integration stages and coaxial connectors for the raw coil output and the final output, so the coils can be compared with identical electronics.
+Five PCB coils, designed in July 2024 from the review, vary one feature at a time: the winding pattern, the return line and the outline. Types 1 and 2 use the saw (sawtooth) pattern on a circular outline, without and with a return line. Types 3 and 4 use the fishbone pattern on a square outline, without and with a return line. Type 5 adds a cutout from the aperture to the board edge, so that the coil can be slid around a conductor that is already in place, in the manner of a clamp-type coil. Each board places its coil beside the same signal-conditioning chain, with amplification and integration stages and coaxial connectors for the raw coil output and the final output, so the coils can be compared with identical electronics.
 
 <figure class="project-blueprint">
   <a href="/images/research/pcb-rogowski/coil-designs.png" target="_blank" rel="noopener"><img src="/images/research/pcb-rogowski/coil-designs.png" alt="Five PCB Rogowski coils side by side: two circular saw windings, without and with return line, two square fishbone windings, without and with return line, and a square fishbone winding with a cutout to the board edge" width="1046" height="236" loading="lazy"></a>

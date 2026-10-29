@@ -9,7 +9,7 @@ project_stylesheet: /assets/css/marine-project.css
 project_contents: true
 ---
 
-AIPE Sketcher is the schematic agent in my AIPE framework. It turns a circuit description into a clean SVG schematic drawn with a standard symbol library, then reads the connections back from the drawn wires to prove that the drawing matches the circuit. This page explains the framework it belongs to, its role there, how the agent is organised, and a dual-active-bridge schematic it has drawn.
+AIPE Sketcher is the schematic agent in the AIPE framework. It turns a circuit description into a clean SVG schematic drawn with a standard symbol library, then reads the connections back from the drawn wires to prove that the drawing matches the circuit. This page explains the framework it belongs to, its role there, how the agent is organised, and a dual-active-bridge schematic it has drawn.
 
 [Explore the repository](https://github.com/FulongLi/AIPE-Sketcher)
 

@@ -9,7 +9,7 @@ project_contents: true
 excerpt: "The dual-window DC bus interacting method: working and signalling voltage windows for coordination of sources and storage."
 ---
 
-I developed the **dual-window DC bus interacting (DBI) method**, which lets sources and storage in a DC microgrid exchange operating commands through the DC bus voltage itself, without a separate communication link. I designed the voltage windows, signal sequences and converter-control modifications.
+The **dual-window DC bus interacting (DBI) method** developed in this work lets sources and storage in a DC microgrid exchange operating commands through the DC bus voltage itself, without a separate communication link. The work covered the design of the voltage windows, signal sequences and converter-control modifications.
 
 <h2 id="overview">Coordinating Converters Through the Bus Voltage</h2>
 
@@ -32,7 +32,7 @@ Coordination through the bus has developed in steps. Voltage level signalling sc
 | DC bus signalling | Droop within each window lets several sources share one state | The load, not the operator, decides the operating state |
 | Mode-adaptive DC bus signalling | One converter holds the bus as a voltage source; others switch between voltage-source and current-source modes | Many sources are hard to regulate with voltage states alone |
 | Power line communication | Dedicated signals, or modulated switching ripple, carry data along the power lines | Needs modulation and demodulation circuits and signal processing, and can affect power quality |
-| **Dual-window bus interacting (my method)** | Deliberate voltage sequences in a signalling window, outside the droop working window | Low data rate, and deliberate voltage excursions |
+| **Dual-window bus interacting (proposed method)** | Deliberate voltage sequences in a signalling window, outside the droop working window | Low data rate, and deliberate voltage excursions |
 
 The DC bus interacting method combines the plug-and-play behaviour of droop control, the accurate power sharing of current-source operation and the voltage signalling of DC bus signalling, without extra links or modulation circuits. Each source alternates between two periods. In the **plug** period it works as a voltage source with droop, so that it can be registered and exchange signals through the bus; at least one converter, such as the grid interface, always holds the bus voltage. In the **play** period it works as a current source, so that its power, such as a battery's charging current, can be set accurately.
 
@@ -43,14 +43,14 @@ The DC bus interacting method combines the plug-and-play behaviour of droop cont
 
 <h2 id="dual-window-principle">Working and Signalling Voltage Windows</h2>
 
-My method separates the two functions into distinct voltage ranges. Normal droop operation stays within a working window, while deliberate signalling uses a level outside it. My design uses a **45–50 V working window** and a **52.5 V signalling level**.
+The proposed method separates the two functions into distinct voltage ranges. Normal droop operation stays within a working window, while deliberate signalling uses a level outside it. The design uses a **45–50 V working window** and a **52.5 V signalling level**.
 
 <figure>
   <a href="/images/research/dc-microgrid-control/dual-window-droop.png" target="_blank" rel="noopener"><img src="/images/research/dc-microgrid-control/dual-window-droop.png" alt="Droop curves with separate working and signalling voltage windows" width="1095" height="693" loading="lazy"></a>
   <figcaption>Droop characteristics with separate working and signalling voltage windows.</figcaption>
 </figure>
 
-To send a message, one converter temporarily drives the bus voltage through a sequence while the others decode it, then returns to its assigned power-control role. As the bus rises during reception, the receiving converters' outer voltage loops would otherwise demand unwanted negative current. I isolated that loop during reception and applied a positive or zero current reference, limiting the extra power the signalling converter must supply. Each converter returns to its normal control mode after the sequence.
+To send a message, one converter temporarily drives the bus voltage through a sequence while the others decode it, then returns to its assigned power-control role. As the bus rises during reception, the receiving converters' outer voltage loops would otherwise demand unwanted negative current. The method therefore isolates that loop during reception and applies a positive or zero current reference, limiting the extra power the signalling converter must supply. Each converter returns to its normal control mode after the sequence.
 
 <h2 id="signal-design">System Commands</h2>
 

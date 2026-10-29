@@ -10,7 +10,7 @@ project_contents: true
 mathjax: true
 ---
 
-In my PhD I developed a passive stabiliser for Boost interface converters in DC microgrids. Derived from an averaged converter model, it adds a high-pass-filtered feedforward path that suppresses oscillation without shifting the steady-state bus voltage.
+This PhD work developed a passive stabiliser for Boost interface converters in DC microgrids. Derived from an averaged converter model, it adds a high-pass-filtered feedforward path that suppresses oscillation without shifting the steady-state bus voltage.
 
 <h2 id="overview">Passivity and Boost Converter Stability</h2>
 
@@ -103,7 +103,7 @@ The gain compensates the high-frequency deficit, and the filter corner sits belo
   <figcaption>The filtered passive stabiliser added in parallel with the outer voltage controller, alongside droop and the inner current loop.</figcaption>
 </figure>
 
-In the control structure, the current controller regulates the inductor current and the voltage controller supplies its reference; droop control adjusts the voltage reference for power sharing, and the stabiliser shapes the outer-loop dynamics in parallel. I discretised the current controller, voltage controller and stabiliser with a bilinear approximation for implementation on the converter's DSP. The gain, filter corner and terminal capacitance are chosen for the analysed converter and its operating point, and must be reviewed for a different operating point or load. The same stabiliser applies to each converter when several Boost interfaces share current through droop control.
+In the control structure, the current controller regulates the inductor current and the voltage controller supplies its reference; droop control adjusts the voltage reference for power sharing, and the stabiliser shapes the outer-loop dynamics in parallel. The current controller, voltage controller and stabiliser were discretised with a bilinear approximation for implementation on the converter's DSP. The gain, filter corner and terminal capacitance are chosen for the analysed converter and its operating point, and must be reviewed for a different operating point or load. The same stabiliser applies to each converter when several Boost interfaces share current through droop control.
 
 <h2 id="results">Simulation Results</h2>
 

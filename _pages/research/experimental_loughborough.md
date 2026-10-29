@@ -9,11 +9,11 @@ project_stylesheet: /assets/css/marine-project.css
 project_contents: true
 ---
 
-I built and developed a low-voltage DC microgrid test bench at Loughborough University around modular interface converters, supporting grid-connected and islanded operation so that converter control and system-level power management can be studied together.
+A low-voltage DC microgrid test bench was built at Loughborough University around modular interface converters, supporting grid-connected and islanded operation so that converter control and system-level power management can be studied together.
 
 ## A Modular Test Bench
 
-The test bench follows the same four-interface structure as my earlier PhD microgrid: a grid emulator, two battery banks and a PV emulator connect to the DC bus through interface converters, alongside electronic and resistive loads. A DC supply and soaking resistor emulate the grid, and a computer and instruments monitor the system.
+The test bench follows the same four-interface structure as the earlier PhD microgrid: a grid emulator, two battery banks and a PV emulator connect to the DC bus through interface converters, alongside electronic and resistive loads. A DC supply and soaking resistor emulate the grid, and a computer and instruments monitor the system.
 
 <figure>
   <a href="/images/research/experimental-platforms/aston-system-architecture.png" target="_blank" rel="noopener"><img src="/images/research/experimental-platforms/aston-system-architecture.png" alt="Schematic showing grid, photovoltaic and battery interfaces connected to a common DC bus with loads" width="990" height="645" loading="lazy"></a>
@@ -22,7 +22,7 @@ The test bench follows the same four-interface structure as my earlier PhD micro
 
 ## Converter Development
 
-The first interface converter was a **100 W** bidirectional Boost converter on a 48 V bus. I then developed a second version rated at **500 W per converter**, improving gate drive and sensing, reducing switching ringing and adding wireless communication support. Stacked power and control boards provide voltage and current sensing, gate drive and DSP-based control.
+The first interface converter was a **100 W** bidirectional Boost converter on a 48 V bus. A second version rated at **500 W per converter** followed, improving gate drive and sensing, reducing switching ringing and adding wireless communication support. Stacked power and control boards provide voltage and current sensing, gate drive and DSP-based control.
 
 <figure>
   <a href="/images/research/experimental-platforms/loughborough-v2.png" target="_blank" rel="noopener"><img src="/images/research/experimental-platforms/loughborough-v2.png" alt="Second-version interface converter with stacked power and control boards and a group of converter modules" width="602" height="302" loading="lazy"></a>
