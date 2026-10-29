@@ -1,0 +1,32 @@
+[
+  {
+    "file": "dc-test-microgrid.png",
+    "source": "PESGM_revised.pdf (accepted manuscript, Loughborough University repository, https://repository.lboro.ac.uk/articles/conference_contribution/Energy_management_system_for_DC_microgrids_considering_battery_degradation/13619312)",
+    "pdf_page": 4,
+    "figure": "6",
+    "crop_points": [
+      51.3,
+      61.7,
+      303.0,
+      206.7
+    ],
+    "width": 755,
+    "height": 435,
+    "sha256": "40524931e3ff8882b4030cc00c3e18e90224c96d265b3fe03dc6cc661dfb485d"
+  },
+  {
+    "file": "lead-acid-cycle-life.png",
+    "source": "PESGM_revised.pdf (accepted manuscript, Loughborough University repository, https://repository.lboro.ac.uk/articles/conference_contribution/Energy_management_system_for_DC_microgrids_considering_battery_degradation/13619312)",
+    "pdf_page": 3,
+    "figure": "5",
+    "crop_points": [
+      54.0,
+      62.0,
+      298.7,
+      205.0
+    ],
+    "width": 734,
+    "height": 429,
+    "sha256": "3fb53575086b0e691a849ad8fcc8e2927930fa5963465452f488cd898501464d"
+  }
+]

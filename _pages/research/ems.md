@@ -13,7 +13,7 @@ The [rule-based DC microgrid study](/research/dcmg/rule-based-ems/) coordinates 
 
 ## Battery Energy Scheduling and Optimisation
 
-My University of Waterloo work incorporates battery degradation into GAMS-based microgrid optimisation, linking scheduling choices to battery use. [Read the battery-storage summary](/research/battery_storage/#battery-degradation-modelling-and-energy-management-optimisation) or the [IEEE PESGM 2020 paper](https://ieeexplore.ieee.org/document/9281580).
+My University of Waterloo work incorporates battery degradation into GAMS-based microgrid optimisation, linking scheduling choices to battery use. [Read the battery-degradation EMS](/research/mgapp/battery-degradation-ems/) or the [IEEE PESGM 2020 paper](https://ieeexplore.ieee.org/document/9281580).
 
 ## Marine Hybrid Powertrains
 

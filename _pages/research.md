@@ -127,6 +127,7 @@ My work connects power-electronic components, converter design, and microgrid co
     <li>
       <a href="/research/mgapp/">Microgrid Energy Management</a>
       <ul>
+        <li><a href="/research/mgapp/battery-degradation-ems/">EMS Considering Battery Degradation</a></li>
         <li><a href="/research/3mw-marine-fuel-cell/">3MW Marine Fuel-Cell Project</a></li>
         <li><a href="/research/sino-ofh/">Thermal Evaluation</a></li>
       </ul>

@@ -3,10 +3,16 @@ layout: single
 title: "Microgrid Energy Management"
 permalink: /research/mgapp/
 author_profile: true
-excerpt: "Project case studies in microgrid energy management, including the 3 MW marine fuel-cell powertrain and marine thermal evaluation."
+excerpt: "Microgrid energy management: a DC microgrid EMS considering battery degradation, the 3 MW marine fuel-cell powertrain and marine thermal evaluation."
 ---
 
-Energy management decides how the sources and storage in a microgrid share demand over time, and its consequences reach beyond the electrical system to fuel use, equipment sizing and heat. My projects in this area connect equipment and load models to operating strategies for a marine fuel-cell and battery powertrain, followed by evaluation of the equipment's thermal environment. I led both projects.
+Energy management decides how the sources and storage in a microgrid share demand over time, and its consequences reach beyond the electrical system to fuel use, equipment sizing and heat. My work in this area ranges from an optimisation-based EMS that accounts for battery wear in DC microgrids to operating strategies for a marine fuel-cell and battery powertrain, followed by evaluation of the equipment's thermal environment. I led both marine projects.
+
+<h2 id="battery-degradation-ems">EMS Considering Battery Degradation</h2>
+
+At the University of Waterloo I developed an EMS for DC microgrids in which the battery holds the bus voltage and its wear is priced alongside grid electricity, through a degradation cost that depends on depth of discharge. It was formulated for a model of the Xiamen University DC building.
+
+[Read the battery-degradation EMS](/research/mgapp/battery-degradation-ems/)
 
 <h2 id="3-mw-marine-fuel-cell-hybrid-powertrain">3 MW Marine Fuel-Cell Project</h2>
 
