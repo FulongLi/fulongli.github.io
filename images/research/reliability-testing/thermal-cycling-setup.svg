@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 262" width="760" height="262" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>Thermal cycling setup and profile: devices sit on a cooling plate above a Peltier module and heat sink, with a temperature controller driving the Peltier module from a thermocouple on the plate; the plate temperature cycles between a minimum and a maximum, with ramps and a dwell at each extreme</title>
+<rect x="110" y="26" width="160" height="38" rx="4" fill="#ffffff" stroke="#494e52" stroke-width="1.4"/>
+<text x="190.0" y="49.5" font-size="12.5" fill="#494e52" text-anchor="middle">Temperature controller</text>
+<rect x="70" y="130" width="260" height="22" rx="0" fill="#f2f3f3" stroke="#bdc1c4" stroke-width="1.2"/>
+<text x="200" y="146" font-size="11.5" fill="#7a8288" text-anchor="middle">cooling plate</text>
+<rect x="95" y="114" width="42" height="16" rx="2" fill="#ffffff" stroke="#494e52" stroke-width="1.4"/>
+<rect x="165" y="114" width="42" height="16" rx="2" fill="#ffffff" stroke="#494e52" stroke-width="1.4"/>
+<rect x="235" y="114" width="42" height="16" rx="2" fill="#ffffff" stroke="#494e52" stroke-width="1.4"/>
+<text x="200" y="106" font-size="11.5" fill="#7a8288" text-anchor="middle">devices under test</text>
+<rect x="85" y="152" width="230" height="18" rx="0" fill="#ffffff" stroke="#bdc1c4" stroke-width="1.2"/>
+<text x="200" y="165" font-size="11" fill="#7a8288" text-anchor="middle">Peltier module</text>
+<rect x="75" y="170" width="250" height="10" rx="0" fill="#f2f3f3" stroke="#bdc1c4" stroke-width="1.2"/>
+<polyline points="85,180 85,200" fill="none" stroke="#bdc1c4" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="101,180 101,200" fill="none" stroke="#bdc1c4" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="117,180 117,200" fill="none" stroke="#bdc1c4" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="133,180 133,200" fill="none" stroke="#bdc1c4" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="149,180 149,200" fill="none" stroke="#bdc1c4" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="165,180 165,200" fill="none" stroke="#bdc1c4" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="181,180 181,200" fill="none" stroke="#bdc1c4" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="197,180 197,200" fill="none" stroke="#bdc1c4" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="213,180 213,200" fill="none" stroke="#bdc1c4" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="229,180 229,200" fill="none" stroke="#bdc1c4" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="245,180 245,200" fill="none" stroke="#bdc1c4" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="261,180 261,200" fill="none" stroke="#bdc1c4" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="277,180 277,200" fill="none" stroke="#bdc1c4" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="293,180 293,200" fill="none" stroke="#bdc1c4" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="309,180 309,200" fill="none" stroke="#bdc1c4" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="325,180 325,200" fill="none" stroke="#bdc1c4" stroke-width="2" stroke-linejoin="round"/>
+<text x="200" y="220" font-size="11.5" fill="#7a8288" text-anchor="middle">heat sink</text>
+<polyline points="130,64 130,84 52,84 52,158 85,158" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="150,64 150,92 62,92 62,164 85,164" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="300" cy="130" r="3.4" fill="#52adc8"/>
+<polyline points="300,127 300,45 270,45" fill="none" stroke="#52adc8" stroke-width="1.4" stroke-linejoin="round" stroke-dasharray="4 3"/>
+<text x="306" y="92" font-size="11.5" fill="#52adc8" text-anchor="start">thermocouple</text>
+<polyline points="470,70 740,70" fill="none" stroke="#bdc1c4" stroke-width="1" stroke-linejoin="round" stroke-dasharray="3 3"/>
+<polyline points="470,190 740,190" fill="none" stroke="#bdc1c4" stroke-width="1" stroke-linejoin="round" stroke-dasharray="3 3"/>
+<polyline points="470,190 500,190 522,70 552,70 574,190 604,190 626,70 656,70 678,190 708,190 730,70 740,70" fill="none" stroke="#52adc8" stroke-width="2" stroke-linejoin="round"/>
+<text x="462" y="75" font-size="15" fill="#494e52" text-anchor="end" font-style="italic">T<tspan font-size="11" dy="4">max</tspan></text>
+<text x="462" y="195" font-size="15" fill="#494e52" text-anchor="end" font-style="italic">T<tspan font-size="11" dy="4">min</tspan></text>
+<polyline points="522,58 552,58" fill="none" stroke="#7a8288" stroke-width="1" stroke-linejoin="round"/>
+<text x="537" y="50" font-size="13" fill="#7a8288" text-anchor="middle" font-style="italic">t<tspan font-size="9" dy="4">dwell</tspan></text>
+<text x="502" y="134" font-size="11.5" fill="#7a8288" text-anchor="end">ramp</text>
+<polyline points="500,208 604,208" fill="none" stroke="#7a8288" stroke-width="1" stroke-linejoin="round"/>
+<path d="M500,208 L505.6,205.0 L505.6,211.0 z" fill="#7a8288"/>
+<path d="M604,208 L598.4,211.0 L598.4,205.0 z" fill="#7a8288"/>
+<text x="552" y="226" font-size="11.5" fill="#7a8288" text-anchor="middle">one cycle</text>
+<text x="705" y="240" font-size="11.5" fill="#7a8288" text-anchor="middle">time</text>
+</svg>

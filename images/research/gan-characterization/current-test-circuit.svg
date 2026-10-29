@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 262" width="760" height="262" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>GaN current-capability test: a current-controlled supply steps the drain current through the device with its gate on inside an enclosure, while an ohmmeter reads the on-chip sensing resistance; illustrative traces show the drain current in increasing steps with rests between them and the junction temperature rising to a higher plateau at each step and cooling between steps</title>
+<polyline points="100,60 167,60" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="193,60 400,60" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="180" cy="60" r="13" fill="#ffffff" stroke="#52adc8" stroke-width="1.6"/>
+<text x="180" y="65" font-size="13" fill="#52adc8" text-anchor="middle" font-weight="600">A</text>
+<polyline points="100,60 100,134" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="100" cy="150" r="16" fill="#ffffff" stroke="#494e52" stroke-width="1.6"/>
+<polyline points="100,159 100,144" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M100,140 L104.5,148.4 L95.5,148.4 z" fill="#494e52"/>
+<polyline points="100,166 100,240" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="78" y="148" font-size="15" fill="#494e52" text-anchor="end" font-style="italic">I<tspan font-size="11" dy="4">D</tspan></text>
+<text x="78" y="166" font-size="12" fill="#7a8288" text-anchor="end">steps</text>
+<polyline points="100,240 400,240" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<rect x="360" y="92" width="118" height="116" rx="4" fill="none" stroke="#bdc1c4" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="478" y="85" font-size="12" fill="#7a8288" text-anchor="end">Enclosure</text>
+<polyline points="400,60 400,115" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="400,115 400,133 388,133" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="388,157 400,157 400,175" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="388,127 388,163" fill="none" stroke="#494e52" stroke-width="2.4" stroke-linejoin="round"/>
+<polyline points="381,131 381,159" fill="none" stroke="#494e52" stroke-width="2.0" stroke-linejoin="round"/>
+<path d="M399,157 L392.7,160.375 L392.7,153.625 z" fill="#494e52"/>
+<polyline points="381,145 330,145" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="400,175 400,240" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="330,145 330,166" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="330" cy="180" r="14" fill="#ffffff" stroke="#494e52" stroke-width="1.6"/>
+<text x="330" y="177" font-size="13" fill="#494e52" text-anchor="middle">+</text>
+<text x="330" y="192" font-size="13" fill="#494e52" text-anchor="middle">−</text>
+<polyline points="330,194 330,218 400,218" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="400" cy="218" r="2.6" fill="#494e52"/>
+<text x="308" y="184" font-size="15" fill="#494e52" text-anchor="end" font-style="italic">V<tspan font-size="11" dy="4">GS</tspan></text>
+<text x="308" y="201" font-size="11.5" fill="#7a8288" text-anchor="end">gate on</text>
+<polyline points="445,125 445,130.0" fill="none" stroke="#52adc8" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="445,160.0 445,165" fill="none" stroke="#52adc8" stroke-width="1.6" stroke-linejoin="round"/>
+<rect x="439" y="130.0" width="12" height="30" rx="0" fill="#ffffff" stroke="#52adc8" stroke-width="1.6"/>
+<text x="433" y="150.0" font-size="15" fill="#494e52" text-anchor="end" font-style="italic">R<tspan font-size="11" dy="4">S</tspan></text>
+<polyline points="445,125 445,112 530,112 530,137" fill="none" stroke="#52adc8" stroke-width="1.4" stroke-linejoin="round"/>
+<polyline points="445,165 445,188 530,188 530,163" fill="none" stroke="#52adc8" stroke-width="1.4" stroke-linejoin="round"/>
+<circle cx="530" cy="150" r="13" fill="#ffffff" stroke="#52adc8" stroke-width="1.6"/>
+<text x="530" y="155" font-size="13" fill="#52adc8" text-anchor="middle" font-weight="600">Ω</text>
+<text x="582" y="98" font-size="15" fill="#494e52" text-anchor="end" font-style="italic">I<tspan font-size="11" dy="4">D</tspan></text>
+<text x="582" y="196" font-size="15" fill="#494e52" text-anchor="end" font-style="italic">T<tspan font-size="11" dy="4">j</tspan></text>
+<text x="582" y="214" font-size="11" fill="#7a8288" text-anchor="end">from</text>
+<text x="582" y="230" font-size="12" fill="#7a8288" text-anchor="end" font-style="italic">R<tspan font-size="8" dy="4">S</tspan></text>
+<polyline points="588,112 742,112" fill="none" stroke="#bdc1c4" stroke-width="1" stroke-linejoin="round"/>
+<polyline points="588,222 742,222" fill="none" stroke="#bdc1c4" stroke-width="1" stroke-linejoin="round"/>
+<polyline points="588,112 594,112 594,101 616,101 616,112 630,112 630,90 652,90 652,112 666,112 666,79 688,79 688,112 702,112 702,68 724,68 724,112 742,112" fill="none" stroke="#494e52" stroke-width="1.8" stroke-linejoin="round"/>
+<polyline points="588,222 594,222.0 596,219.0 598,216.8 600,215.1 602,213.8 604,212.9 606,212.2 608,211.6 610,211.2 612,210.9 614,210.7 616,210.5 618,213.4 620,215.5 622,217.1 624,218.3 626,219.2 628,219.9 630,220.4 630,220.4 632,214.9 634,210.7 636,207.5 638,205.2 640,203.4 642,202.0 644,201.0 646,200.3 648,199.7 650,199.3 652,199.0 654,204.7 656,209.0 658,212.2 660,214.7 662,216.5 664,217.9 666,218.9 666,218.9 668,210.7 670,204.6 672,200.0 674,196.5 676,193.9 678,191.9 680,190.5 682,189.3 684,188.5 686,187.9 688,187.4 690,196.0 692,202.5 694,207.3 696,211.0 698,213.7 700,215.8 702,217.3 702,217.3 704,206.6 706,198.5 708,192.4 710,187.8 712,184.4 714,181.8 716,179.9 718,178.4 720,177.3 722,176.5 724,175.9 726,187.3 728,195.9 730,202.4 732,207.3 734,210.9 736,213.7 738,215.8" fill="none" stroke="#52adc8" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="666" y="244" font-size="11.5" fill="#7a8288" text-anchor="middle">time</text>
+</svg>

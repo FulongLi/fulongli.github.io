@@ -31,6 +31,13 @@ The device is a GaN power transistor embedded in a compact package, with drain a
 
 ### Test Setup
 
+The device is switched on and heated by its own drain current, while the sensing resistance on the chip is read separately as its thermometer and a thermocouple measures the bottom of the package.
+
+<figure class="project-blueprint">
+  <a href="/images/research/gan-characterization/thermal-test-circuit.svg" target="_blank" rel="noopener"><img src="/images/research/gan-characterization/thermal-test-circuit.svg" alt="Thermal-resistance test circuit: a DC supply drives drain current through the GaN device with its gate on, with current and voltage measured for the power, an ohmmeter reading the on-chip sensing resistance, and the package on a Peltier-controlled cooling plate with a thermocouple at its bottom" width="760" height="262" loading="lazy"></a>
+  <figcaption>Thermal-resistance test circuit: the drain current heats the device, the sensing resistance <i>R</i><sub>S</sub> gives the junction temperature <i>T</i><sub>j</sub>, and a thermocouple gives the package-bottom temperature <i>T</i><sub>c</sub>.</figcaption>
+</figure>
+
 I designed a base cooling plate with six seats, each a 1 mm-deep pocket for the 1.685 mm-thick package, so several devices can be prepared and tested in turn. A Peltier module sets the plate temperature, both for calibration and for temperature cycling. The bench combines a precision power analyser, a dual DC power supply, a data-acquisition unit and a thermocouple logger, recorded from a laptop.
 
 <figure class="half">
@@ -64,4 +71,4 @@ For a C2M0080120D SiC MOSFET, I used a PWT2400 power tester, the T3STER transien
 
 The extracted network feeds the thermal branch of the [SiC static ANN model](/research/semiconductor-device-modelling/static-ann/#thermal-modelling) and its converter-level temperature estimates. Automation of the measurement workflow continues in the public [TIM Automation](https://github.com/FulongLi/TIM_Automation) repository.
 
-[GaN Current Capability Test](/research/gan-current-capability/) · [Electrical Characterization](/research/electrical-characterization/) · [Power Device Characterization](/research/switching_devices/) · [Back to Research](/research/)
+[GaN Current Capability Test](/research/gan-current-capability/) · [Double Pulse Test](/research/electrical-characterization/) · [Power Device Characterization](/research/switching_devices/) · [Back to Research](/research/)

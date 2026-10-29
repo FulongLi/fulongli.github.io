@@ -75,4 +75,4 @@ A Cauer network extracted from the device's own thermal measurement, described u
 
 The model applies within the ranges of its reference data and characterised gate-drive conditions. The networks are unconstrained, so they do not enforce zero-current behaviour or monotonicity outside those ranges. The [public training implementation](https://github.com/FulongLi/AIPE-MOSFET-ANN-Modelling/blob/720575683673259a6ddcd29a6c69771e43b6d17a/C2MSeries_ANN_full_model.py) is a reference implementation; its input tables should be reviewed before it is used as a validated C2M0080120D model.
 
-[Semiconductor Device Modelling](/research/mosfet_ann_modelling/) · [Electrical Characterization](/research/electrical-characterization/) · [Converter Design Optimisation](/research/converter_optimization/) · [Back to Research](/research/)
+[Semiconductor Device Modelling](/research/mosfet_ann_modelling/) · [Double Pulse Test](/research/electrical-characterization/) · [Converter Design Optimisation](/research/converter_optimization/) · [Back to Research](/research/)
