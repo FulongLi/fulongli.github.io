@@ -29,7 +29,7 @@ My work connects power-electronic components, converter design, and microgrid co
         <li><a href="/research/aipe-field-simulation/">AIPE Field Simulation</a></li>
         <li><a href="/research/aipe-cad-agent/">AIPE CAD Agent</a></li>
         <li><a href="/research/aipe-pcb-agent/">AIPE PCB Agent</a></li>
-        <li><a href="https://github.com/FulongLi/AIPE-IEEE-Paper-Agent">AIPE IEEE Paper Agent</a></li>
+        <li><a href="/research/aipe-ieee-paper-agent/">AIPE IEEE Paper Agent</a></li>
       </ul>
     </li>
   </ul>
