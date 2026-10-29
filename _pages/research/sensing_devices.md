@@ -16,7 +16,7 @@ An air-cored PCB winding senses the rate of change of current, and an on-board i
 
 ## Embedded-Core PCB Current Transformer (PCB-CT)
 
-A ferrite core embedded between PCB layers, with a secondary winding formed by traces and vias, delivers a scaled secondary current without an integrator. I designed the winding layout and the design calculations, with repeatable manufacture as a design aim.
+A ferrite core embedded between PCB layers, with a secondary winding formed by traces and vias, delivers a scaled secondary current without an integrator. I designed the winding layout and a design workbook that sizes bandwidth, saturation and trace current, with repeatable manufacture as a design aim.
 
 [Read the PCB current transformer project](/research/pcb-current-transformer/)
 

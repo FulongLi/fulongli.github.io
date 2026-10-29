@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 246" width="760" height="246" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>Equivalent circuit of a current transformer referred to the secondary: primary current source with primary capacitance, an ideal 1 to n transformer, magnetising inductance and core-loss resistance in parallel, series leakage inductance and winding resistance, stray capacitance, and the burden resistor with its inductance</title>
+<polyline points="58,60 58,112.0" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="58,148.0 58,200" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="58" cy="130.0" r="18" fill="#ffffff" stroke="#494e52" stroke-width="1.6"/>
+<polyline points="58,140.0 58,122.0" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M53,124.0 L58,117.0 L63,124.0 z" fill="#494e52"/>
+<text x="28" y="135.0" font-size="15" fill="#494e52" text-anchor="middle" font-style="italic">i</text>
+<polyline points="58,60 180,60 180,88" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="58,200 180,200 180,148" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="114,60 114,126.0" fill="none" stroke="#7a8288" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="5 4"/>
+<polyline points="114,134.0 114,200" fill="none" stroke="#7a8288" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="5 4"/>
+<polyline points="102.0,126.0 126.0,126.0" fill="none" stroke="#7a8288" stroke-width="2.2" stroke-linejoin="round"/>
+<polyline points="102.0,134.0 126.0,134.0" fill="none" stroke="#7a8288" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="98" y="162.0" font-size="14" fill="#7a8288" text-anchor="end" font-style="italic">C′<tspan font-size='10' dy='4'>p</tspan></text>
+<circle cx="114" cy="60" r="2.6" fill="#494e52"/>
+<circle cx="114" cy="200" r="2.6" fill="#494e52"/>
+<path d="M180,88 a6,6 0 0 1 0,12 a6,6 0 0 1 0,12 a6,6 0 0 1 0,12 a6,6 0 0 1 0,12 a6,6 0 0 1 0,12" fill="none" stroke="#494e52" stroke-width="1.6"/>
+<polyline points="193,82 193,154" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="199,82 199,154" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M212,88 a6,6 0 0 0 0,12 a6,6 0 0 0 0,12 a6,6 0 0 0 0,12 a6,6 0 0 0 0,12 a6,6 0 0 0 0,12" fill="none" stroke="#494e52" stroke-width="1.6"/>
+<polyline points="212,88 212,60 250,60" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="212,148 212,200 250,200" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="172" cy="86" r="2.6" fill="#494e52"/><circle cx="220" cy="86" r="2.6" fill="#494e52"/>
+<rect x="160" y="72" width="72" height="94" fill="none" stroke="#bdc1c4" stroke-dasharray="4 4"/>
+<text x="196" y="48" font-size="14" fill="#494e52" text-anchor="middle" font-style="italic">1 : n</text>
+<text x="268" y="135.0" font-size="15" fill="#494e52" text-anchor="middle" font-style="italic">v<tspan font-size="10" dy="4">s</tspan></text>
+<text x="268" y="82" font-size="14" fill="#494e52" text-anchor="middle">+</text>
+<text x="268" y="190" font-size="14" fill="#494e52" text-anchor="middle">−</text>
+<polyline points="250,60 404,60" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="250,200 720,200" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="310" cy="60" r="2.6" fill="#494e52"/>
+<circle cx="310" cy="200" r="2.6" fill="#494e52"/>
+<circle cx="370" cy="60" r="2.6" fill="#494e52"/>
+<circle cx="370" cy="200" r="2.6" fill="#494e52"/>
+<polyline points="310,60 310,106.0" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M310,106.0 a6,6 0 0 1 0,12 a6,6 0 0 1 0,12 a6,6 0 0 1 0,12 a6,6 0 0 1 0,12" fill="none" stroke="#494e52" stroke-width="1.6"/>
+<polyline points="310,154.0 310,200" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="332" y="135.0" font-size="14" fill="#494e52" text-anchor="start" font-style="italic">L<tspan font-size="10" dy="4">m</tspan></text>
+<polyline points="370,60 370,106.0" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="370,106.0 376,110.0 364,118.0 376,126.0 364,134.0 376,142.0 364,150.0 370,154.0" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="370,154.0 370,200" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="384" y="135.0" font-size="14" fill="#494e52" text-anchor="start" font-style="italic">R<tspan font-size="10" dy="4">c</tspan></text>
+<path d="M404,60 a6,6 0 0 1 12,0 a6,6 0 0 1 12,0 a6,6 0 0 1 12,0 a6,6 0 0 1 12,0" fill="none" stroke="#494e52" stroke-width="1.6"/>
+<text x="428" y="46" font-size="14" fill="#494e52" text-anchor="middle" font-style="italic">L<tspan font-size="10" dy="4">l</tspan></text>
+<polyline points="452,60 462,60" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="462,60 466.0,66 474.0,54 482.0,66 490.0,54 498.0,66 506.0,54 510,60" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="486" y="46" font-size="14" fill="#494e52" text-anchor="middle" font-style="italic">R<tspan font-size="10" dy="4">s</tspan></text>
+<polyline points="510,60 720,60" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="580" cy="60" r="2.6" fill="#494e52"/>
+<circle cx="580" cy="200" r="2.6" fill="#494e52"/>
+<polyline points="580,60 580,126.0" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="568.0,126.0 592.0,126.0" fill="none" stroke="#494e52" stroke-width="2.2" stroke-linejoin="round"/>
+<polyline points="568.0,134.0 592.0,134.0" fill="none" stroke="#494e52" stroke-width="2.2" stroke-linejoin="round"/>
+<polyline points="580,134.0 580,200" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="600" y="135.0" font-size="14" fill="#494e52" text-anchor="start" font-style="italic">C</text>
+<circle cx="650" cy="60" r="2.6" fill="#494e52"/>
+<circle cx="650" cy="200" r="2.6" fill="#494e52"/>
+<polyline points="650,60 650,72" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M650,72 a6,6 0 0 1 0,12 a6,6 0 0 1 0,12 a6,6 0 0 1 0,12" fill="none" stroke="#494e52" stroke-width="1.6"/>
+<polyline points="650,108 650,130" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="650,130 656,133.66666666666666 644,141.0 656,148.33333333333334 644,155.66666666666666 656,163.0 644,170.33333333333334 650,174" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="650,174 650,200" fill="none" stroke="#494e52" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="668" y="96" font-size="14" fill="#494e52" text-anchor="start" font-style="italic">L<tspan font-size="10" dy="4">R</tspan></text>
+<text x="666" y="158" font-size="14" fill="#494e52" text-anchor="start" font-style="italic">R</text>
+<circle cx="724" cy="60" r="4" fill="#ffffff" stroke="#494e52" stroke-width="1.6"/>
+<circle cx="724" cy="200" r="4" fill="#ffffff" stroke="#494e52" stroke-width="1.6"/>
+<text x="744" y="135.0" font-size="15" fill="#494e52" text-anchor="middle" font-style="italic">v<tspan font-size="10" dy="4">R</tspan></text>
+<text x="744" y="82" font-size="14" fill="#494e52" text-anchor="middle">+</text>
+<text x="744" y="190" font-size="14" fill="#494e52" text-anchor="middle">−</text>
+<text x="86" y="230" font-size="12.5" fill="#7a8288" text-anchor="middle">primary</text>
+<text x="196" y="230" font-size="12.5" fill="#7a8288" text-anchor="middle">ideal transformer</text>
+<text x="340" y="230" font-size="12.5" fill="#7a8288" text-anchor="middle">core</text>
+<text x="458" y="230" font-size="12.5" fill="#7a8288" text-anchor="middle">winding</text>
+<text x="580" y="230" font-size="12.5" fill="#7a8288" text-anchor="middle">stray</text>
+<text x="650" y="230" font-size="12.5" fill="#7a8288" text-anchor="middle">burden</text>
+</svg>
