@@ -25,7 +25,7 @@ The [public converter optimisation repository](https://github.com/FulongLi/AIPE-
 
 [AIPE Sketcher](/research/aipe-sketcher/) turns circuit descriptions into SVG schematics and checks each drawing by reading its connections back from the wires. The project page introduces its structure and a dual-active-bridge schematic.
 
-[AIPE Field Simulation](/research/aipe-field-simulation/) drives Gmsh and Elmer to solve thermal, magnetostatic and eddy-current fields, checking analytical estimates against verified finite-element results. The project page introduces its structure and a heat-sink study for two TO-247 devices.
+[AIPE Field Simulation](/research/aipe-field-simulation/) drives Gmsh and Elmer to solve thermal, magnetostatic and eddy-current fields, checking analytical estimates against verified finite-element results. The project page introduces its structure and the heat sink of a 10 kW DAB converter, solved from the CAD Agent's model.
 
 ## Open-Source Engineering Tools and Resources
 
