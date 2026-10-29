@@ -10,7 +10,7 @@ project_contents: true
 mathjax: true
 ---
 
-I designed a current transformer whose magnetic core is embedded between PCB layers, with a secondary winding formed by PCB traces and vias, and built a design workbook that sizes it for bandwidth, saturation and trace current. The construction aims at compact, isolated current sensing that can be manufactured repeatably at scale.
+This work designed a current transformer whose magnetic core is embedded between PCB layers, with a secondary winding formed by PCB traces and vias, and built a design workbook that sizes it for bandwidth, saturation and trace current. The construction aims at compact, isolated current sensing that can be manufactured repeatably at scale.
 
 ## How a PCB Current Transformer Works
 
@@ -29,7 +29,7 @@ The concept embeds a rectangular ferrite core in the board around a slot for the
 
 ## Equivalent Circuit and Bandwidth
 
-Referred to the secondary, the transformer behaves as an ideal 1 : <i>n</i> transformer loaded by the magnetising inductance <i>L</i><sub>m</sub> and core-loss resistance <i>R</i><sub>c</sub>, followed by the leakage inductance <i>L</i><sub>l</sub>, winding resistance <i>R</i><sub>s</sub>, stray capacitance <i>C</i> and the burden <i>R</i>. My workbook follows the bandwidth model of [Kondrath and Kazimierczuk](https://doi.org/10.1109/TIM.2008.2006134).
+Referred to the secondary, the transformer behaves as an ideal 1 : <i>n</i> transformer loaded by the magnetising inductance <i>L</i><sub>m</sub> and core-loss resistance <i>R</i><sub>c</sub>, followed by the leakage inductance <i>L</i><sub>l</sub>, winding resistance <i>R</i><sub>s</sub>, stray capacitance <i>C</i> and the burden <i>R</i>. The workbook follows the bandwidth model of [Kondrath and Kazimierczuk](https://doi.org/10.1109/TIM.2008.2006134).
 
 <figure class="project-blueprint">
   <a href="/images/research/pcb-current-transformer/ct-equivalent-circuit.svg" target="_blank" rel="noopener"><img src="/images/research/pcb-current-transformer/ct-equivalent-circuit.svg" alt="Current transformer equivalent circuit referred to the secondary, from the primary current source through the ideal transformer, core, winding and stray elements to the burden resistor" width="760" height="246" loading="lazy"></a>
@@ -76,7 +76,7 @@ These are design estimates, not measured ratings of a finished sensor. The last 
 
 ## Board Design
 
-From the concept, I designed the board with the secondary winding distributed around the central aperture, so the magnetic circuit and winding form one compact, galvanically isolated assembly.
+From the concept, the board was designed with the secondary winding distributed around the central aperture, so the magnetic circuit and winding form one compact, galvanically isolated assembly.
 
 <figure class="half">
   <a href="/images/research/pcb-current-transformer/pcb-ct-perspective.png" target="_blank" rel="noopener"><img src="/images/research/pcb-current-transformer/pcb-ct-perspective.png" alt="Perspective rendering of the rectangular PCB current transformer with distributed secondary traces and central aperture" width="602" height="459" loading="lazy"></a>

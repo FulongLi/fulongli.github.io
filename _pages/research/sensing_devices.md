@@ -6,17 +6,17 @@ author_profile: true
 excerpt: "Compact PCB-integrated current sensors for fast-switching power converters: a PCB Rogowski coil and an embedded-core PCB current transformer."
 ---
 
-Fast-switching SiC converters need current sensors that are compact, fit close to the power devices and respond quickly enough to capture switching transients. I developed two PCB-integrated sensors that balance bandwidth, sensitivity, isolation and manufacturability in different ways.
+Fast-switching SiC converters need current sensors that are compact, fit close to the power devices and respond quickly enough to capture switching transients. Two PCB-integrated sensors developed in this work balance bandwidth, sensitivity, isolation and manufacturability in different ways.
 
 ## PCB Rogowski Coil (PCB-RC)
 
-An air-cored PCB winding senses the rate of change of current, and an on-board integrator recovers the current signal. With no core to saturate, it suits large, fast transients. I reviewed the coil's development and how PCB winding patterns trade off, then designed five coils with saw and fishbone patterns, circular and square outlines, with and without a return line and with a cutout, each with its own signal-conditioning circuit.
+An air-cored PCB winding senses the rate of change of current, and an on-board integrator recovers the current signal. With no core to saturate, it suits large, fast transients. A review of the coil's development and of PCB winding trade-offs led to five coil designs with saw and fishbone patterns, circular and square outlines, with and without a return line and with a cutout, each with its own signal-conditioning circuit.
 
 [Read the PCB Rogowski coil project](/research/pcb-rogowski-coil/)
 
 ## Embedded-Core PCB Current Transformer (PCB-CT)
 
-A ferrite core embedded between PCB layers, with a secondary winding formed by traces and vias, delivers a scaled secondary current without an integrator. I designed the winding layout and a design workbook that sizes bandwidth, saturation and trace current, with repeatable manufacture as a design aim.
+A ferrite core embedded between PCB layers, with a secondary winding formed by traces and vias, delivers a scaled secondary current without an integrator. The work covered the winding layout and a design workbook that sizes bandwidth, saturation and trace current, with repeatable manufacture as a design aim.
 
 [Read the PCB current transformer project](/research/pcb-current-transformer/)
 

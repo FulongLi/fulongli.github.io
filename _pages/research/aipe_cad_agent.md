@@ -9,7 +9,7 @@ project_stylesheet: /assets/css/marine-project.css
 project_contents: true
 ---
 
-AIPE CAD Agent is the mechanical-geometry agent in my AIPE framework. It turns parameter files into FreeCAD models of converter transformers, heat sinks, cold plates and complete assemblies, then checks those models for interference, fit and electrical clearance. This page explains the framework it belongs to, its role there, how the agent is organised, and the 10 kW DAB converter it has modelled.
+AIPE CAD Agent is the mechanical-geometry agent in the AIPE framework. It turns parameter files into FreeCAD models of converter transformers, heat sinks, cold plates and complete assemblies, then checks those models for interference, fit and electrical clearance. This page explains the framework it belongs to, its role there, how the agent is organised, and the 10 kW DAB converter it has modelled.
 
 [Explore the repository](https://github.com/FulongLi/AIPE-CAD-Agent)
 

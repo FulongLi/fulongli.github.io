@@ -6,17 +6,17 @@ author_profile: true
 excerpt: "Wireless power transfer research for underwater applications and a postdoctoral prototype test bench."
 ---
 
-My wireless power transfer experience spans undergraduate research for underwater applications and a separate postdoctoral hardware prototype project.
+Wireless power transfer work spans undergraduate research for underwater applications and a separate postdoctoral hardware prototype project.
 
 ## How Inductive Power Transfer Works
 
 Wireless power transfer moves energy between two magnetically coupled coils without a physical connection. A high-frequency current in the transmitter coil produces a magnetic field that induces a voltage in the receiver coil; compensation capacitors tune both coils to resonance so that power can be transferred efficiently across a gap with loose coupling. Removing exposed contacts makes the approach attractive where connectors are impractical, such as charging equipment underwater.
 
-## My Work
+## Projects
 
 <h3 id="undergraduate-research">Undergraduate Research: Underwater Applications</h3>
 
-During my undergraduate studies, I took part in wireless power transfer research for underwater applications.
+Undergraduate research investigated wireless power transfer for underwater applications.
 
 <h3 id="postdoctoral-prototype">Postdoctoral Hardware Prototype</h3>
 

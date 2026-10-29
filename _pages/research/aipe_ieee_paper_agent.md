@@ -9,7 +9,7 @@ project_stylesheet: /assets/css/marine-project.css
 project_contents: true
 ---
 
-AIPE IEEE Paper Agent is the research-writing agent in my AIPE framework. It turns a research idea and the evidence recorded by the design agents into an evidence-linked paper plan and a LaTeX manuscript workspace built on the official IEEE template of the chosen venue. It never invents results or reference metadata. This page explains the framework it belongs to, its role there, how the agent is organised, and a paper plan it has produced for the 10 kW DAB benchmark.
+AIPE IEEE Paper Agent is the research-writing agent in the AIPE framework. It turns a research idea and the evidence recorded by the design agents into an evidence-linked paper plan and a LaTeX manuscript workspace built on the official IEEE template of the chosen venue. It never invents results or reference metadata. This page explains the framework it belongs to, its role there, how the agent is organised, and a paper plan it has produced for the 10 kW DAB benchmark.
 
 [Explore the repository](https://github.com/FulongLi/AIPE-IEEE-Paper-Agent)
 
@@ -60,7 +60,7 @@ Four policies govern every stage: scientific integrity, citations, LaTeX and fig
 
 ## Example: Paper Plan for the 10 kW DAB Benchmark
 
-This example takes the AIPE benchmark, a 10 kW dual-active-bridge converter from 800 V to 400 V at 100 kHz, from executed design run to paper plan. I ran the agent's idea-to-paper workflow with Claude Code as the host, and its scripts to initialise and audit the manuscript. The evidence is the [AIPE-Workflows reference run](https://github.com/FulongLi/AIPE-Workflows/blob/main/examples/dab-10kw/README.md) of the converter: 14 tasks from specification to CAD and PCB, with every result recorded against a verification gate.
+This example takes the AIPE benchmark, a 10 kW dual-active-bridge converter from 800 V to 400 V at 100 kHz, from executed design run to paper plan. The agent's idea-to-paper workflow was run with Claude Code as the host, together with its scripts to initialise and audit the manuscript. The evidence is the [AIPE-Workflows reference run](https://github.com/FulongLi/AIPE-Workflows/blob/main/examples/dab-10kw/README.md) of the converter: 14 tasks from specification to CAD and PCB, with every result recorded against a verification gate.
 
 | Input | Value |
 | --- | --- |

@@ -9,7 +9,7 @@ project_contents: true
 excerpt: "Neural-network models of SiC conduction, switching energy and thermal response for converter loss and temperature calculations."
 ---
 
-I led the development of a data-based model of the **C2M0080120D SiC MOSFET** for converter loss and temperature calculations. Neural networks fit the device's conduction, switching-energy and thermal characteristics, so that losses and temperature can be evaluated at any operating point within the data.
+This study, led by the author, developed a data-based model of the **C2M0080120D SiC MOSFET** for converter loss and temperature calculations. Neural networks fit the device's conduction, switching-energy and thermal characteristics, so that losses and temperature can be evaluated at any operating point within the data.
 
 <h2 id="overview">Device Characteristics for Loss Models</h2>
 
@@ -21,7 +21,7 @@ These characteristics come as tables from datasheets, manufacturer models and me
 
 <h3 id="network-structure">Model Branches</h3>
 
-I organised the reference data as current–temperature–voltage samples for conduction and as event energies at specified voltage, current and temperature for switching, treating the body diode separately from the MOSFET channel. The public training implementation uses fully connected feedforward networks with ReLU hidden layers and linear outputs:
+The reference data were organised as current–temperature–voltage samples for conduction and as event energies at specified voltage, current and temperature for switching, treating the body diode separately from the MOSFET channel. The public training implementation uses fully connected feedforward networks with ReLU hidden layers and linear outputs:
 
 <div class="project-table-scroll" role="region" aria-label="Static ANN branches and layer structures" tabindex="0" markdown="1">
 

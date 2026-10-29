@@ -9,7 +9,7 @@ project_contents: true
 excerpt: "Multi-objective converter design: the optimal design process, an integrated framework for loss, volume and cost, and a Pareto study of a 1 kW buck-type inverter."
 ---
 
-I proposed an integrated framework for comparing power converter designs by **loss, mass and cost**, using consistent component data and electrical and thermal models. I defined its overall architecture and led its early and intermediate research and planning, and later continued the approach independently through [AIPE](/research/aipe/).
+This work proposed an integrated framework for comparing power converter designs by **loss, mass and cost**, using consistent component data and electrical and thermal models. The author defined its overall architecture, led its early and intermediate research and planning, and later continued the approach independently through [AIPE](/research/aipe/).
 
 <h2 id="overview">Why Converter Design Is a Trade-Off</h2>
 
@@ -90,6 +90,6 @@ These are model results for comparing designs, not measured performance. The mod
 
 Parts of the framework have been implemented. The [SiC device-modelling project](/research/mosfet_ann_modelling/) demonstrates the semiconductor branch, connecting ANN loss models to converter loss calculations, and the optimisation code above trains a neural-network surrogate on its Pareto designs for fast evaluation.
 
-The complete architecture remains a proposed framework. My subsequent AIPE work builds on it, connecting component calculations to optimisation and neural-network surrogate modelling within a wider design workflow.
+The complete architecture remains a proposed framework. Subsequent AIPE work builds on it, connecting component calculations to optimisation and neural-network surrogate modelling within a wider design workflow.
 
 [AIPE](/research/aipe/) · [Back to Research](/research/)

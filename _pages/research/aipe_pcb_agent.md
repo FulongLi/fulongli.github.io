@@ -9,7 +9,7 @@ project_stylesheet: /assets/css/marine-project.css
 project_contents: true
 ---
 
-AIPE PCB Agent is the PCB design agent in my AIPE framework. It turns a converter's requirements into editable KiCad schematics and board layouts, runs KiCad's own checks on them and packages the results for engineering review. This page explains the framework it belongs to, its role there, how the agent is organised, and a 5 kW SiC converter it has designed.
+AIPE PCB Agent is the PCB design agent in the AIPE framework. It turns a converter's requirements into editable KiCad schematics and board layouts, runs KiCad's own checks on them and packages the results for engineering review. This page explains the framework it belongs to, its role there, how the agent is organised, and a 5 kW SiC converter it has designed.
 
 [Explore the repository](https://github.com/FulongLi/AIPE-PCB-Agent)
 

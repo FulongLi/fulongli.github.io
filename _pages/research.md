@@ -9,7 +9,7 @@ body_class: research-index-page
 
 ## Research Projects and Engineering Experience
 
-My work connects power-electronic components, converter design, and microgrid control and energy management. Explore the categories below for concise project summaries, my contributions, and public papers, code, and resources.
+This research connects power-electronic components, converter design, and microgrid control and energy management. The categories below give concise project summaries, contributions, and public papers, code and resources.
 
 <div class="research-topics">
 
@@ -93,7 +93,6 @@ My work connects power-electronic components, converter design, and microgrid co
         <li><a href="/research/nonisolated-converters/bidirectional-buck-boost/">Bidirectional Buck–Boost Converter</a></li>
       </ul>
     </li>
-    <li><a href="/research/nonisolated_converters/#acdc-converter-interfaces">AC–DC Converter Interfaces</a></li>
     <li><a href="/research/wireless_power_transfer/">Wireless Power Transfer</a></li>
     <li><a href="/research/sst/">Solid-State Transformers</a></li>
     <li><a href="/research/converter_optimization/">Converter Design Optimisation</a></li>
@@ -121,7 +120,7 @@ My work connects power-electronic components, converter design, and microgrid co
       <ul>
         <li><a href="/research/experimental-platforms/aston/">Aston University DC Microgrid</a></li>
         <li><a href="/research/experimental-platforms/loughborough/">Loughborough University DC Microgrid</a></li>
-        <li><a href="/research/experimental-platforms/zhejiang/">Zhejiang University 50 kW DC Microgrid</a></li>
+        <li><a href="/research/experimental-platforms/zhejiang/">Zhejiang University 50 kW DC Microgrid Test Bench</a></li>
       </ul>
     </li>
     <li>

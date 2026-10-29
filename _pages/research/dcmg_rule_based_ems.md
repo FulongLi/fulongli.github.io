@@ -9,7 +9,7 @@ project_contents: true
 excerpt: "Rule-based power management for a DC microgrid: six-bit bus commands, two-level state machines, battery coordination and PV surplus limitation."
 ---
 
-My PhD system study brings **passive control, droop coordination and dual-window bus signalling** together under a rule-based energy management system (EMS). I integrated the control layers, defined the operating rules and six-bit signalling scheme, and analysed terminal admittance.
+This PhD system study brings **passive control, droop coordination and dual-window bus signalling** together under a rule-based energy management system (EMS). The study integrates the control layers, defines the operating rules and six-bit signalling scheme, and analyses the terminal admittance.
 
 <h2 id="overview">Who Regulates the Bus?</h2>
 

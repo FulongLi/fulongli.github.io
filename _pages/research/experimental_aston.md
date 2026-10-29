@@ -3,13 +3,13 @@ layout: single
 title: "Aston University DC Microgrid Testbed"
 permalink: /research/experimental-platforms/aston/
 author_profile: true
-excerpt: "A modular low-voltage DC microgrid with grid, PV and battery interfaces, built for my PhD control experiments."
+excerpt: "A modular low-voltage DC microgrid with grid, PV and battery interfaces, built for PhD control experiments."
 body_class: microgrid-project-page
 project_stylesheet: /assets/css/marine-project.css
 project_contents: true
 ---
 
-I built this low-voltage DC microgrid at Aston University to test converter stability, coordinated source operation and energy management on real hardware during my PhD.
+This low-voltage DC microgrid was built at Aston University during the PhD research to test converter stability, coordinated source operation and energy management on real hardware.
 
 ## A Modular Laboratory Microgrid
 
@@ -33,6 +33,6 @@ Each [bidirectional interface converter](/research/nonisolated-converters/bidire
   <figcaption>The Aston test bench with interface converters, PV emulator, batteries, loads and measurement equipment.</figcaption>
 </figure>
 
-The testbed carried the experimental studies of my PhD: [passive control](/research/dcmg/passive-control/), [dual-window DC bus signalling](/research/dcmg/dc-bus-signalling/) and [rule-based energy management](/research/dcmg/rule-based-ems/).
+The testbed carried the experimental studies of the PhD research: [passive control](/research/dcmg/passive-control/), [dual-window DC bus signalling](/research/dcmg/dc-bus-signalling/) and [rule-based energy management](/research/dcmg/rule-based-ems/).
 
 [PhD thesis, Chapter 3](https://publications.aston.ac.uk/id/eprint/46135/) · [All experimental platforms](/research/experimental_platforms/) · [Back to Research](/research/)

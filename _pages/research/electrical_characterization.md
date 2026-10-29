@@ -7,10 +7,10 @@ body_class: device-project-page
 project_stylesheet: /assets/css/marine-project.css
 project_contents: true
 mathjax: true
-excerpt: "Double-pulse testing of power devices: the test circuit, a SiC MOSFET test platform and measurement campaign, and a GaN double-pulse test board I designed."
+excerpt: "Double-pulse testing of power devices: the test circuit, a SiC MOSFET test platform and measurement campaign, and a purpose-designed GaN double-pulse test board."
 ---
 
-I use double-pulse tests (DPT) to measure how power devices switch. I jointly built a DPT platform for SiC MOSFETs and carried out its measurement campaign, and later designed a double-pulse test board for GaN devices in the P3EP project.
+Double-pulse tests (DPT) measure how power devices switch. This work covers a jointly built DPT platform for SiC MOSFETs with its measurement campaign, and a double-pulse test board designed for GaN devices in the P3EP project.
 
 <h2 id="double-pulse-testing">How Double-Pulse Testing Works</h2>
 
@@ -33,7 +33,7 @@ Static I–V and C–V measurements complement the switching characteristics wit
 
 <h2 id="sic-double-pulse-test">SiC MOSFET Double Pulse Test</h2>
 
-I jointly assembled the platform and modified the original test board. The rig combines a 2.12 mF capacitor bank and a 52.8 µH load inductor with laminated busbars, a gate driver and a heated device mounting, so that switching conditions can be repeated at controlled temperatures.
+The platform was assembled jointly, with a modified version of the original test board. The rig combines a 2.12 mF capacitor bank and a 52.8 µH load inductor with laminated busbars, a gate driver and a heated device mounting, so that switching conditions can be repeated at controlled temperatures.
 
 <figure>
   <a href="/images/research/device-characterization/dpt-test-platform.png" target="_blank" rel="noopener"><img src="/images/research/device-characterization/dpt-test-platform.png" alt="Double-pulse test platform with capacitor bank, laminated busbars, load inductor, gate driver and heated device mounting" width="1500" height="836" loading="lazy"></a>
@@ -50,7 +50,7 @@ The test principle is the same for GaN devices, but they switch in a few nanosec
 
 ### GaN Double-Pulse Test Board
 
-I designed a half-bridge double-pulse test board, DPT-P3EP V1.0, in October 2024 for the P3EP project's GaN devices.
+A half-bridge double-pulse test board, DPT-P3EP V1.0, was designed in October 2024 for the P3EP project's GaN devices.
 
 <figure>
   <a href="/images/research/device-characterization/gan-dpt-board.png" target="_blank" rel="noopener"><img src="/images/research/device-characterization/gan-dpt-board.png" alt="Rendered GaN double-pulse test board DPT-P3EP V1.0 with large DC+ and DC- terminals, a Mid terminal, SMA connectors for the top and bottom gate signals, gate-drive circuits and Vds_Top and Vds_Bot measurement pins" width="384" height="366" loading="lazy"></a>

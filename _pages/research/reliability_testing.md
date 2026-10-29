@@ -9,7 +9,7 @@ project_contents: true
 excerpt: "Environmental and thermal reliability testing of SiC power modules and GaN devices."
 ---
 
-My reliability testing work covers environmental and thermal stress tests of SiC power modules and GaN devices, alongside my [electrical and thermal characterisation](/research/switching_devices/) work.
+Reliability testing covers environmental and thermal stress tests of SiC power modules and GaN devices, and complements the [electrical and thermal characterisation](/research/switching_devices/) work.
 
 <h2 id="reliability-concept">Why Accelerated Stress Testing</h2>
 
@@ -17,7 +17,7 @@ Power devices are expected to operate for many years, so their weaknesses must b
 
 <h2 id="sic-power-module-htrb-h3trb-test">SiC Power Module HTRB / H3TRB Test</h2>
 
-I carried out high-temperature reverse-bias (HTRB) and high-humidity, high-temperature reverse-bias (H3TRB) testing of SiC power modules.
+High-temperature reverse-bias (HTRB) and high-humidity, high-temperature reverse-bias (H3TRB) tests were carried out on SiC power modules.
 
 In both tests, the devices are held off, with each gate shorted to its source, while a DC supply applies a high voltage between drain and source. Each device is usually connected through a series resistor, which limits the current if it fails, and its leakage current is recorded throughout the test. A rising leakage current shows the blocking capability degrading.
 
@@ -41,7 +41,7 @@ The 80 V option for H3TRB applies only to devices rated above 100 V. In H3TRB, t
 
 <h2 id="gan-thermal-cycling">GaN Thermal Cycling</h2>
 
-I tested GaN devices under repeated thermal cycles.
+GaN devices were tested under repeated thermal cycles.
 
 The devices sit unpowered on a cooling plate whose temperature swings between a minimum and a maximum, dwelling at each extreme long enough for the whole device to reach it. For the GaN devices, a Peltier module under the cooling plate from the [thermal-resistance setup](/research/thermal-characterization/#gan-thermal-resistance) sets the temperature. Each cycle stresses the interfaces between the die, its attach and the package, because they expand by different amounts; measuring the devices at intervals, for example their thermal resistance, shows the damage accumulating.
 

@@ -9,7 +9,7 @@ project_contents: true
 excerpt: "Current capability of a packaged GaN power device, tracked through the junction temperature read from an on-chip sensing resistance."
 ---
 
-For the P3EP project, I tested how much current a packaged GaN power device can carry, by stepping its drain current and tracking its junction temperature through a temperature-dependent resistance on the chip. The test uses the same packaged device as the [thermal-resistance measurement](/research/thermal-characterization/#gan-thermal-resistance).
+For the P3EP project, the current capability of a packaged GaN power device was tested by stepping its drain current and tracking its junction temperature through a temperature-dependent resistance on the chip. The test uses the same packaged device as the [thermal-resistance measurement](/research/thermal-characterization/#gan-thermal-resistance).
 
 ## What Limits the Current
 
